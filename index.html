@@ -17,13 +17,14 @@
 
         <script src="static/globals.js"></script>
         <script src="static/index.js"></script>
+        <script src="static/Tesseract.min.js"></script>
+        <script src="static/barcode_from_img.js"></script>
 
         <!-- sweet alert -->
         <script src="static/sweetalert/sweetalert.min.js"></script>
         <link rel="stylesheet" href="static/sweetalert/sweetalert.css">
 
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 
         <link id="theme" rel="stylesheet" href="">
     </head>
@@ -48,9 +49,217 @@
         </div>
 
 
-        Phone Serial Number: <span id='serial'></span><br>
-        Code  : <span id='barcodecode'></span><br>
-        <button class='btn btn-default' onclick='readbarcode()'>Scan Barcode</button>
+        <div id='meter_details' class='container'>
+            <h3>Meter Details</h3>
+            <div class="row">
+                <span class="key">Date</span>
+                <input id='date' type="date" class="form-control value">
+            </div>
+            <script>document.getElementById("date").valueAsDate = new Date();</script>
+            <div class="row">
+                <span class="key">District/Area</span>
+                <input type="text" class="form-control value">
+            </div>
+            <div class="row">
+                <span class="key">Distributor</span>
+                <select class="form-control value">
+                    <option value='UMEME'>UMEME</option>
+                </select>
+            </div>
+            <div class="row">
+                <span class="key">Manufacturer</span>
+                <select class="form-control value">
+                    <option value='Conlog'>Conlog</option>
+                </select>
+            </div>
+            <div class="row">
+                <span class="key">Modal</span>
+                <select class="form-control value">
+                    <option value='BEC 44'>BEC 44</option>
+                </select>
+            </div>
+            <div class="row">
+                <span class="key">Meter No.(S/N)</span>
+                <input type="text" class="form-control value">
+            </div>
+            <div class="row">
+                <span class="key">Accuracy Class</span>
+                <select class="form-control value">
+                    <option value='2.0'>2.0</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="radio-inline" style='float:right;'>
+                    <input type="radio" name="radio_repaid" checked>Prepaid
+                </label>
+                <label class="radio-inline" style='float:right;margin-right:15px;'>
+                    <input type="radio" name="radio_repaid">PostPaid
+                </label>
+            </div>
+            <br>
+            <div class="row">
+                <span class="key">F.I Token No.</span>
+                <input type="text" class="form-control value">
+            </div>
+            <div class="row">
+                <span class="key">Verification ID</span>
+                <input type="text" class="form-control value">
+            </div>
+            <div class="row">
+                <span class="key">P.A Number</span>
+                <input type="text" class="form-control value">
+            </div>
+            <br>
+            <div class="row">
+                <span class="key">Rated Voltage</span>
+                <select class="form-control value">
+                    <option value='240'>240</option>
+                </select>
+            </div>
+            <div class="row">
+                <span class="key">Rated Current</span>
+                <select class="form-control value">
+                    <option value='5'>5</option>
+                </select>
+            </div>
+            <div class="row">
+                <span class="key">Max. Current</span>
+                <select class="form-control value">
+                    <option value='100'>100</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="radio-inline" style='float:right;'>
+                    <input type="radio" name="radio_phase" checked>Single Phase
+                </label>
+                <label class="radio-inline" style='float:right;margin-right:15px;'>
+                    <input type="radio" name="radio_phase">three Phase
+                </label>
+            </div>
+            <br>
+            <div class="row">
+                <span class="key">Credit b/f testing</span>
+                <input type="text" class="form-control value">
+            </div>
+            <div class="row">
+                <span class="key">Credit after</span>
+                <input type="text" class="form-control value">
+            </div>
+            <br>
+            <div class="row">
+                <span class="key">Energry b/f test</span>
+                <input type="text" class="form-control value">
+            </div>
+            <div class="row">
+                <span class="key">Energry after</span>
+                <input type="text" class="form-control value">
+            </div>
+            <br>
+            <div>
+                <span class='next' onclick="next('meter_details')">
+                    Next<span><i class="glyphicon glyphicon-chevron-right"></i></span>
+                </span>
+            </div>
+        </div>
+
+        <div id='inspection' class='container' style='display:none;'>
+            <h3>External Visual Inspection</h3>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Tamper Switch is Ok</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Meter body is not damaged</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Terminals are not damaged</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Screw caps and/or body seal is not damaged</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Meter marking are visible</label>
+            </div>
+
+            <h3>Functional Inspection</h3>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">LED pulsing output working on applying rated current & voltage</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Meter able to show thats its receiving power</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Meter operating and can connect to CIU well</label>
+            </div>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Able to read credit, balance and appropriate registers</label>
+            </div>
+            <br>
+            <div class="checkbox">
+                  <label><input type="checkbox" value="">Passed overall accuracy test</label>
+            </div>
+            <textarea class='form-control' rows=5 placeholder='remarks'></textarea>
+
+            <h3>Recommendations</h3>
+
+            <div class="row">
+                <div class="radio">
+                    <label><input type="radio" name="radio_recommendations">Further Testing</label>
+                </div>
+                <div class="radio">
+                    <label><input type="radio" name="radio_recommendations" checked>Overall Accuracy & Results</label>
+                </div>
+            </div>
+            <br>
+            <div>
+                <span class='back' onclick="back('inspection')">
+                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Back
+                </span>
+                <span class='next' onclick="next('inspection')">
+                    Next<span><i class="glyphicon glyphicon-chevron-right"></i></span>
+                </span>
+            </div>
+        </div>
+
+        <div id='personnel' class='container' style='display:none;'>
+            <h3>Personnel Details</h3>
+            <h4>Electricity Regulatory Authority rep</h4>
+            <div class="row">
+                <span class="key2">Names</span>
+                <input type="text" class="form-control value2">
+            </div>
+            <div class="row">
+                <span class="key2">Contact</span>
+                <input type="text" class="form-control value2">
+            </div>
+            <br>
+            <h4>Customer Respresentative</h4>
+            <div class="row">
+                <span class="key2">Names</span>
+                <input type="text" class="form-control value2">
+            </div>
+            <div class="row">
+                <span class="key2">Contact</span>
+                <input type="text" class="form-control value2">
+            </div>
+            <br>
+            <h4>Utility Respresentative</h4>
+            <div class="row">
+                <span class="key2">Names</span>
+                <input type="text" class="form-control value2">
+            </div>
+            <div class="row">
+                <span class="key2">Contact</span>
+                <input type="text" class="form-control value2">
+            </div>
+            <br>
+            <div>
+                <span class='back' onclick="back('personnel')">
+                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Back
+                </span>
+                <button class='btn btn-success' style='float:right;width:30%;'>Upload</button>
+            </div>
+
+        </div>
 
     </body>
 
