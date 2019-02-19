@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">        
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+
+        <title>UNBS-SMVT</title>
+    
+        <link rel="stylesheet" href="static/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/index.css">
+
+        <!-- jQuery library -->
+        <script src="static/jquery-3.3.1.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="static/bootstrap-3.3.7/dist/js/bootstrap.min.js"></script>    
+
+        <script src="static/globals.js"></script>
+        <script src="static/index.js"></script>
+
+        <!-- sweet alert -->
+        <script src="static/sweetalert/sweetalert.min.js"></script>
+        <link rel="stylesheet" href="static/sweetalert/sweetalert.css">
+
+        <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+        <link id="theme" rel="stylesheet" href="">
+    </head>
+
+    <body oncontextmenu="return false;">
+
+        <div class="modal fade" id="my_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" style2="width:90%;" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Jerm File Browser Help</h4>
+              </div>
+              <div class="modal-body">
+                    <!--code goes here-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal" >Done</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        Phone Serial Number: <span id='serial'></span><br>
+        Code  : <span id='barcodecode'></span><br>
+        <button class='btn btn-default' onclick='readbarcode()'>Scan Barcode</button>
+
+    </body>
+
+</html>
