@@ -4,3 +4,43 @@ body{
     -ms-user-select: none; /* IE10+/Edge */
     user-select: none; /* Standard */
 }
+
+h3,h4{
+    text-indent:5px;
+}
+
+.row{
+    width:100%;
+    margin:5px;
+}
+
+.key,.key2{
+    float:left;
+    width:40%;
+    text-align:left;
+    text-indent:5px;
+    line-height:32px;
+}
+
+.value,.value2{
+    float:left;
+    width:60%;
+}
+
+.key2{width:30%;}
+.value2{width:70%;}
+
+.back, .next{
+    font-size:1.6em;
+}
+
+.back{
+    float:left;
+}
+.next{
+    float:right;
+}
+
+.back:hover, .next:hover{
+    cursor:pointer;
+}
