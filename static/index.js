@@ -3,6 +3,8 @@ var SERVER = {protocol:'http://', ip:'0.0.0.0', port:8790};
 
 var DEVICE_SERIAL = ''
 
+var LOCATION = null;
+
 function _done_request(){
     document.getElementById('loading').style.display = 'none';
 
@@ -45,6 +47,15 @@ function readserial(){
 }
 
 function readbarcode(){
+    /* in the config.xml file, add the barcode scanner with
+    
+        <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+
+        and NOT just
+        
+        <plugin name="phonegap-plugin-barcodescanner" />
+    
+    */
     try{
         cordova.plugins.barcodeScanner.scan(
             function(result){
@@ -88,6 +99,34 @@ function next(div){
     }
 }
 
+function get_location(){
+    try{
+        navigator.geolocation.getCurrentPosition(
+            function(pos){
+                /*    
+                    position.coords.latitude
+                    position.coords.longitude
+                    position.coords.altitude
+                    position.coords.accuracy
+                    position.coords.altitudeAccuracy
+                    position.coords.heading
+                    position.coords.speed
+                    position.timestamp
+                */
+                LOCATION = {'lat':pos.coords.latitude, 'lon':pos.coords.longitude};
+            },
+            function(err){
+                flag_error('failed to get gps location, is GPS turned on?');
+            },
+            
+            {timeout: 30000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+        );
+    }catch(e){
+        flag_error(e);
+    }
+}
+
 document.addEventListener("deviceready", function(){
     readserial();
+    get_location();
 }, false);
