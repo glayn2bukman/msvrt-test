@@ -48,10 +48,9 @@
           </div>
         </div>
 
-
         <div id='meter_details' class='container'>
             <h3>Meter Details</h3>
-            <div class="row">
+            <div class="row" style='display:none;'>
                 <span class="key">Date</span>
                 <input id='date' type="date" class="form-control value">
             </div>
@@ -82,6 +81,10 @@
                 <span class="key">Meter No.(S/N)</span>
                 <input type="text" class="form-control value">
             </div>
+            <div class="row" >
+                <span style='color:#13a;float:right;' onclick='readbarcode()'>scan barcode</span>
+            </div>
+            <br>
             <div class="row">
                 <span class="key">Accuracy Class</span>
                 <select class="form-control value">
@@ -133,7 +136,7 @@
                     <input type="radio" name="radio_phase" checked>Single Phase
                 </label>
                 <label class="radio-inline" style='float:right;margin-right:15px;'>
-                    <input type="radio" name="radio_phase">three Phase
+                    <input type="radio" name="radio_phase">Three Phase
                 </label>
             </div>
             <br>
@@ -157,9 +160,12 @@
             <br>
             <div>
                 <span class='next' onclick="next('meter_details')">
-                    Next<span><i class="glyphicon glyphicon-chevron-right"></i></span>
+                    Next(2/3)<span><i class="glyphicon glyphicon-chevron-right"></i></span>
                 </span>
             </div>
+
+            <div style='color:#ff0;display:;block'><br>.<br>.</div>
+
         </div>
 
         <div id='inspection' class='container' style='display:none;'>
@@ -212,12 +218,14 @@
             <br>
             <div>
                 <span class='back' onclick="back('inspection')">
-                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Back
+                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Back(1/3)
                 </span>
                 <span class='next' onclick="next('inspection')">
-                    Next<span><i class="glyphicon glyphicon-chevron-right"></i></span>
+                    Next(3/3)<span><i class="glyphicon glyphicon-chevron-right"></i></span>
                 </span>
             </div>
+
+            <div style='color:#ff0;display:;block'><br>.<br>.</div>
         </div>
 
         <div id='personnel' class='container' style='display:none;'>
@@ -254,10 +262,12 @@
             <br>
             <div>
                 <span class='back' onclick="back('personnel')">
-                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Back
+                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Back(2/3)
                 </span>
                 <button class='btn btn-success' style='float:right;width:30%;'>Upload</button>
             </div>
+
+            <div style='color:#ff0;display:;block'><br>.<br>.</div>
 
         </div>
 
