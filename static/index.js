@@ -45,6 +45,25 @@ function readserial(){
 }
 
 function readbarcode(){
+    try{
+        cordova.plugins.barcodeScanner.scan(
+            function(result){
+                show_success(result.cancelled+':'+result.text+':'+result.format);
+            },
+            function(err){
+                flag_error(err);
+            },
+            {
+                preferFrontCamera:false,
+                showFlipCameraButton:true,
+                showTorchButton:true,
+                torchOn:false,
+                prompt:'scan barcode',
+            }
+        );
+    }catch(e){
+        flag_error(e);
+    }
 }
 
 function back(div){
