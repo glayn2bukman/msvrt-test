@@ -48,7 +48,23 @@
           </div>
         </div>
 
-        <div id='meter_details' class='container'>
+        <div id='login_div'>
+            <div id='login_form'>
+                <div class="input-group" style='margin-bottom:10px;'>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                    <input id="uname" type="text" class="form-control li" name="uname" placeholder="Username">
+                </div>
+                <div class="input-group" style='margin-bottom:20px;'>
+                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                    <input id="pswd" type="password" class="form-control li" name="pswd" placeholder="Password">
+                </div>
+                <div>
+                    <button class='btn btn-success' style='width:30%;float:right;' onclick='login()'>Login</button>
+                </div>
+            </div>
+        </div>
+
+        <div id='meter_details' class='container' style='display:none;'>
             <h3>Meter Details</h3>
             <div class="row" style='display:none;'>
                 <span class="key">Date</span>
@@ -159,6 +175,9 @@
             </div>
             <br>
             <div>
+                <span class='back' onclick="logout()" style='color:#ff335b;'>
+                    <span><i class="glyphicon glyphicon-chevron-left"></i></span>Logout
+                </span>
                 <span class='next' onclick="next('meter_details')">
                     Next(2/3)<span><i class="glyphicon glyphicon-chevron-right"></i></span>
                 </span>
