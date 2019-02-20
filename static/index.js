@@ -48,10 +48,11 @@ function readbarcode(){
     try{
         cordova.plugins.barcodeScanner.scan(
             function(result){
-                show_success(result.cancelled+':'+result.text+':'+result.format);
+                document.getElementById('sn').value = result.text;
+                //show_success(result.cancelled+':'+result.text+':'+result.format);
             },
             function(err){
-                flag_error(err);
+                //flag_error(err);
             },
             {
                 preferFrontCamera:false,
