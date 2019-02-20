@@ -87,8 +87,8 @@ function logout()
         function(msg){
             if (msg === false) {return false;} // clicked "cancel"
 
-            // perform any validations you want here...
-            window.location.href = "/";
+            document.getElementById('meter_details').style.display = 'none';
+            document.getElementById('login_div').style.display = 'block';
         }
     );
 
