@@ -97,8 +97,6 @@ function next(div){
         document.getElementById('meter_details').style.display='none';
         document.getElementById('inspection').style.display='block';
     }
-    
-    get_location();
 }
 
 function get_location(){
@@ -116,7 +114,6 @@ function get_location(){
                     position.timestamp
                 */
                 LOCATION = {'lat':pos.coords.latitude, 'lon':pos.coords.longitude};
-                show_success('lat: '+pos.coords.latitude+', lon: '+pos.coords.longitude);
             },
             function(err){
                 flag_error('failed to get gps location, is GPS turned on?');
@@ -129,7 +126,17 @@ function get_location(){
     }
 }
 
+function login(){
+    // send login credentials ALONG WITH the device serial number to the server to check the login
+    
+    document.getElementById('login_div').style.display = 'none';
+    
+    // do these when login is successfull
+    document.getElementById('meter_details').style.display = 'block';
+    //get_location();
+
+}
+
 document.addEventListener("deviceready", function(){
     readserial();
-    get_location();
 }, false);

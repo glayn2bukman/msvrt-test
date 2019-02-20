@@ -5,6 +5,23 @@ body{
     user-select: none; /* Standard */
 }
 
+#login_div{
+    position:absolute;
+    width:100%;left:0%;
+    height:100%;top:0%;
+    background-color:#33ceff;
+}
+
+#login_form{
+    position:absolute;
+    top:40%;
+    width:80%;left:10%;
+    opacity:0.9;
+}
+
+.li{
+}
+
 h3,h4{
     text-indent:5px;
 }
