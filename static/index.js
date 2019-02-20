@@ -82,13 +82,23 @@ function readbarcode(){
     }
 }
 
+function increase_opacity(el,opacity){
+    opacity += .1;
+    if (opacity>=1){return;}
+    
+    el.style.opacity = opacity+'';
+    setTimeout(increase_opacity,150,el,opacity);
+}
+
 function back(div){
     if(div=='personnel'){
         document.getElementById('personnel').style.display='none';
         document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
     }else if(div=='inspection'){
         document.getElementById('inspection').style.display='none';
         document.getElementById('meter_details').style.display='block';
+        increase_opacity(document.getElementById('meter_details'),0.0);
     }else if(div=='meter_details'){
         logout();       
     }
@@ -98,9 +108,11 @@ function next(div){
     }else if(div=='inspection'){
         document.getElementById('inspection').style.display='none';
         document.getElementById('personnel').style.display='block';
+        increase_opacity(document.getElementById('personnel'),0.0);
     }else if(div=='meter_details'){        
         document.getElementById('meter_details').style.display='none';
         document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
     }
 }
 
@@ -210,17 +222,16 @@ function initSwipe(element,callback,threshold=20, other=null){
 function init(){
     readserial();
 
-    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;
-
     let pages=['personnel','inspection','meter_details'];        
 
     for(let i=0; i<pages.length; ++i){
         initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
             if(swipe_data.resultant=="right"){back(div_id);}
             else if(swipe_data.resultant=="left"){next(div_id);}
-        },150,other=pages[i]);        
+        },100,other=pages[i]);        
     }
-    
+
+    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
 }
 
 document.addEventListener("deviceready", function(){
