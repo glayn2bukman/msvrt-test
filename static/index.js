@@ -43,7 +43,11 @@ function request(url,method,payload,onsucess,onfailure,logtext="",glue=null, onp
 }
 
 function readserial(){
-    DEVICE_SERIAL = device.serial;
+    try{
+        DEVICE_SERIAL = device.serial;
+    }catch(e){
+        
+    }
 }
 
 function readbarcode(){
@@ -203,14 +207,9 @@ function initSwipe(element,callback,threshold=20, other=null){
     
 }
 
-
-document.addEventListener("deviceready", function(){
+function init(){
     readserial();
-}, false);
 
-window.onload = function(){
-    
-    // to bend text...include the CirleType.min.js file
     new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;
 
     let pages=['personnel','inspection','meter_details'];        
@@ -219,7 +218,17 @@ window.onload = function(){
         initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
             if(swipe_data.resultant=="right"){back(div_id);}
             else if(swipe_data.resultant=="left"){next(div_id);}
-        },200,other=pages[i]);        
+        },150,other=pages[i]);        
     }
+    
+}
+
+document.addEventListener("deviceready", function(){
+    init();
+}, false);
+
+window.onload = function(){
+    init();
+    // to bend text...include the CirleType.min.js file
     
 }
