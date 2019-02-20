@@ -97,6 +97,8 @@ function next(div){
         document.getElementById('meter_details').style.display='none';
         document.getElementById('inspection').style.display='block';
     }
+    
+    get_location();
 }
 
 function get_location(){
@@ -114,13 +116,13 @@ function get_location(){
                     position.timestamp
                 */
                 LOCATION = {'lat':pos.coords.latitude, 'lon':pos.coords.longitude};
-                show_success('lat'+pos.coords.latitude+', lon':pos.coords.longitude);
+                show_success('lat: '+pos.coords.latitude+', lon: '+pos.coords.longitude);
             },
             function(err){
                 flag_error('failed to get gps location, is GPS turned on?');
             },
             
-            {timeout: 30000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+            {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
         );
     }catch(e){
         flag_error(e);
