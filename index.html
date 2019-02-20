@@ -19,13 +19,14 @@
         <script src="static/index.js"></script>
         <script src="static/Tesseract.min.js"></script>
         <script src="static/barcode_from_img.js"></script>
+        <script src="static/CircleType.min.js"></script>
 
         <!-- sweet alert -->
         <script src="static/sweetalert/sweetalert.min.js"></script>
         <link rel="stylesheet" href="static/sweetalert/sweetalert.css">
 
         <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
-
+ 
         <link id="theme" rel="stylesheet" href="">
     </head>
 
@@ -49,6 +50,7 @@
         </div>
 
         <div id='login_div'>
+            <h1 id='title'>UNBS SMVT</h1>
             <div id='login_form'>
                 <div class="input-group" style='margin-bottom:10px;'>
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -59,7 +61,7 @@
                     <input id="pswd" type="password" class="form-control li" name="pswd" placeholder="Password">
                 </div>
                 <div>
-                    <button class='btn btn-success' style='width:30%;float:right;' onclick='login()'>Login</button>
+                    <button class='btn btn-info' style='width:40%;float:right;' onclick='login()'>Login</button>
                 </div>
             </div>
         </div>
@@ -228,10 +230,10 @@
 
             <div class="row">
                 <div class="radio">
-                    <label><input type="radio" name="radio_recommendations">Further Testing</label>
+                    <label><input type="radio" name="radio_recommendations" checked>Further Testing</label>
                 </div>
                 <div class="radio">
-                    <label><input type="radio" name="radio_recommendations" checked>Overall Accuracy & Results</label>
+                    <label><input type="radio" name="radio_recommendations">Meter Replacement</label>
                 </div>
             </div>
             <br>
