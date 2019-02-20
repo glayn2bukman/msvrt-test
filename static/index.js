@@ -97,8 +97,6 @@ function next(div){
         document.getElementById('meter_details').style.display='none';
         document.getElementById('inspection').style.display='block';
     }
-
-    get_location();
 }
 
 function get_location(){
@@ -116,6 +114,7 @@ function get_location(){
                     position.timestamp
                 */
                 LOCATION = {'lat':pos.coords.latitude, 'lon':pos.coords.longitude};
+                show_success('lat'+pos.coords.latitude+', lon':pos.coords.longitude);
             },
             function(err){
                 flag_error('failed to get gps location, is GPS turned on?');
