@@ -196,7 +196,9 @@ function get_location(callback=null, callback_payload=null, err_callback=null){
             },
             function(err){
                 stop_loading();
-                flag_error('failed to get gps location, is GPS turned on?');
+                if(err_callback){
+                    err_callback('please turn on your GPS(location), you wont submit the report if GPS off');
+                }
             },
             
             {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
@@ -401,7 +403,7 @@ function upload(){
             },
             flag_error
         );
-    }, err_callback=flag_error);
+    });
 }
 
 function showToast(msg,duration='long',position='bottom'){
@@ -409,7 +411,7 @@ function showToast(msg,duration='long',position='bottom'){
         window.plugins.toast.show(msg,duration,position);
     }catch(e){
         // probably in browser where we dont have the toast plugin...
-        flag_error(e/*msg*/);
+        flag_error(msg);
     }
 }
 
@@ -444,9 +446,7 @@ function init(){
 
     setInterval(_load,500);
 
-    showToast('testing i..2...3');
-
-    get_location(showToast, 'please turn on your gps, you wont submit the report if its off');
+    get_location(err_callback=showToast);
 }
 
 document.addEventListener("deviceready", function(){
