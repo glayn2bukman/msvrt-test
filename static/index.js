@@ -172,8 +172,6 @@ function get_location(callback=null, callback_payload=null, err_callback=null){
 
     */
 
-    console.log(err_callback);
-
     try{
         start_loading();
         
@@ -448,7 +446,7 @@ function init(){
 
     setInterval(_load,500);
 
-    get_location(null, null, err_callback=showToast);
+    get_location(null, null, showToast);
 }
 
 document.addEventListener("deviceready", function(){
