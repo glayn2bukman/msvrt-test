@@ -1,50 +1,88 @@
-var SERVER = {protocol:'http://', ip:'0.0.0.0', port:8790};
-//var SERVER = {protocol:'', ip:'', port:''};
+var SERVER = {protocol:'http://', port:9988};
+var SERVERS = ['0.0.0.0','45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
 
-var DEVICE_SERIAL = ''
+var URIs = {
+    login:'login',
+    upload:'upload',
+}
 
+var DEVICE_SERIAL_NUMBER = ''
 var LOCATION = null;
+var AGENT = {uname:'',names:''};
+
+String.prototype.toTitleCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+String.prototype.toCamelCase = function (){
+    // convert this_code_here into thisCodeHere
+    if(this.indexOf('_')<0){return this;}
+
+    let str = this.split('_');
+
+    if(str.length==1){return this;}
+
+    for(let i=1;i<str.length;++i){str[i] = str[i][0]==str[i][0].toUpperCase()?str[i]:str[i].toTitleCase();}
+
+    return str.join('');
+};
+
 
 function _done_request(){
-    document.getElementById('loading').style.display = 'none';
+    stop_loading();
 
-    if(this.logtext){
-        document.getElementById("log_div").innerHTML = logtext+"...done";
-    }
-    
     if(this.status===200){
-        this.onsucess(this.responseText, this.glue);
+        if(this.onsucess){
+            this.onsucess(this.responseText, this.glue);
+        }
     }else{
-        this.onfailure("reply code: "+this.status);
+        if(this.onfailure){
+            this.onfailure("reply code: "+this.status);
+        }
     }
 }
 
-function request(url,method,payload,onsucess,onfailure,logtext="",glue=null, onprogress=null){
+function _request_failed(){
+    console.log('server '+this.server+'...failed');
+
+    this.server++;
+    
+    if(this.server>=SERVERS.length){
+        flag_error('failed to send data. are you online?');
+        stop_loading();
+        return;
+    }
+    
+    request(this.uri,this.method,this.payload,this.onsucess,this.onfailure,this.server,this.glue, this._onprogress)
+}
+
+function request(uri,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null){
     // glue will be passed on to onsucess along witht the server reply...
     var req = new XMLHttpRequest();
     
-    req.open(method, url, true);
+    req.open(method,SERVER.protocol+SERVERS[server]+':'+SERVER.port+'/'+uri, true);
     
     req.onsucess = onsucess;
     req.onfailure = onfailure;
-    req.logtext = logtext;
+    req._onprogress = onprogress;
     req.glue = glue;
+    req.server = server;
+    req.method    = method
+    req.uri    = uri
+    req.payload    = payload
     
     req.onload = _done_request;
+    req.onerror = _request_failed;
     if(onprogress){req.onprogress = onprogress;}
     
     req.send(payload);
     
-    if(req.logtext){
-        document.getElementById("log_div").innerHTML = logtext+"...";
-    }
-    
-    document.getElementById('loading').style.display = 'block';
+    start_loading();
 }
 
 function readserial(){
     try{
-        DEVICE_SERIAL = device.serial;
+        DEVICE_SERIAL_NUMBER = device.serial;
     }catch(e){
         
     }
@@ -78,7 +116,7 @@ function readbarcode(){
             }
         );
     }catch(e){
-        flag_error(e);
+        flag_error(e+'. this is likely because you\'re on PC');
     }
 }
 
@@ -109,14 +147,20 @@ function next(div){
         document.getElementById('inspection').style.display='none';
         document.getElementById('personnel').style.display='block';
         increase_opacity(document.getElementById('personnel'),0.0);
-    }else if(div=='meter_details'){        
+    }else if(div=='meter_details'){
+        let validation = validate_form('meter_details');
+        if(!validation.status){
+            flag_error(validation.log+' is blank!');
+            return;
+        }
+        
         document.getElementById('meter_details').style.display='none';
         document.getElementById('inspection').style.display='block';
         increase_opacity(document.getElementById('inspection'),0.0);
     }
 }
 
-function get_location(){
+function get_location(callback=null, callback_payload=null, err_callback=null){
     /*
         in the config.xml, add
         
@@ -129,6 +173,8 @@ function get_location(){
     */
 
     try{
+        start_loading();
+        
         navigator.geolocation.getCurrentPosition(
             function(pos){
                 /*    
@@ -141,27 +187,68 @@ function get_location(){
                     position.coords.speed
                     position.timestamp
                 */
+                stop_loading();
+
                 LOCATION = {'lat':pos.coords.latitude, 'lon':pos.coords.longitude};
+                if(callback){
+                    callback(callback_payload);
+                }
             },
             function(err){
+                stop_loading();
                 flag_error('failed to get gps location, is GPS turned on?');
             },
             
             {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
         );
     }catch(e){
-        flag_error(e);
+        if(err_callback){err_callback(e);}
     }
 }
 
 function login(){
     // send login credentials ALONG WITH the device serial number to the server to check the login
-    
-    document.getElementById('login_div').style.display = 'none';
-    
-    // do these when login is successfull
-    document.getElementById('meter_details').style.display = 'block';
-    //get_location();
+
+    let uname = document.getElementById('uname').value;
+    let pswd = document.getElementById('pswd').value;
+
+    if(!uname.length || !pswd.length){
+        flag_error('please fill in both fields');
+        return;
+    }
+
+    if(uname.indexOf(':')>=0){
+        DEVICE_SERIAL_NUMBER = uname.slice(uname.indexOf(':')+1, uname.length);
+        uname = uname.slice(0,uname.indexOf(':'));
+    }
+
+    let form = new FormData();
+    form.append('uname',uname);
+    form.append('pswd',pswd);
+    form.append('device',DEVICE_SERIAL_NUMBER);
+
+    request(URIs.login,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+
+            AGENT.uname = reply.uname;
+            AGENT.names = reply.names;
+
+            document.getElementById('login_div').style.display = 'none';
+            
+            // do these when login is successfull
+            document.getElementById('meter_details').style.display = 'block';
+            //get_location();
+            
+            document.getElementById('pswd').value = '';
+        },
+        flag_error
+    );
 
 }
 
@@ -219,6 +306,113 @@ function initSwipe(element,callback,threshold=20, other=null){
     
 }
 
+function validate_form(form_id){
+    // check if every input/textarea element with class `mandatory` is set(has a value)
+    // return {status:bool, log:str}
+
+    let mandatories = document.getElementById(form_id).getElementsByClassName('mandatory');
+
+    let unfilled = ''
+    
+    for(let i=0; i<mandatories.length; ++i){
+        if(!mandatories[i].value.length){unfilled = mandatories[i].getAttribute('name');break;}
+    }
+
+    if(!unfilled.length){return {status:true, log:''};}
+
+    return {status:false, log:unfilled.toCamelCase()};
+}
+
+function get_form(div_id){
+    // converts input data in a form into JSON
+    var data = {}
+
+    if(div_id=='personnel'){
+        var forms =  document.getElementById(div_id).getElementsByTagName('form');
+        var _data, form, input;
+        for(let i=0; i<forms.length; ++i){
+            form = forms[i];
+            _data = {};
+
+            var inputs = form.getElementsByTagName('input');
+
+            for(let j=0; j<inputs.length; ++j){
+                input = inputs[j];
+                _data[input.getAttribute('name').toCamelCase()] = input.value;
+            }
+
+            
+            data[form.getAttribute('name').toCamelCase()] = _data
+        }
+        
+    }else{
+        var form =  document.getElementById(div_id).getElementsByTagName('form')[0];
+        
+        var inputs = [
+            form.getElementsByTagName('input'),
+            form.getElementsByTagName('select'),
+            form.getElementsByTagName('textarea')];
+
+
+        let input_list, input;
+        for(let i=0; i<inputs.length; ++i){
+            input_list = inputs[i];
+            for(let j=0; j<input_list.length; ++j){
+                input = input_list[j];
+                if(input.getAttribute('type')=='radio' && !input.checked){continue;}
+                if(input.getAttribute('type')=='checkbox'){
+                    data[input.getAttribute('name').toCamelCase()] = input.checked;
+                }else{
+                    data[input.getAttribute('name').toCamelCase()] = input.value;
+                }
+            }
+        }
+    }
+
+    return data;
+}
+
+function showToast(msg,duration='long',position='bottom'){
+    try{
+        window.plugins.toast.show(msg,duration,position);
+    }catch(e){
+        // probably in browser where we dont have the toast plugin...
+    }
+}
+
+function upload(){
+    get_location(function(){
+        let payload = {
+            date:document.getElementById('date').value,
+            agent_uname: AGENT.uname,
+            agent: AGENT.names,
+            location: LOCATION,
+            device:DEVICE_SERIAL_NUMBER,
+            meterDetails:get_form('meter_details'), 
+            inspection:get_form('inspection'), 
+            personnel:get_form('personnel'), 
+        };
+
+        let form = new FormData();
+        form.append('device',DEVICE_SERIAL_NUMBER);
+        form.append('payload',payload);
+
+        request(URIs.upload,'post',form,
+            function(reply){
+                reply = JSON.parse(reply);
+
+                if(!reply.status){
+                    flag_error(reply.log);
+                    return;
+                }
+                show_success('data sent successfully');
+            },
+            flag_error
+        );
+    }, err_callback=flag_error);
+}
+
+var LOADING_SPAN = 0;
 function init(){
     readserial();
 
@@ -231,7 +425,24 @@ function init(){
         },100,other=pages[i]);        
     }
 
+    // to bend text...include the CirleType.min.js file
     new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
+
+    function _load(){
+        LOADING_SPAN++;
+        loading_spans = document.getElementById('loading').children;
+
+        LOADING_SPAN = LOADING_SPAN>3?1:LOADING_SPAN;
+
+        for(var i=0; i<loading_spans.length; ++i){
+            if(i<LOADING_SPAN){loading_spans[i].style.display= 'inline-block';}
+            else{loading_spans[i].style.display= 'none';}
+        }
+    }
+
+    setInterval(_load,500);
+
+    get_location(showToast, 'please turn on your gps, you wont submit the report if its off');
 }
 
 document.addEventListener("deviceready", function(){
@@ -240,6 +451,17 @@ document.addEventListener("deviceready", function(){
 
 window.onload = function(){
     init();
-    // to bend text...include the CirleType.min.js file
-    
+
+    /*
+    let payload = {
+        date:document.getElementById('date').value,
+        agent: 'Agent Full Names',
+        location: {'lat':32.032154, 'lon':0.32564},
+        meterDetails:get_form('meter_details'), 
+        inspection:get_form('inspection'), 
+        personnel:get_form('personnel'), 
+    }
+
+    console.log(JSON.stringify(payload));
+    */
 }
