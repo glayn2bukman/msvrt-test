@@ -372,14 +372,6 @@ function get_form(div_id){
     return data;
 }
 
-function showToast(msg,duration='long',position='bottom'){
-    try{
-        window.plugins.toast.show(msg,duration,position);
-    }catch(e){
-        // probably in browser where we dont have the toast plugin...
-    }
-}
-
 function upload(){
     get_location(function(){
         let payload = {
@@ -412,6 +404,16 @@ function upload(){
     }, err_callback=flag_error);
 }
 
+function showToast(msg,duration='long',position='bottom'){
+    try{
+        window.plugins.toast.show(msg,duration,position);
+    }catch(e){
+        // probably in browser where we dont have the toast plugin...
+        flag_error(e/*msg*/);
+    }
+}
+
+
 var LOADING_SPAN = 0;
 function init(){
     readserial();
@@ -441,6 +443,8 @@ function init(){
     }
 
     setInterval(_load,500);
+
+    showToast('testing i..2...3');
 
     get_location(showToast, 'please turn on your gps, you wont submit the report if its off');
 }
