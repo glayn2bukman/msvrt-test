@@ -1,5 +1,5 @@
 var SERVER = {protocol:'http://', port:9988};
-var SERVERS = ['0.0.0.0','45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
+var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29','0.0.0.0',];
 
 var URIs = {
     login:'login',
@@ -48,7 +48,7 @@ function _request_failed(){
     this.server++;
     
     if(this.server>=SERVERS.length){
-        flag_error('failed to send data. are you online?');
+        showToast('failed to communicate with server. are you online?');
         stop_loading();
         return;
     }
@@ -172,6 +172,8 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
 
     */
 
+    if(LOCATION){return;}
+
     try{
         if(show_loading){start_loading();}
         
@@ -248,6 +250,9 @@ function login(){
             //get_location();
             
             document.getElementById('pswd').value = '';
+
+            get_location(null, null, showToast,false);
+
         },
         flag_error
     );
@@ -415,6 +420,15 @@ function showToast(msg,duration='long',position='bottom'){
     }
 }
 
+function refresh(){
+    // happens when a report has been submitted or when a user logs out
+    LOCATION = null;
+
+    let forms = document.getElementsByTagName('form');
+    for(let i=0; i<forms.length; ++i){
+        forms[i].reset();
+    }
+}
 
 var LOADING_SPAN = 0;
 function init(){
@@ -446,7 +460,16 @@ function init(){
 
     setInterval(_load,500);
 
-    get_location(null, null, showToast,false);
+    document.addEventListener("backbutton", function(e){
+        if(document.getElementById('login_div').style.display=='none'){
+            e.preventDefault();
+            logout();
+        }
+        else {
+            return false;
+        }
+    }, false);
+
 }
 
 document.addEventListener("deviceready", function(){
