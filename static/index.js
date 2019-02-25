@@ -446,7 +446,7 @@ function init(){
 
     setInterval(_load,500);
 
-    get_location(null, null, showToast);
+    setTimeout(get_location,2000,null,null,showToast);
 }
 
 document.addEventListener("deviceready", function(){
