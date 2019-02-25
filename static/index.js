@@ -160,7 +160,7 @@ function next(div){
     }
 }
 
-function get_location(callback=null, callback_payload=null, err_callback=null){
+function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
     /*
         in the config.xml, add
         
@@ -173,7 +173,7 @@ function get_location(callback=null, callback_payload=null, err_callback=null){
     */
 
     try{
-        start_loading();
+        if(show_loading){start_loading();}
         
         navigator.geolocation.getCurrentPosition(
             function(pos){
@@ -187,7 +187,7 @@ function get_location(callback=null, callback_payload=null, err_callback=null){
                     position.coords.speed
                     position.timestamp
                 */
-                stop_loading();
+                if(show_loading){stop_loading();}
 
                 LOCATION = {'lat':pos.coords.latitude, 'lon':pos.coords.longitude};
                 if(callback){
@@ -446,7 +446,7 @@ function init(){
 
     setInterval(_load,500);
 
-    setTimeout(get_location,2000,null,null,showToast);
+    get_location(null, null, showToast,false);
 }
 
 document.addEventListener("deviceready", function(){
