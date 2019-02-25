@@ -14,8 +14,7 @@ var URLS = {
 
 var DATA_REFRESH_RATE = 60; // time is in seconds
 
-function clear(el)
-{
+function clear(el){
     while (el.childNodes.length)
         el.removeChild(el.childNodes[0]);
 }
@@ -24,8 +23,7 @@ function clear(el)
 function show_modal(modal_id){$('#'+modal_id).modal('show');}
 function hide_modal(modal_id){$('#'+modal_id).modal('hide');}
 
-function flag_error(error)
-{
+function flag_error(error){
     swal({
         title: "Error!",
         text: error,
@@ -34,8 +32,7 @@ function flag_error(error)
     });
 }
 
-function show_info(msg)
-{
+function show_info(msg){
     swal({
         title: "Info!",
         text:msg,
@@ -44,8 +41,7 @@ function show_info(msg)
     });
 }
 
-function show_success(msg)
-{
+function show_success(msg){
     swal({
         title: "Info!",
         text:msg,
@@ -55,24 +51,24 @@ function show_success(msg)
 }
 
 
-function stop_loading()
-{
-    document.getElementById("loading_div").style.display = "none";
+function stop_loading(){
+    try{
+        document.getElementById('loading').style.display = 'none';
+    }catch(e){}
 }
 
-function start_loading()
-{
-    document.getElementById("loading_div").style.display = "block";
+function start_loading(){
+    try{
+        document.getElementById('loading').style.display = 'block';
+    }catch(e){}
 }
 
-function scroll_to_bottom(div_id)
-{
+function scroll_to_bottom(div_id){
     var div = document.getElementById(div_id);
     div.scrollTop = div.scrollHeight;
 }
 
-function logout()
-{
+function logout(){
     swal({
           title: "Logout?",
           text: "are you sure?",
@@ -95,8 +91,7 @@ function logout()
 }
 
 
-function human_readable(value, dp)
-{
+function human_readable(value, dp){
     try{
         value/2.3;
         
@@ -148,8 +143,7 @@ function human_readable(value, dp)
     
 }
 
-function figure_in_words(n)
-{
+function figure_in_words(n){
     var string = n.toString(), 
         units, 
         tens, 
@@ -246,8 +240,7 @@ function figure_in_words(n)
     return words.reverse().join( ' ' );
 }
 
-function notify(msg)
-{
+function notify(msg){
     var notification = document.getElementById("notification");
     notification.innerHTML = msg;
     notification.style.display="block";
