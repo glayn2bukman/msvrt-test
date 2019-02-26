@@ -468,6 +468,7 @@ function init(){
     setInterval(_load,500);
 
     document.addEventListener("backbutton", function(e){
+        e.stopPropagation();
         if(document.getElementById('personnel').style.display=='block'){
             e.preventDefault();
             back('personnel');
@@ -481,7 +482,6 @@ function init(){
             return false;
         }
     }, false);
-
 }
 
 document.addEventListener("deviceready", function(){
