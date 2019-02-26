@@ -468,11 +468,16 @@ function init(){
     setInterval(_load,500);
 
     document.addEventListener("backbutton", function(e){
-        if(document.getElementById('login_div').style.display=='none'){
+        if(document.getElementById('personnel').style.display=='block'){
+            e.preventDefault();
+            back('personnel');
+        }else if(document.getElementById('inspection').style.display=='block'){
+            e.preventDefault();
+            back('inspection');
+        }else if(document.getElementById('meter_details').style.display=='block'){
             e.preventDefault();
             logout();
-        }
-        else {
+        }else {
             return false;
         }
     }, false);
