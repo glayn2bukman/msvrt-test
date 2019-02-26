@@ -1,5 +1,5 @@
 var SERVER = {protocol:'http://', port:9988};
-var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29','0.0.0.0',];
+var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
 
 var URIs = {
     login:'login',
@@ -149,11 +149,10 @@ function next(div){
         increase_opacity(document.getElementById('personnel'),0.0);
     }else if(div=='meter_details'){
         let validation = validate_form('meter_details');
-        if(!validation.status){
+        if(DEVICE_SERIAL_NUMBER!='debug' && !validation.status){
             flag_error(validation.log+' is blank!');
             return;
         }
-        
         document.getElementById('meter_details').style.display='none';
         document.getElementById('inspection').style.display='block';
         increase_opacity(document.getElementById('inspection'),0.0);
@@ -172,7 +171,7 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
 
     */
 
-    if(LOCATION){return;}
+    //if(LOCATION){return;}
 
     try{
         if(show_loading){start_loading();}
@@ -224,6 +223,10 @@ function login(){
     if(uname.indexOf(':')>=0){
         DEVICE_SERIAL_NUMBER = uname.slice(uname.indexOf(':')+1, uname.length);
         uname = uname.slice(0,uname.indexOf(':'));
+
+        if(SERVERS.indexOf('0.0.0.0')<0){
+            SERVERS.splice(0,0,'0.0.0.0'); // we are in development mode, server is on PC
+        }
     }
 
     let form = new FormData();
@@ -394,7 +397,7 @@ function upload(){
 
         let form = new FormData();
         form.append('device',DEVICE_SERIAL_NUMBER);
-        form.append('payload',payload);
+        form.append('payload',JSON.stringify(payload));
 
         request(URIs.upload,'post',form,
             function(reply){
@@ -405,6 +408,10 @@ function upload(){
                     return;
                 }
                 show_success('data sent successfully');
+                refresh();
+
+                document.getElementById('personnel').style.display='none';
+                document.getElementById('meter_details').style.display='block';
             },
             flag_error
         );

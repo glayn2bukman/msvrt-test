@@ -85,6 +85,7 @@ function logout(){
 
             document.getElementById('meter_details').style.display = 'none';
             document.getElementById('login_div').style.display = 'block';
+            refresh(); // is defined in index.js
         }
     );
 
