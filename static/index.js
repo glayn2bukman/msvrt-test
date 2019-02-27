@@ -506,23 +506,12 @@ function init(){
 
 }
 
-document.addEventListener("deviceready", function(){
-    init();
-}, false);
 
 window.onload = function(){
-    init();
-
-    /*
-    let payload = {
-        date:document.getElementById('date').value,
-        agent: 'Agent Full Names',
-        location: {'lat':32.032154, 'lon':0.32564},
-        meterDetails:get_form('meter_details'), 
-        inspection:get_form('inspection'), 
-        personnel:get_form('personnel'), 
+    if(!("deviceready" in window)){init();}
+    else{
+        document.addEventListener("deviceready", function(){
+            init();
+        }, false);
     }
-
-    console.log(JSON.stringify(payload));
-    */
 }
