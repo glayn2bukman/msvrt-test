@@ -467,6 +467,7 @@ function init(){
 
     setInterval(_load,500);
 
+    
     document.addEventListener("backbutton", function(e){
         e.stopPropagation();
         if(document.getElementById('personnel').style.display=='block'){
@@ -482,6 +483,27 @@ function init(){
             return false;
         }
     }, false);
+
+    /*
+    document.addEventListener("keyup", function(e){
+        if(e.key == 'Escape'){
+            e.stopPropagation();
+            if(document.getElementById('personnel').style.display=='block'){
+                e.preventDefault();
+                back('personnel');
+            }else if(document.getElementById('inspection').style.display=='block'){
+                e.preventDefault();
+                back('inspection');
+            }else if(document.getElementById('meter_details').style.display=='block'){
+                e.preventDefault();
+                logout();
+            }else {
+                return false;
+            }
+        }
+    }, false);
+    */
+
 }
 
 document.addEventListener("deviceready", function(){
