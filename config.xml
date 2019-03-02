@@ -37,7 +37,7 @@
     <plugin name="cordova-plugin-geolocation" version="2.1.0" />
     <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
     <plugin name="cordova-plugin-x-toast" />
-    <plugin name="cordova.plugins.diagnostic" source="npm" />
+    <plugin name="cordova.plugins.diagnostic" spec="https://github.com/dpa99c/cordova-diagnostic-plugin" />
 
 </widget>
 
