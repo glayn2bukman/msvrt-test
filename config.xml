@@ -38,11 +38,8 @@
     <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
     <plugin name="cordova-plugin-x-toast" />
 
-    <preference name="cordova.plugins.diagnostic.modules" value="LOCATION BLUETOOTH WIFI CAMERA NOTIFICATIONS MICROPHONE CONTACTS CALENDAR REMINDERS MOTION NFC EXTERNAL_STORAGE" />
-
-    <!--
-    <plugin name="cordova.plugins.diagnostic" spec="https://github.com/dpa99c/cordova-diagnostic-plugin" />
-    -->
+    
+    <plugin name="cordova-diagnostic-plugin" spec="https://github.com/dpa99c/cordova-diagnostic-plugin" />
     
 </widget>
 
