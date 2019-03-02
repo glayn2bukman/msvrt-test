@@ -174,6 +174,17 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
     //if(LOCATION){return;}
 
     try{
+        cordova.plugins.diagnostic.isGpsLocationEnabled(function(enabled){
+            callback("GPS location is " + (enabled ? "enabled" : "disabled"));
+        }, function(error){
+            err_callback("E: "+error);
+        });
+    }catch(e){
+        err_callback(e);
+    }
+
+    
+    try{
         if(show_loading){start_loading();}
         
         navigator.geolocation.getCurrentPosition(
@@ -470,6 +481,7 @@ function init(){
     
     document.addEventListener("backbutton", function(e){
         e.stopPropagation();
+        
         if(document.getElementById('personnel').style.display=='block'){
             e.preventDefault();
             back('personnel');
@@ -480,30 +492,11 @@ function init(){
             e.preventDefault();
             logout();
         }else {
-            return false;
+            return true;
         }
     }, false);
 
-    /*
-    document.addEventListener("keyup", function(e){
-        if(e.key == 'Escape'){
-            e.stopPropagation();
-            if(document.getElementById('personnel').style.display=='block'){
-                e.preventDefault();
-                back('personnel');
-            }else if(document.getElementById('inspection').style.display=='block'){
-                e.preventDefault();
-                back('inspection');
-            }else if(document.getElementById('meter_details').style.display=='block'){
-                e.preventDefault();
-                logout();
-            }else {
-                return false;
-            }
-        }
-    }, false);
-    */
-
+    get_location(show_info, null, flag_error, true);
 }
 
 
