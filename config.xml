@@ -39,7 +39,7 @@
     <plugin name="cordova-plugin-x-toast" />
 
     
-    <plugin name="cordova-diagnostic-plugin" spec="https://github.com/dpa99c/cordova-diagnostic-plugin" />
+    <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
     
 </widget>
 
