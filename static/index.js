@@ -174,11 +174,15 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
     //if(LOCATION){return;}
 
     try{
-        cordova.plugins.diagnostic.isGpsLocationEnabled(function(enabled){
-            callback("GPS location is " + (enabled ? "enabled" : "disabled"));
-        }, function(error){
-            err_callback("E: "+error);
-        });
+        CheckGPS.check(function(){
+            //GPS is enabled!
+            show_info('gps enabled');
+          },
+          function fail(){
+            //GPS is disabled!
+            flag_error('gps NOT enabled');
+          });
+        return;
     }catch(e){
         err_callback(e);
     }
