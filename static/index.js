@@ -417,41 +417,41 @@ function upload(){
     if(!GPSon()){
         showToast('please turn on your GPS(location), you wont submit the report if GPS off');
         return;
+    }else{
+        get_location(function(){
+            let payload = {
+                date:document.getElementById('date').value,
+                agent_uname: AGENT.uname,
+                agent: AGENT.names,
+                location: LOCATION,
+                device:DEVICE_SERIAL_NUMBER,
+                meterDetails:get_form('meter_details'), 
+                inspection:get_form('inspection'), 
+                personnel:get_form('personnel'), 
+            };
+
+            let form = new FormData();
+            form.append('device',DEVICE_SERIAL_NUMBER);
+            form.append('payload',JSON.stringify(payload));
+
+            request(URIs.upload,'post',form,
+                function(reply){
+                    reply = JSON.parse(reply);
+
+                    if(!reply.status){
+                        flag_error(reply.log);
+                        return;
+                    }
+                    show_success('data sent successfully');
+                    refresh();
+
+                    document.getElementById('personnel').style.display='none';
+                    document.getElementById('meter_details').style.display='block';
+                },
+                flag_error
+            );
+        },null,showToast,true);        
     }
-
-    get_location(function(){
-        let payload = {
-            date:document.getElementById('date').value,
-            agent_uname: AGENT.uname,
-            agent: AGENT.names,
-            location: LOCATION,
-            device:DEVICE_SERIAL_NUMBER,
-            meterDetails:get_form('meter_details'), 
-            inspection:get_form('inspection'), 
-            personnel:get_form('personnel'), 
-        };
-
-        let form = new FormData();
-        form.append('device',DEVICE_SERIAL_NUMBER);
-        form.append('payload',JSON.stringify(payload));
-
-        request(URIs.upload,'post',form,
-            function(reply){
-                reply = JSON.parse(reply);
-
-                if(!reply.status){
-                    flag_error(reply.log);
-                    return;
-                }
-                show_success('data sent successfully');
-                refresh();
-
-                document.getElementById('personnel').style.display='none';
-                document.getElementById('meter_details').style.display='block';
-            },
-            flag_error
-        );
-    },null,showToast,true);
 }
 
 function showToast(msg,duration='long',position='bottom'){
