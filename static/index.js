@@ -414,6 +414,11 @@ function get_form(div_id){
 }
 
 function upload(){
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }
+
     get_location(function(){
         let payload = {
             date:document.getElementById('date').value,
