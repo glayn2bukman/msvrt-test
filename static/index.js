@@ -159,6 +159,30 @@ function next(div){
     }
 }
 
+function GPSon(){
+    let status = true;
+    try{
+        /*
+            the CheckGPS module is included in the config.xml by
+            
+            <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
+
+        */
+        CheckGPS.check(function(){
+            //GPS is enabled!
+          },
+          function fail(){
+            //GPS is disabled!
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            status = false;
+          });
+    }catch(e){
+        flag_error(e);
+        return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
+    }
+    return status;
+}
+
 function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
     /*
         in the config.xml, add
@@ -172,21 +196,6 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
     */
 
     //if(LOCATION){return;}
-
-    try{
-        CheckGPS.check(function(){
-            //GPS is enabled!
-            show_info('gps enabled');
-          },
-          function fail(){
-            //GPS is disabled!
-            flag_error('gps NOT enabled');
-          });
-        return;
-    }catch(e){
-        err_callback(e);
-    }
-
     
     try{
         if(show_loading){start_loading();}
@@ -500,7 +509,7 @@ function init(){
         }
     }, false);
 
-    get_location(show_info, null, flag_error, true);
+    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
 }
 
 
