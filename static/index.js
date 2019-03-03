@@ -199,6 +199,7 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
     
     if(!GPSon()){
         showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        stop_loading();
         return;
     }
     
@@ -283,7 +284,9 @@ function login(){
             
             document.getElementById('pswd').value = '';
 
-            get_location(null, null, showToast,false);
+            if(!GPSon()){
+                showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            }
 
         },
         flag_error
