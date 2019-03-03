@@ -197,6 +197,11 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
 
     //if(LOCATION){return;}
     
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }
+    
     try{
         if(show_loading){start_loading();}
         
