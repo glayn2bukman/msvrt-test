@@ -415,10 +415,11 @@ function get_form(div_id){
 }
 
 function upload(){
-    if(!GPSon()){
-        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
-        return;
-    }else{
+    //if(!GPSon()){
+    //    showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+    //    return;
+    //}else{
+
         get_location(function(){
             let payload = {
                 date:document.getElementById('date').value,
@@ -452,7 +453,7 @@ function upload(){
                 flag_error
             );
         },null,showToast,true);        
-    }
+    //}
 }
 
 function showToast(msg,duration='long',position='bottom'){
