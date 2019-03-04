@@ -228,7 +228,7 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
             function(err){
                 stop_loading();
                 if(err_callback){
-                    err_callback('please turn on your GPS(location), you wont submit the report if GPS off');
+                    err_callback('please turn on your GPS(location). if its on please turn location mode to HIGH ACCURACY');
                 }
             },
             
@@ -415,10 +415,10 @@ function get_form(div_id){
 }
 
 function upload(){
-    //if(!GPSon()){
-    //    showToast('please turn on your GPS(location), you wont submit the report if GPS off');
-    //    return;
-    //}else{
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }else{
 
         get_location(function(){
             let payload = {
@@ -453,7 +453,7 @@ function upload(){
                 flag_error
             );
         },null,showToast,true);        
-    //}
+    }
 }
 
 function showToast(msg,duration='long',position='bottom'){
