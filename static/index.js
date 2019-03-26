@@ -11,6 +11,8 @@ var DEVICE_SERIAL_NUMBER = ''
 var LOCATION = null;
 var AGENT = {uname:'',names:''};
 
+var BTPrinterName = 'Qsprinter';
+
 String.prototype.toTitleCase = function () {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
 };
@@ -538,58 +540,33 @@ window.onload = function(){
 }
 
 function show_bt_devs(){
-/*
-    try{
-        window.DatecsPrinter.listBluetoothDevices(
-          function (devices) {
-            document.getElementById('xxx').innerHTML += 'devices: '+devices.length;  
-
-            if(devices.length){
-                for(let attr in devices[0]){
-                    if(devices[0].hasOwnProperty(attr)){
-                        document.getElementById('xxx').innerHTML += attr+':'+devices[0][attr]+'<br>';
-                    }
-                }
-
-                window.DatecsPrinter.connect(devices[0].address, 
-                  function(){
-                      window.DatecsPrinter.printText("Print Test!\nSecond line", 'ISO-8859-1', 
-                        function() {
-                          show_info('printed text');
-                        },
-                        function(){
-                            flag_error('failed to print using the first printer...');
-                        }
-                      );
-                  },
-                  function() {
-                    flag_error(JSON.stringify(error));
-                  }
-                );
-            }
-          },
-          
-          function (error) {
-            alert(JSON.stringify(error));
-          }
-        );
-    }catch(e){
-        flag_error(e);
-    }
-*/
     try{
         BTPrinter.list(
-            function(devices){
-                document.getElementById('xxx').innerHTML += 'devices: '+devices.length;  
+            function(printer){
+                document.getElementById('xxx').innerHTML = 'device: '+printer;
 
-                if(devices.length){
-                    for(let attr in devices[0]){
-                        if(devices[0].hasOwnProperty(attr)){
-                            document.getElementById('xxx').innerHTML += attr+':'+devices[0][attr]+'<br>';
-                        }
-                    }
-
+                if(printer!=BTPrinterName){
+                    show_info('connected device is not '+BTPrinterName);
+                    return;
                 }
+                BTPrinter.connect(
+                    function(data){
+                        document.getElementById('xxx').innerHTML += 'data: '+data+'<br>';
+
+                        BTPrinter.printText(
+                            function(data){
+                                document.getElementById('xxx').innerHTML += 'print-data: '+data+'<br>';
+                            },
+                            function(err){
+                                flag_error(err);
+                            }, 
+                            "testing 1.2.3\nsecond line!"
+                        );
+                    },
+                    function(err){
+                        show_info(err)
+                    }, 
+                printer);
             },
             function(err){
                 show_info(err);
