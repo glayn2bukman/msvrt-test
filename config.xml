@@ -44,7 +44,7 @@
         
         to use the original plugin, remove the spec="https://github/glayn2bukman/..."
     -->
-    <plugin name="cordova-plugin-bluetooth-printer" />    
+    <plugin name="cordova-plugin-bluetooth-printer" spec="https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer" />    
     
 </widget>
 
