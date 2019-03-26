@@ -553,11 +553,12 @@ function show_bt_devs(){
                     function(data){
                         document.getElementById('xxx').innerHTML += 'data: '+data+'<br>';
 
+                            // pull page clear
                         BTPrinter.printPOSCommand(function(data){
                             ;
                         },function(err){
                             ;
-                        }, "0C"); //'OC' is a POS command for page feed
+                        }, "0C"); //'OC' is a POS command for page feed ie pull up next page!
 
                         let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
                         for (let i=0; i<lines.length; ++i){
@@ -573,6 +574,13 @@ function show_bt_devs(){
                             );
                         }
                         
+                            // pull another page so thatthe agent can tear the printed one away
+                        BTPrinter.printPOSCommand(function(data){
+                            ;
+                        },function(err){
+                            ;
+                        }, "0C"); //'OC' is a POS command for page feed ie pull up next page!
+
                         /*
                         BTPrinter.printImage(
                             function(data){
