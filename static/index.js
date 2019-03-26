@@ -1,3 +1,4 @@
+"use strict";
 var SERVER = {protocol:'http://', port:9988};
 var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
 
@@ -177,7 +178,6 @@ function GPSon(){
             status = false;
           });
     }catch(e){
-        flag_error(e);
         return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
     }
     return status;
@@ -485,7 +485,7 @@ function init(){
         initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
             if(swipe_data.resultant=="right"){back(div_id);}
             else if(swipe_data.resultant=="left"){next(div_id);}
-        },100,other=pages[i]);        
+        },100,pages[i]);        
     }
 
     // to bend text...include the CirleType.min.js file
@@ -493,7 +493,7 @@ function init(){
 
     function _load(){
         LOADING_SPAN++;
-        loading_spans = document.getElementById('loading').children;
+        let loading_spans = document.getElementById('loading').children;
 
         LOADING_SPAN = LOADING_SPAN>3?1:LOADING_SPAN;
 
@@ -524,6 +524,45 @@ function init(){
     }, false);
 
     if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+
+    try{
+        window.DatecsPrinter.listBluetoothDevices(
+          function (devices) {
+            document.getElementById('xxx').innerHTML += 'devices: '+devices.length;  
+
+            if(devices.length){
+                for(let attr in devices[0]){
+                    if(devices[0].hasOwnProperty(attr)){
+                        document.getElementById('xxx').innerHTML += attr+':'+devices[0][attr]+'<br>';
+                    }
+                }
+
+                window.DatecsPrinter.connect(devices[0].address, 
+                  function(){
+                      window.DatecsPrinter.printText("Print Test!\nSecond line", 'ISO-8859-1', 
+                        function() {
+                          show_info('printed text');
+                        },
+                        function(){
+                            flag_error('failed to print using the first printer...');
+                        }
+                      );
+                  },
+                  function() {
+                    flag_error(JSON.stringify(error));
+                  }
+                );
+            }
+          },
+          
+          function (error) {
+            alert(JSON.stringify(error));
+          }
+        );
+    }catch(e){
+        flag_error(e);
+    }
+
 }
 
 
