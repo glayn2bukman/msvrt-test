@@ -39,9 +39,9 @@
 
     <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
 
-    <!--
+    
     <plugin name="phonegap-plugin-barcodescanner" spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
-    -->
+    
     <plugin name="cordova-plugin-thermal-printer" />
     <!--
     <plugin name="cordova-plugin-thermalprint" /> 
