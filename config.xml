@@ -42,7 +42,7 @@
     <!--
     <plugin name="phonegap-plugin-barcodescanner" spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
     -->
-    <plugin name="cordova-plugin-datecs-printer-qr" />
+    <plugin name="cordova-plugin-datecs-printer" spec="https://github.com/giorgiofellipe/cordova-plugin-datecs-printer" />
     <!--
     <plugin name="cordova-plugin-bluetooth-printer" spec="https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer" /> 
     -->
