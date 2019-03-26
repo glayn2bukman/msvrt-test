@@ -543,7 +543,7 @@ function show_bt_devs(){
     try{
         BTPrinter.list(
             function(printers){
-                document.getElementById('xxx').innerHTML = 'device: '+printers;
+                document.getElementById('xxx').innerHTML = 'device: '+printers+'<br>';
 
                 if(printers.indexOf(BTPrinterName)<0){
                     show_info(BTPrinterName+'is not among the connected devices');
@@ -553,14 +553,29 @@ function show_bt_devs(){
                     function(data){
                         document.getElementById('xxx').innerHTML += 'data: '+data+'<br>';
 
-                        BTPrinter.printText(
+                        let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
+                        for (let i=0; i<lines.length; ++i){
+                            
+                            BTPrinter.printText(
+                                function(data){
+                                    document.getElementById('xxx').innerHTML += 'print-data: '+data+'<br>';
+                                },
+                                function(err){
+                                    flag_error('printing: '+err);
+                                }, 
+                                lines[i]
+                            );
+                        }
+
+                        // now disconnect printer, this saves battery as well as reducing the application load
+                        BTPrinter.disconnect(
                             function(data){
-                                document.getElementById('xxx').innerHTML += 'print-data: '+data+'<br>';
+                                ;
                             },
                             function(err){
-                                flag_error('printing: '+err);
+                                ;
                             }, 
-                            "testing 1.2.3\nsecond line!"
+                            BTPrinterName
                         );
                     },
                     function(err){
