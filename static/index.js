@@ -542,10 +542,10 @@ window.onload = function(){
 function show_bt_devs(){
     try{
         BTPrinter.list(
-            function(printer){
+            function(printers){
                 document.getElementById('xxx').innerHTML = 'device: '+printer;
 
-                if(printer!=BTPrinterName){
+                if(printers.indexOf(BTPrinterName)<0){
                     show_info('connected device is not '+BTPrinterName);
                     return;
                 }
@@ -558,19 +558,21 @@ function show_bt_devs(){
                                 document.getElementById('xxx').innerHTML += 'print-data: '+data+'<br>';
                             },
                             function(err){
-                                flag_error(err);
+                                flag_error('printing: '+err);
                             }, 
                             "testing 1.2.3\nsecond line!"
                         );
                     },
                     function(err){
-                        show_info(err)
+                        show_info('connecting: '+err)
                     }, 
-                printer);
+                    BTPrinterName
+                );
             },
             function(err){
                 show_info(err);
-            })
+            }
+        );
     }catch(e){
         flag_error(e);
     }
