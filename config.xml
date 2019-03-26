@@ -44,8 +44,7 @@
         
         to use the original plugin, remove the spec="https://github/glayn2bukman/..."
     -->
-    <plugin name="cordova-plugin-datecs-printer" spec="https://github.com/glayn2bukman/cpdp" />
-    
+    <plugin name="cordova-plugin-bluetooth-printer" />    
     
 </widget>
 
