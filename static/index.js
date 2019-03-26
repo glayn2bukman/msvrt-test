@@ -543,10 +543,10 @@ function show_bt_devs(){
     try{
         BTPrinter.list(
             function(printers){
-                document.getElementById('xxx').innerHTML = 'device: '+printer;
+                document.getElementById('xxx').innerHTML = 'device: '+printers;
 
                 if(printers.indexOf(BTPrinterName)<0){
-                    show_info('connected device is not '+BTPrinterName);
+                    show_info(BTPrinterName+'is not among the connected devices');
                     return;
                 }
                 BTPrinter.connect(
