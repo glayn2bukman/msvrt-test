@@ -42,7 +42,7 @@
     
     <plugin name="phonegap-plugin-barcodescanner" spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
     
-    <plugin name="cordova-plugin-thermal-printer" />
+    <plugin name="cordova-plugin-blutooth-printer" spec="https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer.git" />
     <!--
     <plugin name="cordova-plugin-thermalprint" /> 
     -->
