@@ -525,6 +525,19 @@ function init(){
 
     if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
 
+}
+
+
+window.onload = function(){
+    if(!("deviceready" in window)){init();}
+    else{
+        document.addEventListener("deviceready", function(){
+            init();
+        }, false);
+    }
+}
+
+function show_bt_devs(){
 /*
     try{
         window.DatecsPrinter.listBluetoothDevices(
@@ -564,21 +577,8 @@ function init(){
         flag_error(e);
     }
 */
-}
-
-
-window.onload = function(){
-    if(!("deviceready" in window)){init();}
-    else{
-        document.addEventListener("deviceready", function(){
-            init();
-        }, false);
-    }
-}
-
-function show_bt_devs(){
     try{
-        window.ZJPrinter.list(
+        BTPrinter.list(
             function(devices){
                 document.getElementById('xxx').innerHTML += 'devices: '+devices.length;  
 
@@ -597,4 +597,5 @@ function show_bt_devs(){
     }catch(e){
         flag_error(e);
     }
+
 }
