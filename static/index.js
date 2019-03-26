@@ -574,12 +574,8 @@ function show_bt_devs(){
                             );
                         }
                         
-                            // pull another page so thatthe agent can tear the printed one away
-                        BTPrinter.printPOSCommand(function(data){
-                            ;
-                        },function(err){
-                            ;
-                        }, "0C"); //'OC' is a POS command for page feed ie pull up next page!
+                        // pull another page so thatthe agent can tear the printed one away
+                        // instead of printing a 'OC' POS command, let the user manually press the page feed btn
 
                         /*
                         BTPrinter.printImage(
