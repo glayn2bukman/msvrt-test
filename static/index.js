@@ -578,7 +578,7 @@ window.onload = function(){
 
 function show_bt_devs(){
     try{
-        ZJPrinter.list(
+        window.ZJPrinter.list(
             function(devices){
                 document.getElementById('xxx').innerHTML += 'devices: '+devices.length;  
 
