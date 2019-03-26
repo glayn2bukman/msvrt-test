@@ -35,10 +35,10 @@
     <plugin name="cordova-plugin-sqlite" />
     <plugin name="cordova-plugin-device" />
     <plugin name="cordova-plugin-geolocation" version="2.1.0" />
-    <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+    <plugin name="phonegap-plugin-barcodescanner" spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
     <plugin name="cordova-plugin-x-toast" />
+    <plugin name="cordova-plugin-datecs-printer" />
 
-    
     <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
     
 </widget>
