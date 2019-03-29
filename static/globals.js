@@ -1,15 +1,5 @@
+"use strict";
 var URLS = {
-    login:'login',
-    categories:'categories',
-    browse:'browse',
-    code_preview:'preview_text_file',
-    file_url:'file_url',
-    convert_to_pdf:'convert_to_pdf',
-    rename:'rename',
-    del:'delete',
-    new_folder:'new_folder',
-    upload:'upload',
-    search:'search',
 };
 
 var DATA_REFRESH_RATE = 60; // time is in seconds

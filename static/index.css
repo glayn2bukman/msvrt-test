@@ -75,28 +75,5 @@ h3,h4{
 }
 
 #loading{
-    position:fixed/*absolute*/;
-    width:20%;left:45%/*3%*/;
-    height:20px;bottom:30px;/*top:%3%;*/
-    z-index:100;
     display:none;
-}
-
-.loading-dot{
-    float:left;
-    background-color:#d86;
-    margin-right:5px;
-    border-radius:50%;
-}
-
-#loading-dot-1{
-    width:6px;height:6px;
-    margin-top:4px;
-}
-#loading-dot-2{
-    width:10px;height:10px;
-    margin-top:2px;
-}
-#loading-dot-3{
-    width:14px;height:14px;
 }

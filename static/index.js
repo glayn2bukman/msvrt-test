@@ -1,1 +1,613 @@
-var a=['YXBwbHk=','ZnVuY3Rpb24gKlwoICpcKQ==','XCtcKyAqKD86XzB4KD86W2EtZjAtOV0pezQsNn18KD86XGJ8XGQpW2EtejAtOV17MSw0fSg/OlxifFxkKSk=','aW5pdA==','dGVzdA==','Y2hhaW4=','aW5wdXQ=','e30uY29uc3RydWN0b3IoInJldHVybiB0aGlzIikoICk=','Y29uc29sZQ==','bG9n','d2Fybg==','ZGVidWc=','aW5mbw==','ZXJyb3I=','ZXhjZXB0aW9u','dHJhY2U=','aHR0cDovLw==','NDUuMzMuNi4yMzc=','MTA0LjIzNy4xNDIuMTgz','NDUuMzMuNzQuMzg=','MTM5LjE2Mi4yMzUuMjk=','bG9naW4=','dXBsb2Fk','c3RhdHVz','b25zdWNlc3M=','cmVzcG9uc2VUZXh0','Z2x1ZQ==','b25mYWlsdXJl','cmVwbHkgY29kZTog','c2VydmVyIA==','c2VydmVy','Li4uZmFpbGVk','bGVuZ3Ro','ZmFpbGVkIHRvIGNvbW11bmljYXRlIHdpdGggc2VydmVyLiBhcmUgeW91IG9ubGluZT8=','X29ucHJvZ3Jlc3M=','b3Blbg==','cHJvdG9jb2w=','cG9ydA==','bWV0aG9k','cGF5bG9hZA==','b25wcm9ncmVzcw==','c2VuZA==','c2VyaWFs','YmFyY29kZVNjYW5uZXI=','c2Nhbg==','Z2V0RWxlbWVudEJ5SWQ=','dmFsdWU=','dGV4dA==','c2NhbiBiYXJjb2Rl','c3R5bGU=','b3BhY2l0eQ==','cGVyc29ubmVs','ZGlzcGxheQ==','bm9uZQ==','aW5zcGVjdGlvbg==','YmxvY2s=','bWV0ZXJfZGV0YWlscw==','IGlzIGJsYW5rIQ==','Y2hlY2s=','cGxlYXNlIHR1cm4gb24geW91ciBHUFMobG9jYXRpb24pLCB5b3Ugd29udCBzdWJtaXQgdGhlIHJlcG9ydCBpZiBHUFMgb2Zm','Z2V0Q3VycmVudFBvc2l0aW9u','Y29vcmRz','bG9uZ2l0dWRl','bGF0aXR1ZGU=','dW5hbWU=','cHN3ZA==','cGxlYXNlIGZpbGwgaW4gYm90aCBmaWVsZHM=','aW5kZXhPZg==','c2xpY2U=','c3BsaWNl','MC4wLjAuMA==','YXBwZW5k','ZGV2aWNl','cG9zdA==','cGFyc2U=','bmFtZXM=','cHJvdG90eXBl','dG9UaXRsZUNhc2U=','cmVwbGFjZQ==','dG9VcHBlckNhc2U=','c3Vic3Ry','dG9Mb3dlckNhc2U=','dG9DYW1lbENhc2U=','c3BsaXQ=','am9pbg==','cmlnaHQ=','bGVmdA==','dG91Y2hzdGFydA==','c3RvcFByb3BhZ2F0aW9u','Y2hhbmdlZFRvdWNoZXM=','c3RhcnRZ','cGFnZVk=','YWRkRXZlbnRMaXN0ZW5lcg==','dG91Y2hlbmQ=','cGFnZVg=','c3RhcnRY','bW91c2Vkb3du','Y2xpZW50WA==','Y2xpZW50WQ==','bW91c2V1cA==','Z2V0RWxlbWVudHNCeUNsYXNzTmFtZQ==','bmFtZQ==','Z2V0RWxlbWVudHNCeVRhZ05hbWU=','Zm9ybQ==','Z2V0QXR0cmlidXRl','c2VsZWN0','dGV4dGFyZWE=','cmFkaW8=','Y2hlY2tlZA==','Y2hlY2tib3g=','ZGF0ZQ==','ZGF0YSBzZW50IHN1Y2Nlc3NmdWxseQ==','cGx1Z2lucw==','dG9hc3Q=','cmVzZXQ=','bGlzdA==','Y29ubmVjdA==','cHJpbnRQT1NDb21tYW5k','cHJpbnRpbmc6IA==','cmVzdWx0YW50','dGl0bGU=','cmFkaXVz','YmFja2J1dHRvbg==','cHJldmVudERlZmF1bHQ=','YWRkcmVzcw==','R0VU','bG9u','JmxhdD0=','bGF0','UkVWRVJTRS1HRU9DT0RFOjogc2VydmVyIHJlcGx5IHN0YXR1czog','ZGlzcGxheV9uYW1l','ZGV2aWNlcmVhZHk=','cmljaGFyZC5rYXRvOmRlYnVn','c3RyaW5n','Y29uc3RydWN0b3I=','d2hpbGUgKHRydWUpIHt9','Y291bnRlcg==','ZGVidQ==','Z2dlcg==','Y2FsbA==','c3RhdGVPYmplY3Q='];var b=function(c,d){c=c-0x0;var e=a[c];if(b['pTYZIV']===undefined){(function(){var f;try{var g=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');f=g();}catch(h){f=window;}var i='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';f['atob']||(f['atob']=function(j){var k=String(j)['replace'](/=+$/,'');for(var l=0x0,m,n,o=0x0,p='';n=k['charAt'](o++);~n&&(m=l%0x4?m*0x40+n:n,l++%0x4)?p+=String['fromCharCode'](0xff&m>>(-0x2*l&0x6)):0x0){n=i['indexOf'](n);}return p;});}());b['AOohQe']=function(q){var r=atob(q);var s=[];for(var t=0x0,u=r['length'];t<u;t++){s+='%'+('00'+r['charCodeAt'](t)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(s);};b['komyqd']={};b['pTYZIV']=!![];}var v=b['komyqd'][c];if(v===undefined){e=b['AOohQe'](e);b['komyqd'][c]=e;}else{e=v;}return e;};var e=function(){var g=!![];return function(h,i){var j=g?function(){if(i){var k=i[b('0x0')](h,arguments);i=null;return k;}}:function(){};g=![];return j;};}();(function(){e(this,function(){var l=new RegExp(b('0x1'));var m=new RegExp(b('0x2'),'i');var n=d(b('0x3'));if(!l[b('0x4')](n+b('0x5'))||!m[b('0x4')](n+b('0x6'))){n('0');}else{d();}})();}());var c=function(){var o=!![];return function(p,q){var r=o?function(){if(q){var s=q[b('0x0')](p,arguments);q=null;return s;}}:function(){};o=![];return r;};}();var f=c(this,function(){var t=function(){};var u;try{var v=Function('return\x20(function()\x20'+b('0x7')+');');u=v();}catch(w){u=window;}if(!u[b('0x8')]){u['console']=function(t){var y={};y[b('0x9')]=t;y[b('0xa')]=t;y[b('0xb')]=t;y[b('0xc')]=t;y[b('0xd')]=t;y[b('0xe')]=t;y[b('0xf')]=t;return y;}(t);}else{u[b('0x8')][b('0x9')]=t;u[b('0x8')][b('0xa')]=t;u['console'][b('0xb')]=t;u[b('0x8')][b('0xc')]=t;u[b('0x8')][b('0xd')]=t;u[b('0x8')]['exception']=t;u[b('0x8')]['trace']=t;}});f();'use strict';var SERVER={'protocol':b('0x10'),'port':0x2704},SERVERS=[b('0x11'),b('0x12'),b('0x13'),b('0x14')],URIs={'login':b('0x15'),'upload':b('0x16')},DEVICE_SERIAL_NUMBER='',LOCATION=null,AGENT={'uname':'','names':''},BTPrinterName='Qsprinter';function _done_request(){stop_loading(),0xc8===this[b('0x17')]?this[b('0x18')]&&this['onsucess'](this[b('0x19')],this[b('0x1a')]):this[b('0x1b')]&&this['onfailure'](b('0x1c')+this[b('0x17')]);}function _request_failed(){if(console[b('0x9')](b('0x1d')+this[b('0x1e')]+b('0x1f')),this['server']++,this['server']>=SERVERS[b('0x20')])return showToast(b('0x21')),void stop_loading();request(this['uri'],this['method'],this['payload'],this[b('0x18')],this[b('0x1b')],this[b('0x1e')],this[b('0x1a')],this[b('0x22')]);}function request(z,A,B=null,C=null,D=null,E=0x0,F=null,G=null){var H=new XMLHttpRequest();H[b('0x23')](A,SERVER[b('0x24')]+SERVERS[E]+':'+SERVER[b('0x25')]+'/'+z,!0x0),H[b('0x18')]=C,H['onfailure']=D,H[b('0x22')]=G,H[b('0x1a')]=F,H[b('0x1e')]=E,H[b('0x26')]=A,H['uri']=z,H[b('0x27')]=B,H['onload']=_done_request,H['onerror']=_request_failed,G&&(H[b('0x28')]=G),H[b('0x29')](B),start_loading();}function readserial(){try{DEVICE_SERIAL_NUMBER=device[b('0x2a')];}catch(I){}}function readbarcode(){try{cordova['plugins'][b('0x2b')][b('0x2c')](function(J){document[b('0x2d')]('sn')[b('0x2e')]=J[b('0x2f')];},function(K){},{'preferFrontCamera':!0x1,'showFlipCameraButton':!0x0,'showTorchButton':!0x0,'torchOn':!0x1,'prompt':b('0x30')});}catch(L){flag_error(L+'.\x20this\x20is\x20likely\x20because\x20you\x27re\x20on\x20PC');}}function increase_opacity(M,N){(N+=0.1)>=0x1||(M[b('0x31')][b('0x32')]=N+'',setTimeout(increase_opacity,0x96,M,N));}function back(O){b('0x33')==O?(document[b('0x2d')]('personnel')[b('0x31')][b('0x34')]=b('0x35'),document[b('0x2d')](b('0x36'))[b('0x31')][b('0x34')]=b('0x37'),increase_opacity(document[b('0x2d')](b('0x36')),0x0)):b('0x36')==O?(document['getElementById'](b('0x36'))[b('0x31')][b('0x34')]='none',document[b('0x2d')](b('0x38'))[b('0x31')][b('0x34')]=b('0x37'),increase_opacity(document[b('0x2d')](b('0x38')),0x0)):b('0x38')==O&&logout();}function next(P){if(b('0x33')==P);else if(b('0x36')==P)document[b('0x2d')]('inspection')[b('0x31')]['display']=b('0x35'),document[b('0x2d')](b('0x33'))[b('0x31')][b('0x34')]=b('0x37'),increase_opacity(document[b('0x2d')](b('0x33')),0x0);else if(b('0x38')==P){let P=validate_form(b('0x38'));if('debug'!=DEVICE_SERIAL_NUMBER&&!P[b('0x17')])return void flag_error(P['log']+b('0x39'));document[b('0x2d')](b('0x38'))[b('0x31')][b('0x34')]=b('0x35'),document[b('0x2d')](b('0x36'))[b('0x31')][b('0x34')]=b('0x37'),increase_opacity(document[b('0x2d')](b('0x36')),0x0);}}function GPSon(){let R=!0x0;try{CheckGPS[b('0x3a')](function(){},function(){showToast(b('0x3b')),R=!0x1;});}catch(S){return R;}return R;}function get_location(T=null,U=null,V=null,W=!0x0){try{W&&start_loading(),navigator['geolocation'][b('0x3c')](function(V){W&&stop_loading(),LOCATION={'lat':V[b('0x3d')]['latitude'],'lon':V[b('0x3d')][b('0x3e')]},reverseGeocode({'lat':V['coords'][b('0x3f')],'lon':V[b('0x3d')][b('0x3e')]},T,U);},function(T){stop_loading(),V&&V('please\x20turn\x20on\x20your\x20GPS(location).\x20if\x20its\x20on\x20please\x20turn\x20location\x20mode\x20to\x20HIGH\x20ACCURACY');},{'timeout':0xc350});}catch(Z){V&&V(Z);}console[b('0x9')](DEVICE_SERIAL_NUMBER);}function login(){let a0=document[b('0x2d')](b('0x40'))['value'],a1=document[b('0x2d')](b('0x41'))[b('0x2e')];if(!a0[b('0x20')]||!a1[b('0x20')])return void flag_error(b('0x42'));a0[b('0x43')](':')>=0x0&&(DEVICE_SERIAL_NUMBER=a0[b('0x44')](a0['indexOf'](':')+0x1,a0[b('0x20')]),a0=a0[b('0x44')](0x0,a0[b('0x43')](':')),SERVERS[b('0x43')]('0.0.0.0')<0x0&&SERVERS[b('0x45')](0x0,0x0,b('0x46')));let a2=new FormData();a2[b('0x47')](b('0x40'),a0),a2[b('0x47')](b('0x41'),a1),a2[b('0x47')](b('0x48'),DEVICE_SERIAL_NUMBER),request(URIs[b('0x15')],b('0x49'),a2,function(a0){(a0=JSON[b('0x4a')](a0))[b('0x17')]?(AGENT[b('0x40')]=a0[b('0x40')],AGENT['names']=a0[b('0x4b')],document['getElementById']('login_div')[b('0x31')][b('0x34')]=b('0x35'),document[b('0x2d')](b('0x38'))[b('0x31')][b('0x34')]=b('0x37'),document[b('0x2d')](b('0x41'))[b('0x2e')]='',GPSon()||showToast(b('0x3b'))):flag_error(a0[b('0x9')]);},flag_error);}String[b('0x4c')][b('0x4d')]=function(){return this[b('0x4e')](/\w\S*/g,function(a4){return a4['charAt'](0x0)[b('0x4f')]()+a4[b('0x50')](0x1)[b('0x51')]();});},String['prototype'][b('0x52')]=function(){if(this[b('0x43')]('_')<0x0)return this;let a5=this[b('0x53')]('_');if(0x1==a5[b('0x20')])return this;for(let a6=0x1;a6<a5[b('0x20')];++a6)a5[a6]=a5[a6][0x0]==a5[a6][0x0][b('0x4f')]()?a5[a6]:a5[a6][b('0x4d')]();return a5[b('0x54')]('');};var _swipe={'startX':0x0,'startY':0x0};function initSwipe(a7,a8,a9=0x14,aa=null){function ab(a7,a8,a9){a7=a7<0x0?a7>-a9?0x0:a7:a7<a9?0x0:a7;var aa=(a8=a8<0x0?a8>-a9?0x0:a7:a8<a9?0x0:a8)>0x0?'down':a8<0x0?'up':b('0x35'),ab=a7>0x0?b('0x55'):a7<0x0?b('0x56'):'none';return{'horizontal':ab,'vertical':aa,'resultant':(a8=a8<0x0?-0x1*a8:a8)>(a7=a7<0x0?-0x1*a7:a7)?aa:ab};}a7['addEventListener'](b('0x57'),function(a7){a7[b('0x58')](),_swipe['startX']=a7[b('0x59')][0x0]['pageX'],_swipe[b('0x5a')]=a7['changedTouches'][0x0][b('0x5b')];}),a7[b('0x5c')](b('0x5d'),function(a7){a7[b('0x58')]();var aj=a7['changedTouches'][0x0][b('0x5e')]-_swipe[b('0x5f')],ak=a7[b('0x59')][0x0][b('0x5b')]-_swipe[b('0x5a')];a8(ab(aj,ak,a9),aa);}),a7[b('0x5c')](b('0x60'),function(a7){a7[b('0x58')](),_swipe[b('0x5f')]=a7[b('0x61')],_swipe[b('0x5a')]=a7[b('0x62')];}),a7[b('0x5c')](b('0x63'),function(a7){a7[b('0x58')]();var an=a7[b('0x61')]-_swipe[b('0x5f')],ao=a7[b('0x62')]-_swipe[b('0x5a')];a8(ab(an,ao,a9),aa);});}function validate_form(ap){let aq=document['getElementById'](ap)[b('0x64')]('mandatory'),ar='';for(let ap=0x0;ap<aq['length'];++ap)if(!aq[ap][b('0x2e')][b('0x20')]){ar=aq[ap]['getAttribute'](b('0x65'));break;}return ar[b('0x20')]?{'status':!0x1,'log':ar[b('0x52')]()}:{'status':!0x0,'log':''};}function get_form(at){var au={};if(b('0x33')==at){var av,aw,ax=document[b('0x2d')](at)[b('0x66')](b('0x67'));for(let at=0x0;at<ax[b('0x20')];++at){av={};var az=(aB=ax[at])[b('0x66')](b('0x6'));for(let at=0x0;at<az[b('0x20')];++at)av[(aw=az[at])[b('0x68')](b('0x65'))[b('0x52')]()]=aw[b('0x2e')];au[aB[b('0x68')](b('0x65'))[b('0x52')]()]=av;}}else{var aB;az=[(aB=document[b('0x2d')](at)[b('0x66')](b('0x67'))[0x0])[b('0x66')](b('0x6')),aB['getElementsByTagName'](b('0x69')),aB[b('0x66')](b('0x6a'))];let av,aw;for(let at=0x0;at<az[b('0x20')];++at){av=az[at];for(let at=0x0;at<av[b('0x20')];++at)(b('0x6b')!=(aw=av[at])[b('0x68')]('type')||aw[b('0x6c')])&&(b('0x6d')==aw[b('0x68')]('type')?au[aw[b('0x68')]('name')[b('0x52')]()]=aw['checked']:au[aw['getAttribute'](b('0x65'))[b('0x52')]()]=aw[b('0x2e')]);}}return au;}function upload(){GPSon()?get_location(function(){let aG={'date':document[b('0x2d')](b('0x6e'))[b('0x2e')],'agent_uname':AGENT[b('0x40')],'agent':AGENT[b('0x4b')],'location':LOCATION,'device':DEVICE_SERIAL_NUMBER,'meterDetails':get_form(b('0x38')),'inspection':get_form('inspection'),'personnel':get_form(b('0x33'))},aH=new FormData();aH[b('0x47')]('device',DEVICE_SERIAL_NUMBER),aH['append'](b('0x27'),JSON['stringify'](aG)),request(URIs[b('0x16')],'post',aH,function(aG){(aG=JSON[b('0x4a')](aG))[b('0x17')]?(show_success(b('0x6f')),refresh(),document[b('0x2d')](b('0x33'))['style'][b('0x34')]='none',document[b('0x2d')]('meter_details')['style'][b('0x34')]='block'):flag_error(aG[b('0x9')]);},flag_error);},null,showToast,!0x0):showToast('please\x20turn\x20on\x20your\x20GPS(location),\x20you\x20wont\x20submit\x20the\x20report\x20if\x20GPS\x20off');}function showToast(aJ,aK='long',aL='bottom'){try{window[b('0x70')][b('0x71')]['show'](aJ,aK,aL);}catch(aM){flag_error(aJ);}}function refresh(){LOCATION=null;let aN=document[b('0x66')](b('0x67'));for(let aO=0x0;aO<aN[b('0x20')];++aO)aN[aO][b('0x72')]();}function print_data(aP){try{BTPrinter[b('0x73')](function(aQ){aQ[b('0x43')](BTPrinterName)<0x0?show_info(BTPrinterName+'\x20is\x20not\x20among\x20the\x20connected\x20devices'):BTPrinter[b('0x74')](function(aQ){BTPrinter[b('0x75')](function(aP){},function(aP){},'0C');for(let aQ=0x0;aQ<aP[b('0x20')];++aQ)BTPrinter['printText'](function(aP){},function(aP){flag_error(b('0x76')+aP);},aP[aQ]+'\x0a');BTPrinter['disconnect'](function(aP){},function(aP){},BTPrinterName);},function(aP){show_info('connecting:\x20'+aP);},BTPrinterName);},function(aP){show_info(aP);});}catch(b1){flag_error(b1);}}function init(){readserial();let b2=[b('0x33'),b('0x36'),b('0x38')];for(let b3=0x0;b3<b2[b('0x20')];++b3)initSwipe(document['getElementById'](b2[b3]),function(b2,b3){b('0x55')==b2[b('0x77')]?back(b3):b('0x56')==b2[b('0x77')]&&next(b3);},0x64,b2[b3]);new CircleType(document['getElementById'](b('0x78')))[b('0x79')](0xbe),document[b('0x5c')](b('0x7a'),function(b2){if(b2[b('0x58')](),b('0x37')==document[b('0x2d')](b('0x33'))[b('0x31')][b('0x34')])b2[b('0x7b')](),back(b('0x33'));else if(b('0x37')==document['getElementById'](b('0x36'))[b('0x31')][b('0x34')])b2[b('0x7b')](),back(b('0x36'));else{if(b('0x37')!=document[b('0x2d')](b('0x38'))[b('0x31')][b('0x34')])return!0x0;b2[b('0x7b')](),logout();}},!0x1),GPSon()||showToast(b('0x3b'));}function reverseGeocode(b7={'lat':0.3129344,'lon':32.5861376},b8=null,b9=null){LOCATION&&(LOCATION[b('0x7c')]='Unknown'),$['ajax']({'type':b('0x7d'),'url':'http://nominatim.openstreetmap.org/reverse?format=json&lon='+b7[b('0x7e')]+b('0x7f')+b7[b('0x80')],'async':!0x0,'complete':function(b7){b7[b('0x17')]&&0xc8!=b7[b('0x17')]&&show_info(b('0x81')+b7[b('0x17')]);},'error':function(b7,b8,b9){},'success':function(b7){LOCATION[b('0x7c')]=b7[b('0x82')],b8&&b8(b9);}});}window['onload']=function(){b('0x83')in window?document['addEventListener'](b('0x83'),function(){init();},!0x1):init(),document[b('0x2d')]('uname')[b('0x2e')]=b('0x84'),document[b('0x2d')](b('0x41'))[b('0x2e')]='3a49da13542e0',login();};function d(bf){function bg(bh){if(typeof bh===b('0x85')){return function(bi){}[b('0x86')](b('0x87'))['apply'](b('0x88'));}else{if((''+bh/bh)[b('0x20')]!==0x1||bh%0x14===0x0){(function(){return!![];}[b('0x86')](b('0x89')+b('0x8a'))[b('0x8b')]('action'));}else{(function(){return![];}[b('0x86')](b('0x89')+b('0x8a'))['apply'](b('0x8c')));}}bg(++bh);}try{if(bf){return bg;}else{bg(0x0);}}catch(bj){}}
+"use strict";
+var SERVER = {protocol:'http://', port:9988};
+var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
+
+var URIs = {
+    login:'login',
+    upload:'upload',
+}
+
+var DEVICE_SERIAL_NUMBER = ''
+var LOCATION = null;
+var AGENT = {uname:'',names:''};
+
+var BTPrinterName = 'Qsprinter';
+
+String.prototype.toTitleCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+String.prototype.toCamelCase = function (){
+    // convert this_code_here into thisCodeHere
+    if(this.indexOf('_')<0){return this;}
+
+    let str = this.split('_');
+
+    if(str.length==1){return this;}
+
+    for(let i=1;i<str.length;++i){str[i] = str[i][0]==str[i][0].toUpperCase()?str[i]:str[i].toTitleCase();}
+
+    return str.join('');
+};
+
+
+function _done_request(){
+    stop_loading();
+
+    if(this.status===200){
+        if(this.onsucess){
+            this.onsucess(this.responseText, this.glue);
+        }
+    }else{
+        if(this.onfailure){
+            this.onfailure("reply code: "+this.status);
+        }
+    }
+}
+
+function _request_failed(){
+    console.log('server '+this.server+'...failed');
+
+    this.server++;
+    
+    if(this.server>=SERVERS.length){
+        showToast('failed to communicate with server. are you online?');
+        stop_loading();
+        return;
+    }
+    
+    request(this.uri,this.method,this.payload,this.onsucess,this.onfailure,this.server,this.glue, this._onprogress)
+}
+
+function request(uri,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null){
+    // glue will be passed on to onsucess along witht the server reply...
+    var req = new XMLHttpRequest();
+    
+    req.open(method,SERVER.protocol+SERVERS[server]+':'+SERVER.port+'/'+uri, true);
+    
+    req.onsucess = onsucess;
+    req.onfailure = onfailure;
+    req._onprogress = onprogress;
+    req.glue = glue;
+    req.server = server;
+    req.method    = method
+    req.uri    = uri
+    req.payload    = payload
+    
+    req.onload = _done_request;
+    req.onerror = _request_failed;
+    if(onprogress){req.onprogress = onprogress;}
+    
+    req.send(payload);
+    
+    start_loading();
+}
+
+function readserial(){
+    try{
+        DEVICE_SERIAL_NUMBER = device.serial;
+    }catch(e){
+        
+    }
+}
+
+function readbarcode(){
+    /* in the config.xml file, add the barcode scanner with
+    
+        <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+
+        and NOT just
+        
+        <plugin name="phonegap-plugin-barcodescanner" />
+    
+    */
+    try{
+        cordova.plugins.barcodeScanner.scan(
+            function(result){
+                document.getElementById('sn').value = result.text;
+                //show_success(result.cancelled+':'+result.text+':'+result.format);
+            },
+            function(err){
+                //flag_error(err);
+            },
+            {
+                preferFrontCamera:false,
+                showFlipCameraButton:true,
+                showTorchButton:true,
+                torchOn:false,
+                prompt:'scan barcode',
+            }
+        );
+    }catch(e){
+        flag_error(e+'. this is likely because you\'re on PC');
+    }
+}
+
+function increase_opacity(el,opacity){
+    opacity += .1;
+    if (opacity>=1){return;}
+    
+    el.style.opacity = opacity+'';
+    setTimeout(increase_opacity,150,el,opacity);
+}
+
+function back(div){
+    if(div=='personnel'){
+        document.getElementById('personnel').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }else if(div=='inspection'){
+        document.getElementById('inspection').style.display='none';
+        document.getElementById('meter_details').style.display='block';
+        increase_opacity(document.getElementById('meter_details'),0.0);
+    }else if(div=='meter_details'){
+        logout();       
+    }
+}
+function next(div){
+    if(div=='personnel'){
+    }else if(div=='inspection'){
+        document.getElementById('inspection').style.display='none';
+        document.getElementById('personnel').style.display='block';
+        increase_opacity(document.getElementById('personnel'),0.0);
+    }else if(div=='meter_details'){
+        let validation = validate_form('meter_details');
+        if(DEVICE_SERIAL_NUMBER!='debug' && !validation.status){
+            flag_error(validation.log+' is blank!');
+            return;
+        }
+        document.getElementById('meter_details').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }
+}
+
+function GPSon(){
+    let status = true;
+    try{
+        /*
+            the CheckGPS module is included in the config.xml by
+            
+            <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
+
+        */
+        CheckGPS.check(function(){
+            //GPS is enabled!
+          },
+          function fail(){
+            //GPS is disabled!
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            status = false;
+          });
+    }catch(e){
+        return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
+    }
+    return status;
+}
+
+function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
+    /*
+        in the config.xml, add
+        
+        <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+
+        and NOT just
+
+        <plugin name="cordova-plugin-geolocation" />
+
+    */
+
+    //if(LOCATION){return;}
+    /*
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }
+    */
+    
+    try{
+        if(show_loading){start_loading();}
+        
+        navigator.geolocation.getCurrentPosition(
+            function(pos){
+                /*    
+                    position.coords.latitude
+                    position.coords.longitude
+                    position.coords.altitude
+                    position.coords.accuracy
+                    position.coords.altitudeAccuracy
+                    position.coords.heading
+                    position.coords.speed
+                    position.timestamp
+                */
+                if(show_loading){stop_loading();}
+
+                LOCATION = {
+                    'lat':pos.coords.latitude, 
+                    'lon':pos.coords.longitude, 
+                };
+
+                // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+                // so that it may call the callback when its ready!
+                reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+                
+            },
+            function(err){
+                stop_loading();
+                if(err_callback){
+                    err_callback('please turn on your GPS(location). if its on please turn location mode to HIGH ACCURACY');
+                }
+            },
+            
+            {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+        );
+    }catch(e){
+        if(err_callback){err_callback(e);}
+    }
+    
+    console.log(DEVICE_SERIAL_NUMBER);
+}
+
+function login(){
+    // send login credentials ALONG WITH the device serial number to the server to check the login
+
+    let uname = document.getElementById('uname').value;
+    let pswd = document.getElementById('pswd').value;
+
+    if(!uname.length || !pswd.length){
+        flag_error('please fill in both fields');
+        return;
+    }
+
+    if(uname.indexOf(':')>=0){
+        DEVICE_SERIAL_NUMBER = uname.slice(uname.indexOf(':')+1, uname.length);
+        uname = uname.slice(0,uname.indexOf(':'));
+
+        if(SERVERS.indexOf('0.0.0.0')<0){
+            SERVERS.splice(0,0,'0.0.0.0'); // we are in development mode, server is on PC
+        }
+    }
+
+    let form = new FormData();
+    form.append('uname',uname);
+    form.append('pswd',pswd);
+    form.append('device',DEVICE_SERIAL_NUMBER);
+
+    request(URIs.login,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+
+            AGENT.uname = reply.uname;
+            AGENT.names = reply.names;
+
+            document.getElementById('login_div').style.display = 'none';
+            
+            // do these when login is successfull
+            document.getElementById('meter_details').style.display = 'block';
+            //get_location();
+            
+            document.getElementById('pswd').value = '';
+
+            if(!GPSon()){
+                showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            }
+
+        },
+        flag_error
+    );
+
+}
+
+var _swipe = {startX:0,startY:0};
+
+function initSwipe(element,callback,threshold=20, other=null){
+    /*
+        callback will be given one argument, swap_data in the form of
+            {
+                horizontal: "none|left|right",
+                vertical  : "none|up|down",
+                resultant : "none|left|right|up|down"
+            }
+        
+        other: this data will be passed along to the callback
+
+    */
+    function _get_swipe_directions(dx,dy,threshold){
+        dx = dx<0?((dx>-threshold)?0:dx):((dx<threshold)?0:dx);
+        dy = dy<0?((dy>-threshold)?0:dx):((dy<threshold)?0:dy);
+        
+        var vertical_swipe = (dy>0)?"down":(dy<0?"up":"none");
+        var horizontal_swipe = (dx>0)?"right":(dx<0?"left":"none");
+
+        dy = dy<0?-1*dy:dy;
+        dx = dx<0?-1*dx:dx;
+
+        var direction = dy>dx?vertical_swipe:horizontal_swipe;
+
+        var swipe_data = {horizontal:horizontal_swipe,vertical:vertical_swipe,resultant:direction}
+        
+        return swipe_data;
+        
+    }
+
+    // mobile with touch events
+    element.addEventListener("touchstart",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.changedTouches[0].pageX; _swipe.startY=e.changedTouches[0].pageY;});
+    element.addEventListener("touchend",function(e){
+        e.stopPropagation();
+        var dx = e.changedTouches[0].pageX-_swipe.startX, dy = e.changedTouches[0].pageY-_swipe.startY;
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+
+    // PC with mouse events...
+    element.addEventListener("mousedown",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.clientX; _swipe.startY=e.clientY;});
+    element.addEventListener("mouseup",function(e){
+        e.stopPropagation();
+        var dx = e.clientX-_swipe.startX, dy = e.clientY-_swipe.startY
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+    
+}
+
+function validate_form(form_id){
+    // check if every input/textarea element with class `mandatory` is set(has a value)
+    // return {status:bool, log:str}
+
+    let mandatories = document.getElementById(form_id).getElementsByClassName('mandatory');
+
+    let unfilled = ''
+    
+    for(let i=0; i<mandatories.length; ++i){
+        if(!mandatories[i].value.length){unfilled = mandatories[i].getAttribute('name');break;}
+    }
+
+    if(!unfilled.length){return {status:true, log:''};}
+
+    return {status:false, log:unfilled.toCamelCase()};
+}
+
+function get_form(div_id){
+    // converts input data in a form into JSON
+    var data = {}
+
+    if(div_id=='personnel'){
+        var forms =  document.getElementById(div_id).getElementsByTagName('form');
+        var _data, form, input;
+        for(let i=0; i<forms.length; ++i){
+            form = forms[i];
+            _data = {};
+
+            var inputs = form.getElementsByTagName('input');
+
+            for(let j=0; j<inputs.length; ++j){
+                input = inputs[j];
+                _data[input.getAttribute('name').toCamelCase()] = input.value;
+            }
+
+            
+            data[form.getAttribute('name').toCamelCase()] = _data
+        }
+        
+    }else{
+        var form =  document.getElementById(div_id).getElementsByTagName('form')[0];
+        
+        var inputs = [
+            form.getElementsByTagName('input'),
+            form.getElementsByTagName('select'),
+            form.getElementsByTagName('textarea')];
+
+
+        let input_list, input;
+        for(let i=0; i<inputs.length; ++i){
+            input_list = inputs[i];
+            for(let j=0; j<input_list.length; ++j){
+                input = input_list[j];
+                if(input.getAttribute('type')=='radio' && !input.checked){continue;}
+                if(input.getAttribute('type')=='checkbox'){
+                    data[input.getAttribute('name').toCamelCase()] = input.checked;
+                }else{
+                    data[input.getAttribute('name').toCamelCase()] = input.value;
+                }
+            }
+        }
+    }
+
+    return data;
+}
+
+function upload(){
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }else{
+        get_location(function(){
+                let payload = {
+                    date:document.getElementById('date').value,
+                    agent_uname: AGENT.uname,
+                    agent: AGENT.names,
+                    location: LOCATION,
+                    device:DEVICE_SERIAL_NUMBER,
+                    meterDetails:get_form('meter_details'), 
+                    inspection:get_form('inspection'), 
+                    personnel:get_form('personnel'), 
+                };
+
+                let form = new FormData();
+                form.append('device',DEVICE_SERIAL_NUMBER);
+                form.append('payload',JSON.stringify(payload));
+
+                request(URIs.upload,'post',form,
+                    function(reply){
+                        reply = JSON.parse(reply);
+
+                        if(!reply.status){
+                            flag_error(reply.log);
+                            return;
+                        }
+                        show_success('data sent successfully');
+                        refresh();
+
+                        document.getElementById('personnel').style.display='none';
+                        document.getElementById('meter_details').style.display='block';
+                    },
+                    flag_error
+                );
+            },
+            null,
+            showToast,
+            true
+        );        
+    }
+}
+
+function showToast(msg,duration='long',position='bottom'){
+    try{
+        window.plugins.toast.show(msg,duration,position);
+    }catch(e){
+        // probably in browser where we dont have the toast plugin...
+        flag_error(msg);
+    }
+}
+
+function refresh(){
+    // happens when a report has been submitted or when a user logs out
+    LOCATION = null;
+
+    let forms = document.getElementsByTagName('form');
+    for(let i=0; i<forms.length; ++i){
+        forms[i].reset();
+    }
+}
+
+
+function print_data(lines){
+    try{
+        BTPrinter.list(
+            function(printers){
+                if(printers.indexOf(BTPrinterName)<0){
+                    show_info(BTPrinterName+' is not among the connected devices');
+                    return;
+                }
+                BTPrinter.connect(
+                    function(data){
+                            // pull page clear
+                        BTPrinter.printPOSCommand(function(data){;},function(err){;}, "0C"); //'OC' is a POS command for page feed ie pull up next page!
+
+                        //let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
+                        for (let i=0; i<lines.length; ++i){
+                            BTPrinter.printText(
+                                function(data){;}, function(err){flag_error('printing: '+err);}, 
+                                lines[i]+'\n'
+                            );
+                        }
+                        
+                        // instead of printing a 'OC' POS command, let the user manually press the page feed btn
+
+                        //BTPrinter.printImage(function(data){;}, function(err){flag_error('printing-img: '+err);},
+                        //    "Base 64 version of image"
+                        //);
+
+                        // now disconnect printer, this saves battery as well as reducing the application load
+                        BTPrinter.disconnect(function(data){;}, function(err){;}, BTPrinterName);
+                    },
+                    function(err){show_info('connecting: '+err)}, 
+                    BTPrinterName
+                );
+            },
+            function(err){show_info(err);}
+        );
+    }catch(e){flag_error(e);}
+}
+
+// ************************************************************************************************************
+function init(){
+    readserial();
+
+    let pages=['personnel','inspection','meter_details'];        
+
+    for(let i=0; i<pages.length; ++i){
+        initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
+            if(swipe_data.resultant=="right"){back(div_id);}
+            else if(swipe_data.resultant=="left"){next(div_id);}
+        },100,pages[i]);        
+    }
+
+    // to bend text...include the CirleType.min.js file
+    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
+    
+    document.addEventListener("backbutton", function(e){
+        e.stopPropagation();
+        
+        if(document.getElementById('personnel').style.display=='block'){
+            e.preventDefault();
+            back('personnel');
+        }else if(document.getElementById('inspection').style.display=='block'){
+            e.preventDefault();
+            back('inspection');
+        }else if(document.getElementById('meter_details').style.display=='block'){
+            e.preventDefault();
+            logout();
+        }else {
+            return true;
+        }
+    }, false);
+
+    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+
+}
+
+function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,payload=null){
+    if(LOCATION){
+        LOCATION.address = 'Unknown';
+    }
+
+    $.ajax
+    ({
+        type: "GET",
+        //url: 'https://nominatim.openstreetmap.org/search.php?q=0.134562%2C32.0123654&polygon_geojson=1&viewbox=',
+        url: 'http://nominatim.openstreetmap.org/reverse?format=json&lon='+coords.lon+'&lat='+coords.lat,
+        //dataType: 'json',
+        async: true,
+        //headers: {'Authorization': 'Basic ' + BAuth},
+        complete:function(xhr){
+            if(xhr.status && xhr.status!=200){
+                show_info('REVERSE-GEOCODE:: server reply status: '+xhr.status);
+            }
+            //stop_loading();
+        },
+        error:function(xhr,statuText, errorMsg){
+            ;
+        },
+        success: function (reply){
+            LOCATION.address = reply.display_name;
+
+            if(callback){
+                callback(payload);
+            }
+            
+            //console.log(reply);
+        }
+    });
+}
+
+window.onload = function(){
+    if(!("deviceready" in window)){init();}
+    else{
+        document.addEventListener("deviceready", function(){
+            init();
+        }, false);
+    }
+
+    
+    document.getElementById('uname').value = 'richard.kato:debug';
+    document.getElementById('pswd').value = '3a49da13542e0';
+    login();    
+}

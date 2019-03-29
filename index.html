@@ -7,6 +7,7 @@
         <title>UNBS-SMVT</title>
     
         <link rel="stylesheet" href="static/bootstrap-3.3.7/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="static/loading.css">
         <link rel="stylesheet" href="static/index.css">
 
         <!-- jQuery library -->
@@ -47,7 +48,7 @@
           </div>
         </div>
 
-        <div id='login_div' style='display:none;'>
+        <div id='login_div'>
             <h1 id='title'>UNBS SMVT</h1>
             <div id='login_form'>
                 <div class="input-group" style='margin-bottom:10px;'>
@@ -303,17 +304,7 @@
             <div style='color:#ff0;'><br>.<br>.</div>
         </div>
 
-        <span id='loading'>
-            <span id='loading-dot-1' class='loading-dot'></span>
-            <span id='loading-dot-2' class='loading-dot'></span>
-            <span id='loading-dot-3' class='loading-dot'></span>
-        </span>
-    
-        <div id='xxx'>
-            
-        </div>
-        <button class='btn btn-info' onclick='show_bt_devs()'>Show BT devices</button>
-    
+        <div id='loading' class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </body>
 
 </html>
