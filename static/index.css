@@ -143,6 +143,8 @@ h3,h4{
     margin-right: auto;
     
     display:none;
+
+    width:50%;left:25%;
 }
 
 .three-phase-only{

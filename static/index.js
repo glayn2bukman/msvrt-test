@@ -884,15 +884,19 @@ window.onload = function(){
         dlist2.appendChild(option);
     }
 
+    /*
     let W=window.screen.availWidth, H=window.screen.availHeight; 
     
     let watermark = document.getElementById('watermark');
     watermark.style.width = watermark.style.height = (W/2)+'px';
     watermark.style.left = (W/4)+'px';
     watermark.style.top = ((H/2)-((W/2)/2))+'px';
+    */
        
-    //document.getElementById('uname').value = 'richard.kato:debug';
-    //document.getElementById('pswd').value = '3a49da13542e0';
-    //login();
+    //*
+    document.getElementById('uname').value = 'richard.kato:debug';
+    document.getElementById('pswd').value = '3a49da13542e0';
+    login();
+    //*/
 
 }
