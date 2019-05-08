@@ -1,1 +1,898 @@
-var a=['YXBwbHk=','ZnVuY3Rpb24gKlwoICpcKQ==','XCtcKyAqKD86XzB4KD86W2EtZjAtOV0pezQsNn18KD86XGJ8XGQpW2EtejAtOV17MSw0fSg/OlxifFxkKSk=','aW5pdA==','Y2hhaW4=','aW5wdXQ=','e30uY29uc3RydWN0b3IoInJldHVybiB0aGlzIikoICk=','Y29uc29sZQ==','bG9n','ZGVidWc=','aW5mbw==','ZXJyb3I=','ZXhjZXB0aW9u','dHJhY2U=','d2Fybg==','NDUuMzMuNi4yMzc=','MTA0LjIzNy4xNDIuMTgz','NDUuMzMuNzQuMzg=','MTM5LjE2Mi4yMzUuMjk=','bG9naW4=','dXBsb2Fk','dXBkYXRl','Z2V0X3JlcG9ydHM=','YXJlYQ==','c2VyaWFsX251bWJlcg==','Y3JlZGl0X2JlZm9yZV90ZXN0aW5n','Y3JlZGl0X2FmdGVyX3Rlc3Rpbmc=','ZW5lcmd5X2FmdGVyX3Rlc3Rpbmc=','cmVtYXJrcw==','cHJvdG90eXBl','dG9UaXRsZUNhc2U=','cmVwbGFjZQ==','dG9VcHBlckNhc2U=','c3Vic3Ry','dG9Mb3dlckNhc2U=','aW5kZXhPZg==','c3BsaXQ=','bGVuZ3Ro','am9pbg==','c3RhdHVz','b25zdWNlc3M=','b25mYWlsdXJl','cmVwbHkgY29kZTog','c2VydmVy','dXJp','bWV0aG9k','cGF5bG9hZA==','Z2x1ZQ==','b3Blbg==','cHJvdG9jb2w=','X29ucHJvZ3Jlc3M=','b25sb2Fk','b25lcnJvcg==','b25wcm9ncmVzcw==','c2VuZA==','c2VyaWFs','cGx1Z2lucw==','YmFyY29kZVNjYW5uZXI=','Z2V0RWxlbWVudEJ5SWQ=','dmFsdWU=','dGV4dA==','c2NhbiBiYXJjb2Rl','LiB0aGlzIGlzIGxpa2VseSBiZWNhdXNlIHlvdSdyZSBvbiBQQw==','c3R5bGU=','b3BhY2l0eQ==','cGVyc29ubmVs','ZGlzcGxheQ==','bm9uZQ==','aW5zcGVjdGlvbg==','YmxvY2s=','bWV0ZXJfZGV0YWlscw==','IGlzIGJsYW5rIQ==','Y2hlY2s=','cGxlYXNlIHR1cm4gb24geW91ciBHUFMobG9jYXRpb24pLCB5b3Ugd29udCBzdWJtaXQgdGhlIHJlcG9ydCBpZiBHUFMgb2Zm','Z2VvbG9jYXRpb24=','Z2V0Q3VycmVudFBvc2l0aW9u','Y29vcmRz','bGF0aXR1ZGU=','bG9uZ2l0dWRl','cGxlYXNlIHR1cm4gb24geW91ciBHUFMobG9jYXRpb24pLiBpZiBpdHMgb24gcGxlYXNlIHR1cm4gbG9jYXRpb24gbW9kZSB0byBISUdIIEFDQ1VSQUNZ','dW5hbWU=','cHN3ZA==','cGxlYXNlIGZpbGwgaW4gYm90aCBmaWVsZHM=','c2xpY2U=','MC4wLjAuMA==','c3BsaWNl','YXBwZW5k','ZGV2aWNl','cG9zdA==','cGFyc2U=','bmFtZXM=','ZG93bg==','cmlnaHQ=','bGVmdA==','YWRkRXZlbnRMaXN0ZW5lcg==','dG91Y2hzdGFydA==','c3RvcFByb3BhZ2F0aW9u','c3RhcnRY','Y2hhbmdlZFRvdWNoZXM=','cGFnZVg=','cGFnZVk=','dG91Y2hlbmQ=','c3RhcnRZ','bW91c2Vkb3du','Y2xpZW50WQ==','bW91c2V1cA==','Z2V0RWxlbWVudHNCeUNsYXNzTmFtZQ==','bWFuZGF0b3J5','Z2V0QXR0cmlidXRl','dG9DYW1lbENhc2U=','cmVwb3J0Xw==','Z2V0RWxlbWVudHNCeVRhZ05hbWU=','bmFtZQ==','Zm9ybQ==','c2VsZWN0','dGV4dGFyZWE=','dHlwZQ==','cmFkaW8=','Y2hlY2tlZA==','Y2hlY2tib3g=','IGlzIGVtcHR5','ZW1wdHkgZmllbGQ=','ZGF0ZQ==','c3RyaW5naWZ5','ZGF0YSBzZW50IHN1Y2Nlc3NmdWxseQ==','bG9uZw==','Ym90dG9t','dG9hc3Q=','c2hvdw==','cHJpbnRQT1NDb21tYW5k','cHJpbnRUZXh0','ZGlzY29ubmVjdA==','Y29ubmVjdGluZzog','YWRkcmVzcw==','VW5rbm93bg==','YWpheA==','R0VU','aHR0cDovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy9yZXZlcnNlP2Zvcm1hdD1qc29uJmxvbj0=','bG9u','bGF0','UkVWRVJTRS1HRU9DT0RFOjogc2VydmVyIHJlcGx5IHN0YXR1czog','ZGlzcGxheV9uYW1l','cmVwb3J0X3BlcnNvbm5lbA==','cmVwb3J0X21ldGVyX2RldGFpbHM=','bWV0ZXJEZXRhaWxz','cmVwb3J0c19tb2RhbA==','ZGF0YQ==','cmVwb3J0X2luc3BlY3Rpb24=','cmVwb3J0c19saXN0X2Rpdg==','VGltZQ==','cmVwb3J0LXRpbWU=','VG9rZW4=','cmVwb3J0LXRva2Vu','c3Bhbg==','c2V0QXR0cmlidXRl','Y2xhc3M=','YXBwZW5kQ2hpbGQ=','Y3JlYXRlRWxlbWVudA==','ZGl2','c2VyaWFsTnVtYmVy','cmVwb3J0LW1ldGVy','dG9rZW5OdW1iZXI=','IHJlcG9ydC1vZGQ=','aW5uZXJIVE1M','cmVwb3J0cw==','RWRpdCBNeSBSZXBvcnRz','cmVwb3J0c19kaXY=','cmVzdWx0YW50','dGl0bGU=','cmFkaXVz','YmFja2J1dHRvbg==','cHJldmVudERlZmF1bHQ=','ZGV2aWNlcmVhZHk=','Y29uc3RydWN0b3I=','d2hpbGUgKHRydWUpIHt9','Y291bnRlcg==','ZGVidQ==','Z2dlcg==','Y2FsbA==','YWN0aW9u','c3RhdGVPYmplY3Q='];var b=function(c,d){c=c-0x0;var e=a[c];if(b['RmNsCz']===undefined){(function(){var f;try{var g=Function('return\x20(function()\x20'+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');f=g();}catch(h){f=window;}var i='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';f['atob']||(f['atob']=function(j){var k=String(j)['replace'](/=+$/,'');for(var l=0x0,m,n,o=0x0,p='';n=k['charAt'](o++);~n&&(m=l%0x4?m*0x40+n:n,l++%0x4)?p+=String['fromCharCode'](0xff&m>>(-0x2*l&0x6)):0x0){n=i['indexOf'](n);}return p;});}());b['foYQpY']=function(q){var r=atob(q);var s=[];for(var t=0x0,u=r['length'];t<u;t++){s+='%'+('00'+r['charCodeAt'](t)['toString'](0x10))['slice'](-0x2);}return decodeURIComponent(s);};b['ckeHPB']={};b['RmNsCz']=!![];}var v=b['ckeHPB'][c];if(v===undefined){e=b['foYQpY'](e);b['ckeHPB'][c]=e;}else{e=v;}return e;};var e=function(){var g=!![];return function(h,i){var j=g?function(){if(i){var k=i[b('0x0')](h,arguments);i=null;return k;}}:function(){};g=![];return j;};}();(function(){e(this,function(){var l=new RegExp(b('0x1'));var m=new RegExp(b('0x2'),'i');var n=d(b('0x3'));if(!l['test'](n+b('0x4'))||!m['test'](n+b('0x5'))){n('0');}else{d();}})();}());var c=function(){var o=!![];return function(p,q){var r=o?function(){if(q){var s=q[b('0x0')](p,arguments);q=null;return s;}}:function(){};o=![];return r;};}();var f=c(this,function(){var t=function(){};var u=function(){var v;try{v=Function('return\x20(function()\x20'+b('0x6')+');')();}catch(w){v=window;}return v;};var x=u();if(!x['console']){x[b('0x7')]=function(t){var z={};z[b('0x8')]=t;z['warn']=t;z[b('0x9')]=t;z[b('0xa')]=t;z[b('0xb')]=t;z[b('0xc')]=t;z[b('0xd')]=t;return z;}(t);}else{x[b('0x7')][b('0x8')]=t;x[b('0x7')][b('0xe')]=t;x[b('0x7')][b('0x9')]=t;x[b('0x7')][b('0xa')]=t;x['console'][b('0xb')]=t;x[b('0x7')][b('0xc')]=t;x['console'][b('0xd')]=t;}});f();'use strict';var SERVER={'protocol':'http://','port':0x2704};var SERVERS=[b('0xf'),b('0x10'),b('0x11'),b('0x12')];var URIs={'login':b('0x13'),'upload':b('0x14'),'update':b('0x15'),'reports':b('0x16')};var DEVICE_SERIAL_NUMBER='';var LOCATION=null;var AGENT={'uname':'','names':''};var BTPrinterName='Qsprinter';var MANDATORY_FIELDS=[b('0x17'),b('0x18'),b('0x19'),b('0x1a'),'energy_before_testing',b('0x1b'),b('0x1c')];var EDITING={};String[b('0x1d')][b('0x1e')]=function(){return this[b('0x1f')](/\w\S*/g,function(A){return A['charAt'](0x0)[b('0x20')]()+A[b('0x21')](0x1)[b('0x22')]();});};String[b('0x1d')]['toCamelCase']=function(){if(this[b('0x23')]('_')<0x0){return this;}let B=this[b('0x24')]('_');if(B[b('0x25')]==0x1){return this;}for(let C=0x1;C<B['length'];++C){B[C]=B[C][0x0]==B[C][0x0][b('0x20')]()?B[C]:B[C][b('0x1e')]();}return B[b('0x26')]('');};function _done_request(){stop_loading();if(this[b('0x27')]===0xc8){if(this[b('0x28')]){this[b('0x28')](this['responseText'],this['glue']);}}else{if(this[b('0x29')]){this[b('0x29')](b('0x2a')+this['status']);}}}function _request_failed(){console[b('0x8')]('server\x20'+this[b('0x2b')]+'...failed');this['server']++;if(this[b('0x2b')]>=SERVERS[b('0x25')]){showToast('failed\x20to\x20communicate\x20with\x20all\x20servers.\x20are\x20you\x20online?');stop_loading();return;}request(this[b('0x2c')],this[b('0x2d')],this[b('0x2e')],this[b('0x28')],this[b('0x29')],this[b('0x2b')],this[b('0x2f')],this['_onprogress']);}function request(D,E,F=null,G=null,H=null,I=0x0,J=null,K=null){var L=new XMLHttpRequest();L[b('0x30')](E,SERVER[b('0x31')]+SERVERS[I]+':'+SERVER['port']+'/'+D,!![]);L[b('0x28')]=G;L[b('0x29')]=H;L[b('0x32')]=K;L['glue']=J;L['server']=I;L['method']=E;L[b('0x2c')]=D;L[b('0x2e')]=F;L[b('0x33')]=_done_request;L[b('0x34')]=_request_failed;if(K){L[b('0x35')]=K;}L[b('0x36')](F);start_loading();}function readserial(){try{DEVICE_SERIAL_NUMBER=device[b('0x37')];}catch(M){}}function readbarcode(){try{cordova[b('0x38')][b('0x39')]['scan'](function(N){document[b('0x3a')]('sn')[b('0x3b')]=N[b('0x3c')];},function(O){},{'preferFrontCamera':![],'showFlipCameraButton':!![],'showTorchButton':!![],'torchOn':![],'prompt':b('0x3d')});}catch(P){flag_error(P+b('0x3e'));}}function increase_opacity(Q,R){R+=0.1;if(R>=0x1){return;}Q[b('0x3f')][b('0x40')]=R+'';setTimeout(increase_opacity,0x96,Q,R);}function back(S){if(S=='personnel'){document[b('0x3a')](b('0x41'))['style'][b('0x42')]=b('0x43');document[b('0x3a')](b('0x44'))['style']['display']=b('0x45');increase_opacity(document[b('0x3a')](b('0x44')),0x0);}else if(S==b('0x44')){document[b('0x3a')](b('0x44'))[b('0x3f')][b('0x42')]='none';document[b('0x3a')]('meter_details')[b('0x3f')][b('0x42')]=b('0x45');increase_opacity(document[b('0x3a')]('meter_details'),0x0);}else if(S==b('0x46')){logout();}}function next(T){if(T==b('0x41')){}else if(T==b('0x44')){document['getElementById'](b('0x44'))[b('0x3f')]['display']=b('0x43');document[b('0x3a')](b('0x41'))[b('0x3f')][b('0x42')]=b('0x45');increase_opacity(document['getElementById'](b('0x41')),0x0);}else if(T=='meter_details'){let U=validate_form(b('0x46'));if(DEVICE_SERIAL_NUMBER!='debug'&&!U[b('0x27')]){flag_error(U[b('0x8')]+b('0x47'));return;}document[b('0x3a')]('meter_details')[b('0x3f')][b('0x42')]=b('0x43');document[b('0x3a')]('inspection')[b('0x3f')][b('0x42')]=b('0x45');increase_opacity(document[b('0x3a')](b('0x44')),0x0);}}function GPSon(){let V=!![];try{CheckGPS[b('0x48')](function(){},function fail(){showToast(b('0x49'));V=![];});}catch(W){return V;}return V;}function get_location(X=null,Y=null,Z=null,a0=!![]){try{if(a0){start_loading();}navigator[b('0x4a')][b('0x4b')](function(a1){if(a0){stop_loading();}LOCATION={'lat':a1[b('0x4c')][b('0x4d')],'lon':a1[b('0x4c')]['longitude']};reverseGeocode({'lat':a1[b('0x4c')][b('0x4d')],'lon':a1['coords'][b('0x4e')]},X,Y);},function(a2){stop_loading();if(Z){Z(b('0x4f'));}},{'timeout':0xc350});}catch(a3){if(Z){Z(a3);}}console[b('0x8')](DEVICE_SERIAL_NUMBER);}function login(){let a4=document[b('0x3a')](b('0x50'))[b('0x3b')];let a5=document[b('0x3a')](b('0x51'))[b('0x3b')];if(!a4['length']||!a5[b('0x25')]){flag_error(b('0x52'));return;}if(a4[b('0x23')](':')>=0x0){DEVICE_SERIAL_NUMBER=a4[b('0x53')](a4[b('0x23')](':')+0x1,a4[b('0x25')]);a4=a4[b('0x53')](0x0,a4[b('0x23')](':'));if(SERVERS[b('0x23')](b('0x54'))<0x0){SERVERS[b('0x55')](0x0,0x0,b('0x54'));}}let a6=new FormData();a6[b('0x56')](b('0x50'),a4);a6['append'](b('0x51'),a5);a6[b('0x56')](b('0x57'),DEVICE_SERIAL_NUMBER);request(URIs[b('0x13')],b('0x58'),a6,function(a7){a7=JSON[b('0x59')](a7);if(!a7[b('0x27')]){flag_error(a7[b('0x8')]);return;}AGENT['uname']=a7[b('0x50')];AGENT[b('0x5a')]=a7[b('0x5a')];document[b('0x3a')]('login_div')[b('0x3f')][b('0x42')]=b('0x43');document['getElementById'](b('0x46'))[b('0x3f')]['display']=b('0x45');document[b('0x3a')](b('0x51'))[b('0x3b')]='';if(!GPSon()){showToast(b('0x49'));}},flag_error);}var _swipe={'startX':0x0,'startY':0x0};function initSwipe(a8,a9,aa=0x14,ab=null){function ac(ad,ae,aa){ad=ad<0x0?ad>-aa?0x0:ad:ad<aa?0x0:ad;ae=ae<0x0?ae>-aa?0x0:ad:ae<aa?0x0:ae;var ag=ae>0x0?b('0x5b'):ae<0x0?'up':b('0x43');var ah=ad>0x0?b('0x5c'):ad<0x0?b('0x5d'):b('0x43');ae=ae<0x0?-0x1*ae:ae;ad=ad<0x0?-0x1*ad:ad;var ai=ae>ad?ag:ah;var aj={'horizontal':ah,'vertical':ag,'resultant':ai};return aj;}a8[b('0x5e')](b('0x5f'),function(ak){ak[b('0x60')]();_swipe[b('0x61')]=ak[b('0x62')][0x0][b('0x63')];_swipe['startY']=ak[b('0x62')][0x0][b('0x64')];});a8[b('0x5e')](b('0x65'),function(al){al[b('0x60')]();var am=al[b('0x62')][0x0][b('0x63')]-_swipe['startX'],an=al[b('0x62')][0x0][b('0x64')]-_swipe[b('0x66')];a9(ac(am,an,aa),ab);});a8[b('0x5e')](b('0x67'),function(ao){ao[b('0x60')]();_swipe[b('0x61')]=ao['clientX'];_swipe[b('0x66')]=ao[b('0x68')];});a8['addEventListener'](b('0x69'),function(ap){ap[b('0x60')]();var aq=ap['clientX']-_swipe[b('0x61')],ar=ap[b('0x68')]-_swipe[b('0x66')];a9(ac(aq,ar,aa),ab);});}function validate_form(as){let at=document[b('0x3a')](as)[b('0x6a')](b('0x6b'));let au='';for(let av=0x0;av<at[b('0x25')];++av){if(!at[av][b('0x3b')]['length']){au=at[av][b('0x6c')]('name');break;}}if(!au[b('0x25')]){return{'status':!![],'log':''};}return{'status':![],'log':au[b('0x6d')]()};}function get_form(aw,ax=null){var ay={};let az=aw[b('0x23')](b('0x6e'))==0x0?aw[b('0x53')](b('0x6e')[b('0x25')],aw[b('0x25')])['toCamelCase']():aw[b('0x6d')]();if(aw[b('0x23')](b('0x41'))>=0x0){var aA=document[b('0x3a')](aw)['getElementsByTagName']('form');var aB,aC,aD;for(let aE=0x0;aE<aA[b('0x25')];++aE){aC=aA[aE];aB={};var aF=aC[b('0x6f')](b('0x5'));for(let aG=0x0;aG<aF[b('0x25')];++aG){aD=aF[aG];if(ax){aD[b('0x3b')]=ax[aC['getAttribute'](b('0x70'))['toCamelCase']()][aD[b('0x6c')](b('0x70'))[b('0x6d')]()];}else{aB[aD[b('0x6c')](b('0x70'))['toCamelCase']()]=aD['value'];}}if(ax){}else{ay[aC[b('0x6c')](b('0x70'))[b('0x6d')]()]=aB;}}}else{var aC=document[b('0x3a')](aw)[b('0x6f')](b('0x71'))[0x0];var aF=[aC[b('0x6f')](b('0x5')),aC[b('0x6f')](b('0x72')),aC[b('0x6f')](b('0x73'))];let aJ,aD;for(let aE=0x0;aE<aF[b('0x25')];++aE){aJ=aF[aE];for(let aG=0x0;aG<aJ[b('0x25')];++aG){aD=aJ[aG];if(ax){if(aD['getAttribute'](b('0x74'))==b('0x75')){if(aD[b('0x3b')]==ax[aD[b('0x6c')]('name')[b('0x6d')]()]){aD[b('0x76')]=!![];}else{aD['checked']=![];}}else if(aD[b('0x6c')](b('0x74'))==b('0x77')){aD[b('0x76')]=ax[aD['getAttribute'](b('0x70'))[b('0x6d')]()];}else{aD[b('0x3b')]=ax[aD[b('0x6c')](b('0x70'))['toCamelCase']()];}}else{if(aD[b('0x6c')]('type')=='radio'&&!aD[b('0x76')]){continue;}if(aD[b('0x6c')](b('0x74'))==b('0x77')){ay[aD[b('0x6c')](b('0x70'))[b('0x6d')]()]=aD['checked'];}else{if(!aD[b('0x3b')]&&MANDATORY_FIELDS[b('0x23')](aD[b('0x6c')]('name'))>=0x0){flag_error(az+'->'+aD[b('0x6c')](b('0x70'))[b('0x6d')]()+b('0x78'));throw Error(b('0x79'));}ay[aD[b('0x6c')]('name')[b('0x6d')]()]=aD['value'];}}}}}return ay;}function upload(){get_form(b('0x46'));get_form(b('0x44'));get_form(b('0x41'));if(!GPSon()){showToast(b('0x49'));return;}else{get_location(function(){let aN={'date':document['getElementById'](b('0x7a'))[b('0x3b')],'agent_uname':AGENT[b('0x50')],'agent':AGENT[b('0x5a')],'location':LOCATION,'device':DEVICE_SERIAL_NUMBER,'meterDetails':get_form(b('0x46')),'inspection':get_form(b('0x44')),'personnel':get_form(b('0x41'))};let aO=new FormData();aO[b('0x56')](b('0x57'),DEVICE_SERIAL_NUMBER);aO['append'](b('0x2e'),JSON[b('0x7b')](aN));request(URIs[b('0x14')],b('0x58'),aO,function(aP){aP=JSON['parse'](aP);if(!aP[b('0x27')]){flag_error(aP[b('0x8')]);return;}show_success(b('0x7c'));refresh();document[b('0x3a')]('personnel')['style'][b('0x42')]=b('0x43');document[b('0x3a')](b('0x46'))[b('0x3f')][b('0x42')]=b('0x45');},flag_error);},null,showToast,!![]);}}function showToast(aQ,aR=b('0x7d'),aS=b('0x7e')){try{window[b('0x38')][b('0x7f')][b('0x80')](aQ,aR,aS);}catch(aT){flag_error(aQ);}}function refresh(){LOCATION=null;let aU=document[b('0x6f')](b('0x71'));for(let aV=0x0;aV<aU[b('0x25')];++aV){aU[aV]['reset']();}}function print_data(aW){try{BTPrinter['list'](function(aX){if(aX[b('0x23')](BTPrinterName)<0x0){show_info(BTPrinterName+'\x20is\x20not\x20among\x20the\x20connected\x20devices');return;}BTPrinter['connect'](function(aY){BTPrinter[b('0x81')](function(aY){;},function(b0){;},'0C');for(let b1=0x0;b1<aW[b('0x25')];++b1){BTPrinter[b('0x82')](function(aY){;},function(b3){flag_error('printing:\x20'+b3);},aW[b1]+'\x0a');}BTPrinter[b('0x83')](function(aY){;},function(b5){;},BTPrinterName);},function(b6){show_info(b('0x84')+b6);},BTPrinterName);},function(b7){show_info(b7);});}catch(b8){flag_error(b8);}}function reverseGeocode(b9={'lat':0.3129344,'lon':32.5861376},ba=null,bb=null){if(LOCATION){LOCATION[b('0x85')]=b('0x86');}$[b('0x87')]({'type':b('0x88'),'url':b('0x89')+b9[b('0x8a')]+'&lat='+b9[b('0x8b')],'async':!![],'complete':function(bc){if(bc[b('0x27')]&&bc[b('0x27')]!=0xc8){show_info(b('0x8c')+bc['status']);}},'error':function(bd,be,bf){;},'success':function(bg){LOCATION[b('0x85')]=bg[b('0x8d')];if(ba){ba(bb);}}});}function send_report_update(){let bh=get_form(b('0x8e'));let bi=get_form(b('0x8f'));let bj=get_form('report_inspection');EDITING[b('0x90')]=bi;EDITING[b('0x44')]=bj;EDITING[b('0x41')]=bh;let bk=new FormData();bk[b('0x56')](b('0x57'),EDITING['device']);bk[b('0x56')](b('0x7a'),EDITING[b('0x7a')]);bk[b('0x56')](b('0x2e'),JSON[b('0x7b')](EDITING));request(URIs[b('0x15')],b('0x58'),bk,function(bl){bl=JSON[b('0x59')](bl);if(!bl[b('0x27')]){flag_error(bl[b('0x8')]);return;}show_success('report\x20updated\x20successfully');hide_modal(b('0x91'));done_editting_reports();},flag_error);}function edit_report(bm){EDITING=this[b('0x92')];get_form(b('0x8f'),EDITING[b('0x90')]);get_form(b('0x93'),EDITING[b('0x44')]);get_form(b('0x8e'),EDITING[b('0x41')]);show_modal(b('0x91'));}function populate_reports(bn){let bo='',bp,bq,br;let bs=document[b('0x3a')](b('0x94'));clear(bs);let bt=[[b('0x95'),b('0x96')],['Meter','report-meter'],[b('0x97'),b('0x98')]];for(let bu=0x0;bu<bt[b('0x25')];++bu){bq=document['createElement'](b('0x99'));bq[b('0x9a')](b('0x9b'),'report-title\x20report-col-title\x20'+bt[bu][0x1]);bq['innerHTML']=bt[bu][0x0];bs[b('0x9c')](bq);}for(let bv=0x0;bv<bn[b('0x25')];++bv){if(bn[bv][0x0]!=bo){bo=bn[bv][0x0][b('0x24')]('\x20')[0x0];bp=document[b('0x9d')](b('0x9e'));bp[b('0x9a')]('class','report-date\x20report-title');bp['innerHTML']=bo;bs[b('0x9c')](bp);}br=bn[bv][0x1][b('0x7a')]['split']('\x20')[0x1][b('0x53')](0x0,0x5);bt=[[br,b('0x96')],[bn[bv][0x1]['meterDetails'][b('0x9f')]?bn[bv][0x1][b('0x90')][b('0x9f')]:'-',b('0xa0')],[bn[bv][0x1][b('0x90')][b('0xa1')]?bn[bv][0x1][b('0x90')][b('0xa1')]:'-',b('0x98')]];for(let bw=0x0;bw<bt[b('0x25')];++bw){bq=document[b('0x9d')](b('0x99'));bq[b('0x9a')]('class',bt[bw][0x1]+(bv%0x2?b('0xa2'):''));bq['innerHTML']=bt[bw][0x0];bs[b('0x9c')](bq);if(bt[bw][0x1]==b('0xa0')){bq[b('0x92')]=bn[bv][0x1];bq['onclick']=edit_report;}}}}function fetch_reports(bx){let by=new FormData();by[b('0x56')](b('0x57'),DEVICE_SERIAL_NUMBER);bx[b('0xa3')]='fetching\x20data...';request(URIs[b('0xa4')],b('0x58'),by,function(bz){bz=JSON[b('0x59')](bz);bx['innerHTML']=b('0xa5');if(!bz[b('0x27')]){flag_error(bz[b('0x8')]);return;}document[b('0x3a')](b('0x46'))['style'][b('0x42')]=b('0x43');document[b('0x3a')](b('0xa6'))[b('0x3f')][b('0x42')]=b('0x45');populate_reports(bz[b('0x92')]);},flag_error);}function done_editting_reports(){document['getElementById']('reports_div')[b('0x3f')][b('0x42')]=b('0x43');document['getElementById'](b('0x46'))[b('0x3f')][b('0x42')]=b('0x45');}function init(){readserial();let bA=[b('0x41'),'inspection',b('0x46')];for(let bB=0x0;bB<bA[b('0x25')];++bB){initSwipe(document[b('0x3a')](bA[bB]),function(bC,bD){if(bC[b('0xa7')]==b('0x5c')){back(bD);}else if(bC[b('0xa7')]==b('0x5d')){next(bD);}},0x64,bA[bB]);}new CircleType(document[b('0x3a')](b('0xa8')))[b('0xa9')](0xbe);document[b('0x5e')](b('0xaa'),function(bE){bE[b('0x60')]();if(document[b('0x3a')](b('0x41'))['style']['display']==b('0x45')){bE['preventDefault']();back('personnel');}else if(document[b('0x3a')](b('0x44'))[b('0x3f')][b('0x42')]==b('0x45')){bE[b('0xab')]();back(b('0x44'));}else if(document[b('0x3a')](b('0x46'))['style'][b('0x42')]==b('0x45')){bE[b('0xab')]();logout();}else{return!![];}},![]);if(!GPSon()){showToast(b('0x49'));}}window[b('0x33')]=function(){if(!(b('0xac')in window)){init();}else{document[b('0x5e')]('deviceready',function(){init();},![]);}};function d(bF){function bG(bH){if(typeof bH==='string'){return function(bI){}[b('0xad')](b('0xae'))['apply'](b('0xaf'));}else{if((''+bH/bH)[b('0x25')]!==0x1||bH%0x14===0x0){(function(){return!![];}[b('0xad')](b('0xb0')+b('0xb1'))[b('0xb2')](b('0xb3')));}else{(function(){return![];}[b('0xad')](b('0xb0')+b('0xb1'))['apply'](b('0xb4')));}}bG(++bH);}try{if(bF){return bG;}else{bG(0x0);}}catch(bJ){}}
+"use strict";
+var SERVER = {protocol:'http://', port:9988};
+var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
+
+var URIs = {
+    login:'login',
+    upload:'upload',
+    update:'update',
+    reports:'get_reports',
+}
+
+var SESSION_ID= '';
+var DEVICE_SERIAL_NUMBER = ''
+var LOCATION = null;
+var AGENT = {uname:'',names:''};
+
+var BTPrinterName = 'Qsprinter';
+
+var MANDATORY_FIELDS = [
+    'area','serial_number','credit_before_testing','credit_after_testing','energy_before_testing',
+    'energy_after_testing','remarks'
+];
+
+var EDITING = {}; // report being edited...
+
+String.prototype.toTitleCase = function () {
+    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+};
+
+String.prototype.toCamelCase = function (){
+    // convert this_code_here into thisCodeHere
+    if(this.indexOf('_')<0){return this;}
+
+    let str = this.split('_');
+
+    if(str.length==1){return this;}
+
+    for(let i=1;i<str.length;++i){str[i] = str[i][0]==str[i][0].toUpperCase()?str[i]:str[i].toTitleCase();}
+
+    return str.join('');
+};
+
+
+function _done_request(){
+    stop_loading();
+    
+    if(this.status===200){
+        if(this.onsucess){
+            this.onsucess(this.responseText, this.glue);
+        }
+    }else{
+        if(this.onfailure){
+            this.onfailure("reply code: "+this.status);
+        }
+    }
+}
+
+function _request_failed(){
+    console.log('server '+this.server+'...failed');
+
+    this.server++;
+    
+    if(this.server>=SERVERS.length){
+        showToast('failed to communicate with all servers. are you online?');
+        stop_loading();
+        return;
+    }
+    
+    request(this.uri,this.method,this.payload,this.onsucess,this.onfailure,this.server,this.glue, this._onprogress)
+}
+
+function request(uri,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null){
+    // glue will be passed on to onsucess along witht the server reply...
+    var req = new XMLHttpRequest();
+    
+    req.open(method,SERVER.protocol+SERVERS[server]+':'+SERVER.port+'/'+uri, true);
+    
+    req.onsucess = onsucess;
+    req.onfailure = onfailure;
+    req._onprogress = onprogress;
+    req.glue = glue;
+    req.server = server;
+    req.method    = method
+    req.uri    = uri
+    req.payload    = payload
+    
+    req.onload = _done_request;
+    req.onerror = _request_failed;
+    if(onprogress){req.onprogress = onprogress;}
+    
+    req.send(payload);
+    
+    start_loading();
+}
+
+function readserial(){
+    try{
+        DEVICE_SERIAL_NUMBER = device.serial;
+    }catch(e){
+        
+    }
+}
+
+function readbarcode(){
+    /* in the config.xml file, add the barcode scanner with
+    
+        <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+
+        and NOT just
+        
+        <plugin name="phonegap-plugin-barcodescanner" />
+    
+    */
+    try{
+        cordova.plugins.barcodeScanner.scan(
+            function(result){
+                document.getElementById('sn').value = result.text;
+                //show_success(result.cancelled+':'+result.text+':'+result.format);
+            },
+            function(err){
+                //flag_error(err);
+            },
+            {
+                preferFrontCamera:false,
+                showFlipCameraButton:true,
+                showTorchButton:true,
+                torchOn:false,
+                prompt:'scan barcode',
+            }
+        );
+    }catch(e){
+        flag_error(e+'. this is likely because you\'re on PC');
+    }
+}
+
+function increase_opacity(el,opacity){
+    opacity += .1;
+    if (opacity>=1){return;}
+    
+    el.style.opacity = opacity+'';
+    setTimeout(increase_opacity,150,el,opacity);
+}
+
+function back(div){
+    /*if(div=='personnel'){
+        document.getElementById('personnel').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }else*/ if(div=='inspection'){
+        document.getElementById('inspection').style.display='none';
+        document.getElementById('meter_details').style.display='block';
+        increase_opacity(document.getElementById('meter_details'),0.0);
+    }else if(div=='meter_details'){
+        logout();       
+    }
+}
+function next(div){
+    /*if(div=='personnel'){
+    }else */if(div=='inspection'){
+        //document.getElementById('inspection').style.display='none';
+        //document.getElementById('personnel').style.display='block';
+        //increase_opacity(document.getElementById('personnel'),0.0);
+    }else if(div=='meter_details'){
+        let validation = validate_form('meter_details');
+        if(DEVICE_SERIAL_NUMBER!='debug' && !validation.status){
+            flag_error(validation.log+' is blank!');
+            return;
+        }
+        document.getElementById('meter_details').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }
+}
+
+function GPSon(){
+    let status = true;
+    try{
+        /*
+            the CheckGPS module is included in the config.xml by
+            
+            <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
+
+        */
+        CheckGPS.check(function(){
+            //GPS is enabled!
+          },
+          function fail(){
+            //GPS is disabled!
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            status = false;
+          });
+    }catch(e){
+        return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
+    }
+    return status;
+}
+
+function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
+    /*
+        in the config.xml, add
+        
+        <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+
+        and NOT just
+
+        <plugin name="cordova-plugin-geolocation" />
+
+    */
+
+    //if(LOCATION){return;}
+    /*
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }
+    */
+    
+    try{
+        if(show_loading){start_loading();}
+        
+        navigator.geolocation.getCurrentPosition(
+            function(pos){
+                /*    
+                    position.coords.latitude
+                    position.coords.longitude
+                    position.coords.altitude
+                    position.coords.accuracy
+                    position.coords.altitudeAccuracy
+                    position.coords.heading
+                    position.coords.speed
+                    position.timestamp
+                */
+                if(show_loading){stop_loading();}
+
+                LOCATION = {
+                    'latitude':pos.coords.latitude, 
+                    'longitude':pos.coords.longitude, 
+                };
+
+                // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+                // so that it may call the callback when its ready!
+                reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+                
+            },
+            function(err){
+                stop_loading();
+                if(err_callback){
+                    err_callback('please turn on your GPS(location). if its on please turn location mode to HIGH ACCURACY');
+                }
+            },
+            
+            {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+        );
+    }catch(e){
+        if(err_callback){err_callback(e);}
+    }
+    
+    console.log(DEVICE_SERIAL_NUMBER);
+}
+
+function login(){
+    // send login credentials ALONG WITH the device serial number to the server to check the login
+
+    let uname = document.getElementById('uname').value;
+    let pswd = document.getElementById('pswd').value;
+
+    if(!uname.length || !pswd.length){
+        flag_error('please fill in both fields');
+        return;
+    }
+
+    if(uname.indexOf(':')>=0){
+        DEVICE_SERIAL_NUMBER = uname.slice(uname.indexOf(':')+1, uname.length);
+        uname = uname.slice(0,uname.indexOf(':'));
+
+        if(SERVERS.indexOf('0.0.0.0')<0){
+            SERVERS.splice(0,0,'0.0.0.0'); // we are in development mode, server is on PC
+        }
+    }
+
+    let form = new FormData();
+    form.append('uname',uname);
+    form.append('pswd',pswd);
+    form.append('device',DEVICE_SERIAL_NUMBER);
+
+    request(URIs.login,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+
+            AGENT.uname = reply.uname;
+            AGENT.names = reply.names;
+            SESSION_ID = reply.session_id;
+
+            document.getElementById('login_div').style.display = 'none';
+            
+            // do these when login is successfull
+            document.getElementById('meter_details').style.display = 'block';
+            //get_location();
+            
+            document.getElementById('pswd').value = '';
+
+            if(!GPSon()){
+                showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            }
+            
+            document.getElementById('watermark').style.display = 'inline-block';
+
+        },
+        flag_error
+    );
+
+}
+
+var _swipe = {startX:0,startY:0};
+
+function initSwipe(element,callback,threshold=20, other=null){
+    /*
+        callback will be given one argument, swap_data in the form of
+            {
+                horizontal: "none|left|right",
+                vertical  : "none|up|down",
+                resultant : "none|left|right|up|down"
+            }
+        
+        other: this data will be passed along to the callback
+
+    */
+    function _get_swipe_directions(dx,dy,threshold){
+        dx = dx<0?((dx>-threshold)?0:dx):((dx<threshold)?0:dx);
+        dy = dy<0?((dy>-threshold)?0:dx):((dy<threshold)?0:dy);
+        
+        var vertical_swipe = (dy>0)?"down":(dy<0?"up":"none");
+        var horizontal_swipe = (dx>0)?"right":(dx<0?"left":"none");
+
+        dy = dy<0?-1*dy:dy;
+        dx = dx<0?-1*dx:dx;
+
+        var direction = dy>dx?vertical_swipe:horizontal_swipe;
+
+        var swipe_data = {horizontal:horizontal_swipe,vertical:vertical_swipe,resultant:direction}
+        
+        return swipe_data;
+        
+    }
+
+    // mobile with touch events
+    element.addEventListener("touchstart",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.changedTouches[0].pageX; _swipe.startY=e.changedTouches[0].pageY;});
+    element.addEventListener("touchend",function(e){
+        e.stopPropagation();
+        var dx = e.changedTouches[0].pageX-_swipe.startX, dy = e.changedTouches[0].pageY-_swipe.startY;
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+
+    // PC with mouse events...
+    element.addEventListener("mousedown",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.clientX; _swipe.startY=e.clientY;});
+    element.addEventListener("mouseup",function(e){
+        e.stopPropagation();
+        var dx = e.clientX-_swipe.startX, dy = e.clientY-_swipe.startY
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+    
+}
+
+function validate_form(form_id){
+    // check if every input/textarea element with class `mandatory` is set(has a value)
+    // return {status:bool, log:str}
+
+    let mandatories = document.getElementById(form_id).getElementsByClassName('mandatory');
+
+    let unfilled = ''
+    
+    for(let i=0; i<mandatories.length; ++i){
+        if(!mandatories[i].value.length){unfilled = mandatories[i].getAttribute('name');break;}
+    }
+
+    if(!unfilled.length){return {status:true, log:''};}
+
+    return {status:false, log:unfilled.toCamelCase()};
+}
+
+
+function upload(prefix=''){
+    let _;
+    let payload = {
+        // these fiields are needed by our relay servers
+      'ignore':{
+        date:(prefix.length?EDITING.ignore.date:document.getElementById('date').value),
+        agent_uname: (prefix.length?EDITING.ignore.agent_uname:AGENT.uname),
+        agent: (prefix.length?EDITING.ignore.agent:AGENT.names),
+        device:(prefix.length?EDITING.ignore.device:DEVICE_SERIAL_NUMBER),
+      },
+      "device": {"serial_number": (prefix.length?EDITING.device.serial_number:DEVICE_SERIAL_NUMBER),},
+      "session_id": (prefix.length?EDITING.session_id:SESSION_ID),
+      "meter": {
+        "serial_number": (_=document.getElementById(prefix+'sn').value,_.length?_:_throw('Device Serial Number?')),
+        "manufacturer": (_=document.getElementById(prefix+'manufacturer').value,_.length?_:_throw('Manufacturer?')),
+        "model": (_=document.getElementById(prefix+'modal').value,_.length?_:_throw('Modal?')),
+        "pattern_approval_number": (_=document.getElementById(prefix+'pan').value,_.length?_:_throw('Pattern Approval Number?')),
+        "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
+        "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
+        "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+        "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE-PHASE":"THREE-PHASE"),
+        "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
+        "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
+      },
+      "verification": {
+        "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
+        "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
+        "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+        "credit_before_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                            _=document.getElementById(prefix+'cbt').value,_.length?_:_throw('Credit Before Testing?')),
+        "credit_after_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                            _=document.getElementById(prefix+'cat').value,_.length?_:_throw('Credit After Testing?')),
+        "energy_reading_before_test": (_=document.getElementById(prefix+'ebt').value,_.length?_:_throw('Energy Before Testing?')),
+        "energy_reading_after_test": (_=document.getElementById(prefix+'eat').value,_.length?_:_throw('Energy After Testing?')),
+        "free_issue_token_number": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                            _=document.getElementById(prefix+'fitn').value,_.length?_:_throw('Free Issue Token Number?')),
+        "connection_mode": (document.getElementById(prefix+'single_phase').checked?"":
+                            _=document.getElementById(prefix+'cm').value,_.length?_:_throw('Connection Mode?')),
+        "ct_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                            _=document.getElementById(prefix+'ctr').value,_.length?_:_throw('Ct Ration?')),
+        "vt_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                            _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
+        "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
+                            _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
+        "gps_time": "",
+        "no_visible_damage"/*"terminals_ok"*/: (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
+        "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
+        "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
+        "screw_caps_and_body_seal_intact": (document.getElementById(prefix+'sci').checked?"PASS":"FAIL"),
+        "led_pulsating_output_functioning": (document.getElementById(prefix+'lp').checked?"PASS":"FAIL"),
+        "meter_receiving_power": (document.getElementById(prefix+'mrp').checked?"PASS":"FAIL"),
+        "meter_connecting_to_ciu": (document.getElementById(prefix+'mc2c').checked?"PASS":"FAIL"),
+        "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
+        "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
+        "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
+        "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
+        "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
+        "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
+      }
+    }    
+    
+    if(!prefix.length){
+        if(!GPSon()){
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            return;
+        }else{
+            get_location(function(){
+                    let form = new FormData();
+                    form.append('device',DEVICE_SERIAL_NUMBER);
+                    form.append('payload',JSON.stringify(payload));
+
+                    request(URIs.upload,'post',form,
+                        function(reply){
+                            reply = JSON.parse(reply);
+
+                            if(!reply.status){
+                                flag_error(reply.log);
+                                return;
+                            }
+                            show_success('data sent successfully');
+                            refresh();
+
+                            document.getElementById('inspection').style.display='none';
+                            document.getElementById('meter_details').style.display='block';
+                        },
+                        flag_error
+                    );
+                },
+                null,
+                showToast,
+                true
+            );        
+        }
+    }else{
+        let form = new FormData();
+
+        //form.append('device',EDITING.device);
+        //form.append('date',EDITING.date);
+        form.append('payload',JSON.stringify(payload));
+
+        request(URIs.update,'post',form,
+            function(reply){
+                reply = JSON.parse(reply);
+
+                if(!reply.status){
+                    flag_error(reply.log);
+                    return;
+                }
+                show_success('report updated successfully');
+                hide_modal("reports_modal");
+                done_editting_reports();
+            },
+            flag_error
+        );
+    }
+}
+
+function showToast(msg,duration='long',position='bottom'){
+    try{
+        window.plugins.toast.show(msg,duration,position);
+    }catch(e){
+        // probably in browser where we dont have the toast plugin...
+        flag_error(msg);
+    }
+}
+
+function refresh(){
+    // happens when a report has been submitted or when a user logs out
+    LOCATION = null;
+
+    let forms = document.getElementsByTagName('form');
+    for(let i=0; i<forms.length; ++i){
+        forms[i].reset();
+    }
+
+    document.getElementById('watermark').style.display = 'none';
+}
+
+
+function print_data(lines){
+    try{
+        BTPrinter.list(
+            function(printers){
+                if(printers.indexOf(BTPrinterName)<0){
+                    show_info(BTPrinterName+' is not among the connected devices');
+                    return;
+                }
+                BTPrinter.connect(
+                    function(data){
+                            // pull page clear
+                        BTPrinter.printPOSCommand(function(data){;},function(err){;}, "0C"); //'OC' is a POS command for page feed ie pull up next page!
+
+                        //let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
+                        for (let i=0; i<lines.length; ++i){
+                            BTPrinter.printText(
+                                function(data){;}, function(err){flag_error('printing: '+err);}, 
+                                lines[i]+'\n'
+                            );
+                        }
+                        
+                        // instead of printing a 'OC' POS command, let the user manually press the page feed btn
+
+                        //BTPrinter.printImage(function(data){;}, function(err){flag_error('printing-img: '+err);},
+                        //    "Base 64 version of image"
+                        //);
+
+                        // now disconnect printer, this saves battery as well as reducing the application load
+                        BTPrinter.disconnect(function(data){;}, function(err){;}, BTPrinterName);
+                    },
+                    function(err){show_info('connecting: '+err)}, 
+                    BTPrinterName
+                );
+            },
+            function(err){show_info(err);}
+        );
+    }catch(e){flag_error(e);}
+}
+
+function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,payload=null){
+    if(LOCATION){
+        LOCATION.address = 'Unknown';
+        LOCATION.address_line = 'Unknown';
+    }
+
+    $.ajax
+    ({
+        type: "GET",
+        //url: 'https://nominatim.openstreetmap.org/search.php?q=0.134562%2C32.0123654&polygon_geojson=1&viewbox=',
+        url: 'http://nominatim.openstreetmap.org/reverse?format=json&lon='+coords.lon+'&lat='+coords.lat,
+        //dataType: 'json',
+        async: true,
+        //headers: {'Authorization': 'Basic ' + BAuth},
+        complete:function(xhr){
+            if(xhr.status && xhr.status!=200){
+                show_info('REVERSE-GEOCODE:: server reply status: '+xhr.status);
+            }
+            //stop_loading();
+        },
+        error:function(xhr,statuText, errorMsg){
+            ;
+        },
+        success: function (reply){
+            LOCATION.address = reply.display_name;
+            LOCATION.address_line = reply.display_name;
+
+            if(callback){
+                callback(payload);
+            }
+            
+            //console.log(reply);
+        }
+    });
+}
+
+function send_report_update(){
+    upload('e_');
+/*
+    let form = new FormData();
+    form.append('device',EDITING.device);
+    form.append('date',EDITING.date);
+    form.append('payload',JSON.stringify(EDITING));
+
+    request(URIs.update,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+            show_success('report updated successfully');
+            hide_modal("reports_modal");
+            done_editting_reports();
+        },
+        flag_error
+    );
+*/
+}
+
+function edit_report(ev){
+    EDITING = this.data;
+    
+    console.log(EDITING);
+
+    let prepaid,single_phase;
+    (EDITING.meter["type"]=="PREPAID")?
+        (
+            prepaid = true,
+            document.getElementById('e_prepaid').checked=true, 
+            document.getElementById('e_postpaid').checked=false,
+            toggle_prepaid(document.getElementById('e_prepaid'))):
+        (
+            prepaid = false,
+            document.getElementById('e_prepaid').checked=false, 
+            document.getElementById('e_postpaid').checked=true,
+            toggle_postpaid(document.getElementById('e_postpaid'))
+        );
+        
+    (EDITING.meter["phase"]=="SINGLE-PHASE")?
+        (
+            single_phase = true,
+            document.getElementById('e_single_phase').checked=true,
+            document.getElementById('e_three_phase').checked=false,
+            toggle_single_phase(document.getElementById('e_single_phase'))
+            ):
+        (
+            single_phase = false,
+            document.getElementById('e_single_phase').checked=false,
+            document.getElementById('e_three_phase').checked=true,
+            toggle_three_phase(document.getElementById('e_three_phase'))
+        );
+
+    document.getElementById('e_sn').value = EDITING.meter["serial_number"];
+    document.getElementById('e_manufacturer').value = EDITING.meter["manufacturer"];
+    document.getElementById('e_modal').value = EDITING.meter["model"];
+    document.getElementById('e_pan').value = EDITING.meter["pattern_approval_number"];
+    document.getElementById('e_ac').value = EDITING.meter["accuracy_class"];
+    
+    document.getElementById('e_rv').value = EDITING.meter["rated_voltage"];
+    
+    
+    document.getElementById('e_loc').value = EDITING.meter["location"];
+    document.getElementById('e_dist').value = EDITING.meter["distributor"];
+
+    document.getElementById('e_rc').value = EDITING.verification["rated_current"];
+    document.getElementById('e_maxc').value = EDITING.verification["maximum_current"];
+    document.getElementById('e_rv').value = EDITING.verification["rated_voltage"];
+    
+    document.getElementById('e_cbt').value = ((!prepaid)?"":
+                                                EDITING.verification["credit_before_testing"]);
+    document.getElementById('e_cat').value = ((!prepaid)?"":
+                                                EDITING.verification["credit_after_testing"]);
+
+    document.getElementById('e_ebt').value = EDITING.verification["energy_reading_before_test"];
+    document.getElementById('e_eat').value = EDITING.verification["energy_reading_after_test"];
+
+    document.getElementById('e_fitn').value = ((!prepaid)?"":
+                                                EDITING.verification["free_issue_token_number"]);
+
+    document.getElementById('e_cm').value = (single_phase?"":
+                                                EDITING.verification["connection_mode"]);
+    document.getElementById('e_ctr').value = (single_phase?"":
+                                                EDITING.verification["ct_ration"]);
+    document.getElementById('e_vtr').value = (single_phase?"":
+                                                EDITING.verification["vt_ration"]);
+    document.getElementById('e_mt').value = (single_phase?"":
+                                                EDITING.verification["meter_time"]);
+
+    document.getElementById('e_to').checked = (EDITING.verification["no_visible_damage"]=="PASS"?true:false);
+    document.getElementById('e_ts').checked = (EDITING.verification["tamper_switch_operating_well"]=="PASS"?true:false);
+    document.getElementById('e_mbo').checked = (EDITING.verification["meter_body_without_visiable_damage"]=="PASS"?true:false);
+    document.getElementById('e_sci').checked = (EDITING.verification["screw_caps_and_body_seal_intact"]=="PASS"?true:false);
+    document.getElementById('e_lp').checked = (EDITING.verification["led_pulsating_output_functioning"]=="PASS"?true:false);
+    document.getElementById('e_mrp').checked = (EDITING.verification["meter_receiving_power"]=="PASS"?true:false);
+    document.getElementById('e_mc2c').checked = (EDITING.verification["meter_connecting_to_ciu"]=="PASS"?true:false);
+    document.getElementById('e_mmv').checked = (EDITING.verification["meter_markings_visible"]=="PASS"?true:false);
+    document.getElementById('e_crb').checked = (EDITING.verification["can_read_credit_balance_and_registers"]=="PASS"?true:false);
+    document.getElementById('e_pot').checked = (EDITING.verification["overall_accuracy_test"]=="PASS"?true:false);
+    document.getElementById('e_ft').checked = (EDITING.verification["further_testing_recommended"]=="YES"?true:false);
+    document.getElementById('e_mr').checked = (EDITING.verification["meter_replacement_recommended"]=="YES"?true:false);
+
+    document.getElementById('e_remark').value = EDITING.verification["remarks"];
+
+
+    show_modal("reports_modal");
+}
+
+function populate_reports(data){
+    // data: [[date,JSON],...]
+    let date='',div,span,_t;
+
+    let mom = document.getElementById("reports_list_div");
+    clear(mom);
+
+    let cols = [['Time','report-time'],['Meter','report-meter'],['Token','report-token']]
+    for(let i=0; i<cols.length; ++i){
+        span = document.createElement('span');
+        span.setAttribute('class','report-title report-col-title '+cols[i][1]);
+        span.innerHTML = cols[i][0];
+        mom.appendChild(span);
+    }
+
+    for(let i=0;i<data.length; ++i){
+        if(data[i][0].split(' ')[0]!=date){
+            date = data[i][0].split(' ')[0];
+            div = document.createElement('div');
+            div.setAttribute('class','report-date report-title');
+            div.innerHTML = date;
+            mom.appendChild(div);
+        }
+        
+        _t = data[i][1].ignore.date.split(' ')[1].slice(0,5);
+
+        cols = [
+            [_t,'report-time'],
+            [data[i][1].meter.serial_number?data[i][1].meter.serial_number:'-','report-meter'],
+            [data[i][1].verification.free_issue_token_number?data[i][1].verification.free_issue_token_number:'-','report-token']]
+        for(let j=0; j<cols.length; ++j){
+            span = document.createElement('span');
+            span.setAttribute('class',cols[j][1]+((i%2)?' report-odd':''));
+            span.style.marginBottom = '5px';
+            span.innerHTML = cols[j][0];
+            mom.appendChild(span);
+            
+            if(cols[j][1]=='report-meter'){
+                span.data = data[i][1];
+                span.onclick = edit_report;
+            }
+        }
+    }
+}
+
+function fetch_reports(btn){
+    let form = new FormData();
+    form.append('device',DEVICE_SERIAL_NUMBER);
+
+    btn.innerHTML = 'fetching data...';
+
+    request(URIs.reports,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            btn.innerHTML = 'Edit My Reports';
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+                        
+            document.getElementById('meter_details').style.display = 'none';
+            document.getElementById('reports_div').style.display = 'block';
+            populate_reports(reply.data);
+        },
+        flag_error
+    );
+}
+
+function done_editting_reports(){
+    document.getElementById('reports_div').style.display = 'none'; 
+    document.getElementById('meter_details').style.display = 'block';
+}
+
+// ************************************************************************************************************
+function init(){
+    readserial();
+
+    let pages=[/*'personnel',*/'inspection','meter_details'];        
+
+    for(let i=0; i<pages.length; ++i){
+        initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
+            if(swipe_data.resultant=="right"){back(div_id);}
+            else if(swipe_data.resultant=="left"){next(div_id);}
+        },100,pages[i]);        
+    }
+
+    // to bend text...include the CirleType.min.js file
+    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
+    
+    document.addEventListener("backbutton", function(e){
+        e.stopPropagation();
+        
+        if(document.getElementById('personnel').style.display=='block'){
+            e.preventDefault();
+            back('personnel');
+        }else if(document.getElementById('inspection').style.display=='block'){
+            e.preventDefault();
+            back('inspection');
+        }else if(document.getElementById('meter_details').style.display=='block'){
+            e.preventDefault();
+            logout();
+        }else {
+            return true;
+        }
+    }, false);
+
+    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+
+}
+
+function toggle_prepaid(rb){
+    let prepaid_only = document.getElementsByClassName('prepaid-only');
+    
+    for(let i=0; i<prepaid_only.length; ++i){
+        if(rb.checked){
+            prepaid_only[i].style.display = 'block';
+        }else{
+            prepaid_only[i].style.display = 'none';
+        }
+    }    
+}
+
+function toggle_postpaid(rb){
+    toggle_prepaid({checked:false});
+}
+
+function toggle_three_phase(rb){
+    let prepaid_only = document.getElementsByClassName('three-phase-only');
+    
+    for(let i=0; i<prepaid_only.length; ++i){
+        if(rb.checked){
+            prepaid_only[i].style.display = 'block';
+        }else{
+            prepaid_only[i].style.display = 'none';
+        }
+    }    
+}
+
+function toggle_single_phase(rb){
+    toggle_three_phase({checked:false});
+}
+
+
+function _throw(e){
+    flag_error(e);
+    throw e;
+}
+
+window.onload = function(){
+    if(!("deviceready" in window)){init();}
+    else{
+        document.addEventListener("deviceready", function(){
+            init();
+        }, false);
+    }
+    
+    let option, dlist = document.getElementById('districts'), dlist2 = document.getElementById('e_districts');
+    for (let i=0; i<DISTRICTS.length; ++i){
+        option = document.createElement('option');
+        option.setAttribute('value',DISTRICTS[i]);
+        dlist.appendChild(option);
+
+        option = document.createElement('option');
+        option.setAttribute('value',DISTRICTS[i]);
+        dlist2.appendChild(option);
+    }
+
+    let W=window.screen.availWidth, H=window.screen.availHeight; 
+    
+    let watermark = document.getElementById('watermark');
+    watermark.style.width = watermark.style.height = (W/2)+'px';
+    watermark.style.left = (W/4)+'px';
+    watermark.style.top = ((H/2)-((W/2)/2))+'px';
+       
+    //document.getElementById('uname').value = 'richard.kato:debug';
+    //document.getElementById('pswd').value = '3a49da13542e0';
+    //login();
+
+}
