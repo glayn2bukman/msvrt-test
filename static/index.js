@@ -398,55 +398,58 @@ function upload(prefix=''){
         agent: (prefix.length?EDITING.ignore.agent:AGENT.names),
         device:(prefix.length?EDITING.ignore.device:DEVICE_SERIAL_NUMBER),
       },
-      "device": {"serial_number": (prefix.length?EDITING.device.serial_number:DEVICE_SERIAL_NUMBER),},
+      "device": {"serial": (prefix.length?EDITING.device.serial_number:DEVICE_SERIAL_NUMBER),},
       "session_id": (prefix.length?EDITING.session_id:SESSION_ID),
-      "meter": {
-        "serial_number": (_=document.getElementById(prefix+'sn').value,_.length?_:_throw('Device Serial Number?')),
-        "manufacturer": (_=document.getElementById(prefix+'manufacturer').value,_.length?_:_throw('Manufacturer?')),
-        "model": (_=document.getElementById(prefix+'modal').value,_.length?_:_throw('Modal?')),
-        "pattern_approval_number": (_=document.getElementById(prefix+'pan').value,_.length?_:_throw('Pattern Approval Number?')),
-        "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
-        "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
-        "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
-        "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE-PHASE":"THREE-PHASE"),
-        "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
-        "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
-      },
-      "verification": {
-        "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
-        "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
-        "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
-        "credit_before_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
-                            _=document.getElementById(prefix+'cbt').value,_.length?_:_throw('Credit Before Testing?')),
-        "credit_after_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
-                            _=document.getElementById(prefix+'cat').value,_.length?_:_throw('Credit After Testing?')),
-        "energy_reading_before_test": (_=document.getElementById(prefix+'ebt').value,_.length?_:_throw('Energy Before Testing?')),
-        "energy_reading_after_test": (_=document.getElementById(prefix+'eat').value,_.length?_:_throw('Energy After Testing?')),
-        "free_issue_token_number": ((!document.getElementById(prefix+'prepaid').checked)?"":
-                            _=document.getElementById(prefix+'fitn').value,_.length?_:_throw('Free Issue Token Number?')),
-        "connection_mode": (document.getElementById(prefix+'single_phase').checked?"":
-                            _=document.getElementById(prefix+'cm').value,_.length?_:_throw('Connection Mode?')),
-        "ct_ration": (document.getElementById(prefix+'single_phase').checked?"":
-                            _=document.getElementById(prefix+'ctr').value,_.length?_:_throw('Ct Ration?')),
-        "vt_ration": (document.getElementById(prefix+'single_phase').checked?"":
-                            _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
-        "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
-                            _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
-        "gps_time": "",
-        "no_visible_damage"/*"terminals_ok"*/: (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
-        "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
-        "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
-        "screw_caps_and_body_seal_intact": (document.getElementById(prefix+'sci').checked?"PASS":"FAIL"),
-        "led_pulsating_output_functioning": (document.getElementById(prefix+'lp').checked?"PASS":"FAIL"),
-        "meter_receiving_power": (document.getElementById(prefix+'mrp').checked?"PASS":"FAIL"),
-        "meter_connecting_to_ciu": (document.getElementById(prefix+'mc2c').checked?"PASS":"FAIL"),
-        "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
-        "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
-        "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
-        "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
-        "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
-        "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
-      }
+      'data':{
+          "location":(prefix.length?EDITING.data.location:{}),
+          "meter": {
+            "serial_number": (_=document.getElementById(prefix+'sn').value,_.length?_:_throw('Device Serial Number?')),
+            "manufacturer": (_=document.getElementById(prefix+'manufacturer').value,_.length?_:_throw('Manufacturer?')),
+            "model": (_=document.getElementById(prefix+'modal').value,_.length?_:_throw('Modal?')),
+            "pattern_approval_number": (_=document.getElementById(prefix+'pan').value,_.length?_:_throw('Pattern Approval Number?')),
+            "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
+            "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE-PHASE":"THREE-PHASE"),
+            "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
+            "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
+          },
+          "verification": {
+            "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
+            "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "credit_before_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cbt').value,_.length?_:_throw('Credit Before Testing?')),
+            "credit_after_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cat').value,_.length?_:_throw('Credit After Testing?')),
+            "energy_reading_before_test": (_=document.getElementById(prefix+'ebt').value,_.length?_:_throw('Energy Before Testing?')),
+            "energy_reading_after_test": (_=document.getElementById(prefix+'eat').value,_.length?_:_throw('Energy After Testing?')),
+            "free_issue_token_number": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'fitn').value,_.length?_:_throw('Free Issue Token Number?')),
+            "connection_mode": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'cm').value,_.length?_:_throw('Connection Mode?')),
+            "ct_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'ctr').value,_.length?_:_throw('Ct Ration?')),
+            "vt_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
+            "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
+            "gps_time": "",
+            "no_visible_damage"/*"terminals_ok"*/: (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
+            "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
+            "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
+            "screw_caps_and_body_seal_intact": (document.getElementById(prefix+'sci').checked?"PASS":"FAIL"),
+            "led_pulsating_output_functioning": (document.getElementById(prefix+'lp').checked?"PASS":"FAIL"),
+            "meter_receiving_power": (document.getElementById(prefix+'mrp').checked?"PASS":"FAIL"),
+            "meter_connecting_to_ciu": (document.getElementById(prefix+'mc2c').checked?"PASS":"FAIL"),
+            "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
+            "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
+            "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
+            "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
+            "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
+            "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
+          }
+       }
     }    
     
     if(!prefix.length){
@@ -457,6 +460,7 @@ function upload(prefix=''){
             get_location(function(){
                     let form = new FormData();
                     form.append('device',DEVICE_SERIAL_NUMBER);
+                    payload.data.location = LOCATION;
                     form.append('payload',JSON.stringify(payload));
 
                     request(URIs.upload,'post',form,
@@ -523,7 +527,9 @@ function refresh(){
         forms[i].reset();
     }
 
-    document.getElementById('watermark').style.display = 'none';
+    toggle_postpaid({checked:true});
+    toggle_single_phase({checked:true});
+
 }
 
 
