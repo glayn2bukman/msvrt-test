@@ -825,6 +825,18 @@ function init(){
 
     if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
 
+    let option, dlist = document.getElementById('districts'), dlist2 = document.getElementById('e_districts');
+    for (let i=0; i<DISTRICTS.length; ++i){
+        option = document.createElement('option');
+        option.setAttribute('value',DISTRICTS[i]);
+        dlist.appendChild(option);
+
+        option = document.createElement('option');
+        option.setAttribute('value',DISTRICTS[i]);
+        dlist2.appendChild(option);
+    }
+
+
 }
 
 function toggle_prepaid(rb){
@@ -872,28 +884,9 @@ window.onload = function(){
             init();
         }, false);
     }
-    
-    let option, dlist = document.getElementById('districts'), dlist2 = document.getElementById('e_districts');
-    for (let i=0; i<DISTRICTS.length; ++i){
-        option = document.createElement('option');
-        option.setAttribute('value',DISTRICTS[i]);
-        dlist.appendChild(option);
-
-        option = document.createElement('option');
-        option.setAttribute('value',DISTRICTS[i]);
-        dlist2.appendChild(option);
-    }
-
+      
+    // place anything else you cant to run at startup in `init` NOT here!
     /*
-    let W=window.screen.availWidth, H=window.screen.availHeight; 
-    
-    let watermark = document.getElementById('watermark');
-    watermark.style.width = watermark.style.height = (W/2)+'px';
-    watermark.style.left = (W/4)+'px';
-    watermark.style.top = ((H/2)-((W/2)/2))+'px';
-    */
-       
-    //*
     document.getElementById('uname').value = 'richard.kato:debug';
     document.getElementById('pswd').value = '3a49da13542e0';
     login();
