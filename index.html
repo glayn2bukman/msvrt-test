@@ -47,8 +47,8 @@
 
                         <div class="row">
                             <span class="key">District/Area</span>
-                            <input id='e_loc' name='area' type="text" class="form-control value mandatory" list="e_districts">
-                            <datalist id="e_districts"></datalist>
+                            <input id='e_loc' name='area' type="text" class="form-control value mandatory" list="e_districtsl">
+                            <datalist id="e_districtsl"><select id="e_districts"></select></datalist>
                         </div>
                         <div class="row">
                             <span class="key">Distributor</span>
@@ -255,8 +255,8 @@
             <script>document.getElementById("date").valueAsDate = new Date();</script>
             <div class="row">
                 <span class="key">District/Area</span>
-                <input id='loc' name='area' type="text" class="form-control value mandatory" list="districts">
-                <datalist id="districts"></datalist>
+                <input id='loc' name='area' type="text" class="form-control value mandatory" list="districtsl">
+                <datalist id="districtsl"><select id="districts"></select></datalist>
             </div>
             <div class="row">
                 <span class="key">Distributor</span>
@@ -461,5 +461,7 @@
 
         <div id='loading' class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </body>
+
+    <script type="text/javascript" src="static/datalist-polyfill.js"></script>
 
 </html>
