@@ -230,7 +230,7 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
                     position.coords.speed
                     position.timestamp
                 */
-                if(show_loading){stop_loading();}
+                //if(show_loading){stop_loading();}
 
                 LOCATION = {
                     'latitude':pos.coords.latitude, 
@@ -319,6 +319,7 @@ function login(){
 var _swipe = {startX:0,startY:0};
 
 function initSwipe(element,callback,threshold=20, other=null){
+    return; // disable swipe
     /*
         callback will be given one argument, swap_data in the form of
             {
@@ -590,7 +591,7 @@ function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,pa
             if(xhr.status && xhr.status!=200){
                 show_info('REVERSE-GEOCODE:: server reply status: '+xhr.status);
             }
-            //stop_loading();
+            stop_loading();
         },
         error:function(xhr,statuText, errorMsg){
             ;
@@ -610,34 +611,11 @@ function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,pa
 
 function send_report_update(){
     upload('e_');
-/*
-    let form = new FormData();
-    form.append('device',EDITING.device);
-    form.append('date',EDITING.date);
-    form.append('payload',JSON.stringify(EDITING));
-
-    request(URIs.update,'post',form,
-        function(reply){
-            reply = JSON.parse(reply);
-
-            if(!reply.status){
-                flag_error(reply.log);
-                return;
-            }
-            show_success('report updated successfully');
-            hide_modal("reports_modal");
-            done_editting_reports();
-        },
-        flag_error
-    );
-*/
 }
 
 function edit_report(ev){
     EDITING = this.data;
     
-    console.log(EDITING);
-
     let prepaid,single_phase;
     (EDITING.data.meter["type"]=="PREPAID")?
         (
@@ -832,23 +810,24 @@ function init(){
 
     if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
 
-    let option, dlist = document.getElementById('districts'), dlist2 = document.getElementById('e_districts');
-    for (let i=0; i<DISTRICTS.length; ++i){
-        option = document.createElement('option');
-        option.setAttribute('value',DISTRICTS[i]);
-        dlist.appendChild(option);
-
-        option = document.createElement('option');
-        option.setAttribute('value',DISTRICTS[i]);
-        dlist2.appendChild(option);
+    // populate data from data.js into html
+    let option, selects;
+    let fields = [
+        'districts','distributors','manufacturers','modals','ct_rations','vt_rations',
+        'connection_modes','accuracy_classes','rated_voltages','rated_currents',
+        'max_currents'];
+    for(let k=0; k<fields.length; ++k){
+        selects = document.getElementsByClassName(APP_DATA[fields[k]].class);
+        APP_DATA[fields[k]].data.sort();
+        for (let i=0; i<APP_DATA[fields[k]].data.length; ++i){
+            for(let j=0; j<selects.length; ++j){
+                option = document.createElement('option');
+                option.setAttribute('value',APP_DATA[fields[k]].data[i]);
+                option.innerHTML = APP_DATA[fields[k]].data[i];
+                selects[j].appendChild(option);
+            }
+        }
     }
-
-    //*
-    document.getElementById('uname').value = 'richard.kato:debug';
-    document.getElementById('pswd').value = '3a49da13542e0';
-    login();
-    //*/
-
 
 }
 
@@ -899,4 +878,9 @@ window.onload = function(){
     }
       
     // place anything else you cant to run at startup in `init` NOT here!
+    /*
+    document.getElementById('uname').value = 'richard.kato:debug';
+    document.getElementById('pswd').value = '3a49da13542e0';
+    login();
+    //*/    
 }
