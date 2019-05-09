@@ -639,7 +639,7 @@ function edit_report(ev){
     console.log(EDITING);
 
     let prepaid,single_phase;
-    (EDITING.meter["type"]=="PREPAID")?
+    (EDITING.data.meter["type"]=="PREPAID")?
         (
             prepaid = true,
             document.getElementById('e_prepaid').checked=true, 
@@ -652,7 +652,7 @@ function edit_report(ev){
             toggle_postpaid(document.getElementById('e_postpaid'))
         );
         
-    (EDITING.meter["phase"]=="SINGLE-PHASE")?
+    (EDITING.data.meter["phase"]=="SINGLE-PHASE")?
         (
             single_phase = true,
             document.getElementById('e_single_phase').checked=true,
@@ -666,56 +666,56 @@ function edit_report(ev){
             toggle_three_phase(document.getElementById('e_three_phase'))
         );
 
-    document.getElementById('e_sn').value = EDITING.meter["serial_number"];
-    document.getElementById('e_manufacturer').value = EDITING.meter["manufacturer"];
-    document.getElementById('e_modal').value = EDITING.meter["model"];
-    document.getElementById('e_pan').value = EDITING.meter["pattern_approval_number"];
-    document.getElementById('e_ac').value = EDITING.meter["accuracy_class"];
+    document.getElementById('e_sn').value = EDITING.data.meter["serial_number"];
+    document.getElementById('e_manufacturer').value = EDITING.data.meter["manufacturer"];
+    document.getElementById('e_modal').value = EDITING.data.meter["model"];
+    document.getElementById('e_pan').value = EDITING.data.meter["pattern_approval_number"];
+    document.getElementById('e_ac').value = EDITING.data.meter["accuracy_class"];
     
-    document.getElementById('e_rv').value = EDITING.meter["rated_voltage"];
+    document.getElementById('e_rv').value = EDITING.data.meter["rated_voltage"];
     
     
-    document.getElementById('e_loc').value = EDITING.meter["location"];
-    document.getElementById('e_dist').value = EDITING.meter["distributor"];
+    document.getElementById('e_loc').value = EDITING.data.meter["location"];
+    document.getElementById('e_dist').value = EDITING.data.meter["distributor"];
 
-    document.getElementById('e_rc').value = EDITING.verification["rated_current"];
-    document.getElementById('e_maxc').value = EDITING.verification["maximum_current"];
-    document.getElementById('e_rv').value = EDITING.verification["rated_voltage"];
+    document.getElementById('e_rc').value = EDITING.data.verification["rated_current"];
+    document.getElementById('e_maxc').value = EDITING.data.verification["maximum_current"];
+    document.getElementById('e_rv').value = EDITING.data.verification["rated_voltage"];
     
     document.getElementById('e_cbt').value = ((!prepaid)?"":
-                                                EDITING.verification["credit_before_testing"]);
+                                                EDITING.data.verification["credit_before_testing"]);
     document.getElementById('e_cat').value = ((!prepaid)?"":
-                                                EDITING.verification["credit_after_testing"]);
+                                                EDITING.data.verification["credit_after_testing"]);
 
-    document.getElementById('e_ebt').value = EDITING.verification["energy_reading_before_test"];
-    document.getElementById('e_eat').value = EDITING.verification["energy_reading_after_test"];
+    document.getElementById('e_ebt').value = EDITING.data.verification["energy_reading_before_test"];
+    document.getElementById('e_eat').value = EDITING.data.verification["energy_reading_after_test"];
 
     document.getElementById('e_fitn').value = ((!prepaid)?"":
-                                                EDITING.verification["free_issue_token_number"]);
+                                                EDITING.data.verification["free_issue_token_number"]);
 
     document.getElementById('e_cm').value = (single_phase?"":
-                                                EDITING.verification["connection_mode"]);
+                                                EDITING.data.verification["connection_mode"]);
     document.getElementById('e_ctr').value = (single_phase?"":
-                                                EDITING.verification["ct_ration"]);
+                                                EDITING.data.verification["ct_ration"]);
     document.getElementById('e_vtr').value = (single_phase?"":
-                                                EDITING.verification["vt_ration"]);
+                                                EDITING.data.verification["vt_ration"]);
     document.getElementById('e_mt').value = (single_phase?"":
-                                                EDITING.verification["meter_time"]);
+                                                EDITING.data.verification["meter_time"]);
 
-    document.getElementById('e_to').checked = (EDITING.verification["no_visible_damage"]=="PASS"?true:false);
-    document.getElementById('e_ts').checked = (EDITING.verification["tamper_switch_operating_well"]=="PASS"?true:false);
-    document.getElementById('e_mbo').checked = (EDITING.verification["meter_body_without_visiable_damage"]=="PASS"?true:false);
-    document.getElementById('e_sci').checked = (EDITING.verification["screw_caps_and_body_seal_intact"]=="PASS"?true:false);
-    document.getElementById('e_lp').checked = (EDITING.verification["led_pulsating_output_functioning"]=="PASS"?true:false);
-    document.getElementById('e_mrp').checked = (EDITING.verification["meter_receiving_power"]=="PASS"?true:false);
-    document.getElementById('e_mc2c').checked = (EDITING.verification["meter_connecting_to_ciu"]=="PASS"?true:false);
-    document.getElementById('e_mmv').checked = (EDITING.verification["meter_markings_visible"]=="PASS"?true:false);
-    document.getElementById('e_crb').checked = (EDITING.verification["can_read_credit_balance_and_registers"]=="PASS"?true:false);
-    document.getElementById('e_pot').checked = (EDITING.verification["overall_accuracy_test"]=="PASS"?true:false);
-    document.getElementById('e_ft').checked = (EDITING.verification["further_testing_recommended"]=="YES"?true:false);
-    document.getElementById('e_mr').checked = (EDITING.verification["meter_replacement_recommended"]=="YES"?true:false);
+    document.getElementById('e_to').checked = (EDITING.data.verification["no_visible_damage"]=="PASS"?true:false);
+    document.getElementById('e_ts').checked = (EDITING.data.verification["tamper_switch_operating_well"]=="PASS"?true:false);
+    document.getElementById('e_mbo').checked = (EDITING.data.verification["meter_body_without_visiable_damage"]=="PASS"?true:false);
+    document.getElementById('e_sci').checked = (EDITING.data.verification["screw_caps_and_body_seal_intact"]=="PASS"?true:false);
+    document.getElementById('e_lp').checked = (EDITING.data.verification["led_pulsating_output_functioning"]=="PASS"?true:false);
+    document.getElementById('e_mrp').checked = (EDITING.data.verification["meter_receiving_power"]=="PASS"?true:false);
+    document.getElementById('e_mc2c').checked = (EDITING.data.verification["meter_connecting_to_ciu"]=="PASS"?true:false);
+    document.getElementById('e_mmv').checked = (EDITING.data.verification["meter_markings_visible"]=="PASS"?true:false);
+    document.getElementById('e_crb').checked = (EDITING.data.verification["can_read_credit_balance_and_registers"]=="PASS"?true:false);
+    document.getElementById('e_pot').checked = (EDITING.data.verification["overall_accuracy_test"]=="PASS"?true:false);
+    document.getElementById('e_ft').checked = (EDITING.data.verification["further_testing_recommended"]=="YES"?true:false);
+    document.getElementById('e_mr').checked = (EDITING.data.verification["meter_replacement_recommended"]=="YES"?true:false);
 
-    document.getElementById('e_remark').value = EDITING.verification["remarks"];
+    document.getElementById('e_remark').value = EDITING.data.verification["remarks"];
 
 
     show_modal("reports_modal");
@@ -737,6 +737,7 @@ function populate_reports(data){
     }
 
     for(let i=0;i<data.length; ++i){
+        if(!data[i][1].data)continue;
         if(data[i][0].split(' ')[0]!=date){
             date = data[i][0].split(' ')[0];
             div = document.createElement('div');
@@ -749,8 +750,8 @@ function populate_reports(data){
 
         cols = [
             [_t,'report-time'],
-            [data[i][1].meter.serial_number?data[i][1].meter.serial_number:'-','report-meter'],
-            [data[i][1].verification.free_issue_token_number?data[i][1].verification.free_issue_token_number:'-','report-token']]
+            [data[i][1].data.meter.serial_number?data[i][1].data.meter.serial_number:'-','report-meter'],
+            [data[i][1].data.verification.free_issue_token_number?data[i][1].data.verification.free_issue_token_number:'-','report-token']]
         for(let j=0; j<cols.length; ++j){
             span = document.createElement('span');
             span.setAttribute('class',cols[j][1]+((i%2)?' report-odd':''));
