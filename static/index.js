@@ -372,6 +372,8 @@ function initSwipe(element,callback,threshold=20, other=null){
 }
 
 function validate_form(form_id){
+    return {status:true, log:''}; // disable form validation
+
     // check if every input/textarea element with class `mandatory` is set(has a value)
     // return {status:bool, log:str}
 
