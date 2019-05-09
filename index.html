@@ -18,7 +18,7 @@
 
         <script src="static/globals.js"></script>
         <script src="static/index.js"></script>
-        <script src="static/districts.js"></script>
+        <script src="static/data.js"></script>
         <script src="static/CircleType.min.js"></script>
 
         <!-- sweet alert -->
@@ -47,26 +47,19 @@
 
                         <div class="row">
                             <span class="key">District/Area</span>
-                            <input id='e_loc' name='area' type="text" class="form-control value mandatory" list="e_districtsl">
-                            <datalist id="e_districtsl"><select id="e_districts"></select></datalist>
+                            <select id='e_loc' name='area' class="form-control value mandatory districts"></select>
                         </div>
                         <div class="row">
                             <span class="key">Distributor</span>
-                            <select id='e_dist' name='distributor' class="form-control value">
-                                <option value='UMEME'>UMEME</option>
-                            </select>
+                            <select id='e_dist' name='distributor' class="form-control value distributors"></select>
                         </div>
                         <div class="row">
                             <span class="key">Manufacturer</span>
-                            <select id='e_manufacturer' name='manufacturer' class="form-control value">
-                                <option value='Conlog'>Conlog</option>
-                            </select>
+                            <select id='e_manufacturer' name='manufacturer' class="form-control value manufacturers"></select>
                         </div>
                         <div class="row">
                             <span class="key">Modal</span>
-                            <select id='e_modal' name='modal' class="form-control value">
-                                <option value='BEC 44'>BEC 44</option>
-                            </select>
+                            <select id='e_modal' name='modal' class="form-control value modals"></select>
                         </div>
                         <div class="row">
                             <span class="key">Meter No.(S/N)</span>
@@ -78,9 +71,7 @@
                         <br>
                         <div class="row">
                             <span class="key">Accuracy Class</span>
-                            <select id='e_ac' name='accuracy_class' class="form-control value">
-                                <option value='2.0'>2.0</option>
-                            </select>
+                            <select id='e_ac' name='accuracy_class' class="form-control value accuracy_classes"></select>
                         </div>
                         <div class="row">
                             <label class="radio-inline" style='float:right;'>
@@ -106,21 +97,15 @@
                         <br>
                         <div class="row">
                             <span class="key">Rated Voltage</span>
-                            <select id='e_rv' name='rated_voltage' class="form-control value">
-                                <option value='240'>240</option>
-                            </select>
+                            <select id='e_rv' name='rated_voltage' class="form-control value rated_voltages"></select>
                         </div>
                         <div class="row">
                             <span class="key">Rated Current</span>
-                            <select id='e_rc' name='rated_current' class="form-control value">
-                                <option value='5'>5</option>
-                            </select>
+                            <select id='e_rc' name='rated_current' class="form-control value rated_currents"></select>
                         </div>
                         <div class="row">
                             <span class="key">Max. Current</span>
-                            <select id='e_maxc' name='max_current' class="form-control value">
-                                <option value='100'>100</option>
-                            </select>
+                            <select id='e_maxc' name='max_current' class="form-control value max_currents"></select>
                         </div>
                         <div class="row">
                             <label class="radio-inline" style='float:right;'>
@@ -138,15 +123,15 @@
                         </div>
                         <div class="row three-phase-only">
                             <span class="key">Connection Mode</span>
-                            <input id='e_cm' name='connection_mode' type="text" class="form-control value mandatory">
+                            <select id='e_cm' name='connection_mode' class="form-control value mandatory connection_modes"></select>
                         </div>
                         <div class="row three-phase-only">
                             <span class="key">Ct Ration</span>
-                            <input id='e_ctr' name='ct_ration' type="text" class="form-control value mandatory">
+                            <select id='e_ctr' name='ct_ration' class="form-control value ct_rations"></select>
                         </div>
                         <div class="row three-phase-only">
                             <span class="key">Vt Ration</span>
-                            <input id='e_vtr' name='vt_ration' type="text" class="form-control value mandatory">
+                            <select id='e_vtr' name='vt_ration' class="form-control value mandatory vt_rations"></select>
                         </div>
 
                         <br>
@@ -255,26 +240,19 @@
             <script>document.getElementById("date").valueAsDate = new Date();</script>
             <div class="row">
                 <span class="key">District/Area</span>
-                <input id='loc' name='area' type="text" class="form-control value mandatory" list="districtsl">
-                <datalist id="districtsl"><select id="districts"></select></datalist>
+                <select id='loc' name='area' class="form-control value mandatory districts"></select>
             </div>
             <div class="row">
                 <span class="key">Distributor</span>
-                <select id='dist' name='distributor' class="form-control value">
-                    <option value='UMEME'>UMEME</option>
-                </select>
+                <select id='dist' name='distributor' class="form-control value distributors"></select>
             </div>
             <div class="row">
                 <span class="key">Manufacturer</span>
-                <select id='manufacturer' name='manufacturer' class="form-control value">
-                    <option value='Conlog'>Conlog</option>
-                </select>
+                <select id='manufacturer' name='manufacturer' class="form-control value manufacturers"></select>
             </div>
             <div class="row">
                 <span class="key">Modal</span>
-                <select id='modal' name='modal' class="form-control value">
-                    <option value='BEC 44'>BEC 44</option>
-                </select>
+                <select id='modal' name='modal' class="form-control value modals"></select>
             </div>
             <div class="row">
                 <span class="key">Meter No.(S/N)</span>
@@ -286,9 +264,7 @@
             <br>
             <div class="row">
                 <span class="key">Accuracy Class</span>
-                <select id='ac' name='accuracy_class' class="form-control value">
-                    <option value='2.0'>2.0</option>
-                </select>
+                <select id='ac' name='accuracy_class' class="form-control value accuracy_classes"></select>
             </div>
             <div class="row">
                 <label class="radio-inline" style='float:right;'>
@@ -314,21 +290,15 @@
             <br>
             <div class="row">
                 <span class="key">Rated Voltage</span>
-                <select id='rv' name='rated_voltage' class="form-control value">
-                    <option value='240'>240</option>
-                </select>
+                <select id='rv' name='rated_voltage' class="form-control value rated_voltages"></select>
             </div>
             <div class="row">
                 <span class="key">Rated Current</span>
-                <select id='rc' name='rated_current' class="form-control value">
-                    <option value='5'>5</option>
-                </select>
+                <select id='rc' name='rated_current' class="form-control value rated_currents"></select>
             </div>
             <div class="row">
                 <span class="key">Max. Current</span>
-                <select id='maxc' name='max_current' class="form-control value">
-                    <option value='100'>100</option>
-                </select>
+                <select id='maxc' name='max_current' class="form-control value max_currents"></select>
             </div>
             <div class="row">
                 <label class="radio-inline" style='float:right;'>
@@ -346,15 +316,15 @@
             </div>
             <div class="row three-phase-only">
                 <span class="key">Connection Mode</span>
-                <input id='cm' name='connection_mode' type="text" class="form-control value mandatory">
+                <select id='cm' name='connection_mode' class="form-control value mandatory connection_modes"></select>
             </div>
             <div class="row three-phase-only">
                 <span class="key">Ct Ration</span>
-                <input id='ctr' name='ct_ration' type="text" class="form-control value mandatory">
+                <select id='ctr' name='ct_ration' class="form-control value mandatory ct_rations"></select>
             </div>
             <div class="row three-phase-only">
                 <span class="key">Vt Ration</span>
-                <input id='vtr' name='vt_ration' type="text" class="form-control value mandatory">
+                <select id='vtr' name='vt_ration' class="form-control value mandatory vt_rations"></select>
             </div>
 
             <br>
@@ -461,7 +431,5 @@
 
         <div id='loading' class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
     </body>
-
-    <script type="text/javascript" src="static/datalist-polyfill.js"></script>
 
 </html>
