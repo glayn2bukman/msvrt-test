@@ -413,7 +413,7 @@ function upload(prefix=''){
             "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
             "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
             "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
-            "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE-PHASE":"THREE-PHASE"),
+            "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE":"THREE"),
             "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
             "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
           },
@@ -529,6 +529,12 @@ function refresh(){
     for(let i=0; i<forms.length; ++i){
         forms[i].reset();
     }
+
+    document.getElementById('prepaid').checked=true, 
+    document.getElementById('postpaid').checked=false,
+
+    document.getElementById('single_phase').checked=true,
+    document.getElementById('three_phase').checked=false,
 
     toggle_postpaid({checked:true});
     toggle_single_phase({checked:true});
@@ -880,7 +886,7 @@ window.onload = function(){
     }
       
     // place anything else you cant to run at startup in `init` NOT here!
-    /*
+    //*
     document.getElementById('uname').value = 'richard.kato:debug';
     document.getElementById('pswd').value = '3a49da13542e0';
     login();
