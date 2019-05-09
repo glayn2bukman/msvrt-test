@@ -630,26 +630,26 @@ function edit_report(ev){
             prepaid = true,
             document.getElementById('e_prepaid').checked=true, 
             document.getElementById('e_postpaid').checked=false,
-            toggle_prepaid(document.getElementById('e_prepaid'))):
+            toggle_prepaid({checked:true})):
         (
             prepaid = false,
             document.getElementById('e_prepaid').checked=false, 
             document.getElementById('e_postpaid').checked=true,
-            toggle_postpaid(document.getElementById('e_postpaid'))
+            toggle_postpaid({checked:true})
         );
-        
-    (EDITING.data.meter["phase"]=="SINGLE-PHASE")?
+    
+    (EDITING.data.meter["phase"]=="SINGLE")?
         (
             single_phase = true,
             document.getElementById('e_single_phase').checked=true,
             document.getElementById('e_three_phase').checked=false,
-            toggle_single_phase(document.getElementById('e_single_phase'))
+            toggle_single_phase({checked:true})
             ):
         (
             single_phase = false,
             document.getElementById('e_single_phase').checked=false,
             document.getElementById('e_three_phase').checked=true,
-            toggle_three_phase(document.getElementById('e_three_phase'))
+            toggle_three_phase({checked:true})
         );
 
     document.getElementById('e_sn').value = EDITING.data.meter["serial_number"];
