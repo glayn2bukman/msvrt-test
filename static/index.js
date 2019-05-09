@@ -886,7 +886,7 @@ window.onload = function(){
     }
       
     // place anything else you cant to run at startup in `init` NOT here!
-    //*
+    /*
     document.getElementById('uname').value = 'richard.kato:debug';
     document.getElementById('pswd').value = '3a49da13542e0';
     login();
