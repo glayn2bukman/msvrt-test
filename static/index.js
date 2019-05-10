@@ -101,7 +101,7 @@ function readserial(){
     }
 }
 
-function readbarcode(){
+function readbarcode(entry){
     /* in the config.xml file, add the barcode scanner with
     
         <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
@@ -114,7 +114,7 @@ function readbarcode(){
     try{
         cordova.plugins.barcodeScanner.scan(
             function(result){
-                document.getElementById('sn').value = result.text;
+                entry/*document.getElementById('sn')*/.value = result.text;
                 //show_success(result.cancelled+':'+result.text+':'+result.format);
             },
             function(err){
@@ -448,6 +448,9 @@ function upload(prefix=''){
             "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
             "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
             "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
+            "sticker_number":(prefix.length?EDITING.data.verification.sticker_number:(document.getElementById(prefix+'pot').checked?(
+                              _=document.getElementById(prefix+'sticker_qrcode').value,(
+                                (_.length>=20)?_:_throw('Sticker QRCode information should be 20+ characters long'))):"")),
             "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
             "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
             "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
@@ -538,6 +541,7 @@ function refresh(){
 
     toggle_postpaid({checked:true});
     toggle_single_phase({checked:true});
+    toggle_sticker({checked:false});
 
 }
 
@@ -871,6 +875,17 @@ function toggle_single_phase(rb){
     toggle_three_phase({checked:false});
 }
 
+function toggle_sticker(cb){
+    let sticker_els = document.getElementsByClassName('sticker');
+    
+    for(let i=0; i<sticker_els.length; ++i){
+        if(cb.checked){
+            sticker_els[i].style.display = 'block';
+        }else{
+            sticker_els[i].style.display = 'none';
+        }
+    }    
+}
 
 function _throw(e){
     flag_error(e);
@@ -890,5 +905,5 @@ window.onload = function(){
     document.getElementById('uname').value = 'richard.kato:debug';
     document.getElementById('pswd').value = '3a49da13542e0';
     login();
-    //*/    
+    //*/  
 }
