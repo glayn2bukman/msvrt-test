@@ -259,7 +259,7 @@
                 <input id='sn' name='serial_number' type="text" class="form-control value mandatory">
             </div>
             <div class="row" >
-                <span style='color:#13a;float:right;' onclick='readbarcode()'>scan barcode</span>
+                <span style='color:#13a;float:right;' onclick="readbarcode(document.getElementById('sn'))">scan barcode</span>
             </div>
             <br>
             <div class="row">
@@ -396,8 +396,18 @@
             </div>
             <br>
             <div class="checkbox">
-                  <label><input id='pot' name='passed_overall_accuracy_test' type="checkbox" value="">Passed overall accuracy test</label>
+                  <label><input id='pot' name='passed_overall_accuracy_test' 
+                    type="checkbox" value="" onchange='toggle_sticker(this)'>Passed overall accuracy test</label>
             </div>
+                <div class="row sticker">
+                    <span class="key">Sticker QRCode</span>
+                    <input id='sticker_qrcode' name='sticker_qrcode' type="text" class="form-control value mandatory">
+                </div>
+                <div class="row sticker">
+                    <span style='color:#13a;float:right;' onclick="readbarcode(document.getElementById('sticker_qrcode'))">scan sticker QRCode</span>
+                </div>
+                <br class='sticker'>
+
             <label>remark</label>
             <textarea id='remark' name='remarks' class='form-control mandatory' rows=5 placeholder='remarks'></textarea>
 
