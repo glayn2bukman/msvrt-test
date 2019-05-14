@@ -1,1 +1,245 @@
-"use strict";var URLS={},DATA_REFRESH_RATE=60;function clear(e){for(;e.childNodes.length;)e.removeChild(e.childNodes[0])}function show_modal(e){$("#"+e).modal("show")}function hide_modal(e){$("#"+e).modal("hide")}function flag_error(e){swal({title:"Error!",text:e,type:"error",confirmButtonText:"Ok"})}function show_info(e){swal({title:"Info!",text:e,type:"info",confirmButtonText:"Ok"})}function show_success(e){swal({title:"Info!",text:e,type:"success",confirmButtonText:"Ok"})}function stop_loading(){try{document.getElementById("loading").style.display="none"}catch(e){}}function start_loading(){try{document.getElementById("loading").style.display="block"}catch(e){}}function scroll_to_bottom(e){var t=document.getElementById(e);t.scrollTop=t.scrollHeight}function logout(){swal({title:"Logout?",text:"are you sure?",type:"warning",showCancelButton:!0,closeOnConfirm:!0,animation:"slide-from-top",confirmButtonText:"Yes",cancelButtonText:"No"},function(e){if(!1===e)return!1;document.getElementById("meter_details").style.display="none",document.getElementById("login_div").style.display="block",refresh()})}function human_readable(e,t){try{e=isNaN(t)?e.toString():e.toFixed(t)}catch(e){}if(isNaN(parseFloat(e)))return e;dp_index=e.indexOf("."),dp_index=dp_index<0?e.length-1:dp_index-1,value_reverse=[];for(var n=e.length-1;n!=dp_index;--n)value_reverse.push(e[n]);n=dp_index;for(var i=1;n>=0;--n)value_reverse.push(e[n]),3==i&&n&&(value_reverse.push(","),i=0),i++;return value_reverse.reverse(),!isNaN(t)&&!t&&(e=value_reverse.join("")).indexOf(".")>=0?e.slice(0,e.indexOf(".")):value_reverse.join("")}function figure_in_words(e){var t,n,i,o,l,r,s,u,d,c,a,f=e.toString();if(0===parseInt(f))return"zero";for(t=["","one","two","three","four","five","six","seven","eight","nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"],n=["","","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"],i=["","thousand","million","billion","trillion","quadrillion","quintillion","sextillion","septillion","octillion","nonillion","decillion","undecillion","duodecillion","tredecillion","quatttuor-decillion","quindecillion","sexdecillion","septen-decillion","octodecillion","novemdecillion","vigintillion","centillion"],o=f.length,r=[];o>0;)l=o,r.push(f.slice(o=Math.max(0,o-3),l));if((s=r.length)>i.length)return"";for(a=[],d=0;d<s;d++)parseInt(r[d])&&(1===(u=r[d].split("").reverse().map(parseFloat))[1]&&(u[0]+=10),(c=i[d])&&a.push(c),(c=t[u[0]])&&a.push(c),(c=n[u[1]])&&a.push(c),(u[0]||u[1])&&(u[2]||!d&&s)&&a.push("and"),(c=t[u[2]])&&a.push(c+" hundred"));return a.reverse().join(" ")}function notify(e){var t=document.getElementById("notification");t.innerHTML=e,t.style.display="block",t.style.opacity="1",setTimeout(function(){t.style.opacity="0",setTimeout(function(){t.style.display="none"},2e3)},1e3)}
+"use strict";
+var URLS = {
+};
+
+var DATA_REFRESH_RATE = 60; // time is in seconds
+
+function clear(el){
+    while (el.childNodes.length)
+        el.removeChild(el.childNodes[0]);
+}
+
+// the show/hide_modal functions rely on jquerry
+function show_modal(modal_id){$('#'+modal_id).modal('show');}
+function hide_modal(modal_id){$('#'+modal_id).modal('hide');}
+
+function flag_error(error){
+    swal({
+        title: "Error!",
+        text: error,
+        type: "error",
+        confirmButtonText: "Ok"
+    });
+}
+
+function show_info(msg){
+    swal({
+        title: "Info!",
+        text:msg,
+        type: "info",
+        confirmButtonText: "Ok"
+    });
+}
+
+function show_success(msg){
+    swal({
+        title: "Info!",
+        text:msg,
+        type: "success",
+        confirmButtonText: "Ok"
+    });
+}
+
+
+function stop_loading(){
+    try{
+        document.getElementById('loading').style.display = 'none';
+    }catch(e){}
+}
+
+function start_loading(){
+    try{
+        document.getElementById('loading').style.display = 'block';
+    }catch(e){}
+}
+
+function scroll_to_bottom(div_id){
+    var div = document.getElementById(div_id);
+    div.scrollTop = div.scrollHeight;
+}
+
+function logout(){
+    swal({
+          title: "Logout?",
+          text: "are you sure?",
+          type: "warning",
+          showCancelButton: true,
+          closeOnConfirm: true,
+          animation: "slide-from-top",
+          confirmButtonText:"Yes",
+          cancelButtonText:"No",
+        },
+        
+        function(msg){
+            if (msg === false) {return false;} // clicked "cancel"
+
+            document.getElementById('meter_details').style.display = 'none';
+            document.getElementById('login_div').style.display = 'block';
+            refresh(); // is defined in index.js
+        }
+    );
+
+}
+
+
+function human_readable(value, dp){
+    try{
+        value/2.3;
+        
+        if (!isNaN(dp))
+            value = value.toFixed(dp);
+        else
+            value = value.toString();
+    }
+    catch(e){
+        // value already a string as we want it!
+    }
+    
+    if (isNaN(parseFloat(value)))
+    {
+        return value;
+    }
+
+    dp_index = value.indexOf(".");
+    dp_index = dp_index<0 ? value.length-1 : dp_index-1;
+        
+        // array to contain new human-readable value format...
+    value_reverse = [];
+    for (var i=value.length-1; i!=dp_index; --i)
+        value_reverse.push(value[i]);
+    
+    for (var i=dp_index, counter=1; i>=0; --i)
+    {
+        value_reverse.push(value[i]);
+        if (counter==3 && i)
+        {
+            value_reverse.push(",");
+            counter = 0;
+        }
+
+        counter++;
+    }
+
+    value_reverse.reverse();
+
+    if (!isNaN(dp) && !dp)
+    {
+        value = value_reverse.join("");
+        if (value.indexOf(".")>=0)
+            return value.slice(0, value.indexOf("."));
+    }
+    
+    return value_reverse.join("");
+
+    
+}
+
+function figure_in_words(n){
+    var string = n.toString(), 
+        units, 
+        tens, 
+        scales, 
+        start, 
+        end, 
+        chunks, 
+        chunksLen, 
+        chunk, 
+        ints, 
+        i, 
+        word, 
+        words, 
+        and = 'and';
+
+    /* Is number zero? */
+    if( parseInt( string ) === 0 ) {
+        return 'zero';
+    }
+
+    /* Array of units as words */
+    units = [ '', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen' ];
+
+    /* Array of tens as words */
+    tens = [ '', '', 'twenty', 'thirty', 'forty', 'fifty', 'sixty', 'seventy', 'eighty', 'ninety' ];
+
+    /* Array of scales as words */
+    scales = [ '', 'thousand', 'million', 'billion', 'trillion', 'quadrillion', 'quintillion', 'sextillion', 'septillion', 'octillion', 'nonillion', 'decillion', 'undecillion', 'duodecillion', 'tredecillion', 'quatttuor-decillion', 'quindecillion', 'sexdecillion', 'septen-decillion', 'octodecillion', 'novemdecillion', 'vigintillion', 'centillion' ];
+
+    /* Split user arguemnt into 3 digit chunks from right to left */
+    start = string.length;
+    chunks = [];
+    while( start > 0 ) {
+        end = start;
+        chunks.push( string.slice( ( start = Math.max( 0, start - 3 ) ), end ) );
+    }
+
+    /* Check if function has enough scale words to be able to stringify the user argument */
+    chunksLen = chunks.length;
+    if( chunksLen > scales.length ) {
+        return '';
+    }
+
+    /* Stringify each integer in each chunk */
+    words = [];
+    for( i = 0; i < chunksLen; i++ ) {
+
+        chunk = parseInt( chunks[i] );
+
+        if( chunk ) {
+
+            /* Split chunk into array of individual integers */
+            ints = chunks[i].split( '' ).reverse().map( parseFloat );
+
+            /* If tens integer is 1, i.e. 10, then add 10 to units integer */
+            if( ints[1] === 1 ) {
+                ints[0] += 10;
+            }
+
+            /* Add scale word if chunk is not zero and array item exists */
+            if( ( word = scales[i] ) ) {
+                words.push( word );
+            }
+
+            /* Add unit word if array item exists */
+            if( ( word = units[ ints[0] ] ) ) {
+                words.push( word );
+            }
+
+            /* Add tens word if array item exists */
+            if( ( word = tens[ ints[1] ] ) ) {
+                words.push( word );
+            }
+
+            /* Add 'and' string after units or tens integer if: */
+            if( ints[0] || ints[1] ) {
+
+                /* Chunk has a hundreds integer or chunk is the first of multiple chunks */
+                if( ints[2] || ! i && chunksLen ) {
+                    words.push( and );
+                }
+
+            }
+
+            /* Add hundreds word if array item exists */
+            if( ( word = units[ ints[2] ] ) ) {
+                words.push( word + ' hundred' );
+            }
+
+        }
+
+    }
+
+    return words.reverse().join( ' ' );
+}
+
+function notify(msg){
+    var notification = document.getElementById("notification");
+    notification.innerHTML = msg;
+    notification.style.display="block";
+    notification.style.opacity="1";
+    setTimeout(function(){
+        notification.style.opacity="0";
+        setTimeout(function(){
+            notification.style.display="none";        
+        }, 2000)
+    }, 1000);
+}

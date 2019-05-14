@@ -6,17 +6,27 @@
 var APP_DATA = {
     distributors:{
         class:'distributors',
-        data:['UMEME'],
+        data:[
+            'Umeme Ltd','Rural Electrification Agency','Uganda Electricity Distribution Dompany Limited',
+            'Pamoja Energy Limited','Kalanagala Infrastructre Service',
+            'Kyegegwa Rural Electrification Company Limited','Kilembe Electricity Company Limited',
+            'West Nile Rural Electricity Company Limited','Bundibugyo Energy Co-Operative Society',
+        ],
     },
     
     manufacturers:{
         class:'manufacturers',
-        data:['Conlog'],
+        data:[
+            'Star instrument','Elster Metering Systems','Hexing Electrical Company Limited','Chint Instruments',
+            'Conlog Pty','Sanxing Electrical','CEWE Prometer','Shehenzen Clou Electronics','Sunrise',
+        ],
     },
 
     modals:{
         class:'modals',
-        data:['BEC 44'],
+        data:[
+            'A1700','HXE310','Hxe110','PG03','BECC 44','BEC 66(07)','DTSY666J','DDSY089-K2','SX5A2-PELS-04',        
+        ],
     },
 
     ct_rations:{
@@ -36,7 +46,7 @@ var APP_DATA = {
 
     accuracy_classes:{
         class:'accuracy_classes',
-        data:['2.0'],
+        data:['1.0','2.0','0.5s','1.5'],
     },
 
     rated_voltages:{

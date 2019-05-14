@@ -1,13 +1,9 @@
 "use strict";
-var SERVER = {protocol:'http://', port:9988};
-var SERVERS = ['45.33.6.237','104.237.142.183','45.33.74.38','139.162.235.29',];
-
-var URIs = {
-    login:'login',
-    upload:'upload',
-    update:'update',
-    reports:'get_reports',
-}
+var UNBS_SERVERS = [
+    'http://0.0.0.0:9988/api', 
+    'http://192.168.43.154:9988',
+    //'https://meters-dev.unbs.go.ug/api/',
+];
 
 var SESSION_ID= '';
 var DEVICE_SERIAL_NUMBER = ''
@@ -16,12 +12,11 @@ var AGENT = {uname:'',names:''};
 
 var BTPrinterName = 'Qsprinter';
 
-var MANDATORY_FIELDS = [
-    'area','serial_number','credit_before_testing','credit_after_testing','energy_before_testing',
-    'energy_after_testing','remarks'
-];
-
 var EDITING = {}; // report being edited...
+
+var TARGET_DEVICE='03744098AV000487';
+
+var LOGIN_REF = {};
 
 String.prototype.toTitleCase = function () {
     return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
@@ -69,28 +64,26 @@ function _request_failed(){
     request(this.uri,this.method,this.payload,this.onsucess,this.onfailure,this.server,this.glue, this._onprogress)
 }
 
-function request(uri,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null){
+function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null){
     // glue will be passed on to onsucess along witht the server reply...
-    var req = new XMLHttpRequest();
-    
-    req.open(method,SERVER.protocol+SERVERS[server]+':'+SERVER.port+'/'+uri, true);
-    
-    req.onsucess = onsucess;
-    req.onfailure = onfailure;
-    req._onprogress = onprogress;
-    req.glue = glue;
-    req.server = server;
-    req.method    = method
-    req.uri    = uri
-    req.payload    = payload
-    
-    req.onload = _done_request;
-    req.onerror = _request_failed;
-    if(onprogress){req.onprogress = onprogress;}
-    
-    req.send(payload);
-    
+    if(server==UNBS_SERVERS.length){
+        onfailure?onfailure():flag_error('failed to communicate with all UNBS servers. are we online?');
+        // save the payload(data) at this point
+        return;
+    }
+
     start_loading();
+    jQuery.ajax({
+        type: "POST",
+        url: UNBS_SERVERS[server],
+        data: JSON.stringify(payload),
+        complete:function(){stop_loading();},
+        success: onsucess,
+        error:function(){request(url,method,payload,onsucess,onfailure,++server,glue, onprogress)},
+        dataType: "json",
+        contentType: "application/json",
+        processData: false
+    });    
 }
 
 function readserial(){
@@ -208,16 +201,30 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
     */
 
     //if(LOCATION){return;}
-    /*
+    //*
     if(!GPSon()){
-        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        showToast('please turn on your GPS(location). if its on please turn location mode to HIGH ACCURACY');
         return;
     }
-    */
+    //*/
     
     try{
         if(show_loading){start_loading();}
         
+        LOCATION = {
+            'time':0,
+            'latitude':0.00000, 
+            'longitude':0.00000,
+            'address_line':'GPS-FAILED',
+            'address':'GPS-FAILED',
+
+            "locality": "OMITTED",
+            "sub_locality": "OMITTED",
+            "admin_area": "OMITTED",
+            "sub_admin_area": "OMITTED",
+            "feature_name": "OMITTED",
+        };
+
         navigator.geolocation.getCurrentPosition(
             function(pos){
                 /*    
@@ -231,11 +238,10 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
                     position.timestamp
                 */
                 //if(show_loading){stop_loading();}
-
-                LOCATION = {
-                    'latitude':pos.coords.latitude, 
-                    'longitude':pos.coords.longitude, 
-                };
+                
+                LOCATION.time = pos.timestamp;
+                LOCATION.latitude = pos.coords.latitude; 
+                LOCATION.longitude = pos.coords.longitude;
 
                 // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
                 // so that it may call the callback when its ready!
@@ -244,9 +250,9 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
             },
             function(err){
                 stop_loading();
-                if(err_callback){
-                    err_callback('please turn on your GPS(location). if its on please turn location mode to HIGH ACCURACY');
-                }
+                showToast('gps failed, continuing without coordinates...');
+                console.log('gps failed, continuing without coordinates...');
+                if(callback){callback(callback_payload);}
             },
             
             {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
@@ -255,10 +261,14 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
         if(err_callback){err_callback(e);}
     }
     
-    console.log(DEVICE_SERIAL_NUMBER);
 }
 
 function login(){
+    if(DEVICE_SERIAL_NUMBER!=TARGET_DEVICE){
+        showSerialError();
+        return;
+    }
+
     // send login credentials ALONG WITH the device serial number to the server to check the login
 
     let uname = document.getElementById('uname').value;
@@ -269,30 +279,15 @@ function login(){
         return;
     }
 
-    if(uname.indexOf(':')>=0){
-        DEVICE_SERIAL_NUMBER = uname.slice(uname.indexOf(':')+1, uname.length);
-        uname = uname.slice(0,uname.indexOf(':'));
-
-        if(SERVERS.indexOf('0.0.0.0')<0){
-            SERVERS.splice(0,0,'0.0.0.0'); // we are in development mode, server is on PC
-        }
-    }
-
-    let form = new FormData();
-    form.append('uname',uname);
-    form.append('pswd',pswd);
-    form.append('device',DEVICE_SERIAL_NUMBER);
-
-    request(URIs.login,'post',form,
-        function(reply){
-            reply = JSON.parse(reply);
-
-            if(!reply.status){
-                flag_error(reply.log);
+    let onsuccess = function(reply){
+            if(reply.error){
+                flag_error(reply.message);
                 return;
             }
 
-            AGENT.uname = reply.uname;
+            write_local_data('login',JSON.stringify({uname:uname, pswd:pswd}),function(e){},function(v){});
+
+            AGENT.uname = uname;
             AGENT.names = reply.names;
             SESSION_ID = reply.session_id;
 
@@ -308,12 +303,30 @@ function login(){
                 showToast('please turn on your GPS(location), you wont submit the report if GPS off');
             }
             
-            document.getElementById('watermark').style.display = 'inline-block';
+            document.getElementById('watermark').style.display = 'inline-block';            
+        }
 
-        },
-        flag_error
-    );
-
+    request('','POST',{
+        'action':'login',
+        'device':{'serial':DEVICE_SERIAL_NUMBER},
+        'login_id':uname,
+        'password': pswd},
+        onsuccess,
+        function(){
+            read_local_data('login',function(){}, function(value){
+                if(!value){
+                    flag_error('Failed to communicate with all UNBS servers and no offline data is available')
+                    //write_local_data('login','',function(e){},function(v){});
+                }else{
+                    let credentials = JSON.parse(value);
+                    if(credentials.uname==uname && credentials.pswd==pswd){
+                        onsuccess({error:false});
+                    }else{
+                        onsuccess({error:true, message:'Ivalid login credentials'});
+                    }
+                }
+            });
+        },0,null, null);
 }
 
 var _swipe = {startX:0,startY:0};
@@ -418,6 +431,8 @@ function upload(prefix=''){
             "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
           },
           "verification": {
+            "verification_id": document.getElementById(prefix+'vid').value,
+            "id": document.getElementById(prefix+'vid').value,
             "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
             "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
             "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
@@ -437,7 +452,9 @@ function upload(prefix=''){
                                 _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
             "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
                                 _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
-            "gps_time": "",
+            "gps_time": (prefix.length?EDITING.data.verification.gps_time:
+                            (_=new Date,_=_.getFullYear()+'-'+(_.getMonth()+1)+'-'+_.getDate()+' '+
+                            _.getHours()+':'+_.getMinutes()+':'+_.getSeconds())),
             "no_visible_damage"/*"terminals_ok"*/: (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
             "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
             "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
@@ -458,33 +475,77 @@ function upload(prefix=''){
        }
     }    
     
+    { // printing data...
+        let options = document.getElementById('_print_div').getElementsByTagName('label');
+
+        let option_map = [
+            ['verification','gps_time'], ['meter','location'],['meter','manufacturer'],['meter','distributor'],
+            ['meter','model'],['meter','serial_number'],['meter','accuracy_class'],['meter','type'],
+            ['verification','free_issue_token_number'],['verification','id'],['meter','pattern_approval_number'],
+            ['verification','rated_voltage'],['verification','rated_current'],['verification','maximum_current'],
+            ['meter','phase'],['verification','meter_time'],['verification','connection_mode'],
+            ['verification','ct_ration'],['verification','vt_ration'],['verification','credit_before_testing'],
+            ['verification','credit_after_testing'],['verification','energy_reading_before_test'],
+            ['verification','energy_reading_after_test'],
+            ['verification','tamper_switch_operating_well'],['verification','meter_body_without_visiable_damage'],
+            ['verification','no_visible_damage'],
+            ['verification','screw_caps_and_body_seal_intact'],
+            ['verification','meter_markings_visible'],['verification','led_pulsating_output_functioning'],
+            ['verification','meter_receiving_power'],['verification','meter_connecting_to_ciu'],
+            ['verification','can_read_credit_balance_and_registers'],['verification','overall_accuracy_test'],
+            ['verification','further_testing_recommended'],['verification','meter_replacement_recommended'],
+        ];
+
+        for(let i=0; i<options.length; ++i){
+            options[i].children[0].setAttribute('value',payload.data[option_map[i][0]][option_map[i][1]]);
+            options[i].setAttribute('title',payload.data[option_map[i][0]][option_map[i][1]]);
+        }
+    }
+    
     if(!prefix.length){
         if(!GPSon()){
             showToast('please turn on your GPS(location), you wont submit the report if GPS off');
             return;
         }else{
             get_location(function(){
-                    let form = new FormData();
-                    form.append('device',DEVICE_SERIAL_NUMBER);
                     payload.data.location = LOCATION;
-                    form.append('payload',JSON.stringify(payload));
 
-                    request(URIs.upload,'post',form,
+                    request('','POST',{
+                            'action':'processverification',
+                            'device':{'serial':DEVICE_SERIAL_NUMBER},
+                            'session_id':SESSION_ID,
+                            'data':payload,},
                         function(reply){
-                            reply = JSON.parse(reply);
-
-                            if(!reply.status){
-                                flag_error(reply.log);
+                            if(!reply.status || reply.reply.error){
+                                flag_error(reply.reply.message);
                                 return;
                             }
+
                             show_success('data sent successfully');
                             refresh();
 
                             document.getElementById('inspection').style.display='none';
                             document.getElementById('meter_details').style.display='block';
+                            show_modal('print_modal');
                         },
-                        flag_error
-                    );
+                        function(){
+                            read_local_data('savedReports',function(){}, function(value){
+                                let _data;
+                                if(value){_data = JSON.parse(value);}
+                                else{_data = [];}
+                                
+                                _data.push(payload);
+                                
+                                write_local_data('savedReports',JSON.stringify(_data),function(e){},function(v){});
+
+                                show_success('data saved locally as we could not communicate with UNBS servers');
+                                refresh();
+
+                                document.getElementById('inspection').style.display='none';
+                                document.getElementById('meter_details').style.display='block';
+                                show_modal('print_modal');
+                            });
+                        },0,null, null);
                 },
                 null,
                 showToast,
@@ -492,26 +553,22 @@ function upload(prefix=''){
             );        
         }
     }else{
-        let form = new FormData();
-
-        //form.append('device',EDITING.device);
-        //form.append('date',EDITING.date);
-        form.append('payload',JSON.stringify(payload));
-
-        request(URIs.update,'post',form,
+        request('','POST',{
+                'action':'processupdate', // ************************ this is yet to be provided by UNBS
+                'device':{'serial':DEVICE_SERIAL_NUMBER},
+                'session_id':SESSION_ID,
+                'data':payload,},
             function(reply){
-                reply = JSON.parse(reply);
-
-                if(!reply.status){
-                    flag_error(reply.log);
+                if(!reply.status || reply.reply.error){
+                    flag_error(reply.reply.message);
                     return;
                 }
-                show_success('report updated successfully');
+
+                show_success('data updated successfully');
                 hide_modal("reports_modal");
                 done_editting_reports();
-            },
-            flag_error
-        );
+            },null,0,null, null);
+        
     }
 }
 
@@ -562,7 +619,7 @@ function print_data(lines){
                         //let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
                         for (let i=0; i<lines.length; ++i){
                             BTPrinter.printText(
-                                function(data){;}, function(err){flag_error('printing: '+err);}, 
+                                function(data){;}, function(err){flag_error('printing ERROR: '+err);}, 
                                 lines[i]+'\n'
                             );
                         }
@@ -585,6 +642,22 @@ function print_data(lines){
     }catch(e){flag_error(e);}
 }
 
+function _print(){
+    let options = document.getElementById('_print_div').getElementsByTagName('label');
+
+    let lines = []
+    for(let i=0; i<options.length; ++i){
+        if(options[i].children[0].checked){
+            lines.push(options[i].innerHTML.slice(options[i].innerHTML.indexOf('>')+1,options[i].innerHTML.length)
+                +': '+options[i].children[0].value);
+        }
+    }
+
+    if(lines.length){print_data(lines);}
+    
+    hide_modal('print_modal');
+}
+
 function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,payload=null){
     if(LOCATION){
         LOCATION.address = 'Unknown';
@@ -601,23 +674,25 @@ function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,pa
         //headers: {'Authorization': 'Basic ' + BAuth},
         complete:function(xhr){
             if(xhr.status && xhr.status!=200){
-                show_info('REVERSE-GEOCODE:: server reply status: '+xhr.status);
+                showToast('REVERSE-GEOCODE:: server reply status: '+xhr.status);
             }
             stop_loading();
+            if(callback){callback(payload);}
         },
         error:function(xhr,statuText, errorMsg){
-            ;
+            showToast('failed to fetch address, continuing without it');
+            console.log('failed to fetch address, continuing without it');
+            //if(callback){callback(payload);}
         },
         success: function (reply){
             LOCATION.address = reply.display_name;
             LOCATION.address_line = reply.display_name;
 
-            if(callback){
-                callback(payload);
-            }
+            //if(callback){callback(payload);}
             
             //console.log(reply);
-        }
+        },
+        timeout:10000,
     });
 }
 
@@ -668,6 +743,8 @@ function edit_report(ev){
     document.getElementById('e_loc').value = EDITING.data.meter["location"];
     document.getElementById('e_dist').value = EDITING.data.meter["distributor"];
 
+    document.getElementById('e_vid').value = EDITING.data.verification["id"];
+    document.getElementById('e_vid').value = EDITING.data.verification["verification_id"];
     document.getElementById('e_rc').value = EDITING.data.verification["rated_current"];
     document.getElementById('e_maxc').value = EDITING.data.verification["maximum_current"];
     document.getElementById('e_rv').value = EDITING.data.verification["rated_voltage"];
@@ -758,6 +835,11 @@ function populate_reports(data){
 }
 
 function fetch_reports(btn){
+    {
+        show_info('not yet implemented');
+        return
+    }
+    
     let form = new FormData();
     form.append('device',DEVICE_SERIAL_NUMBER);
 
@@ -787,60 +869,20 @@ function done_editting_reports(){
     document.getElementById('meter_details').style.display = 'block';
 }
 
-// ************************************************************************************************************
-function init(){
-    readserial();
+function write_local_data(key,value,errCallback,sucessCallback){
+    key = 'unbs_Jerm_'+key; // just to ensure keys dont clash accross different applications
+    localforage.setItem(key, value, function (err) {
+        if(err){errCallback(err);}
+        else{sucessCallback(key);}
+    });
 
-    let pages=[/*'personnel',*/'inspection','meter_details'];        
-
-    for(let i=0; i<pages.length; ++i){
-        initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
-            if(swipe_data.resultant=="right"){back(div_id);}
-            else if(swipe_data.resultant=="left"){next(div_id);}
-        },100,pages[i]);        
-    }
-
-    // to bend text...include the CirleType.min.js file
-    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
-    
-    document.addEventListener("backbutton", function(e){
-        e.stopPropagation();
-        
-        if(document.getElementById('personnel').style.display=='block'){
-            e.preventDefault();
-            back('personnel');
-        }else if(document.getElementById('inspection').style.display=='block'){
-            e.preventDefault();
-            back('inspection');
-        }else if(document.getElementById('meter_details').style.display=='block'){
-            e.preventDefault();
-            logout();
-        }else {
-            return true;
-        }
-    }, false);
-
-    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
-
-    // populate data from data.js into html
-    let option, selects;
-    let fields = [
-        'districts','distributors','manufacturers','modals','ct_rations','vt_rations',
-        'connection_modes','accuracy_classes','rated_voltages','rated_currents',
-        'max_currents'];
-    for(let k=0; k<fields.length; ++k){
-        selects = document.getElementsByClassName(APP_DATA[fields[k]].class);
-        APP_DATA[fields[k]].data.sort();
-        for (let i=0; i<APP_DATA[fields[k]].data.length; ++i){
-            for(let j=0; j<selects.length; ++j){
-                option = document.createElement('option');
-                option.setAttribute('value',APP_DATA[fields[k]].data[i]);
-                option.innerHTML = APP_DATA[fields[k]].data[i];
-                selects[j].appendChild(option);
-            }
-        }
-    }
-
+}
+function read_local_data(key,errCallback,sucessCallback){
+    key = 'unbs_Jerm_'+key; // just to ensure keys dont clash accross different applications
+    localforage.getItem(key, function (err, value) {
+        if(err){errCallback(err);}
+        else{sucessCallback(value);}
+    });    
 }
 
 function toggle_prepaid(rb){
@@ -892,6 +934,80 @@ function _throw(e){
     throw e;
 }
 
+
+// ************************************************************************************************************
+function showSerialError(){
+    showToast('This application is NOT targeted for this device. Please talk to JERM Technology about this');
+}
+
+function init(){
+    // to bend text...include the CirleType.min.js file
+    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
+
+    readserial();
+
+    if(DEVICE_SERIAL_NUMBER!=TARGET_DEVICE){
+        showSerialError();
+        return;
+    }
+
+    let pages=[/*'personnel',*/'inspection','meter_details'];        
+
+    for(let i=0; i<pages.length; ++i){
+        initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
+            if(swipe_data.resultant=="right"){back(div_id);}
+            else if(swipe_data.resultant=="left"){next(div_id);}
+        },100,pages[i]);        
+    }
+
+    
+    document.addEventListener("backbutton", function(e){
+        e.stopPropagation();
+        
+        if(document.getElementById('personnel').style.display=='block'){
+            e.preventDefault();
+            back('personnel');
+        }else if(document.getElementById('inspection').style.display=='block'){
+            e.preventDefault();
+            back('inspection');
+        }else if(document.getElementById('meter_details').style.display=='block'){
+            e.preventDefault();
+            logout();
+        }else {
+            return true;
+        }
+    }, false);
+
+    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+
+    // populate data from data.js into html
+    let option, selects;
+    let fields = [
+        'districts','distributors','manufacturers','modals','ct_rations','vt_rations',
+        'connection_modes','accuracy_classes','rated_voltages','rated_currents',
+        'max_currents'];
+    for(let k=0; k<fields.length; ++k){
+        selects = document.getElementsByClassName(APP_DATA[fields[k]].class);
+        APP_DATA[fields[k]].data.sort();
+        APP_DATA[fields[k]].data.push('Other');
+        for (let i=0; i<APP_DATA[fields[k]].data.length; ++i){
+            for(let j=0; j<selects.length; ++j){
+                option = document.createElement('option');
+                option.setAttribute('value',APP_DATA[fields[k]].data[i]);
+                option.innerHTML = APP_DATA[fields[k]].data[i];
+                selects[j].appendChild(option);
+            }
+        }
+    }
+
+    // initiate saved reports array if not present
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){write_local_data('savedReports','[]',function(e){},function(v){});}
+        else{/*console.log(JSON.parse(value));*/}
+    });
+}
+
+
 window.onload = function(){
     if(!("deviceready" in window)){init();}
     else{
@@ -901,9 +1017,9 @@ window.onload = function(){
     }
       
     // place anything else you cant to run at startup in `init` NOT here!
-    /*
-    document.getElementById('uname').value = 'richard.kato:debug';
-    document.getElementById('pswd').value = '3a49da13542e0';
+    //*
+    document.getElementById('uname').value = 'richard.kato';
+    document.getElementById('pswd').value = '1234567b';
     login();
-    //*/  
+    //*/    
 }
