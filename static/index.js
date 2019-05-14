@@ -1,7 +1,7 @@
 "use strict";
 var UNBS_SERVERS = [
     'http://0.0.0.0:9988/api', 
-    'http://192.168.43.154:9988',
+    'http://192.168.43.154:9988/api',
     //'https://meters-dev.unbs.go.ug/api/',
 ];
 
