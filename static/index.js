@@ -20,51 +20,6 @@ var TARGET_DEVICE='03744098AV000487';//'03744098AV000487';
 
 var LOGIN_REF = {};
 
-String.prototype.toTitleCase = function () {
-    return this.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
-};
-
-String.prototype.toCamelCase = function (){
-    // convert this_code_here into thisCodeHere
-    if(this.indexOf('_')<0){return this;}
-
-    let str = this.split('_');
-
-    if(str.length==1){return this;}
-
-    for(let i=1;i<str.length;++i){str[i] = str[i][0]==str[i][0].toUpperCase()?str[i]:str[i].toTitleCase();}
-
-    return str.join('');
-};
-
-
-function _done_request(){
-    stop_loading();
-    
-    if(this.status===200){
-        if(this.onsucess){
-            this.onsucess(this.responseText, this.glue);
-        }
-    }else{
-        if(this.onfailure){
-            this.onfailure("reply code: "+this.status);
-        }
-    }
-}
-
-function _request_failed(){
-    console.log('server '+this.server+'...failed');
-
-    this.server++;
-    
-    if(this.server>=SERVERS.length){
-        showToast('failed to communicate with all servers. are you online?');
-        stop_loading();
-        return;
-    }
-    
-    request(this.uri,this.method,this.payload,this.onsucess,this.onfailure,this.server,this.glue, this._onprogress)
-}
 
 function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null, async=true){
     // glue will be passed on to onsucess along witht the server reply...
@@ -79,9 +34,9 @@ function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,g
         type: "POST",
         url: UNBS_SERVERS[server],
         data: JSON.stringify(payload),
-        complete:function(){},
+        complete:function(){stop_loading();},
         success: onsucess,
-        error:function(req){console.log(req);request(url,method,payload,onsucess,onfailure,++server,glue, onprogress,async);},
+        error:function(req){request(url,method,payload,onsucess,onfailure,++server,glue, onprogress,async);},
         dataType: "json",
         contentType: "application/json",
         processData: false,
@@ -512,15 +467,17 @@ function upload(prefix=''){
         }else{
             get_location(function(){
                     payload.data.location = LOCATION;
-
-                    request('','POST',{
-                            'action':'processverification',
-                            'device':{'serial':DEVICE_SERIAL_NUMBER},
-                            'session_id':SESSION_ID,
-                            'data':payload,},
+                    let _payload = {
+                        device:payload.device, 
+                        data:payload.data, 
+                        action:'processverification',
+                        session_id:payload.session_id,
+                    };
+                    
+                    request('','POST',_payload,
                         function(reply){
-                            if(!reply.status || reply.reply.error){
-                                flag_error(reply.reply.message);
+                            if(reply.error){
+                                flag_error(reply.message);
                                 return;
                             }
 
@@ -556,14 +513,17 @@ function upload(prefix=''){
             );        
         }
     }else{
-        request('','POST',{
-                'action':'processupdate', // ************************ this is yet to be provided by UNBS
-                'device':{'serial':DEVICE_SERIAL_NUMBER},
-                'session_id':SESSION_ID,
-                'data':payload,},
+        let _payload = {
+            device:payload.device, 
+            data:payload.data, 
+            action:'processupdate',
+            session_id:payload.session_id,
+        };
+
+        request('','POST',payload,
             function(reply){
-                if(!reply.status || reply.reply.error){
-                    flag_error(reply.reply.message);
+                if(!reply.status || reply.error){
+                    flag_error(reply.message);
                     return;
                 }
 
@@ -940,6 +900,10 @@ function _throw(e){
 }
 
 function upload_saved_reports(){
+    if(!SESSION_ID){
+        show_info('you dont have a session ID. please connect to internet, logout and login again to attain one');
+        return;
+    }
     read_local_data('savedReports',function(){}, function(value){
         if(!value){flag_error("storage error. saved reports seem to be missing");}
         else{
@@ -952,14 +916,21 @@ function upload_saved_reports(){
             for(let i=1; i<options.length; ++i){
                 if(options[i].children[0].checked && !options[i].children[0].getAttribute('value')){
                     showToast('uploading report '+(i)+'...');
-                    request('','POST',{
-                            'action':'processverification',
-                            'device':{'serial':DEVICE_SERIAL_NUMBER},
-                            'session_id':_data[i-1].session_id,
-                            'data':_data[i-1],},
+
+                    let _payload = {
+                        device:_data[i-1].device, 
+                        data:_data[i-1].data, 
+                        action:'processverification',
+                        session_id:SESSION_ID,//_data[i-1].session_id,
+                    };
+
+                    //console.log(SESSION_ID, _payload.session_id);
+
+                    request('','POST',_payload,
                         function(reply){
-                            if(!reply.status || reply.reply.error){
-                                flag_error(reply.reply.message);
+                            console.log(_payload,reply);
+                            if(reply.error){
+                                flag_error(reply.message);
                                 return;
                             }
                             
