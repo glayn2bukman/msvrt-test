@@ -1,8 +1,10 @@
 "use strict";
+var global = this; // will acess global variables with global.{VARNAMR}
+
 var UNBS_SERVERS = [
-    'http://0.0.0.0:9988/api', 
-    'http://192.168.43.154:9988/api',
-    //'https://meters-dev.unbs.go.ug/api/',
+    //'http://0.0.0.0:9988/api', 
+    //'http://192.168.43.154:9988/api',
+    'https://meters-dev.unbs.go.ug/api/',
 ];
 
 var SESSION_ID= '';
@@ -77,9 +79,9 @@ function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,g
         type: "POST",
         url: UNBS_SERVERS[server],
         data: JSON.stringify(payload),
-        complete:function(){stop_loading();},
+        complete:function(){},
         success: onsucess,
-        error:function(){request(url,method,payload,onsucess,onfailure,++server,glue, onprogress)},
+        error:function(req){console.log(req);request(url,method,payload,onsucess,onfailure,++server,glue, onprogress,async);},
         dataType: "json",
         contentType: "application/json",
         processData: false,
@@ -323,7 +325,7 @@ function login(){
                     if(credentials.uname==uname && credentials.pswd==pswd){
                         onsuccess({error:false});
                     }else{
-                        onsuccess({error:true, message:'Ivalid login credentials'});
+                        onsuccess({error:true, message:'Invalid login credentials'});
                     }
                 }
             });
@@ -598,7 +600,7 @@ function refresh(){
         document.getElementById('single_phase').checked=true,
         document.getElementById('three_phase').checked=false,
 
-        toggle_postpaid({checked:true});
+        toggle_postpaid({checked:false});
         toggle_single_phase({checked:true});
         toggle_sticker({checked:false});
         
@@ -1097,7 +1099,7 @@ window.onload = function(){
     }
       
     // place anything else you cant to run at startup in `init` NOT here!
-    //*
+    /*
     document.getElementById('uname').value = 'richard.kato';
     document.getElementById('pswd').value = '1234567b';
     login();
