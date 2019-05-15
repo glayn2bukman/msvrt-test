@@ -14,7 +14,7 @@ var BTPrinterName = 'Qsprinter';
 
 var EDITING = {}; // report being edited...
 
-var TARGET_DEVICE='03744098AV000487';
+var TARGET_DEVICE='';//'03744098AV000487';
 
 var LOGIN_REF = {};
 
@@ -64,7 +64,7 @@ function _request_failed(){
     request(this.uri,this.method,this.payload,this.onsucess,this.onfailure,this.server,this.glue, this._onprogress)
 }
 
-function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null){
+function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null, async=true){
     // glue will be passed on to onsucess along witht the server reply...
     if(server==UNBS_SERVERS.length){
         onfailure?onfailure():flag_error('failed to communicate with all UNBS servers. are we online?');
@@ -82,7 +82,8 @@ function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,g
         error:function(){request(url,method,payload,onsucess,onfailure,++server,glue, onprogress)},
         dataType: "json",
         contentType: "application/json",
-        processData: false
+        processData: false,
+        async:async,
     });    
 }
 
@@ -577,7 +578,7 @@ function showToast(msg,duration='long',position='bottom'){
         window.plugins.toast.show(msg,duration,position);
     }catch(e){
         // probably in browser where we dont have the toast plugin...
-        flag_error(msg);
+        console.log(msg);
     }
 }
 
@@ -590,16 +591,18 @@ function refresh(){
         forms[i].reset();
     }
 
-    document.getElementById('prepaid').checked=true, 
-    document.getElementById('postpaid').checked=false,
+    setTimeout(function(){
+        document.getElementById('prepaid').checked=true, 
+        document.getElementById('postpaid').checked=false,
 
-    document.getElementById('single_phase').checked=true,
-    document.getElementById('three_phase').checked=false,
+        document.getElementById('single_phase').checked=true,
+        document.getElementById('three_phase').checked=false,
 
-    toggle_postpaid({checked:true});
-    toggle_single_phase({checked:true});
-    toggle_sticker({checked:false});
-
+        toggle_postpaid({checked:true});
+        toggle_single_phase({checked:true});
+        toggle_sticker({checked:false});
+        
+    }, 500);
 }
 
 
@@ -655,7 +658,7 @@ function _print(){
 
     if(lines.length){print_data(lines);}
     
-    hide_modal('print_modal');
+    //hide_modal('print_modal');
 }
 
 function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,payload=null){
@@ -934,6 +937,83 @@ function _throw(e){
     throw e;
 }
 
+function upload_saved_reports(){
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){flag_error("storage error. saved reports seem to be missing");}
+        else{
+            let _data = JSON.parse(value);
+
+            let uploaded_reports = []; // an array of reports that were uploaded successfully
+
+            let mom = document.getElementById('saved_reports_div');
+            let options = mom.getElementsByTagName('label');
+            for(let i=1; i<options.length; ++i){
+                if(options[i].children[0].checked && !options[i].children[0].getAttribute('value')){
+                    showToast('uploading report '+(i)+'...');
+                    request('','POST',{
+                            'action':'processverification',
+                            'device':{'serial':DEVICE_SERIAL_NUMBER},
+                            'session_id':_data[i-1].session_id,
+                            'data':_data[i-1],},
+                        function(reply){
+                            if(!reply.status || reply.reply.error){
+                                flag_error(reply.reply.message);
+                                return;
+                            }
+                            
+                            uploaded_reports.push(i-1);
+                        },
+                        null,0,null,null,false);
+
+                }
+            }
+            
+            let new_data = [];
+            for (let i=0; i<_data.length; ++i){
+                if(uploaded_reports.indexOf(i)<0){new_data.push(_data[i]);}
+            }
+            
+            write_local_data('savedReports',JSON.stringify(new_data),function(err){},function(value){});
+            hide_modal('saved_reports_modal');
+            setTimeout(function(){showToast('reports uploaded successfully')},500);
+        }
+    });
+
+    
+}
+
+function select_all_saved_reports(cb){
+    let mom = document.getElementById('saved_reports_div');
+    let options = mom.getElementsByTagName('label');
+    for(let i=0; i<options.length; ++i){
+        options[i].children[0].checked = cb.checked;
+    }
+}
+
+function show_saved_reports(){
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){show_info('no saved reports found');}
+        else{
+            let data = JSON.parse(value);
+            
+            
+            
+            let mom = document.getElementById('saved_reports_div');
+            clear(mom);
+
+            mom.innerHTML = "<div class='checkbox'><label><input type='checkbox' value='all' onchange='select_all_saved_reports(this)'>Select All</label></div>";
+
+            for(let i=0; i<data.length; ++i){
+                mom.innerHTML += "<div class='checkbox'><label><input type='checkbox'>"+
+                data[i].data.verification.gps_time
+                +"</label></div>";
+            }
+                        
+            show_modal('saved_reports_modal');
+        }
+    });
+
+}
 
 // ************************************************************************************************************
 function showSerialError(){
@@ -1021,5 +1101,5 @@ window.onload = function(){
     document.getElementById('uname').value = 'richard.kato';
     document.getElementById('pswd').value = '1234567b';
     login();
-    //*/    
+    //*/
 }
