@@ -904,6 +904,7 @@ function upload_saved_reports(){
         show_info('you dont have a session ID. please connect to internet, logout and login again to attain one');
         return;
     }
+    hide_modal('saved_reports_modal');
     read_local_data('savedReports',function(){}, function(value){
         if(!value){flag_error("storage error. saved reports seem to be missing");}
         else{
