@@ -35,6 +35,24 @@
 
         <img id='watermark' src='data/logo.png' class='center'>
 
+        <div class="modal fade" id="saved_reports_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" style2="width:96%;" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Saved Reports</h4>
+              </div>
+              <div class="modal-body" id='saved_reports_div'>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Back</button>
+                <button type="button" class="btn btn-success" onclick="upload_saved_reports()">Upload</button>
+              </div>
+          </div>
+        </div></div>
+
+
         <div class="modal fade" id="print_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
           <div class="modal-dialog" style2="width:96%;" role="document">
             <div class="modal-content">
@@ -419,9 +437,12 @@
 
             <div style='color:#ff0;'><br>.
             <br>.
-                <span style='float:left;width:30%;'>.</span>
-                <span style='color:#43a;float:left;width:40%;text-align:center;' onclick='fetch_reports(this)'>Edit My Reports</span>
-                <span style='float:left;width:30%;'>.</span>
+                <span style='float:left;width:20%;'>.</span>
+                <span style='color:#43a;float:left;width:60%;text-align:center;border-top:1px solid #eee;padding-top:5px;'>
+                    <span onclick='fetch_reports(this)' style='float:left;'>Edit Report</span>
+                    <span style='float:right;' onclick='show_saved_reports()'>Saved Reports</span>
+                </span>
+                <span style='float:left;width:20%;'>.</span>
             </div>
         </form></div>
 
