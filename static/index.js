@@ -16,7 +16,7 @@ var BTPrinterName = 'Qsprinter';
 
 var EDITING = {}; // report being edited...
 
-var TARGET_DEVICE='03744098AV000487';//'03744098AV000487';
+var TARGET_DEVICE='S311802020797';//'03744098AV000487';
 
 var LOGIN_REF = {};
 
@@ -560,7 +560,7 @@ function refresh(){
         document.getElementById('single_phase').checked=true,
         document.getElementById('three_phase').checked=false,
 
-        toggle_postpaid({checked:false});
+        toggle_prepaid({checked:true});
         toggle_single_phase({checked:true});
         toggle_sticker({checked:false});
         
