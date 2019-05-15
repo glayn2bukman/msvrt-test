@@ -16,7 +16,7 @@ var BTPrinterName = 'Qsprinter';
 
 var EDITING = {}; // report being edited...
 
-var TARGET_DEVICE='';//'03744098AV000487';
+var TARGET_DEVICE='03744098AV000487';//'03744098AV000487';
 
 var LOGIN_REF = {};
 
