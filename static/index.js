@@ -947,7 +947,6 @@ function upload_saved_reports(){
             }
             
             write_local_data('savedReports',JSON.stringify(new_data),function(err){},function(value){});
-            hide_modal('saved_reports_modal');
             setTimeout(function(){showToast('reports uploaded successfully')},500);
         }
     });
@@ -969,7 +968,10 @@ function show_saved_reports(){
         else{
             let data = JSON.parse(value);
             
-            
+            if(!data.length){
+                show_info('no saved reports found');
+                return;
+            }
             
             let mom = document.getElementById('saved_reports_div');
             clear(mom);
