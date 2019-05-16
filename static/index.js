@@ -1,1 +1,1089 @@
-var _0x5726=["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6D\x65\x74\x65\x72\x73\x2D\x64\x65\x76\x2E\x75\x6E\x62\x73\x2E\x67\x6F\x2E\x75\x67\x2F\x61\x70\x69\x2F","","\x51\x73\x70\x72\x69\x6E\x74\x65\x72","\x53\x33\x31\x31\x38\x30\x32\x30\x32\x30\x37\x39\x37","\x6C\x65\x6E\x67\x74\x68","\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x63\x6F\x6D\x6D\x75\x6E\x69\x63\x61\x74\x65\x20\x77\x69\x74\x68\x20\x61\x6C\x6C\x20\x55\x4E\x42\x53\x20\x73\x65\x72\x76\x65\x72\x73\x2E\x20\x61\x72\x65\x20\x77\x65\x20\x6F\x6E\x6C\x69\x6E\x65\x3F","\x50\x4F\x53\x54","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x6A\x73\x6F\x6E","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x61\x6A\x61\x78","\x73\x65\x72\x69\x61\x6C","\x76\x61\x6C\x75\x65","\x74\x65\x78\x74","\x73\x63\x61\x6E\x20\x62\x61\x72\x63\x6F\x64\x65","\x73\x63\x61\x6E","\x62\x61\x72\x63\x6F\x64\x65\x53\x63\x61\x6E\x6E\x65\x72","\x70\x6C\x75\x67\x69\x6E\x73","\x2E\x20\x74\x68\x69\x73\x20\x69\x73\x20\x6C\x69\x6B\x65\x6C\x79\x20\x62\x65\x63\x61\x75\x73\x65\x20\x79\x6F\x75\x27\x72\x65\x20\x6F\x6E\x20\x50\x43","\x6F\x70\x61\x63\x69\x74\x79","\x73\x74\x79\x6C\x65","\x69\x6E\x73\x70\x65\x63\x74\x69\x6F\x6E","\x64\x69\x73\x70\x6C\x61\x79","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6E\x6F\x6E\x65","\x6D\x65\x74\x65\x72\x5F\x64\x65\x74\x61\x69\x6C\x73","\x62\x6C\x6F\x63\x6B","\x64\x65\x62\x75\x67","\x73\x74\x61\x74\x75\x73","\x6C\x6F\x67","\x20\x69\x73\x20\x62\x6C\x61\x6E\x6B\x21","\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x47\x50\x53\x28\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x29\x2C\x20\x79\x6F\x75\x20\x77\x6F\x6E\x74\x20\x73\x75\x62\x6D\x69\x74\x20\x74\x68\x65\x20\x72\x65\x70\x6F\x72\x74\x20\x69\x66\x20\x47\x50\x53\x20\x6F\x66\x66","\x63\x68\x65\x63\x6B","\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x47\x50\x53\x28\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x29\x2E\x20\x69\x66\x20\x69\x74\x73\x20\x6F\x6E\x20\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x20\x6D\x6F\x64\x65\x20\x74\x6F\x20\x48\x49\x47\x48\x20\x41\x43\x43\x55\x52\x41\x43\x59","\x47\x50\x53\x2D\x46\x41\x49\x4C\x45\x44","\x4F\x4D\x49\x54\x54\x45\x44","\x74\x69\x6D\x65","\x74\x69\x6D\x65\x73\x74\x61\x6D\x70","\x6C\x61\x74\x69\x74\x75\x64\x65","\x63\x6F\x6F\x72\x64\x73","\x6C\x6F\x6E\x67\x69\x74\x75\x64\x65","\x67\x70\x73\x20\x66\x61\x69\x6C\x65\x64\x2C\x20\x63\x6F\x6E\x74\x69\x6E\x75\x69\x6E\x67\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x63\x6F\x6F\x72\x64\x69\x6E\x61\x74\x65\x73\x2E\x2E\x2E","\x67\x65\x74\x43\x75\x72\x72\x65\x6E\x74\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x67\x65\x6F\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x75\x6E\x61\x6D\x65","\x70\x73\x77\x64","\x70\x6C\x65\x61\x73\x65\x20\x66\x69\x6C\x6C\x20\x69\x6E\x20\x62\x6F\x74\x68\x20\x66\x69\x65\x6C\x64\x73","\x65\x72\x72\x6F\x72","\x6D\x65\x73\x73\x61\x67\x65","\x6C\x6F\x67\x69\x6E","\x6E\x61\x6D\x65\x73","\x73\x65\x73\x73\x69\x6F\x6E\x5F\x69\x64","\x6C\x6F\x67\x69\x6E\x5F\x64\x69\x76","\x77\x61\x74\x65\x72\x6D\x61\x72\x6B","\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B","\x46\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x63\x6F\x6D\x6D\x75\x6E\x69\x63\x61\x74\x65\x20\x77\x69\x74\x68\x20\x61\x6C\x6C\x20\x55\x4E\x42\x53\x20\x73\x65\x72\x76\x65\x72\x73\x20\x61\x6E\x64\x20\x6E\x6F\x20\x6F\x66\x66\x6C\x69\x6E\x65\x20\x64\x61\x74\x61\x20\x69\x73\x20\x61\x76\x61\x69\x6C\x61\x62\x6C\x65","\x70\x61\x72\x73\x65","\x49\x6E\x76\x61\x6C\x69\x64\x20\x6C\x6F\x67\x69\x6E\x20\x63\x72\x65\x64\x65\x6E\x74\x69\x61\x6C\x73","\x64\x6F\x77\x6E","\x75\x70","\x72\x69\x67\x68\x74","\x6C\x65\x66\x74","\x74\x6F\x75\x63\x68\x73\x74\x61\x72\x74","\x73\x74\x6F\x70\x50\x72\x6F\x70\x61\x67\x61\x74\x69\x6F\x6E","\x73\x74\x61\x72\x74\x58","\x70\x61\x67\x65\x58","\x63\x68\x61\x6E\x67\x65\x64\x54\x6F\x75\x63\x68\x65\x73","\x73\x74\x61\x72\x74\x59","\x70\x61\x67\x65\x59","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x74\x6F\x75\x63\x68\x65\x6E\x64","\x6D\x6F\x75\x73\x65\x64\x6F\x77\x6E","\x63\x6C\x69\x65\x6E\x74\x58","\x63\x6C\x69\x65\x6E\x74\x59","\x6D\x6F\x75\x73\x65\x75\x70","\x6D\x61\x6E\x64\x61\x74\x6F\x72\x79","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x6E\x61\x6D\x65","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x74\x6F\x43\x61\x6D\x65\x6C\x43\x61\x73\x65","\x64\x61\x74\x65","\x69\x67\x6E\x6F\x72\x65","\x61\x67\x65\x6E\x74\x5F\x75\x6E\x61\x6D\x65","\x61\x67\x65\x6E\x74","\x64\x65\x76\x69\x63\x65","\x73\x65\x72\x69\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x64\x61\x74\x61","\x73\x6E","\x44\x65\x76\x69\x63\x65\x20\x53\x65\x72\x69\x61\x6C\x20\x4E\x75\x6D\x62\x65\x72\x3F","\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72","\x4D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72\x3F","\x6D\x6F\x64\x61\x6C","\x4D\x6F\x64\x61\x6C\x3F","\x70\x61\x6E","\x50\x61\x74\x74\x65\x72\x6E\x20\x41\x70\x70\x72\x6F\x76\x61\x6C\x20\x4E\x75\x6D\x62\x65\x72\x3F","\x63\x68\x65\x63\x6B\x65\x64","\x70\x72\x65\x70\x61\x69\x64","\x50\x52\x45\x50\x41\x49\x44","\x50\x4F\x53\x54\x50\x41\x49\x44","\x61\x63","\x41\x63\x63\x75\x72\x61\x63\x79\x20\x43\x6C\x61\x73\x73\x3F","\x72\x76","\x52\x61\x74\x65\x64\x20\x56\x6F\x6C\x74\x61\x67\x65\x3F","\x73\x69\x6E\x67\x6C\x65\x5F\x70\x68\x61\x73\x65","\x53\x49\x4E\x47\x4C\x45","\x54\x48\x52\x45\x45","\x6C\x6F\x63","\x4C\x6F\x63\x61\x74\x69\x6F\x6E\x3F","\x64\x69\x73\x74","\x44\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72\x3F","\x76\x69\x64","\x72\x63","\x52\x61\x74\x65\x64\x20\x43\x75\x72\x72\x65\x6E\x74\x3F","\x6D\x61\x78\x63","\x4D\x61\x78\x69\x6D\x75\x6D\x20\x43\x75\x72\x72\x65\x6E\x74\x3F","\x63\x62\x74","\x43\x72\x65\x64\x69\x74\x20\x42\x65\x66\x6F\x72\x65\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x63\x61\x74","\x43\x72\x65\x64\x69\x74\x20\x41\x66\x74\x65\x72\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x65\x62\x74","\x45\x6E\x65\x72\x67\x79\x20\x42\x65\x66\x6F\x72\x65\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x65\x61\x74","\x45\x6E\x65\x72\x67\x79\x20\x41\x66\x74\x65\x72\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x66\x69\x74\x6E","\x46\x72\x65\x65\x20\x49\x73\x73\x75\x65\x20\x54\x6F\x6B\x65\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3F","\x63\x6D","\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x20\x4D\x6F\x64\x65\x3F","\x63\x74\x72","\x43\x74\x20\x52\x61\x74\x69\x6F\x6E\x3F","\x76\x74\x72","\x56\x74\x20\x52\x61\x74\x69\x6F\x6E\x3F","\x6D\x74","\x4D\x65\x74\x65\x72\x20\x54\x69\x6D\x65\x3F","\x67\x70\x73\x5F\x74\x69\x6D\x65","\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x2D","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x67\x65\x74\x44\x61\x74\x65","\x20","\x67\x65\x74\x48\x6F\x75\x72\x73","\x3A","\x67\x65\x74\x4D\x69\x6E\x75\x74\x65\x73","\x67\x65\x74\x53\x65\x63\x6F\x6E\x64\x73","\x74\x6F","\x50\x41\x53\x53","\x46\x41\x49\x4C","\x74\x73","\x6D\x62\x6F","\x73\x63\x69","\x6C\x70","\x6D\x72\x70","\x6D\x63\x32\x63","\x6D\x6D\x76","\x63\x72\x62","\x70\x6F\x74","\x73\x74\x69\x63\x6B\x65\x72\x5F\x6E\x75\x6D\x62\x65\x72","\x73\x74\x69\x63\x6B\x65\x72\x5F\x71\x72\x63\x6F\x64\x65","\x53\x74\x69\x63\x6B\x65\x72\x20\x51\x52\x43\x6F\x64\x65\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x73\x68\x6F\x75\x6C\x64\x20\x62\x65\x20\x32\x30\x2B\x20\x63\x68\x61\x72\x61\x63\x74\x65\x72\x73\x20\x6C\x6F\x6E\x67","\x66\x74","\x59\x45\x53","\x4E\x4F","\x6D\x72","\x72\x65\x6D\x61\x72\x6B","\x52\x65\x6D\x61\x72\x6B\x3F","\x6C\x61\x62\x65\x6C","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x5F\x70\x72\x69\x6E\x74\x5F\x64\x69\x76","\x6D\x65\x74\x65\x72","\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72","\x6D\x6F\x64\x65\x6C","\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73","\x74\x79\x70\x65","\x66\x72\x65\x65\x5F\x69\x73\x73\x75\x65\x5F\x74\x6F\x6B\x65\x6E\x5F\x6E\x75\x6D\x62\x65\x72","\x69\x64","\x70\x61\x74\x74\x65\x72\x6E\x5F\x61\x70\x70\x72\x6F\x76\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72","\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65","\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74","\x6D\x61\x78\x69\x6D\x75\x6D\x5F\x63\x75\x72\x72\x65\x6E\x74","\x70\x68\x61\x73\x65","\x6D\x65\x74\x65\x72\x5F\x74\x69\x6D\x65","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65","\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E","\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E","\x63\x72\x65\x64\x69\x74\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74\x69\x6E\x67","\x63\x72\x65\x64\x69\x74\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67","\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74","\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74","\x74\x61\x6D\x70\x65\x72\x5F\x73\x77\x69\x74\x63\x68\x5F\x6F\x70\x65\x72\x61\x74\x69\x6E\x67\x5F\x77\x65\x6C\x6C","\x6D\x65\x74\x65\x72\x5F\x62\x6F\x64\x79\x5F\x77\x69\x74\x68\x6F\x75\x74\x5F\x76\x69\x73\x69\x61\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65","\x6E\x6F\x5F\x76\x69\x73\x69\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65","\x73\x63\x72\x65\x77\x5F\x63\x61\x70\x73\x5F\x61\x6E\x64\x5F\x62\x6F\x64\x79\x5F\x73\x65\x61\x6C\x5F\x69\x6E\x74\x61\x63\x74","\x6D\x65\x74\x65\x72\x5F\x6D\x61\x72\x6B\x69\x6E\x67\x73\x5F\x76\x69\x73\x69\x62\x6C\x65","\x6C\x65\x64\x5F\x70\x75\x6C\x73\x61\x74\x69\x6E\x67\x5F\x6F\x75\x74\x70\x75\x74\x5F\x66\x75\x6E\x63\x74\x69\x6F\x6E\x69\x6E\x67","\x6D\x65\x74\x65\x72\x5F\x72\x65\x63\x65\x69\x76\x69\x6E\x67\x5F\x70\x6F\x77\x65\x72","\x6D\x65\x74\x65\x72\x5F\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x5F\x74\x6F\x5F\x63\x69\x75","\x63\x61\x6E\x5F\x72\x65\x61\x64\x5F\x63\x72\x65\x64\x69\x74\x5F\x62\x61\x6C\x61\x6E\x63\x65\x5F\x61\x6E\x64\x5F\x72\x65\x67\x69\x73\x74\x65\x72\x73","\x6F\x76\x65\x72\x61\x6C\x6C\x5F\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x74\x65\x73\x74","\x66\x75\x72\x74\x68\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64","\x6D\x65\x74\x65\x72\x5F\x72\x65\x70\x6C\x61\x63\x65\x6D\x65\x6E\x74\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x63\x68\x69\x6C\x64\x72\x65\x6E","\x74\x69\x74\x6C\x65","\x70\x72\x6F\x63\x65\x73\x73\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E","\x64\x61\x74\x61\x20\x73\x65\x6E\x74\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x70\x72\x69\x6E\x74\x5F\x6D\x6F\x64\x61\x6C","\x73\x61\x76\x65\x64\x52\x65\x70\x6F\x72\x74\x73","\x70\x75\x73\x68","\x64\x61\x74\x61\x20\x73\x61\x76\x65\x64\x20\x6C\x6F\x63\x61\x6C\x6C\x79\x20\x61\x73\x20\x77\x65\x20\x63\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x63\x6F\x6D\x6D\x75\x6E\x69\x63\x61\x74\x65\x20\x77\x69\x74\x68\x20\x55\x4E\x42\x53\x20\x73\x65\x72\x76\x65\x72\x73","\x70\x72\x6F\x63\x65\x73\x73\x75\x70\x64\x61\x74\x65","\x64\x61\x74\x61\x20\x75\x70\x64\x61\x74\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x72\x65\x70\x6F\x72\x74\x73\x5F\x6D\x6F\x64\x61\x6C","\x6C\x6F\x6E\x67","\x62\x6F\x74\x74\x6F\x6D","\x73\x68\x6F\x77","\x74\x6F\x61\x73\x74","\x66\x6F\x72\x6D","\x72\x65\x73\x65\x74","\x70\x6F\x73\x74\x70\x61\x69\x64","\x74\x68\x72\x65\x65\x5F\x70\x68\x61\x73\x65","\x69\x6E\x64\x65\x78\x4F\x66","\x20\x69\x73\x20\x6E\x6F\x74\x20\x61\x6D\x6F\x6E\x67\x20\x74\x68\x65\x20\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64\x20\x64\x65\x76\x69\x63\x65\x73","\x70\x72\x69\x6E\x74\x69\x6E\x67\x20\x45\x52\x52\x4F\x52\x3A\x20","\x0A","\x70\x72\x69\x6E\x74\x54\x65\x78\x74","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x3A\x20","\x63\x6F\x6E\x6E\x65\x63\x74","\x6C\x69\x73\x74","\x3E","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x73\x6C\x69\x63\x65","\x3A\x20","\x70\x6C\x65\x61\x73\x65\x20\x63\x68\x65\x63\x6B\x20\x61\x74\x20\x6C\x65\x61\x73\x74\x20\x6F\x6E\x65\x20\x69\x74\x65\x6D","\x61\x64\x64\x72\x65\x73\x73","\x55\x6E\x6B\x6E\x6F\x77\x6E","\x61\x64\x64\x72\x65\x73\x73\x5F\x6C\x69\x6E\x65","\x47\x45\x54","\x68\x74\x74\x70\x3A\x2F\x2F\x6E\x6F\x6D\x69\x6E\x61\x74\x69\x6D\x2E\x6F\x70\x65\x6E\x73\x74\x72\x65\x65\x74\x6D\x61\x70\x2E\x6F\x72\x67\x2F\x72\x65\x76\x65\x72\x73\x65\x3F\x66\x6F\x72\x6D\x61\x74\x3D\x6A\x73\x6F\x6E\x26\x6C\x6F\x6E\x3D","\x6C\x6F\x6E","\x26\x6C\x61\x74\x3D","\x6C\x61\x74","\x52\x45\x56\x45\x52\x53\x45\x2D\x47\x45\x4F\x43\x4F\x44\x45\x3A\x3A\x20\x73\x65\x72\x76\x65\x72\x20\x72\x65\x70\x6C\x79\x20\x73\x74\x61\x74\x75\x73\x3A\x20","\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x66\x65\x74\x63\x68\x20\x61\x64\x64\x72\x65\x73\x73\x2C\x20\x63\x6F\x6E\x74\x69\x6E\x75\x69\x6E\x67\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x69\x74","\x64\x69\x73\x70\x6C\x61\x79\x5F\x6E\x61\x6D\x65","\x65\x5F","\x65\x5F\x70\x72\x65\x70\x61\x69\x64","\x65\x5F\x70\x6F\x73\x74\x70\x61\x69\x64","\x65\x5F\x73\x69\x6E\x67\x6C\x65\x5F\x70\x68\x61\x73\x65","\x65\x5F\x74\x68\x72\x65\x65\x5F\x70\x68\x61\x73\x65","\x65\x5F\x73\x6E","\x65\x5F\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72","\x65\x5F\x6D\x6F\x64\x61\x6C","\x65\x5F\x70\x61\x6E","\x65\x5F\x61\x63","\x65\x5F\x72\x76","\x65\x5F\x6C\x6F\x63","\x65\x5F\x64\x69\x73\x74","\x65\x5F\x76\x69\x64","\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x5F\x69\x64","\x65\x5F\x72\x63","\x65\x5F\x6D\x61\x78\x63","\x65\x5F\x63\x62\x74","\x65\x5F\x63\x61\x74","\x65\x5F\x65\x62\x74","\x65\x5F\x65\x61\x74","\x65\x5F\x66\x69\x74\x6E","\x65\x5F\x63\x6D","\x65\x5F\x63\x74\x72","\x65\x5F\x76\x74\x72","\x65\x5F\x6D\x74","\x65\x5F\x74\x6F","\x65\x5F\x74\x73","\x65\x5F\x6D\x62\x6F","\x65\x5F\x73\x63\x69","\x65\x5F\x6C\x70","\x65\x5F\x6D\x72\x70","\x65\x5F\x6D\x63\x32\x63","\x65\x5F\x6D\x6D\x76","\x65\x5F\x63\x72\x62","\x65\x5F\x70\x6F\x74","\x65\x5F\x66\x74","\x65\x5F\x6D\x72","\x65\x5F\x72\x65\x6D\x61\x72\x6B","\x72\x65\x6D\x61\x72\x6B\x73","\x72\x65\x70\x6F\x72\x74\x73\x5F\x6C\x69\x73\x74\x5F\x64\x69\x76","\x54\x69\x6D\x65","\x72\x65\x70\x6F\x72\x74\x2D\x74\x69\x6D\x65","\x4D\x65\x74\x65\x72","\x72\x65\x70\x6F\x72\x74\x2D\x6D\x65\x74\x65\x72","\x54\x6F\x6B\x65\x6E","\x72\x65\x70\x6F\x72\x74\x2D\x74\x6F\x6B\x65\x6E","\x73\x70\x61\x6E","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x63\x6C\x61\x73\x73","\x72\x65\x70\x6F\x72\x74\x2D\x74\x69\x74\x6C\x65\x20\x72\x65\x70\x6F\x72\x74\x2D\x63\x6F\x6C\x2D\x74\x69\x74\x6C\x65\x20","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x73\x70\x6C\x69\x74","\x64\x69\x76","\x72\x65\x70\x6F\x72\x74\x2D\x64\x61\x74\x65\x20\x72\x65\x70\x6F\x72\x74\x2D\x74\x69\x74\x6C\x65","\x20\x72\x65\x70\x6F\x72\x74\x2D\x6F\x64\x64","\x6D\x61\x72\x67\x69\x6E\x42\x6F\x74\x74\x6F\x6D","\x35\x70\x78","\x6F\x6E\x63\x6C\x69\x63\x6B","\x6E\x6F\x74\x20\x79\x65\x74\x20\x69\x6D\x70\x6C\x65\x6D\x65\x6E\x74\x65\x64","\x61\x70\x70\x65\x6E\x64","\x66\x65\x74\x63\x68\x69\x6E\x67\x20\x64\x61\x74\x61\x2E\x2E\x2E","\x72\x65\x70\x6F\x72\x74\x73","\x70\x6F\x73\x74","\x45\x64\x69\x74\x20\x4D\x79\x20\x52\x65\x70\x6F\x72\x74\x73","\x72\x65\x70\x6F\x72\x74\x73\x5F\x64\x69\x76","\x75\x6E\x62\x73\x5F\x4A\x65\x72\x6D\x5F","\x73\x65\x74\x49\x74\x65\x6D","\x67\x65\x74\x49\x74\x65\x6D","\x70\x72\x65\x70\x61\x69\x64\x2D\x6F\x6E\x6C\x79","\x74\x68\x72\x65\x65\x2D\x70\x68\x61\x73\x65\x2D\x6F\x6E\x6C\x79","\x73\x74\x69\x63\x6B\x65\x72","\x79\x6F\x75\x20\x64\x6F\x6E\x74\x20\x68\x61\x76\x65\x20\x61\x20\x73\x65\x73\x73\x69\x6F\x6E\x20\x49\x44\x2E\x20\x70\x6C\x65\x61\x73\x65\x20\x63\x6F\x6E\x6E\x65\x63\x74\x20\x74\x6F\x20\x69\x6E\x74\x65\x72\x6E\x65\x74\x2C\x20\x6C\x6F\x67\x6F\x75\x74\x20\x61\x6E\x64\x20\x6C\x6F\x67\x69\x6E\x20\x61\x67\x61\x69\x6E\x20\x74\x6F\x20\x61\x74\x74\x61\x69\x6E\x20\x6F\x6E\x65","\x73\x61\x76\x65\x64\x5F\x72\x65\x70\x6F\x72\x74\x73\x5F\x6D\x6F\x64\x61\x6C","\x73\x74\x6F\x72\x61\x67\x65\x20\x65\x72\x72\x6F\x72\x2E\x20\x73\x61\x76\x65\x64\x20\x72\x65\x70\x6F\x72\x74\x73\x20\x73\x65\x65\x6D\x20\x74\x6F\x20\x62\x65\x20\x6D\x69\x73\x73\x69\x6E\x67","\x73\x61\x76\x65\x64\x5F\x72\x65\x70\x6F\x72\x74\x73\x5F\x64\x69\x76","\x75\x70\x6C\x6F\x61\x64\x69\x6E\x67\x20\x72\x65\x70\x6F\x72\x74\x20","\x2E\x2E\x2E","\x72\x65\x70\x6F\x72\x74\x73\x20\x75\x70\x6C\x6F\x61\x64\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x6E\x6F\x20\x73\x61\x76\x65\x64\x20\x72\x65\x70\x6F\x72\x74\x73\x20\x66\x6F\x75\x6E\x64","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E\x3C\x6C\x61\x62\x65\x6C\x3E\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x20\x76\x61\x6C\x75\x65\x3D\x27\x61\x6C\x6C\x27\x20\x6F\x6E\x63\x68\x61\x6E\x67\x65\x3D\x27\x73\x65\x6C\x65\x63\x74\x5F\x61\x6C\x6C\x5F\x73\x61\x76\x65\x64\x5F\x72\x65\x70\x6F\x72\x74\x73\x28\x74\x68\x69\x73\x29\x27\x3E\x53\x65\x6C\x65\x63\x74\x20\x41\x6C\x6C\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x64\x69\x76\x3E","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E\x3C\x6C\x61\x62\x65\x6C\x3E\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E","\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x64\x69\x76\x3E","\x54\x68\x69\x73\x20\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x20\x69\x73\x20\x4E\x4F\x54\x20\x74\x61\x72\x67\x65\x74\x65\x64\x20\x66\x6F\x72\x20\x74\x68\x69\x73\x20\x64\x65\x76\x69\x63\x65\x2E\x20\x50\x6C\x65\x61\x73\x65\x20\x74\x61\x6C\x6B\x20\x74\x6F\x20\x4A\x45\x52\x4D\x20\x54\x65\x63\x68\x6E\x6F\x6C\x6F\x67\x79\x20\x61\x62\x6F\x75\x74\x20\x74\x68\x69\x73","\x72\x61\x64\x69\x75\x73","\x72\x65\x73\x75\x6C\x74\x61\x6E\x74","\x62\x61\x63\x6B\x62\x75\x74\x74\x6F\x6E","\x70\x65\x72\x73\x6F\x6E\x6E\x65\x6C","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x64\x69\x73\x74\x72\x69\x63\x74\x73","\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72\x73","\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72\x73","\x6D\x6F\x64\x61\x6C\x73","\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E\x73","\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E\x73","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65\x73","\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73\x65\x73","\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65\x73","\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74\x73","\x6D\x61\x78\x5F\x63\x75\x72\x72\x65\x6E\x74\x73","\x73\x6F\x72\x74","\x4F\x74\x68\x65\x72","\x6F\x70\x74\x69\x6F\x6E","\x5B\x5D","\x6F\x6E\x6C\x6F\x61\x64","\x64\x65\x76\x69\x63\x65\x72\x65\x61\x64\x79"];_0x5726[0];var global=this;var UNBS_SERVERS=[_0x5726[1]];var SESSION_ID=_0x5726[2];var DEVICE_SERIAL_NUMBER=_0x5726[2];var LOCATION=null;var AGENT={uname:_0x5726[2],names:_0x5726[2]};var BTPrinterName=_0x5726[3];var EDITING={};var TARGET_DEVICE=_0x5726[4];var LOGIN_REF={};function request(_0x6a42xc,_0x6a42xd,_0x6a42xe= null,_0x6a42xf= null,_0x6a42x10= null,_0x6a42x11= 0,_0x6a42x12= null,_0x6a42x13= null,_0x6a42x14= true){if(_0x6a42x11== UNBS_SERVERS[_0x5726[5]]){_0x6a42x10?_0x6a42x10():flag_error(_0x5726[6]);return};start_loading();jQuery[_0x5726[11]]({type:_0x5726[7],url:UNBS_SERVERS[_0x6a42x11],data:JSON[_0x5726[8]](_0x6a42xe),complete:function(){stop_loading()},success:_0x6a42xf,error:function(_0x6a42x15){request(_0x6a42xc,_0x6a42xd,_0x6a42xe,_0x6a42xf,_0x6a42x10,++_0x6a42x11,_0x6a42x12,_0x6a42x13,_0x6a42x14)},dataType:_0x5726[9],contentType:_0x5726[10],processData:false,async:_0x6a42x14})}function readserial(){try{DEVICE_SERIAL_NUMBER= device[_0x5726[12]]}catch(e){}}function readbarcode(_0x6a42x18){try{cordova[_0x5726[18]][_0x5726[17]][_0x5726[16]](function(_0x6a42x19){_0x6a42x18[_0x5726[13]]= _0x6a42x19[_0x5726[14]]},function(_0x6a42x1a){},{preferFrontCamera:false,showFlipCameraButton:true,showTorchButton:true,torchOn:false,prompt:_0x5726[15]})}catch(e){flag_error(e+ _0x5726[19])}}function increase_opacity(_0x6a42x1c,_0x6a42x1d){_0x6a42x1d+= 0.1;if(_0x6a42x1d>= 1){return};_0x6a42x1c[_0x5726[21]][_0x5726[20]]= _0x6a42x1d+ _0x5726[2];setTimeout(increase_opacity,150,_0x6a42x1c,_0x6a42x1d)}function back(_0x6a42x1f){if(_0x6a42x1f== _0x5726[22]){document[_0x5726[24]](_0x5726[22])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[27];increase_opacity(document[_0x5726[24]](_0x5726[26]),0.0)}else {if(_0x6a42x1f== _0x5726[26]){logout()}}}function next(_0x6a42x1f){if(_0x6a42x1f== _0x5726[22]){}else {if(_0x6a42x1f== _0x5726[26]){let _0x6a42x21=validate_form(_0x5726[26]);if(DEVICE_SERIAL_NUMBER!= _0x5726[28]&&  !_0x6a42x21[_0x5726[29]]){flag_error(_0x6a42x21[_0x5726[30]]+ _0x5726[31]);return};document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[22])[_0x5726[21]][_0x5726[23]]= _0x5726[27];increase_opacity(document[_0x5726[24]](_0x5726[22]),0.0)}}}function GPSon(){let _0x6a42x23=true;try{CheckGPS[_0x5726[33]](function(){},function _0x6a42x24(){showToast(_0x5726[32]);_0x6a42x23= false})}catch(e){return _0x6a42x23};return _0x6a42x23}function get_location(_0x6a42x26= null,_0x6a42x27= null,_0x6a42x28= null,_0x6a42x29= true){if(!GPSon()){showToast(_0x5726[34]);return};try{if(_0x6a42x29){start_loading()};LOCATION= {"\x74\x69\x6D\x65":0,"\x6C\x61\x74\x69\x74\x75\x64\x65":0.00000,"\x6C\x6F\x6E\x67\x69\x74\x75\x64\x65":0.00000,"\x61\x64\x64\x72\x65\x73\x73\x5F\x6C\x69\x6E\x65":_0x5726[35],"\x61\x64\x64\x72\x65\x73\x73":_0x5726[35],"\x6C\x6F\x63\x61\x6C\x69\x74\x79":_0x5726[36],"\x73\x75\x62\x5F\x6C\x6F\x63\x61\x6C\x69\x74\x79":_0x5726[36],"\x61\x64\x6D\x69\x6E\x5F\x61\x72\x65\x61":_0x5726[36],"\x73\x75\x62\x5F\x61\x64\x6D\x69\x6E\x5F\x61\x72\x65\x61":_0x5726[36],"\x66\x65\x61\x74\x75\x72\x65\x5F\x6E\x61\x6D\x65":_0x5726[36]};navigator[_0x5726[44]][_0x5726[43]](function(_0x6a42x2a){LOCATION[_0x5726[37]]= _0x6a42x2a[_0x5726[38]];LOCATION[_0x5726[39]]= _0x6a42x2a[_0x5726[40]][_0x5726[39]];LOCATION[_0x5726[41]]= _0x6a42x2a[_0x5726[40]][_0x5726[41]];reverseGeocode({lat:_0x6a42x2a[_0x5726[40]][_0x5726[39]],lon:_0x6a42x2a[_0x5726[40]][_0x5726[41]]},_0x6a42x26,_0x6a42x27)},function(_0x6a42x1a){stop_loading();showToast(_0x5726[42]);console[_0x5726[30]](_0x5726[42]);if(_0x6a42x26){_0x6a42x26(_0x6a42x27)}},{timeout:50000})}catch(e){if(_0x6a42x28){_0x6a42x28(e)}}}function login(){if(DEVICE_SERIAL_NUMBER!= TARGET_DEVICE){showSerialError();return};let _0x6a42x2c=document[_0x5726[24]](_0x5726[45])[_0x5726[13]];let _0x6a42x2d=document[_0x5726[24]](_0x5726[46])[_0x5726[13]];if(!_0x6a42x2c[_0x5726[5]]||  !_0x6a42x2d[_0x5726[5]]){flag_error(_0x5726[47]);return};let _0x6a42x2e=function(_0x6a42x2f){if(_0x6a42x2f[_0x5726[48]]){flag_error(_0x6a42x2f[_0x5726[49]]);return};write_local_data(_0x5726[50],JSON[_0x5726[8]]({uname:_0x6a42x2c,pswd:_0x6a42x2d}),function(_0x6a42x30){},function(_0x6a42x31){});AGENT[_0x5726[45]]= _0x6a42x2c;AGENT[_0x5726[51]]= _0x6a42x2f[_0x5726[51]];SESSION_ID= _0x6a42x2f[_0x5726[52]];document[_0x5726[24]](_0x5726[53])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[27];document[_0x5726[24]](_0x5726[46])[_0x5726[13]]= _0x5726[2];if(!GPSon()){showToast(_0x5726[32])};document[_0x5726[24]](_0x5726[54])[_0x5726[21]][_0x5726[23]]= _0x5726[55]};request(_0x5726[2],_0x5726[7],{"\x61\x63\x74\x69\x6F\x6E":_0x5726[50],"\x64\x65\x76\x69\x63\x65":{"\x73\x65\x72\x69\x61\x6C":DEVICE_SERIAL_NUMBER},"\x6C\x6F\x67\x69\x6E\x5F\x69\x64":_0x6a42x2c,"\x70\x61\x73\x73\x77\x6F\x72\x64":_0x6a42x2d},_0x6a42x2e,function(){read_local_data(_0x5726[50],function(){},function(_0x6a42x32){if(!_0x6a42x32){flag_error(_0x5726[56])}else {let _0x6a42x33=JSON[_0x5726[57]](_0x6a42x32);if(_0x6a42x33[_0x5726[45]]== _0x6a42x2c&& _0x6a42x33[_0x5726[46]]== _0x6a42x2d){_0x6a42x2e({error:false})}else {_0x6a42x2e({error:true,message:_0x5726[58]})}}})},0,null,null)}var _swipe={startX:0,startY:0};function initSwipe(_0x6a42x36,_0x6a42x26,_0x6a42x37= 20,_0x6a42x38= null){return;function _get_swipe_directions(_0x6a42x3a,_0x6a42x3b,_0x6a42x37){_0x6a42x3a= _0x6a42x3a< 0?((_0x6a42x3a>  -_0x6a42x37)?0:_0x6a42x3a):((_0x6a42x3a< _0x6a42x37)?0:_0x6a42x3a);_0x6a42x3b= _0x6a42x3b< 0?((_0x6a42x3b>  -_0x6a42x37)?0:_0x6a42x3a):((_0x6a42x3b< _0x6a42x37)?0:_0x6a42x3b);var _0x6a42x3c=(_0x6a42x3b> 0)?_0x5726[59]:(_0x6a42x3b< 0?_0x5726[60]:_0x5726[25]);var _0x6a42x3d=(_0x6a42x3a> 0)?_0x5726[61]:(_0x6a42x3a< 0?_0x5726[62]:_0x5726[25]);_0x6a42x3b= _0x6a42x3b< 0?-1* _0x6a42x3b:_0x6a42x3b;_0x6a42x3a= _0x6a42x3a< 0?-1* _0x6a42x3a:_0x6a42x3a;var _0x6a42x3e=_0x6a42x3b> _0x6a42x3a?_0x6a42x3c:_0x6a42x3d;var _0x6a42x3f={horizontal:_0x6a42x3d,vertical:_0x6a42x3c,resultant:_0x6a42x3e};return _0x6a42x3f}_0x6a42x36[_0x5726[70]](_0x5726[63],function(_0x6a42x30){_0x6a42x30[_0x5726[64]]();_swipe[_0x5726[65]]= _0x6a42x30[_0x5726[67]][0][_0x5726[66]];_swipe[_0x5726[68]]= _0x6a42x30[_0x5726[67]][0][_0x5726[69]]});_0x6a42x36[_0x5726[70]](_0x5726[71],function(_0x6a42x30){_0x6a42x30[_0x5726[64]]();var _0x6a42x3a=_0x6a42x30[_0x5726[67]][0][_0x5726[66]]- _swipe[_0x5726[65]],_0x6a42x3b=_0x6a42x30[_0x5726[67]][0][_0x5726[69]]- _swipe[_0x5726[68]];_0x6a42x26(_get_swipe_directions(_0x6a42x3a,_0x6a42x3b,_0x6a42x37),_0x6a42x38)});_0x6a42x36[_0x5726[70]](_0x5726[72],function(_0x6a42x30){_0x6a42x30[_0x5726[64]]();_swipe[_0x5726[65]]= _0x6a42x30[_0x5726[73]];_swipe[_0x5726[68]]= _0x6a42x30[_0x5726[74]]});_0x6a42x36[_0x5726[70]](_0x5726[75],function(_0x6a42x30){_0x6a42x30[_0x5726[64]]();var _0x6a42x3a=_0x6a42x30[_0x5726[73]]- _swipe[_0x5726[65]],_0x6a42x3b=_0x6a42x30[_0x5726[74]]- _swipe[_0x5726[68]];_0x6a42x26(_get_swipe_directions(_0x6a42x3a,_0x6a42x3b,_0x6a42x37),_0x6a42x38)})}function validate_form(_0x6a42x41){return {status:true,log:_0x5726[2]};let _0x6a42x42=document[_0x5726[24]](_0x6a42x41)[_0x5726[77]](_0x5726[76]);let _0x6a42x43=_0x5726[2];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x42[_0x5726[5]];++_0x6a42x44){if(!_0x6a42x42[_0x6a42x44][_0x5726[13]][_0x5726[5]]){_0x6a42x43= _0x6a42x42[_0x6a42x44][_0x5726[79]](_0x5726[78]);break}};if(!_0x6a42x43[_0x5726[5]]){return {status:true,log:_0x5726[2]}};return {status:false,log:_0x6a42x43[_0x5726[80]]()}}function upload(_0x6a42x46= _0x5726[2]){let _0x6a42x47;let _0x6a42xe={"\x69\x67\x6E\x6F\x72\x65":{date:(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[82]][_0x5726[81]]:document[_0x5726[24]](_0x5726[81])[_0x5726[13]]),agent_uname:(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[82]][_0x5726[83]]:AGENT[_0x5726[45]]),agent:(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[82]][_0x5726[84]]:AGENT[_0x5726[51]]),device:(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[82]][_0x5726[85]]:DEVICE_SERIAL_NUMBER)},"\x64\x65\x76\x69\x63\x65":{"\x73\x65\x72\x69\x61\x6C":(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[85]][_0x5726[86]]:DEVICE_SERIAL_NUMBER)},"\x73\x65\x73\x73\x69\x6F\x6E\x5F\x69\x64":(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[52]]:SESSION_ID),"\x64\x61\x74\x61":{"\x6C\x6F\x63\x61\x74\x69\x6F\x6E":(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[88]][_0x5726[87]]:{}),"\x6D\x65\x74\x65\x72":{"\x73\x65\x72\x69\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[89])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[90])),"\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[91])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[92])),"\x6D\x6F\x64\x65\x6C":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[93])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[94])),"\x70\x61\x74\x74\x65\x72\x6E\x5F\x61\x70\x70\x72\x6F\x76\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[95])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[96])),"\x74\x79\x70\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[98])[_0x5726[97]]?_0x5726[99]:_0x5726[100]),"\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[101])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[102])),"\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[103])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[104])),"\x70\x68\x61\x73\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[105])[_0x5726[97]]?_0x5726[106]:_0x5726[107]),"\x6C\x6F\x63\x61\x74\x69\x6F\x6E":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[108])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[109])),"\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[110])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[111]))},"\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E":{"\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x5F\x69\x64":document[_0x5726[24]](_0x6a42x46+ _0x5726[112])[_0x5726[13]],"\x69\x64":document[_0x5726[24]](_0x6a42x46+ _0x5726[112])[_0x5726[13]],"\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[113])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[114])),"\x6D\x61\x78\x69\x6D\x75\x6D\x5F\x63\x75\x72\x72\x65\x6E\x74":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[115])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[116])),"\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[103])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[104])),"\x63\x72\x65\x64\x69\x74\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74\x69\x6E\x67":((!document[_0x5726[24]](_0x6a42x46+ _0x5726[98])[_0x5726[97]])?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[117])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[118])),"\x63\x72\x65\x64\x69\x74\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67":((!document[_0x5726[24]](_0x6a42x46+ _0x5726[98])[_0x5726[97]])?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[119])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[120])),"\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[121])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[122])),"\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[123])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[124])),"\x66\x72\x65\x65\x5F\x69\x73\x73\x75\x65\x5F\x74\x6F\x6B\x65\x6E\x5F\x6E\x75\x6D\x62\x65\x72":((!document[_0x5726[24]](_0x6a42x46+ _0x5726[98])[_0x5726[97]])?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[125])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[126])),"\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[105])[_0x5726[97]]?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[127])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[128])),"\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E":(document[_0x5726[24]](_0x6a42x46+ _0x5726[105])[_0x5726[97]]?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[129])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[130])),"\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E":(document[_0x5726[24]](_0x6a42x46+ _0x5726[105])[_0x5726[97]]?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[131])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[132])),"\x6D\x65\x74\x65\x72\x5F\x74\x69\x6D\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[105])[_0x5726[97]]?_0x5726[2]:_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[133])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[134])),"\x67\x70\x73\x5F\x74\x69\x6D\x65":(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[88]][_0x5726[136]][_0x5726[135]]:(_0x6a42x47=  new Date,_0x6a42x47= _0x6a42x47[_0x5726[137]]()+ _0x5726[138]+ (_0x6a42x47[_0x5726[139]]()+ 1)+ _0x5726[138]+ _0x6a42x47[_0x5726[140]]()+ _0x5726[141]+ _0x6a42x47[_0x5726[142]]()+ _0x5726[143]+ _0x6a42x47[_0x5726[144]]()+ _0x5726[143]+ _0x6a42x47[_0x5726[145]]())),"\x6E\x6F\x5F\x76\x69\x73\x69\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[146])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x74\x61\x6D\x70\x65\x72\x5F\x73\x77\x69\x74\x63\x68\x5F\x6F\x70\x65\x72\x61\x74\x69\x6E\x67\x5F\x77\x65\x6C\x6C":(document[_0x5726[24]](_0x6a42x46+ _0x5726[149])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x6D\x65\x74\x65\x72\x5F\x62\x6F\x64\x79\x5F\x77\x69\x74\x68\x6F\x75\x74\x5F\x76\x69\x73\x69\x61\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[150])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x73\x63\x72\x65\x77\x5F\x63\x61\x70\x73\x5F\x61\x6E\x64\x5F\x62\x6F\x64\x79\x5F\x73\x65\x61\x6C\x5F\x69\x6E\x74\x61\x63\x74":(document[_0x5726[24]](_0x6a42x46+ _0x5726[151])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x6C\x65\x64\x5F\x70\x75\x6C\x73\x61\x74\x69\x6E\x67\x5F\x6F\x75\x74\x70\x75\x74\x5F\x66\x75\x6E\x63\x74\x69\x6F\x6E\x69\x6E\x67":(document[_0x5726[24]](_0x6a42x46+ _0x5726[152])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x6D\x65\x74\x65\x72\x5F\x72\x65\x63\x65\x69\x76\x69\x6E\x67\x5F\x70\x6F\x77\x65\x72":(document[_0x5726[24]](_0x6a42x46+ _0x5726[153])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x6D\x65\x74\x65\x72\x5F\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x5F\x74\x6F\x5F\x63\x69\x75":(document[_0x5726[24]](_0x6a42x46+ _0x5726[154])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x6D\x65\x74\x65\x72\x5F\x6D\x61\x72\x6B\x69\x6E\x67\x73\x5F\x76\x69\x73\x69\x62\x6C\x65":(document[_0x5726[24]](_0x6a42x46+ _0x5726[155])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x63\x61\x6E\x5F\x72\x65\x61\x64\x5F\x63\x72\x65\x64\x69\x74\x5F\x62\x61\x6C\x61\x6E\x63\x65\x5F\x61\x6E\x64\x5F\x72\x65\x67\x69\x73\x74\x65\x72\x73":(document[_0x5726[24]](_0x6a42x46+ _0x5726[156])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x6F\x76\x65\x72\x61\x6C\x6C\x5F\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x74\x65\x73\x74":(document[_0x5726[24]](_0x6a42x46+ _0x5726[157])[_0x5726[97]]?_0x5726[147]:_0x5726[148]),"\x73\x74\x69\x63\x6B\x65\x72\x5F\x6E\x75\x6D\x62\x65\x72":(_0x6a42x46[_0x5726[5]]?EDITING[_0x5726[88]][_0x5726[136]][_0x5726[158]]:(document[_0x5726[24]](_0x6a42x46+ _0x5726[157])[_0x5726[97]]?(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[159])[_0x5726[13]],((_0x6a42x47[_0x5726[5]]>= 20)?_0x6a42x47:_throw(_0x5726[160]))):_0x5726[2])),"\x66\x75\x72\x74\x68\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64":(document[_0x5726[24]](_0x6a42x46+ _0x5726[161])[_0x5726[97]]?_0x5726[162]:_0x5726[163]),"\x6D\x65\x74\x65\x72\x5F\x72\x65\x70\x6C\x61\x63\x65\x6D\x65\x6E\x74\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64":(document[_0x5726[24]](_0x6a42x46+ _0x5726[164])[_0x5726[97]]?_0x5726[162]:_0x5726[163]),"\x72\x65\x6D\x61\x72\x6B\x73":(_0x6a42x47= document[_0x5726[24]](_0x6a42x46+ _0x5726[165])[_0x5726[13]],_0x6a42x47[_0x5726[5]]?_0x6a42x47:_throw(_0x5726[166]))}}};{let _0x6a42x48=document[_0x5726[24]](_0x5726[169])[_0x5726[168]](_0x5726[167]);let _0x6a42x49=[[_0x5726[136],_0x5726[135]],[_0x5726[170],_0x5726[87]],[_0x5726[170],_0x5726[91]],[_0x5726[170],_0x5726[171]],[_0x5726[170],_0x5726[172]],[_0x5726[170],_0x5726[86]],[_0x5726[170],_0x5726[173]],[_0x5726[170],_0x5726[174]],[_0x5726[136],_0x5726[175]],[_0x5726[136],_0x5726[176]],[_0x5726[170],_0x5726[177]],[_0x5726[136],_0x5726[178]],[_0x5726[136],_0x5726[179]],[_0x5726[136],_0x5726[180]],[_0x5726[170],_0x5726[181]],[_0x5726[136],_0x5726[182]],[_0x5726[136],_0x5726[183]],[_0x5726[136],_0x5726[184]],[_0x5726[136],_0x5726[185]],[_0x5726[136],_0x5726[186]],[_0x5726[136],_0x5726[187]],[_0x5726[136],_0x5726[188]],[_0x5726[136],_0x5726[189]],[_0x5726[136],_0x5726[190]],[_0x5726[136],_0x5726[191]],[_0x5726[136],_0x5726[192]],[_0x5726[136],_0x5726[193]],[_0x5726[136],_0x5726[194]],[_0x5726[136],_0x5726[195]],[_0x5726[136],_0x5726[196]],[_0x5726[136],_0x5726[197]],[_0x5726[136],_0x5726[198]],[_0x5726[136],_0x5726[199]],[_0x5726[136],_0x5726[200]],[_0x5726[136],_0x5726[201]]];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x48[_0x5726[5]];++_0x6a42x44){_0x6a42x48[_0x6a42x44][_0x5726[203]][0][_0x5726[202]](_0x5726[13],_0x6a42xe[_0x5726[88]][_0x6a42x49[_0x6a42x44][0]][_0x6a42x49[_0x6a42x44][1]]);_0x6a42x48[_0x6a42x44][_0x5726[202]](_0x5726[204],_0x6a42xe[_0x5726[88]][_0x6a42x49[_0x6a42x44][0]][_0x6a42x49[_0x6a42x44][1]])}}if(!_0x6a42x46[_0x5726[5]]){if(!GPSon()){showToast(_0x5726[32]);return}else {get_location(function(){_0x6a42xe[_0x5726[88]][_0x5726[87]]= LOCATION;let _0x6a42x4a={device:_0x6a42xe[_0x5726[85]],data:_0x6a42xe[_0x5726[88]],action:_0x5726[205],session_id:_0x6a42xe[_0x5726[52]]};request(_0x5726[2],_0x5726[7],_0x6a42x4a,function(_0x6a42x2f){if(_0x6a42x2f[_0x5726[48]]){flag_error(_0x6a42x2f[_0x5726[49]]);return};show_success(_0x5726[206]);refresh();document[_0x5726[24]](_0x5726[22])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[27];show_modal(_0x5726[207])},function(){read_local_data(_0x5726[208],function(){},function(_0x6a42x32){let _0x6a42x4b;if(_0x6a42x32){_0x6a42x4b= JSON[_0x5726[57]](_0x6a42x32)}else {_0x6a42x4b= []};_0x6a42x4b[_0x5726[209]](_0x6a42xe);write_local_data(_0x5726[208],JSON[_0x5726[8]](_0x6a42x4b),function(_0x6a42x30){},function(_0x6a42x31){});show_success(_0x5726[210]);refresh();document[_0x5726[24]](_0x5726[22])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[27];show_modal(_0x5726[207])})},0,null,null)},null,showToast,true)}}else {let _0x6a42x4a={device:_0x6a42xe[_0x5726[85]],data:_0x6a42xe[_0x5726[88]],action:_0x5726[211],session_id:_0x6a42xe[_0x5726[52]]};request(_0x5726[2],_0x5726[7],_0x6a42xe,function(_0x6a42x2f){if(!_0x6a42x2f[_0x5726[29]]|| _0x6a42x2f[_0x5726[48]]){flag_error(_0x6a42x2f[_0x5726[49]]);return};show_success(_0x5726[212]);hide_modal(_0x5726[213]);done_editting_reports()},null,0,null,null)}}function showToast(_0x6a42x4d,_0x6a42x4e= _0x5726[214],_0x6a42x4f= _0x5726[215]){try{window[_0x5726[18]][_0x5726[217]][_0x5726[216]](_0x6a42x4d,_0x6a42x4e,_0x6a42x4f)}catch(e){console[_0x5726[30]](_0x6a42x4d)}}function refresh(){LOCATION= null;let _0x6a42x51=document[_0x5726[168]](_0x5726[218]);for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x51[_0x5726[5]];++_0x6a42x44){_0x6a42x51[_0x6a42x44][_0x5726[219]]()};setTimeout(function(){document[_0x5726[24]](_0x5726[98])[_0x5726[97]]= true,document[_0x5726[24]](_0x5726[220])[_0x5726[97]]= false,document[_0x5726[24]](_0x5726[105])[_0x5726[97]]= true,document[_0x5726[24]](_0x5726[221])[_0x5726[97]]= false,toggle_prepaid({checked:true});toggle_single_phase({checked:true});toggle_sticker({checked:false})},500)}function print_data(_0x6a42x53){try{BTPrinter[_0x5726[230]](function(_0x6a42x54){if(_0x6a42x54[_0x5726[222]](BTPrinterName)< 0){show_info(BTPrinterName+ _0x5726[223]);return};BTPrinter[_0x5726[229]](function(_0x6a42x55){for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x53[_0x5726[5]];++_0x6a42x44){BTPrinter[_0x5726[226]](function(_0x6a42x55){;},function(_0x6a42x1a){flag_error(_0x5726[224]+ _0x6a42x1a)},_0x6a42x53[_0x6a42x44]+ _0x5726[225])};BTPrinter[_0x5726[227]](function(_0x6a42x55){;},function(_0x6a42x1a){;},BTPrinterName)},function(_0x6a42x1a){show_info(_0x5726[228]+ _0x6a42x1a)},BTPrinterName)},function(_0x6a42x1a){show_info(_0x6a42x1a)})}catch(e){flag_error(e)}}function _print(){let _0x6a42x48=document[_0x5726[24]](_0x5726[169])[_0x5726[168]](_0x5726[167]);let _0x6a42x53=[];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x48[_0x5726[5]];++_0x6a42x44){if(_0x6a42x48[_0x6a42x44][_0x5726[203]][0][_0x5726[97]]){_0x6a42x53[_0x5726[209]](_0x6a42x48[_0x6a42x44][_0x5726[232]][_0x5726[233]](_0x6a42x48[_0x6a42x44][_0x5726[232]][_0x5726[222]](_0x5726[231])+ 1,_0x6a42x48[_0x6a42x44][_0x5726[232]][_0x5726[5]])+ _0x5726[234]+ _0x6a42x48[_0x6a42x44][_0x5726[203]][0][_0x5726[13]])}};if(_0x6a42x53[_0x5726[5]]){print_data(_0x6a42x53)}else {show_info(_0x5726[235])}}function reverseGeocode(_0x6a42x58= {lat:0.3129344,lon:32.5861376},_0x6a42x26= null,_0x6a42xe= null){if(LOCATION){LOCATION[_0x5726[236]]= _0x5726[237];LOCATION[_0x5726[238]]= _0x5726[237]};$[_0x5726[11]]({type:_0x5726[239],url:_0x5726[240]+ _0x6a42x58[_0x5726[241]]+ _0x5726[242]+ _0x6a42x58[_0x5726[243]],async:true,complete:function(_0x6a42x59){if(_0x6a42x59[_0x5726[29]]&& _0x6a42x59[_0x5726[29]]!= 200){showToast(_0x5726[244]+ _0x6a42x59[_0x5726[29]])};stop_loading();if(_0x6a42x26){_0x6a42x26(_0x6a42xe)}},error:function(_0x6a42x59,_0x6a42x5a,_0x6a42x5b){showToast(_0x5726[245]);console[_0x5726[30]](_0x5726[245])},success:function(_0x6a42x2f){LOCATION[_0x5726[236]]= _0x6a42x2f[_0x5726[246]];LOCATION[_0x5726[238]]= _0x6a42x2f[_0x5726[246]]},timeout:10000})}function send_report_update(){upload(_0x5726[247])}function edit_report(_0x6a42x5e){EDITING= this[_0x5726[88]];let _0x6a42x5f,_0x6a42x60;(EDITING[_0x5726[88]][_0x5726[170]][_0x5726[174]]== _0x5726[99])?(_0x6a42x5f= true,document[_0x5726[24]](_0x5726[248])[_0x5726[97]]= true,document[_0x5726[24]](_0x5726[249])[_0x5726[97]]= false,toggle_prepaid({checked:true})):(_0x6a42x5f= false,document[_0x5726[24]](_0x5726[248])[_0x5726[97]]= false,document[_0x5726[24]](_0x5726[249])[_0x5726[97]]= true,toggle_postpaid({checked:true}));(EDITING[_0x5726[88]][_0x5726[170]][_0x5726[181]]== _0x5726[106])?(_0x6a42x60= true,document[_0x5726[24]](_0x5726[250])[_0x5726[97]]= true,document[_0x5726[24]](_0x5726[251])[_0x5726[97]]= false,toggle_single_phase({checked:true})):(_0x6a42x60= false,document[_0x5726[24]](_0x5726[250])[_0x5726[97]]= false,document[_0x5726[24]](_0x5726[251])[_0x5726[97]]= true,toggle_three_phase({checked:true}));document[_0x5726[24]](_0x5726[252])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[86]];document[_0x5726[24]](_0x5726[253])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[91]];document[_0x5726[24]](_0x5726[254])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[172]];document[_0x5726[24]](_0x5726[255])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[177]];document[_0x5726[24]](_0x5726[256])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[173]];document[_0x5726[24]](_0x5726[257])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[178]];document[_0x5726[24]](_0x5726[258])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[87]];document[_0x5726[24]](_0x5726[259])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[170]][_0x5726[171]];document[_0x5726[24]](_0x5726[260])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[176]];document[_0x5726[24]](_0x5726[260])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[261]];document[_0x5726[24]](_0x5726[262])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[179]];document[_0x5726[24]](_0x5726[263])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[180]];document[_0x5726[24]](_0x5726[257])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[178]];document[_0x5726[24]](_0x5726[264])[_0x5726[13]]= ((!_0x6a42x5f)?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[186]]);document[_0x5726[24]](_0x5726[265])[_0x5726[13]]= ((!_0x6a42x5f)?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[187]]);document[_0x5726[24]](_0x5726[266])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[188]];document[_0x5726[24]](_0x5726[267])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[189]];document[_0x5726[24]](_0x5726[268])[_0x5726[13]]= ((!_0x6a42x5f)?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[175]]);document[_0x5726[24]](_0x5726[269])[_0x5726[13]]= (_0x6a42x60?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[183]]);document[_0x5726[24]](_0x5726[270])[_0x5726[13]]= (_0x6a42x60?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[184]]);document[_0x5726[24]](_0x5726[271])[_0x5726[13]]= (_0x6a42x60?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[185]]);document[_0x5726[24]](_0x5726[272])[_0x5726[13]]= (_0x6a42x60?_0x5726[2]:EDITING[_0x5726[88]][_0x5726[136]][_0x5726[182]]);document[_0x5726[24]](_0x5726[273])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[192]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[274])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[190]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[275])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[191]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[276])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[193]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[277])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[195]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[278])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[196]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[279])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[197]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[280])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[194]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[281])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[198]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[282])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[199]]== _0x5726[147]?true:false);document[_0x5726[24]](_0x5726[283])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[200]]== _0x5726[162]?true:false);document[_0x5726[24]](_0x5726[284])[_0x5726[97]]= (EDITING[_0x5726[88]][_0x5726[136]][_0x5726[201]]== _0x5726[162]?true:false);document[_0x5726[24]](_0x5726[285])[_0x5726[13]]= EDITING[_0x5726[88]][_0x5726[136]][_0x5726[286]];show_modal(_0x5726[213])}function populate_reports(_0x6a42x55){let _0x6a42x62=_0x5726[2],_0x6a42x1f,_0x6a42x63,_0x6a42x64;let _0x6a42x65=document[_0x5726[24]](_0x5726[287]);clear(_0x6a42x65);let _0x6a42x66=[[_0x5726[288],_0x5726[289]],[_0x5726[290],_0x5726[291]],[_0x5726[292],_0x5726[293]]];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x66[_0x5726[5]];++_0x6a42x44){_0x6a42x63= document[_0x5726[295]](_0x5726[294]);_0x6a42x63[_0x5726[202]](_0x5726[296],_0x5726[297]+ _0x6a42x66[_0x6a42x44][1]);_0x6a42x63[_0x5726[232]]= _0x6a42x66[_0x6a42x44][0];_0x6a42x65[_0x5726[298]](_0x6a42x63)};for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x55[_0x5726[5]];++_0x6a42x44){if(!_0x6a42x55[_0x6a42x44][1][_0x5726[88]]){continue};if(_0x6a42x55[_0x6a42x44][0][_0x5726[299]](_0x5726[141])[0]!= _0x6a42x62){_0x6a42x62= _0x6a42x55[_0x6a42x44][0][_0x5726[299]](_0x5726[141])[0];_0x6a42x1f= document[_0x5726[295]](_0x5726[300]);_0x6a42x1f[_0x5726[202]](_0x5726[296],_0x5726[301]);_0x6a42x1f[_0x5726[232]]= _0x6a42x62;_0x6a42x65[_0x5726[298]](_0x6a42x1f)};_0x6a42x64= _0x6a42x55[_0x6a42x44][1][_0x5726[82]][_0x5726[81]][_0x5726[299]](_0x5726[141])[1][_0x5726[233]](0,5);_0x6a42x66= [[_0x6a42x64,_0x5726[289]],[_0x6a42x55[_0x6a42x44][1][_0x5726[88]][_0x5726[170]][_0x5726[86]]?_0x6a42x55[_0x6a42x44][1][_0x5726[88]][_0x5726[170]][_0x5726[86]]:_0x5726[138],_0x5726[291]],[_0x6a42x55[_0x6a42x44][1][_0x5726[88]][_0x5726[136]][_0x5726[175]]?_0x6a42x55[_0x6a42x44][1][_0x5726[88]][_0x5726[136]][_0x5726[175]]:_0x5726[138],_0x5726[293]]];for(let _0x6a42x67=0;_0x6a42x67< _0x6a42x66[_0x5726[5]];++_0x6a42x67){_0x6a42x63= document[_0x5726[295]](_0x5726[294]);_0x6a42x63[_0x5726[202]](_0x5726[296],_0x6a42x66[_0x6a42x67][1]+ ((_0x6a42x44% 2)?_0x5726[302]:_0x5726[2]));_0x6a42x63[_0x5726[21]][_0x5726[303]]= _0x5726[304];_0x6a42x63[_0x5726[232]]= _0x6a42x66[_0x6a42x67][0];_0x6a42x65[_0x5726[298]](_0x6a42x63);if(_0x6a42x66[_0x6a42x67][1]== _0x5726[291]){_0x6a42x63[_0x5726[88]]= _0x6a42x55[_0x6a42x44][1];_0x6a42x63[_0x5726[305]]= edit_report}}}}function fetch_reports(_0x6a42x69){{show_info(_0x5726[306]);return}let _0x6a42x6a= new FormData();_0x6a42x6a[_0x5726[307]](_0x5726[85],DEVICE_SERIAL_NUMBER);_0x6a42x69[_0x5726[232]]= _0x5726[308];request(URIs[_0x5726[309]],_0x5726[310],_0x6a42x6a,function(_0x6a42x2f){_0x6a42x2f= JSON[_0x5726[57]](_0x6a42x2f);_0x6a42x69[_0x5726[232]]= _0x5726[311];if(!_0x6a42x2f[_0x5726[29]]){flag_error(_0x6a42x2f[_0x5726[30]]);return};document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[312])[_0x5726[21]][_0x5726[23]]= _0x5726[27];populate_reports(_0x6a42x2f[_0x5726[88]])},flag_error)}function done_editting_reports(){document[_0x5726[24]](_0x5726[312])[_0x5726[21]][_0x5726[23]]= _0x5726[25];document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]= _0x5726[27]}function write_local_data(_0x6a42x6d,_0x6a42x32,_0x6a42x6e,_0x6a42x6f){_0x6a42x6d= _0x5726[313]+ _0x6a42x6d;localforage[_0x5726[314]](_0x6a42x6d,_0x6a42x32,function(_0x6a42x1a){if(_0x6a42x1a){_0x6a42x6e(_0x6a42x1a)}else {_0x6a42x6f(_0x6a42x6d)}})}function read_local_data(_0x6a42x6d,_0x6a42x6e,_0x6a42x6f){_0x6a42x6d= _0x5726[313]+ _0x6a42x6d;localforage[_0x5726[315]](_0x6a42x6d,function(_0x6a42x1a,_0x6a42x32){if(_0x6a42x1a){_0x6a42x6e(_0x6a42x1a)}else {_0x6a42x6f(_0x6a42x32)}})}function toggle_prepaid(_0x6a42x72){let _0x6a42x73=document[_0x5726[77]](_0x5726[316]);for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x73[_0x5726[5]];++_0x6a42x44){if(_0x6a42x72[_0x5726[97]]){_0x6a42x73[_0x6a42x44][_0x5726[21]][_0x5726[23]]= _0x5726[27]}else {_0x6a42x73[_0x6a42x44][_0x5726[21]][_0x5726[23]]= _0x5726[25]}}}function toggle_postpaid(_0x6a42x72){toggle_prepaid({checked:false})}function toggle_three_phase(_0x6a42x72){let _0x6a42x73=document[_0x5726[77]](_0x5726[317]);for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x73[_0x5726[5]];++_0x6a42x44){if(_0x6a42x72[_0x5726[97]]){_0x6a42x73[_0x6a42x44][_0x5726[21]][_0x5726[23]]= _0x5726[27]}else {_0x6a42x73[_0x6a42x44][_0x5726[21]][_0x5726[23]]= _0x5726[25]}}}function toggle_single_phase(_0x6a42x72){toggle_three_phase({checked:false})}function toggle_sticker(_0x6a42x78){let _0x6a42x79=document[_0x5726[77]](_0x5726[318]);for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x79[_0x5726[5]];++_0x6a42x44){if(_0x6a42x78[_0x5726[97]]){_0x6a42x79[_0x6a42x44][_0x5726[21]][_0x5726[23]]= _0x5726[27]}else {_0x6a42x79[_0x6a42x44][_0x5726[21]][_0x5726[23]]= _0x5726[25]}}}function _throw(_0x6a42x30){flag_error(_0x6a42x30);throw _0x6a42x30}function upload_saved_reports(){if(!SESSION_ID){show_info(_0x5726[319]);return};hide_modal(_0x5726[320]);read_local_data(_0x5726[208],function(){},function(_0x6a42x32){if(!_0x6a42x32){flag_error(_0x5726[321])}else {let _0x6a42x4b=JSON[_0x5726[57]](_0x6a42x32);let _0x6a42x7c=[];let _0x6a42x65=document[_0x5726[24]](_0x5726[322]);let _0x6a42x48=_0x6a42x65[_0x5726[168]](_0x5726[167]);for(let _0x6a42x44=1;_0x6a42x44< _0x6a42x48[_0x5726[5]];++_0x6a42x44){if(_0x6a42x48[_0x6a42x44][_0x5726[203]][0][_0x5726[97]]&&  !_0x6a42x48[_0x6a42x44][_0x5726[203]][0][_0x5726[79]](_0x5726[13])){showToast(_0x5726[323]+ (_0x6a42x44)+ _0x5726[324]);let _0x6a42x4a={device:_0x6a42x4b[_0x6a42x44- 1][_0x5726[85]],data:_0x6a42x4b[_0x6a42x44- 1][_0x5726[88]],action:_0x5726[205],session_id:SESSION_ID};request(_0x5726[2],_0x5726[7],_0x6a42x4a,function(_0x6a42x2f){console[_0x5726[30]](_0x6a42x4a,_0x6a42x2f);if(_0x6a42x2f[_0x5726[48]]){flag_error(_0x6a42x2f[_0x5726[49]]);return};_0x6a42x7c[_0x5726[209]](_0x6a42x44- 1)},null,0,null,null,false)}};let _0x6a42x7d=[];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x4b[_0x5726[5]];++_0x6a42x44){if(_0x6a42x7c[_0x5726[222]](_0x6a42x44)< 0){_0x6a42x7d[_0x5726[209]](_0x6a42x4b[_0x6a42x44])}};write_local_data(_0x5726[208],JSON[_0x5726[8]](_0x6a42x7d),function(_0x6a42x1a){},function(_0x6a42x32){});setTimeout(function(){showToast(_0x5726[325])},500)}})}function select_all_saved_reports(_0x6a42x78){let _0x6a42x65=document[_0x5726[24]](_0x5726[322]);let _0x6a42x48=_0x6a42x65[_0x5726[168]](_0x5726[167]);for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x48[_0x5726[5]];++_0x6a42x44){_0x6a42x48[_0x6a42x44][_0x5726[203]][0][_0x5726[97]]= _0x6a42x78[_0x5726[97]]}}function show_saved_reports(){read_local_data(_0x5726[208],function(){},function(_0x6a42x32){if(!_0x6a42x32){show_info(_0x5726[326])}else {let _0x6a42x55=JSON[_0x5726[57]](_0x6a42x32);if(!_0x6a42x55[_0x5726[5]]){show_info(_0x5726[326]);return};let _0x6a42x65=document[_0x5726[24]](_0x5726[322]);clear(_0x6a42x65);_0x6a42x65[_0x5726[232]]= _0x5726[327];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x55[_0x5726[5]];++_0x6a42x44){_0x6a42x65[_0x5726[232]]+= _0x5726[328]+ _0x6a42x55[_0x6a42x44][_0x5726[88]][_0x5726[136]][_0x5726[135]]+ _0x5726[329]};show_modal(_0x5726[320])}})}function showSerialError(){showToast(_0x5726[330])}function init(){ new CircleType(document[_0x5726[24]](_0x5726[204]))[_0x5726[331]](190);readserial();if(DEVICE_SERIAL_NUMBER!= TARGET_DEVICE){showSerialError();return};let _0x6a42x82=[_0x5726[22],_0x5726[26]];for(let _0x6a42x44=0;_0x6a42x44< _0x6a42x82[_0x5726[5]];++_0x6a42x44){initSwipe(document[_0x5726[24]](_0x6a42x82[_0x6a42x44]),function(_0x6a42x3f,_0x6a42x83){if(_0x6a42x3f[_0x5726[332]]== _0x5726[61]){back(_0x6a42x83)}else {if(_0x6a42x3f[_0x5726[332]]== _0x5726[62]){next(_0x6a42x83)}}},100,_0x6a42x82[_0x6a42x44])};document[_0x5726[70]](_0x5726[333],function(_0x6a42x30){_0x6a42x30[_0x5726[64]]();if(document[_0x5726[24]](_0x5726[334])[_0x5726[21]][_0x5726[23]]== _0x5726[27]){_0x6a42x30[_0x5726[335]]();back(_0x5726[334])}else {if(document[_0x5726[24]](_0x5726[22])[_0x5726[21]][_0x5726[23]]== _0x5726[27]){_0x6a42x30[_0x5726[335]]();back(_0x5726[22])}else {if(document[_0x5726[24]](_0x5726[26])[_0x5726[21]][_0x5726[23]]== _0x5726[27]){_0x6a42x30[_0x5726[335]]();logout()}else {return true}}}},false);if(!GPSon()){showToast(_0x5726[32])};let _0x6a42x84,_0x6a42x85;let _0x6a42x86=[_0x5726[336],_0x5726[337],_0x5726[338],_0x5726[339],_0x5726[340],_0x5726[341],_0x5726[342],_0x5726[343],_0x5726[344],_0x5726[345],_0x5726[346]];for(let _0x6a42x87=0;_0x6a42x87< _0x6a42x86[_0x5726[5]];++_0x6a42x87){_0x6a42x85= document[_0x5726[77]](APP_DATA[_0x6a42x86[_0x6a42x87]][_0x5726[296]]);APP_DATA[_0x6a42x86[_0x6a42x87]][_0x5726[88]][_0x5726[347]]();APP_DATA[_0x6a42x86[_0x6a42x87]][_0x5726[88]][_0x5726[209]](_0x5726[348]);for(let _0x6a42x44=0;_0x6a42x44< APP_DATA[_0x6a42x86[_0x6a42x87]][_0x5726[88]][_0x5726[5]];++_0x6a42x44){for(let _0x6a42x67=0;_0x6a42x67< _0x6a42x85[_0x5726[5]];++_0x6a42x67){_0x6a42x84= document[_0x5726[295]](_0x5726[349]);_0x6a42x84[_0x5726[202]](_0x5726[13],APP_DATA[_0x6a42x86[_0x6a42x87]][_0x5726[88]][_0x6a42x44]);_0x6a42x84[_0x5726[232]]= APP_DATA[_0x6a42x86[_0x6a42x87]][_0x5726[88]][_0x6a42x44];_0x6a42x85[_0x6a42x67][_0x5726[298]](_0x6a42x84)}}};read_local_data(_0x5726[208],function(){},function(_0x6a42x32){if(!_0x6a42x32){write_local_data(_0x5726[208],_0x5726[350],function(_0x6a42x30){},function(_0x6a42x31){})}else {}})}window[_0x5726[351]]= function(){if(!(_0x5726[352] in  window)){init()}else {document[_0x5726[70]](_0x5726[352],function(){init()},false)}}
+"use strict";
+var global = this; // will acess global variables with global.{VARNAMR}
+
+var UNBS_SERVERS = [
+    //'http://0.0.0.0:9988/api', 
+    //'http://192.168.43.154:9988/api',
+    'https://meters-dev.unbs.go.ug/api/',
+];
+
+var SESSION_ID= '';
+var DEVICE_SERIAL_NUMBER = ''
+var LOCATION = null;
+var AGENT = {uname:'',names:''};
+
+var BTPrinterName = 'Qsprinter';
+
+var EDITING = {}; // report being edited...
+
+var TARGET_DEVICE='S311802020797';//'03744098AV000487';
+
+var LOGIN_REF = {};
+
+
+function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null, async=true){
+    // glue will be passed on to onsucess along witht the server reply...
+    if(server==UNBS_SERVERS.length){
+        onfailure?onfailure():flag_error('failed to communicate with all UNBS servers. are we online?');
+        // save the payload(data) at this point
+        return;
+    }
+
+    start_loading();
+    jQuery.ajax({
+        type: "POST",
+        url: UNBS_SERVERS[server],
+        data: JSON.stringify(payload),
+        complete:function(){stop_loading();},
+        success: onsucess,
+        error:function(req){request(url,method,payload,onsucess,onfailure,++server,glue, onprogress,async);},
+        dataType: "json",
+        contentType: "application/json",
+        processData: false,
+        async:async,
+    });    
+}
+
+function readserial(){
+    try{
+        DEVICE_SERIAL_NUMBER = device.serial;
+    }catch(e){
+        
+    }
+}
+
+function readbarcode(entry){
+    /* in the config.xml file, add the barcode scanner with
+    
+        <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+
+        and NOT just
+        
+        <plugin name="phonegap-plugin-barcodescanner" />
+    
+    */
+    try{
+        cordova.plugins.barcodeScanner.scan(
+            function(result){
+                entry/*document.getElementById('sn')*/.value = result.text;
+                //show_success(result.cancelled+':'+result.text+':'+result.format);
+            },
+            function(err){
+                //flag_error(err);
+            },
+            {
+                preferFrontCamera:false,
+                showFlipCameraButton:true,
+                showTorchButton:true,
+                torchOn:false,
+                prompt:'scan barcode',
+            }
+        );
+    }catch(e){
+        flag_error(e+'. this is likely because you\'re on PC');
+    }
+}
+
+function increase_opacity(el,opacity){
+    opacity += .1;
+    if (opacity>=1){return;}
+    
+    el.style.opacity = opacity+'';
+    setTimeout(increase_opacity,150,el,opacity);
+}
+
+function back(div){
+    /*if(div=='personnel'){
+        document.getElementById('personnel').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }else*/ if(div=='inspection'){
+        document.getElementById('inspection').style.display='none';
+        document.getElementById('meter_details').style.display='block';
+        increase_opacity(document.getElementById('meter_details'),0.0);
+    }else if(div=='meter_details'){
+        logout();       
+    }
+}
+function next(div){
+    /*if(div=='personnel'){
+    }else */if(div=='inspection'){
+        //document.getElementById('inspection').style.display='none';
+        //document.getElementById('personnel').style.display='block';
+        //increase_opacity(document.getElementById('personnel'),0.0);
+    }else if(div=='meter_details'){
+        let validation = validate_form('meter_details');
+        if(DEVICE_SERIAL_NUMBER!='debug' && !validation.status){
+            flag_error(validation.log+' is blank!');
+            return;
+        }
+        document.getElementById('meter_details').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }
+}
+
+function GPSon(){
+    let status = true;
+    try{
+        /*
+            the CheckGPS module is included in the config.xml by
+            
+            <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
+
+        */
+        CheckGPS.check(function(){
+            //GPS is enabled!
+          },
+          function fail(){
+            //GPS is disabled!
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            status = false;
+          });
+    }catch(e){
+        return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
+    }
+    return status;
+}
+
+function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
+    /*
+        in the config.xml, add
+        
+        <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+
+        and NOT just
+
+        <plugin name="cordova-plugin-geolocation" />
+
+    */
+
+    //if(LOCATION){return;}
+    //*
+    if(!GPSon()){
+        showToast('please turn on your GPS(location). if its on please turn location mode to HIGH ACCURACY');
+        return;
+    }
+    //*/
+    
+    try{
+        if(show_loading){start_loading();}
+        
+        LOCATION = {
+            'time':0,
+            'latitude':0.00000, 
+            'longitude':0.00000,
+            'address_line':'GPS-FAILED',
+            'address':'GPS-FAILED',
+
+            "locality": "OMITTED",
+            "sub_locality": "OMITTED",
+            "admin_area": "OMITTED",
+            "sub_admin_area": "OMITTED",
+            "feature_name": "OMITTED",
+        };
+
+        navigator.geolocation.getCurrentPosition(
+            function(pos){
+                /*    
+                    position.coords.latitude
+                    position.coords.longitude
+                    position.coords.altitude
+                    position.coords.accuracy
+                    position.coords.altitudeAccuracy
+                    position.coords.heading
+                    position.coords.speed
+                    position.timestamp
+                */
+                //if(show_loading){stop_loading();}
+                
+                LOCATION.time = pos.timestamp;
+                LOCATION.latitude = pos.coords.latitude; 
+                LOCATION.longitude = pos.coords.longitude;
+
+                // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+                // so that it may call the callback when its ready!
+                reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+                
+            },
+            function(err){
+                stop_loading();
+                showToast('gps failed, continuing without coordinates...');
+                console.log('gps failed, continuing without coordinates...');
+                if(callback){callback(callback_payload);}
+            },
+            
+            {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+        );
+    }catch(e){
+        if(err_callback){err_callback(e);}
+    }
+    
+}
+
+function login(){
+    show_info('online?'+isOnline());
+
+    if(DEVICE_SERIAL_NUMBER!=TARGET_DEVICE){
+        showSerialError();
+        return;
+    }
+
+    // send login credentials ALONG WITH the device serial number to the server to check the login
+
+    let uname = document.getElementById('uname').value;
+    let pswd = document.getElementById('pswd').value;
+
+    if(!uname.length || !pswd.length){
+        flag_error('please fill in both fields');
+        return;
+    }
+
+    let onsuccess = function(reply){
+            if(reply.error){
+                flag_error(reply.message);
+                return;
+            }
+
+            write_local_data('login',JSON.stringify({uname:uname, pswd:pswd}),function(e){},function(v){});
+
+            AGENT.uname = uname;
+            AGENT.names = reply.names;
+            SESSION_ID = reply.session_id;
+
+            document.getElementById('login_div').style.display = 'none';
+            
+            // do these when login is successfull
+            document.getElementById('meter_details').style.display = 'block';
+            //get_location();
+            
+            document.getElementById('pswd').value = '';
+
+            if(!GPSon()){
+                showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            }
+            
+            document.getElementById('watermark').style.display = 'inline-block';            
+        }
+
+    request('','POST',{
+        'action':'login',
+        'device':{'serial':DEVICE_SERIAL_NUMBER},
+        'login_id':uname,
+        'password': pswd},
+        onsuccess,
+        function(){
+            read_local_data('login',function(){}, function(value){
+                if(!value){
+                    flag_error('Failed to communicate with all UNBS servers and no offline data is available')
+                    //write_local_data('login','',function(e){},function(v){});
+                }else{
+                    let credentials = JSON.parse(value);
+                    if(credentials.uname==uname && credentials.pswd==pswd){
+                        onsuccess({error:false});
+                    }else{
+                        onsuccess({error:true, message:'Invalid login credentials'});
+                    }
+                }
+            });
+        },0,null, null);
+}
+
+var _swipe = {startX:0,startY:0};
+
+function initSwipe(element,callback,threshold=20, other=null){
+    return; // disable swipe
+    /*
+        callback will be given one argument, swap_data in the form of
+            {
+                horizontal: "none|left|right",
+                vertical  : "none|up|down",
+                resultant : "none|left|right|up|down"
+            }
+        
+        other: this data will be passed along to the callback
+
+    */
+    function _get_swipe_directions(dx,dy,threshold){
+        dx = dx<0?((dx>-threshold)?0:dx):((dx<threshold)?0:dx);
+        dy = dy<0?((dy>-threshold)?0:dx):((dy<threshold)?0:dy);
+        
+        var vertical_swipe = (dy>0)?"down":(dy<0?"up":"none");
+        var horizontal_swipe = (dx>0)?"right":(dx<0?"left":"none");
+
+        dy = dy<0?-1*dy:dy;
+        dx = dx<0?-1*dx:dx;
+
+        var direction = dy>dx?vertical_swipe:horizontal_swipe;
+
+        var swipe_data = {horizontal:horizontal_swipe,vertical:vertical_swipe,resultant:direction}
+        
+        return swipe_data;
+        
+    }
+
+    // mobile with touch events
+    element.addEventListener("touchstart",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.changedTouches[0].pageX; _swipe.startY=e.changedTouches[0].pageY;});
+    element.addEventListener("touchend",function(e){
+        e.stopPropagation();
+        var dx = e.changedTouches[0].pageX-_swipe.startX, dy = e.changedTouches[0].pageY-_swipe.startY;
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+
+    // PC with mouse events...
+    element.addEventListener("mousedown",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.clientX; _swipe.startY=e.clientY;});
+    element.addEventListener("mouseup",function(e){
+        e.stopPropagation();
+        var dx = e.clientX-_swipe.startX, dy = e.clientY-_swipe.startY
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+    
+}
+
+function validate_form(form_id){
+    return {status:true, log:''}; // disable form validation
+
+    // check if every input/textarea element with class `mandatory` is set(has a value)
+    // return {status:bool, log:str}
+
+    let mandatories = document.getElementById(form_id).getElementsByClassName('mandatory');
+
+    let unfilled = ''
+    
+    for(let i=0; i<mandatories.length; ++i){
+        if(!mandatories[i].value.length){unfilled = mandatories[i].getAttribute('name');break;}
+    }
+
+    if(!unfilled.length){return {status:true, log:''};}
+
+    return {status:false, log:unfilled.toCamelCase()};
+}
+
+
+function upload(prefix=''){
+    let _;
+    let payload = {
+        // these fiields are needed by our relay servers
+      'ignore':{
+        date:(prefix.length?EDITING.ignore.date:document.getElementById('date').value),
+        agent_uname: (prefix.length?EDITING.ignore.agent_uname:AGENT.uname),
+        agent: (prefix.length?EDITING.ignore.agent:AGENT.names),
+        device:(prefix.length?EDITING.ignore.device:DEVICE_SERIAL_NUMBER),
+      },
+      "device": {"serial": (prefix.length?EDITING.device.serial_number:DEVICE_SERIAL_NUMBER),},
+      "session_id": (prefix.length?EDITING.session_id:SESSION_ID),
+      'data':{
+          "location":(prefix.length?EDITING.data.location:{}),
+          "meter": {
+            "serial_number": (_=document.getElementById(prefix+'sn').value,_.length?_:_throw('Device Serial Number?')),
+            "manufacturer": (_=document.getElementById(prefix+'manufacturer').value,_.length?_:_throw('Manufacturer?')),
+            "model": (_=document.getElementById(prefix+'modal').value,_.length?_:_throw('Modal?')),
+            "pattern_approval_number": (_=document.getElementById(prefix+'pan').value,_.length?_:_throw('Pattern Approval Number?')),
+            "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
+            "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE":"THREE"),
+            "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
+            "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
+          },
+          "verification": {
+            "verification_id": document.getElementById(prefix+'vid').value,
+            "id": document.getElementById(prefix+'vid').value,
+            "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
+            "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "credit_before_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cbt').value,_.length?_:_throw('Credit Before Testing?')),
+            "credit_after_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cat').value,_.length?_:_throw('Credit After Testing?')),
+            "energy_reading_before_test": (_=document.getElementById(prefix+'ebt').value,_.length?_:_throw('Energy Before Testing?')),
+            "energy_reading_after_test": (_=document.getElementById(prefix+'eat').value,_.length?_:_throw('Energy After Testing?')),
+            "free_issue_token_number": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'fitn').value,_.length?_:_throw('Free Issue Token Number?')),
+            "connection_mode": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'cm').value,_.length?_:_throw('Connection Mode?')),
+            "ct_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'ctr').value,_.length?_:_throw('Ct Ration?')),
+            "vt_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
+            "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
+            "gps_time": (prefix.length?EDITING.data.verification.gps_time:
+                            (_=new Date,_=_.getFullYear()+'-'+(_.getMonth()+1)+'-'+_.getDate()+' '+
+                            _.getHours()+':'+_.getMinutes()+':'+_.getSeconds())),
+            "no_visible_damage"/*"terminals_ok"*/: (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
+            "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
+            "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
+            "screw_caps_and_body_seal_intact": (document.getElementById(prefix+'sci').checked?"PASS":"FAIL"),
+            "led_pulsating_output_functioning": (document.getElementById(prefix+'lp').checked?"PASS":"FAIL"),
+            "meter_receiving_power": (document.getElementById(prefix+'mrp').checked?"PASS":"FAIL"),
+            "meter_connecting_to_ciu": (document.getElementById(prefix+'mc2c').checked?"PASS":"FAIL"),
+            "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
+            "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
+            "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
+            "sticker_number":(prefix.length?EDITING.data.verification.sticker_number:(document.getElementById(prefix+'pot').checked?(
+                              _=document.getElementById(prefix+'sticker_qrcode').value,(
+                                (_.length>=20)?_:_throw('Sticker QRCode information should be 20+ characters long'))):"")),
+            "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
+            "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
+            "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
+          }
+       }
+    }    
+    
+    { // printing data...
+        let options = document.getElementById('_print_div').getElementsByTagName('label');
+
+        let option_map = [
+            ['verification','gps_time'], ['meter','location'],['meter','manufacturer'],['meter','distributor'],
+            ['meter','model'],['meter','serial_number'],['meter','accuracy_class'],['meter','type'],
+            ['verification','free_issue_token_number'],['verification','id'],['meter','pattern_approval_number'],
+            ['verification','rated_voltage'],['verification','rated_current'],['verification','maximum_current'],
+            ['meter','phase'],['verification','meter_time'],['verification','connection_mode'],
+            ['verification','ct_ration'],['verification','vt_ration'],['verification','credit_before_testing'],
+            ['verification','credit_after_testing'],['verification','energy_reading_before_test'],
+            ['verification','energy_reading_after_test'],
+            ['verification','tamper_switch_operating_well'],['verification','meter_body_without_visiable_damage'],
+            ['verification','no_visible_damage'],
+            ['verification','screw_caps_and_body_seal_intact'],
+            ['verification','meter_markings_visible'],['verification','led_pulsating_output_functioning'],
+            ['verification','meter_receiving_power'],['verification','meter_connecting_to_ciu'],
+            ['verification','can_read_credit_balance_and_registers'],['verification','overall_accuracy_test'],
+            ['verification','further_testing_recommended'],['verification','meter_replacement_recommended'],
+        ];
+
+        for(let i=0; i<options.length; ++i){
+            options[i].children[0].setAttribute('value',payload.data[option_map[i][0]][option_map[i][1]]);
+            options[i].setAttribute('title',payload.data[option_map[i][0]][option_map[i][1]]);
+        }
+    }
+    
+    if(!prefix.length){
+        if(!GPSon()){
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            return;
+        }else{
+            get_location(function(){
+                    payload.data.location = LOCATION;
+                    let _payload = {
+                        device:payload.device, 
+                        data:payload.data, 
+                        action:'processverification',
+                        session_id:payload.session_id,
+                    };
+                    
+                    request('','POST',_payload,
+                        function(reply){
+                            if(reply.error){
+                                flag_error(reply.message);
+                                return;
+                            }
+
+                            show_success('data sent successfully');
+                            refresh();
+
+                            document.getElementById('inspection').style.display='none';
+                            document.getElementById('meter_details').style.display='block';
+                            show_modal('print_modal');
+                        },
+                        function(){
+                            read_local_data('savedReports',function(){}, function(value){
+                                let _data;
+                                if(value){_data = JSON.parse(value);}
+                                else{_data = [];}
+                                
+                                _data.push(payload);
+                                
+                                write_local_data('savedReports',JSON.stringify(_data),function(e){},function(v){});
+
+                                show_success('data saved locally as we could not communicate with UNBS servers');
+                                refresh();
+
+                                document.getElementById('inspection').style.display='none';
+                                document.getElementById('meter_details').style.display='block';
+                                show_modal('print_modal');
+                            });
+                        },0,null, null);
+                },
+                null,
+                showToast,
+                true
+            );        
+        }
+    }else{
+        let _payload = {
+            device:payload.device, 
+            data:payload.data, 
+            action:'processupdate',
+            session_id:payload.session_id,
+        };
+
+        request('','POST',payload,
+            function(reply){
+                if(!reply.status || reply.error){
+                    flag_error(reply.message);
+                    return;
+                }
+
+                show_success('data updated successfully');
+                hide_modal("reports_modal");
+                done_editting_reports();
+            },null,0,null, null);
+        
+    }
+}
+
+function showToast(msg,duration='long',position='bottom'){
+    try{
+        window.plugins.toast.show(msg,duration,position);
+    }catch(e){
+        // probably in browser where we dont have the toast plugin...
+        console.log(msg);
+    }
+}
+
+function refresh(){
+    // happens when a report has been submitted or when a user logs out
+    LOCATION = null;
+
+    let forms = document.getElementsByTagName('form');
+    for(let i=0; i<forms.length; ++i){
+        forms[i].reset();
+    }
+
+    setTimeout(function(){
+        document.getElementById('prepaid').checked=true, 
+        document.getElementById('postpaid').checked=false,
+
+        document.getElementById('single_phase').checked=true,
+        document.getElementById('three_phase').checked=false,
+
+        toggle_prepaid({checked:true});
+        toggle_single_phase({checked:true});
+        toggle_sticker({checked:false});
+        
+    }, 500);
+}
+
+
+function print_data(lines){
+    try{
+        BTPrinter.list(
+            function(printers){
+                if(printers.indexOf(BTPrinterName)<0){
+                    show_info(BTPrinterName+' is not among the connected devices');
+                    return;
+                }
+                BTPrinter.connect(
+                    function(data){
+                        // pull page clear
+                        //BTPrinter.printPOSCommand(function(data){;},function(err){;}, "0C"); //'OC' is a POS command for page feed ie pull up next page!
+
+                        //let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
+                        for (let i=0; i<lines.length; ++i){
+                            BTPrinter.printText(
+                                function(data){;}, function(err){flag_error('printing ERROR: '+err);}, 
+                                lines[i]+'\n'
+                            );
+                        }
+                        
+                        // instead of printing a 'OC' POS command, let the user manually press the page feed btn
+
+                        //BTPrinter.printImage(function(data){;}, function(err){flag_error('printing-img: '+err);},
+                        //    "Base 64 version of image"
+                        //);
+
+                        // now disconnect printer, this saves battery as well as reducing the application load
+                        BTPrinter.disconnect(function(data){;}, function(err){;}, BTPrinterName);
+                    },
+                    function(err){show_info('connecting: '+err)}, 
+                    BTPrinterName
+                );
+            },
+            function(err){show_info(err);}
+        );
+    }catch(e){flag_error(e);}
+}
+
+function _print(){
+    let options = document.getElementById('_print_div').getElementsByTagName('label');
+
+    let lines = []
+    for(let i=0; i<options.length; ++i){
+        if(options[i].children[0].checked){
+            lines.push(options[i].innerHTML.slice(options[i].innerHTML.indexOf('>')+1,options[i].innerHTML.length)
+                +': '+options[i].children[0].value);
+        }
+    }
+
+    if(lines.length){print_data(lines);}
+    else{show_info('please check at least one item');}
+    
+    //hide_modal('print_modal');
+}
+
+function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,payload=null){
+    if(LOCATION){
+        LOCATION.address = 'Unknown';
+        LOCATION.address_line = 'Unknown';
+    }
+
+    $.ajax
+    ({
+        type: "GET",
+        //url: 'https://nominatim.openstreetmap.org/search.php?q=0.134562%2C32.0123654&polygon_geojson=1&viewbox=',
+        url: 'http://nominatim.openstreetmap.org/reverse?format=json&lon='+coords.lon+'&lat='+coords.lat,
+        //dataType: 'json',
+        async: true,
+        //headers: {'Authorization': 'Basic ' + BAuth},
+        complete:function(xhr){
+            if(xhr.status && xhr.status!=200){
+                showToast('REVERSE-GEOCODE:: server reply status: '+xhr.status);
+            }
+            stop_loading();
+            if(callback){callback(payload);}
+        },
+        error:function(xhr,statuText, errorMsg){
+            showToast('failed to fetch address, continuing without it');
+            console.log('failed to fetch address, continuing without it');
+            //if(callback){callback(payload);}
+        },
+        success: function (reply){
+            LOCATION.address = reply.display_name;
+            LOCATION.address_line = reply.display_name;
+
+            //if(callback){callback(payload);}
+            
+            //console.log(reply);
+        },
+        timeout:10000,
+    });
+}
+
+function send_report_update(){
+    upload('e_');
+}
+
+function edit_report(ev){
+    EDITING = this.data;
+    
+    let prepaid,single_phase;
+    (EDITING.data.meter["type"]=="PREPAID")?
+        (
+            prepaid = true,
+            document.getElementById('e_prepaid').checked=true, 
+            document.getElementById('e_postpaid').checked=false,
+            toggle_prepaid({checked:true})):
+        (
+            prepaid = false,
+            document.getElementById('e_prepaid').checked=false, 
+            document.getElementById('e_postpaid').checked=true,
+            toggle_postpaid({checked:true})
+        );
+    
+    (EDITING.data.meter["phase"]=="SINGLE")?
+        (
+            single_phase = true,
+            document.getElementById('e_single_phase').checked=true,
+            document.getElementById('e_three_phase').checked=false,
+            toggle_single_phase({checked:true})
+            ):
+        (
+            single_phase = false,
+            document.getElementById('e_single_phase').checked=false,
+            document.getElementById('e_three_phase').checked=true,
+            toggle_three_phase({checked:true})
+        );
+
+    document.getElementById('e_sn').value = EDITING.data.meter["serial_number"];
+    document.getElementById('e_manufacturer').value = EDITING.data.meter["manufacturer"];
+    document.getElementById('e_modal').value = EDITING.data.meter["model"];
+    document.getElementById('e_pan').value = EDITING.data.meter["pattern_approval_number"];
+    document.getElementById('e_ac').value = EDITING.data.meter["accuracy_class"];
+    
+    document.getElementById('e_rv').value = EDITING.data.meter["rated_voltage"];
+    
+    
+    document.getElementById('e_loc').value = EDITING.data.meter["location"];
+    document.getElementById('e_dist').value = EDITING.data.meter["distributor"];
+
+    document.getElementById('e_vid').value = EDITING.data.verification["id"];
+    document.getElementById('e_vid').value = EDITING.data.verification["verification_id"];
+    document.getElementById('e_rc').value = EDITING.data.verification["rated_current"];
+    document.getElementById('e_maxc').value = EDITING.data.verification["maximum_current"];
+    document.getElementById('e_rv').value = EDITING.data.verification["rated_voltage"];
+    
+    document.getElementById('e_cbt').value = ((!prepaid)?"":
+                                                EDITING.data.verification["credit_before_testing"]);
+    document.getElementById('e_cat').value = ((!prepaid)?"":
+                                                EDITING.data.verification["credit_after_testing"]);
+
+    document.getElementById('e_ebt').value = EDITING.data.verification["energy_reading_before_test"];
+    document.getElementById('e_eat').value = EDITING.data.verification["energy_reading_after_test"];
+
+    document.getElementById('e_fitn').value = ((!prepaid)?"":
+                                                EDITING.data.verification["free_issue_token_number"]);
+
+    document.getElementById('e_cm').value = (single_phase?"":
+                                                EDITING.data.verification["connection_mode"]);
+    document.getElementById('e_ctr').value = (single_phase?"":
+                                                EDITING.data.verification["ct_ration"]);
+    document.getElementById('e_vtr').value = (single_phase?"":
+                                                EDITING.data.verification["vt_ration"]);
+    document.getElementById('e_mt').value = (single_phase?"":
+                                                EDITING.data.verification["meter_time"]);
+
+    document.getElementById('e_to').checked = (EDITING.data.verification["no_visible_damage"]=="PASS"?true:false);
+    document.getElementById('e_ts').checked = (EDITING.data.verification["tamper_switch_operating_well"]=="PASS"?true:false);
+    document.getElementById('e_mbo').checked = (EDITING.data.verification["meter_body_without_visiable_damage"]=="PASS"?true:false);
+    document.getElementById('e_sci').checked = (EDITING.data.verification["screw_caps_and_body_seal_intact"]=="PASS"?true:false);
+    document.getElementById('e_lp').checked = (EDITING.data.verification["led_pulsating_output_functioning"]=="PASS"?true:false);
+    document.getElementById('e_mrp').checked = (EDITING.data.verification["meter_receiving_power"]=="PASS"?true:false);
+    document.getElementById('e_mc2c').checked = (EDITING.data.verification["meter_connecting_to_ciu"]=="PASS"?true:false);
+    document.getElementById('e_mmv').checked = (EDITING.data.verification["meter_markings_visible"]=="PASS"?true:false);
+    document.getElementById('e_crb').checked = (EDITING.data.verification["can_read_credit_balance_and_registers"]=="PASS"?true:false);
+    document.getElementById('e_pot').checked = (EDITING.data.verification["overall_accuracy_test"]=="PASS"?true:false);
+    document.getElementById('e_ft').checked = (EDITING.data.verification["further_testing_recommended"]=="YES"?true:false);
+    document.getElementById('e_mr').checked = (EDITING.data.verification["meter_replacement_recommended"]=="YES"?true:false);
+
+    document.getElementById('e_remark').value = EDITING.data.verification["remarks"];
+
+
+    show_modal("reports_modal");
+}
+
+function populate_reports(data){
+    // data: [[date,JSON],...]
+    let date='',div,span,_t;
+
+    let mom = document.getElementById("reports_list_div");
+    clear(mom);
+
+    let cols = [['Time','report-time'],['Meter','report-meter'],['Token','report-token']]
+    for(let i=0; i<cols.length; ++i){
+        span = document.createElement('span');
+        span.setAttribute('class','report-title report-col-title '+cols[i][1]);
+        span.innerHTML = cols[i][0];
+        mom.appendChild(span);
+    }
+
+    for(let i=0;i<data.length; ++i){
+        if(!data[i][1].data)continue;
+        if(data[i][0].split(' ')[0]!=date){
+            date = data[i][0].split(' ')[0];
+            div = document.createElement('div');
+            div.setAttribute('class','report-date report-title');
+            div.innerHTML = date;
+            mom.appendChild(div);
+        }
+        
+        _t = data[i][1].ignore.date.split(' ')[1].slice(0,5);
+
+        cols = [
+            [_t,'report-time'],
+            [data[i][1].data.meter.serial_number?data[i][1].data.meter.serial_number:'-','report-meter'],
+            [data[i][1].data.verification.free_issue_token_number?data[i][1].data.verification.free_issue_token_number:'-','report-token']]
+        for(let j=0; j<cols.length; ++j){
+            span = document.createElement('span');
+            span.setAttribute('class',cols[j][1]+((i%2)?' report-odd':''));
+            span.style.marginBottom = '5px';
+            span.innerHTML = cols[j][0];
+            mom.appendChild(span);
+            
+            if(cols[j][1]=='report-meter'){
+                span.data = data[i][1];
+                span.onclick = edit_report;
+            }
+        }
+    }
+}
+
+function fetch_reports(btn){
+    {
+        show_info('not yet implemented');
+        return
+    }
+    
+    let form = new FormData();
+    form.append('device',DEVICE_SERIAL_NUMBER);
+
+    btn.innerHTML = 'fetching data...';
+
+    request(URIs.reports,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            btn.innerHTML = 'Edit My Reports';
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+                        
+            document.getElementById('meter_details').style.display = 'none';
+            document.getElementById('reports_div').style.display = 'block';
+            populate_reports(reply.data);
+        },
+        flag_error
+    );
+}
+
+function done_editting_reports(){
+    document.getElementById('reports_div').style.display = 'none'; 
+    document.getElementById('meter_details').style.display = 'block';
+}
+
+function write_local_data(key,value,errCallback,sucessCallback){
+    key = 'unbs_Jerm_'+key; // just to ensure keys dont clash accross different applications
+    localforage.setItem(key, value, function (err) {
+        if(err){errCallback(err);}
+        else{sucessCallback(key);}
+    });
+
+}
+function read_local_data(key,errCallback,sucessCallback){
+    key = 'unbs_Jerm_'+key; // just to ensure keys dont clash accross different applications
+    localforage.getItem(key, function (err, value) {
+        if(err){errCallback(err);}
+        else{sucessCallback(value);}
+    });    
+}
+
+function toggle_prepaid(rb){
+    let prepaid_only = document.getElementsByClassName('prepaid-only');
+    
+    for(let i=0; i<prepaid_only.length; ++i){
+        if(rb.checked){
+            prepaid_only[i].style.display = 'block';
+        }else{
+            prepaid_only[i].style.display = 'none';
+        }
+    }    
+}
+
+function toggle_postpaid(rb){
+    toggle_prepaid({checked:false});
+}
+
+function toggle_three_phase(rb){
+    let prepaid_only = document.getElementsByClassName('three-phase-only');
+    
+    for(let i=0; i<prepaid_only.length; ++i){
+        if(rb.checked){
+            prepaid_only[i].style.display = 'block';
+        }else{
+            prepaid_only[i].style.display = 'none';
+        }
+    }    
+}
+
+function toggle_single_phase(rb){
+    toggle_three_phase({checked:false});
+}
+
+function toggle_sticker(cb){
+    let sticker_els = document.getElementsByClassName('sticker');
+    
+    for(let i=0; i<sticker_els.length; ++i){
+        if(cb.checked){
+            sticker_els[i].style.display = 'block';
+        }else{
+            sticker_els[i].style.display = 'none';
+        }
+    }    
+}
+
+function _throw(e){
+    flag_error(e);
+    throw e;
+}
+
+function upload_saved_reports(){
+    if(!SESSION_ID){
+        show_info('you dont have a session ID. please connect to internet, logout and login again to attain one');
+        return;
+    }
+    hide_modal('saved_reports_modal');
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){flag_error("storage error. saved reports seem to be missing");}
+        else{
+            let _data = JSON.parse(value);
+
+            let uploaded_reports = []; // an array of reports that were uploaded successfully
+
+            let mom = document.getElementById('saved_reports_div');
+            let options = mom.getElementsByTagName('label');
+            for(let i=1; i<options.length; ++i){
+                if(options[i].children[0].checked && !options[i].children[0].getAttribute('value')){
+                    showToast('uploading report '+(i)+'...');
+
+                    let _payload = {
+                        device:_data[i-1].device, 
+                        data:_data[i-1].data, 
+                        action:'processverification',
+                        session_id:SESSION_ID,//_data[i-1].session_id,
+                    };
+
+                    //console.log(SESSION_ID, _payload.session_id);
+
+                    request('','POST',_payload,
+                        function(reply){
+                            console.log(_payload,reply);
+                            if(reply.error){
+                                flag_error(reply.message);
+                                return;
+                            }
+                            
+                            uploaded_reports.push(i-1);
+                        },
+                        null,0,null,null,false);
+
+                }
+            }
+            
+            let new_data = [];
+            for (let i=0; i<_data.length; ++i){
+                if(uploaded_reports.indexOf(i)<0){new_data.push(_data[i]);}
+            }
+            
+            write_local_data('savedReports',JSON.stringify(new_data),function(err){},function(value){});
+            setTimeout(function(){showToast('reports uploaded successfully')},500);
+        }
+    });
+
+    
+}
+
+function select_all_saved_reports(cb){
+    let mom = document.getElementById('saved_reports_div');
+    let options = mom.getElementsByTagName('label');
+    for(let i=0; i<options.length; ++i){
+        options[i].children[0].checked = cb.checked;
+    }
+}
+
+function show_saved_reports(){
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){show_info('no saved reports found');}
+        else{
+            let data = JSON.parse(value);
+            
+            if(!data.length){
+                show_info('no saved reports found');
+                return;
+            }
+            
+            let mom = document.getElementById('saved_reports_div');
+            clear(mom);
+
+            mom.innerHTML = "<div class='checkbox'><label><input type='checkbox' value='all' onchange='select_all_saved_reports(this)'>Select All</label></div>";
+
+            for(let i=0; i<data.length; ++i){
+                mom.innerHTML += "<div class='checkbox'><label><input type='checkbox'>"+
+                data[i].data.verification.gps_time
+                +"</label></div>";
+            }
+                        
+            show_modal('saved_reports_modal');
+        }
+    });
+
+}
+
+function isOnline(){
+    try{ return navigator.connection.type!=Connection.NONE;
+    }catch(e){return true;/*assume we're online by default*/}
+}
+
+// ************************************************************************************************************
+function showSerialError(){
+    showToast('This application is NOT targeted for this device. Please talk to JERM Technology about this');
+}
+
+function init(){
+    // to bend text...include the CirleType.min.js file
+    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
+
+    readserial();
+
+    if(DEVICE_SERIAL_NUMBER!=TARGET_DEVICE){
+        showSerialError();
+        return;
+    }
+
+    let pages=[/*'personnel',*/'inspection','meter_details'];        
+
+    for(let i=0; i<pages.length; ++i){
+        initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
+            if(swipe_data.resultant=="right"){back(div_id);}
+            else if(swipe_data.resultant=="left"){next(div_id);}
+        },100,pages[i]);        
+    }
+
+    
+    document.addEventListener("backbutton", function(e){
+        e.stopPropagation();
+        
+        if(document.getElementById('personnel').style.display=='block'){
+            e.preventDefault();
+            back('personnel');
+        }else if(document.getElementById('inspection').style.display=='block'){
+            e.preventDefault();
+            back('inspection');
+        }else if(document.getElementById('meter_details').style.display=='block'){
+            e.preventDefault();
+            logout();
+        }else {
+            return true;
+        }
+    }, false);
+
+    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+
+    // populate data from data.js into html
+    let option, selects;
+    let fields = [
+        'districts','distributors','manufacturers','modals','ct_rations','vt_rations',
+        'connection_modes','accuracy_classes','rated_voltages','rated_currents',
+        'max_currents'];
+    for(let k=0; k<fields.length; ++k){
+        selects = document.getElementsByClassName(APP_DATA[fields[k]].class);
+        APP_DATA[fields[k]].data.sort();
+        APP_DATA[fields[k]].data.push('Other');
+        for (let i=0; i<APP_DATA[fields[k]].data.length; ++i){
+            for(let j=0; j<selects.length; ++j){
+                option = document.createElement('option');
+                option.setAttribute('value',APP_DATA[fields[k]].data[i]);
+                option.innerHTML = APP_DATA[fields[k]].data[i];
+                selects[j].appendChild(option);
+            }
+        }
+    }
+
+    // initiate saved reports array if not present
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){write_local_data('savedReports','[]',function(e){},function(v){});}
+        else{/*console.log(JSON.parse(value));*/}
+    });    
+}
+
+
+window.onload = function(){
+    if(!("deviceready" in window)){init();}
+    else{
+        document.addEventListener("deviceready", function(){
+            init();
+        }, false);
+    }
+      
+    // place anything else you cant to run at startup in `init` NOT here!
+    /*
+    document.getElementById('uname').value = 'richard.kato';
+    document.getElementById('pswd').value = '1234567b';
+    login();
+    //*/
+}
