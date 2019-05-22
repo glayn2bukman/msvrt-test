@@ -22,7 +22,7 @@ var APP_DATA = {
         ],
     },
 
-    modals:{
+    models:{
         class:'modals',
         data:[
             'A1700','HXE310','Hxe110','PG03','BECC 44','BEC 66(07)','DTSY666J','DDSY089-K2','SX5A2-PELS-04',        
