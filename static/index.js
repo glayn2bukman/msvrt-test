@@ -1,1 +1,1508 @@
-var _0xb615=["\x75\x73\x65\x20\x73\x74\x72\x69\x63\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6D\x65\x74\x65\x72\x73\x2D\x64\x65\x76\x2E\x75\x6E\x62\x73\x2E\x67\x6F\x2E\x75\x67\x2F\x61\x70\x69\x2F","","\x51\x73\x70\x72\x69\x6E\x74\x65\x72","\x53\x33\x31\x31\x39\x30\x33\x30\x30\x30\x34\x32\x33","\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x63\x6F\x6D\x6D\x75\x6E\x69\x63\x61\x74\x65\x20\x77\x69\x74\x68\x20\x61\x6C\x6C\x20\x55\x4E\x42\x53\x20\x73\x65\x72\x76\x65\x72\x73\x2E\x20\x61\x72\x65\x20\x77\x65\x20\x6F\x6E\x6C\x69\x6E\x65\x3F","\x6C\x65\x6E\x67\x74\x68","\x50\x4F\x53\x54","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x6A\x73\x6F\x6E","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x61\x6A\x61\x78","\x73\x65\x72\x69\x61\x6C","\x76\x61\x6C\x75\x65","\x74\x65\x78\x74","\x73\x63\x61\x6E\x20\x62\x61\x72\x63\x6F\x64\x65","\x73\x63\x61\x6E","\x62\x61\x72\x63\x6F\x64\x65\x53\x63\x61\x6E\x6E\x65\x72","\x70\x6C\x75\x67\x69\x6E\x73","\x2E\x20\x74\x68\x69\x73\x20\x69\x73\x20\x6C\x69\x6B\x65\x6C\x79\x20\x62\x65\x63\x61\x75\x73\x65\x20\x79\x6F\x75\x27\x72\x65\x20\x6F\x6E\x20\x50\x43","\x6F\x70\x61\x63\x69\x74\x79","\x73\x74\x79\x6C\x65","\x69\x6E\x73\x70\x65\x63\x74\x69\x6F\x6E","\x64\x69\x73\x70\x6C\x61\x79","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x6E\x6F\x6E\x65","\x6D\x65\x74\x65\x72\x5F\x64\x65\x74\x61\x69\x6C\x73","\x62\x6C\x6F\x63\x6B","\x64\x65\x62\x75\x67","\x73\x74\x61\x74\x75\x73","\x6C\x6F\x67","\x20\x69\x73\x20\x62\x6C\x61\x6E\x6B\x21","\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x47\x50\x53\x28\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x29\x2C\x20\x79\x6F\x75\x20\x77\x6F\x6E\x74\x20\x73\x75\x62\x6D\x69\x74\x20\x74\x68\x65\x20\x72\x65\x70\x6F\x72\x74\x20\x69\x66\x20\x47\x50\x53\x20\x6F\x66\x66","\x63\x68\x65\x63\x6B","\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x47\x50\x53\x28\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x29\x2E\x20\x69\x66\x20\x69\x74\x73\x20\x6F\x6E\x20\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x20\x6D\x6F\x64\x65\x20\x74\x6F\x20\x44\x45\x56\x49\x43\x45\x20\x4F\x4E\x4C\x59","\x47\x50\x53\x2D\x46\x41\x49\x4C\x45\x44","\x4F\x4D\x49\x54\x54\x45\x44","\x74\x69\x6D\x65","\x74\x69\x6D\x65\x73\x74\x61\x6D\x70","\x6C\x61\x74\x69\x74\x75\x64\x65","\x63\x6F\x6F\x72\x64\x73","\x6C\x6F\x6E\x67\x69\x74\x75\x64\x65","\x67\x70\x73\x20\x66\x61\x69\x6C\x65\x64\x2C\x20\x63\x6F\x6E\x74\x69\x6E\x75\x69\x6E\x67\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x63\x6F\x6F\x72\x64\x69\x6E\x61\x74\x65\x73\x2E\x2E\x2E","\x67\x65\x74\x43\x75\x72\x72\x65\x6E\x74\x50\x6F\x73\x69\x74\x69\x6F\x6E","\x67\x65\x6F\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x75\x6E\x61\x6D\x65","\x70\x73\x77\x64","\x70\x6C\x65\x61\x73\x65\x20\x66\x69\x6C\x6C\x20\x69\x6E\x20\x62\x6F\x74\x68\x20\x66\x69\x65\x6C\x64\x73","\x65\x72\x72\x6F\x72","\x6D\x65\x73\x73\x61\x67\x65","\x6C\x6F\x67\x69\x6E","\x6E\x61\x6D\x65\x73","\x73\x65\x73\x73\x69\x6F\x6E\x5F\x69\x64","\x6C\x6F\x67\x69\x6E\x5F\x64\x69\x76","\x77\x61\x74\x65\x72\x6D\x61\x72\x6B","\x69\x6E\x6C\x69\x6E\x65\x2D\x62\x6C\x6F\x63\x6B","\x46\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x63\x6F\x6D\x6D\x75\x6E\x69\x63\x61\x74\x65\x20\x77\x69\x74\x68\x20\x61\x6C\x6C\x20\x55\x4E\x42\x53\x20\x73\x65\x72\x76\x65\x72\x73\x20\x61\x6E\x64\x20\x6E\x6F\x20\x6F\x66\x66\x6C\x69\x6E\x65\x20\x64\x61\x74\x61\x20\x69\x73\x20\x61\x76\x61\x69\x6C\x61\x62\x6C\x65","\x70\x61\x72\x73\x65","\x49\x6E\x76\x61\x6C\x69\x64\x20\x6C\x6F\x67\x69\x6E\x20\x63\x72\x65\x64\x65\x6E\x74\x69\x61\x6C\x73","\x64\x6F\x77\x6E","\x75\x70","\x72\x69\x67\x68\x74","\x6C\x65\x66\x74","\x74\x6F\x75\x63\x68\x73\x74\x61\x72\x74","\x73\x74\x6F\x70\x50\x72\x6F\x70\x61\x67\x61\x74\x69\x6F\x6E","\x73\x74\x61\x72\x74\x58","\x70\x61\x67\x65\x58","\x63\x68\x61\x6E\x67\x65\x64\x54\x6F\x75\x63\x68\x65\x73","\x73\x74\x61\x72\x74\x59","\x70\x61\x67\x65\x59","\x61\x64\x64\x45\x76\x65\x6E\x74\x4C\x69\x73\x74\x65\x6E\x65\x72","\x74\x6F\x75\x63\x68\x65\x6E\x64","\x6D\x6F\x75\x73\x65\x64\x6F\x77\x6E","\x63\x6C\x69\x65\x6E\x74\x58","\x63\x6C\x69\x65\x6E\x74\x59","\x6D\x6F\x75\x73\x65\x75\x70","\x6D\x61\x6E\x64\x61\x74\x6F\x72\x79","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x43\x6C\x61\x73\x73\x4E\x61\x6D\x65","\x6E\x61\x6D\x65","\x67\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x74\x6F\x43\x61\x6D\x65\x6C\x43\x61\x73\x65","\x64\x61\x74\x65","\x69\x67\x6E\x6F\x72\x65","\x61\x67\x65\x6E\x74\x5F\x75\x6E\x61\x6D\x65","\x61\x67\x65\x6E\x74","\x64\x65\x76\x69\x63\x65","\x73\x65\x72\x69\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x64\x61\x74\x61","\x73\x6E","\x44\x65\x76\x69\x63\x65\x20\x53\x65\x72\x69\x61\x6C\x20\x4E\x75\x6D\x62\x65\x72\x3F","\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72","\x4D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72\x3F","\x6D\x6F\x64\x61\x6C","\x4D\x6F\x64\x61\x6C\x3F","\x70\x61\x6E","\x50\x61\x74\x74\x65\x72\x6E\x20\x41\x70\x70\x72\x6F\x76\x61\x6C\x20\x4E\x75\x6D\x62\x65\x72\x3F","\x63\x68\x65\x63\x6B\x65\x64","\x70\x72\x65\x70\x61\x69\x64","\x50\x52\x45\x50\x41\x49\x44","\x50\x4F\x53\x54\x50\x41\x49\x44","\x61\x63","\x41\x63\x63\x75\x72\x61\x63\x79\x20\x43\x6C\x61\x73\x73\x3F","\x72\x76","\x52\x61\x74\x65\x64\x20\x56\x6F\x6C\x74\x61\x67\x65\x3F","\x73\x69\x6E\x67\x6C\x65\x5F\x70\x68\x61\x73\x65","\x53\x49\x4E\x47\x4C\x45","\x54\x48\x52\x45\x45","\x6C\x6F\x63","\x4C\x6F\x63\x61\x74\x69\x6F\x6E\x3F","\x64\x69\x73\x74","\x44\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72\x3F","\x76\x69\x64","\x72\x63","\x52\x61\x74\x65\x64\x20\x43\x75\x72\x72\x65\x6E\x74\x3F","\x6D\x61\x78\x63","\x4D\x61\x78\x69\x6D\x75\x6D\x20\x43\x75\x72\x72\x65\x6E\x74\x3F","\x63\x62\x74","\x43\x72\x65\x64\x69\x74\x20\x42\x65\x66\x6F\x72\x65\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x63\x61\x74","\x43\x72\x65\x64\x69\x74\x20\x41\x66\x74\x65\x72\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x65\x62\x74","\x45\x6E\x65\x72\x67\x79\x20\x42\x65\x66\x6F\x72\x65\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x65\x61\x74","\x45\x6E\x65\x72\x67\x79\x20\x41\x66\x74\x65\x72\x20\x54\x65\x73\x74\x69\x6E\x67\x3F","\x66\x69\x74\x6E","\x46\x72\x65\x65\x20\x49\x73\x73\x75\x65\x20\x54\x6F\x6B\x65\x6E\x20\x4E\x75\x6D\x62\x65\x72\x3F","\x63\x6D","\x43\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x20\x4D\x6F\x64\x65\x3F","\x63\x74\x72","\x43\x74\x20\x52\x61\x74\x69\x6F\x6E\x3F","\x76\x74\x72","\x56\x74\x20\x52\x61\x74\x69\x6F\x6E\x3F","\x6D\x74","\x4D\x65\x74\x65\x72\x20\x54\x69\x6D\x65\x3F","\x67\x70\x73\x5F\x74\x69\x6D\x65","\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E","\x74\x6F","\x50\x41\x53\x53","\x46\x41\x49\x4C","\x74\x73","\x6D\x62\x6F","\x73\x63\x69","\x6C\x70","\x6D\x72\x70","\x6D\x63\x32\x63","\x6D\x6D\x76","\x63\x72\x62","\x70\x6F\x74","\x73\x74\x69\x63\x6B\x65\x72\x5F\x6E\x75\x6D\x62\x65\x72","\x73\x74\x69\x63\x6B\x65\x72\x5F\x71\x72\x63\x6F\x64\x65","\x53\x74\x69\x63\x6B\x65\x72\x20\x51\x52\x43\x6F\x64\x65\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x73\x68\x6F\x75\x6C\x64\x20\x62\x65\x20\x32\x30\x2B\x20\x63\x68\x61\x72\x61\x63\x74\x65\x72\x73\x20\x6C\x6F\x6E\x67","\x66\x74","\x59\x45\x53","\x4E\x4F","\x6D\x72","\x72\x65\x6D\x61\x72\x6B","\x52\x65\x6D\x61\x72\x6B\x3F","\x6C\x61\x62\x65\x6C","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x73\x42\x79\x54\x61\x67\x4E\x61\x6D\x65","\x5F\x70\x72\x69\x6E\x74\x5F\x64\x69\x76","\x6D\x65\x74\x65\x72","\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72","\x6D\x6F\x64\x65\x6C","\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73","\x74\x79\x70\x65","\x66\x72\x65\x65\x5F\x69\x73\x73\x75\x65\x5F\x74\x6F\x6B\x65\x6E\x5F\x6E\x75\x6D\x62\x65\x72","\x69\x64","\x70\x61\x74\x74\x65\x72\x6E\x5F\x61\x70\x70\x72\x6F\x76\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72","\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65","\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74","\x6D\x61\x78\x69\x6D\x75\x6D\x5F\x63\x75\x72\x72\x65\x6E\x74","\x70\x68\x61\x73\x65","\x6D\x65\x74\x65\x72\x5F\x74\x69\x6D\x65","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65","\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E","\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E","\x63\x72\x65\x64\x69\x74\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74\x69\x6E\x67","\x63\x72\x65\x64\x69\x74\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67","\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74","\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74","\x74\x61\x6D\x70\x65\x72\x5F\x73\x77\x69\x74\x63\x68\x5F\x6F\x70\x65\x72\x61\x74\x69\x6E\x67\x5F\x77\x65\x6C\x6C","\x6D\x65\x74\x65\x72\x5F\x62\x6F\x64\x79\x5F\x77\x69\x74\x68\x6F\x75\x74\x5F\x76\x69\x73\x69\x61\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65","\x6E\x6F\x5F\x76\x69\x73\x69\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65","\x73\x63\x72\x65\x77\x5F\x63\x61\x70\x73\x5F\x61\x6E\x64\x5F\x62\x6F\x64\x79\x5F\x73\x65\x61\x6C\x5F\x69\x6E\x74\x61\x63\x74","\x6D\x65\x74\x65\x72\x5F\x6D\x61\x72\x6B\x69\x6E\x67\x73\x5F\x76\x69\x73\x69\x62\x6C\x65","\x6C\x65\x64\x5F\x70\x75\x6C\x73\x61\x74\x69\x6E\x67\x5F\x6F\x75\x74\x70\x75\x74\x5F\x66\x75\x6E\x63\x74\x69\x6F\x6E\x69\x6E\x67","\x6D\x65\x74\x65\x72\x5F\x72\x65\x63\x65\x69\x76\x69\x6E\x67\x5F\x70\x6F\x77\x65\x72","\x6D\x65\x74\x65\x72\x5F\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x5F\x74\x6F\x5F\x63\x69\x75","\x63\x61\x6E\x5F\x72\x65\x61\x64\x5F\x63\x72\x65\x64\x69\x74\x5F\x62\x61\x6C\x61\x6E\x63\x65\x5F\x61\x6E\x64\x5F\x72\x65\x67\x69\x73\x74\x65\x72\x73","\x6F\x76\x65\x72\x61\x6C\x6C\x5F\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x74\x65\x73\x74","\x66\x75\x72\x74\x68\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64","\x6D\x65\x74\x65\x72\x5F\x72\x65\x70\x6C\x61\x63\x65\x6D\x65\x6E\x74\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x63\x68\x69\x6C\x64\x72\x65\x6E","\x74\x69\x74\x6C\x65","\x70\x72\x6F\x63\x65\x73\x73\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E","\x64\x61\x74\x61\x20\x73\x65\x6E\x74\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x70\x72\x69\x6E\x74\x5F\x6D\x6F\x64\x61\x6C","\x73\x61\x76\x65\x64\x52\x65\x70\x6F\x72\x74\x73","\x70\x75\x73\x68","\x64\x61\x74\x61\x20\x73\x61\x76\x65\x64\x20\x6C\x6F\x63\x61\x6C\x6C\x79\x20\x61\x73\x20\x77\x65\x20\x63\x6F\x75\x6C\x64\x20\x6E\x6F\x74\x20\x63\x6F\x6D\x6D\x75\x6E\x69\x63\x61\x74\x65\x20\x77\x69\x74\x68\x20\x55\x4E\x42\x53\x20\x73\x65\x72\x76\x65\x72\x73","\x70\x72\x6F\x63\x65\x73\x73\x75\x70\x64\x61\x74\x65","\x64\x61\x74\x61\x20\x75\x70\x64\x61\x74\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x72\x65\x70\x6F\x72\x74\x73\x5F\x6D\x6F\x64\x61\x6C","\x6C\x6F\x6E\x67","\x62\x6F\x74\x74\x6F\x6D","\x73\x68\x6F\x77","\x74\x6F\x61\x73\x74","\x66\x6F\x72\x6D","\x72\x65\x73\x65\x74","\x70\x6F\x73\x74\x70\x61\x69\x64","\x74\x68\x72\x65\x65\x5F\x70\x68\x61\x73\x65","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x69\x6E\x64\x65\x78\x4F\x66","\x20\x69\x73\x20\x6E\x6F\x74\x20\x61\x6D\x6F\x6E\x67\x20\x74\x68\x65\x20\x63\x6F\x6E\x6E\x65\x63\x74\x65\x64\x20\x64\x65\x76\x69\x63\x65\x73","\x63\x6F\x6E\x63\x61\x74","\x20\x20\x20\x20\x20\x20\x20\x78\x78\x78\x20\x55\x4E\x42\x53\x20\x53\x4D\x56\x54\x20\x78\x78\x78","\x20\x20\x20\x20\x2D\x2D\x20\x49\x6E\x73\x70\x65\x63\x74\x69\x6F\x6E\x20\x52\x65\x63\x65\x69\x70\x74\x20\x2D\x2D","\x20\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D\x2D","\x70\x72\x69\x6E\x74\x69\x6E\x67\x20\x45\x52\x52\x4F\x52\x3A\x20","\x0A","\x70\x72\x69\x6E\x74\x54\x65\x78\x74","\x64\x69\x73\x63\x6F\x6E\x6E\x65\x63\x74","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x3A\x20","\x63\x6F\x6E\x6E\x65\x63\x74","\x6C\x69\x73\x74","\x3E","\x69\x6E\x6E\x65\x72\x48\x54\x4D\x4C","\x73\x6C\x69\x63\x65","\x3A\x20","\x70\x6C\x65\x61\x73\x65\x20\x63\x68\x65\x63\x6B\x20\x61\x74\x20\x6C\x65\x61\x73\x74\x20\x6F\x6E\x65\x20\x69\x74\x65\x6D","\x61\x64\x64\x72\x65\x73\x73","\x55\x6E\x6B\x6E\x6F\x77\x6E","\x61\x64\x64\x72\x65\x73\x73\x5F\x6C\x69\x6E\x65","\x47\x45\x54","\x68\x74\x74\x70\x3A\x2F\x2F\x6E\x6F\x6D\x69\x6E\x61\x74\x69\x6D\x2E\x6F\x70\x65\x6E\x73\x74\x72\x65\x65\x74\x6D\x61\x70\x2E\x6F\x72\x67\x2F\x72\x65\x76\x65\x72\x73\x65\x3F\x66\x6F\x72\x6D\x61\x74\x3D\x6A\x73\x6F\x6E\x26\x6C\x6F\x6E\x3D","\x6C\x6F\x6E","\x26\x6C\x61\x74\x3D","\x6C\x61\x74","\x52\x45\x56\x45\x52\x53\x45\x2D\x47\x45\x4F\x43\x4F\x44\x45\x3A\x3A\x20\x73\x65\x72\x76\x65\x72\x20\x72\x65\x70\x6C\x79\x20\x73\x74\x61\x74\x75\x73\x3A\x20","\x66\x61\x69\x6C\x65\x64\x20\x74\x6F\x20\x66\x65\x74\x63\x68\x20\x61\x64\x64\x72\x65\x73\x73\x2C\x20\x63\x6F\x6E\x74\x69\x6E\x75\x69\x6E\x67\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x69\x74","\x64\x69\x73\x70\x6C\x61\x79\x5F\x6E\x61\x6D\x65","\x65\x5F","\x6E\x6F\x20\x73\x61\x76\x65\x64\x20\x72\x65\x70\x6F\x72\x74\x73\x20\x66\x6F\x75\x6E\x64","\x49\x2F\x4F\x20\x65\x72\x72\x6F\x72\x2E\x20\x63\x61\x6E\x74\x20\x6C\x6F\x63\x61\x74\x65\x20\x74\x68\x69\x73\x20\x72\x65\x70\x6F\x72\x74\x21","\x72\x65\x70\x6F\x72\x74\x20\x75\x70\x64\x61\x74\x65\x64","\x65\x5F\x70\x72\x65\x70\x61\x69\x64","\x65\x5F\x70\x6F\x73\x74\x70\x61\x69\x64","\x65\x5F\x73\x69\x6E\x67\x6C\x65\x5F\x70\x68\x61\x73\x65","\x65\x5F\x74\x68\x72\x65\x65\x5F\x70\x68\x61\x73\x65","\x65\x5F\x73\x6E","\x65\x5F\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72","\x65\x5F\x6D\x6F\x64\x61\x6C","\x65\x5F\x70\x61\x6E","\x65\x5F\x61\x63","\x65\x5F\x72\x76","\x65\x5F\x6C\x6F\x63","\x65\x5F\x64\x69\x73\x74","\x65\x5F\x76\x69\x64","\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x5F\x69\x64","\x65\x5F\x72\x63","\x65\x5F\x6D\x61\x78\x63","\x65\x5F\x63\x62\x74","\x65\x5F\x63\x61\x74","\x65\x5F\x65\x62\x74","\x65\x5F\x65\x61\x74","\x65\x5F\x66\x69\x74\x6E","\x65\x5F\x63\x6D","\x65\x5F\x63\x74\x72","\x65\x5F\x76\x74\x72","\x65\x5F\x6D\x74","\x65\x5F\x74\x6F","\x65\x5F\x74\x73","\x65\x5F\x6D\x62\x6F","\x65\x5F\x73\x63\x69","\x65\x5F\x6C\x70","\x65\x5F\x6D\x72\x70","\x65\x5F\x6D\x63\x32\x63","\x65\x5F\x6D\x6D\x76","\x65\x5F\x63\x72\x62","\x65\x5F\x70\x6F\x74","\x65\x5F\x73\x74\x69\x63\x6B\x65\x72\x5F\x71\x72\x63\x6F\x64\x65","\x65\x5F\x66\x74","\x65\x5F\x6D\x72","\x65\x5F\x72\x65\x6D\x61\x72\x6B","\x72\x65\x6D\x61\x72\x6B\x73","\x72\x65\x70\x6F\x72\x74\x73\x5F\x6C\x69\x73\x74\x5F\x64\x69\x76","\x54\x69\x6D\x65","\x72\x65\x70\x6F\x72\x74\x2D\x74\x69\x6D\x65","\x4D\x65\x74\x65\x72","\x72\x65\x70\x6F\x72\x74\x2D\x6D\x65\x74\x65\x72","\x54\x6F\x6B\x65\x6E","\x72\x65\x70\x6F\x72\x74\x2D\x74\x6F\x6B\x65\x6E","\x73\x70\x61\x6E","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x63\x6C\x61\x73\x73","\x72\x65\x70\x6F\x72\x74\x2D\x74\x69\x74\x6C\x65\x20\x72\x65\x70\x6F\x72\x74\x2D\x63\x6F\x6C\x2D\x74\x69\x74\x6C\x65\x20","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x20","\x73\x70\x6C\x69\x74","\x64\x69\x76","\x72\x65\x70\x6F\x72\x74\x2D\x64\x61\x74\x65\x20\x72\x65\x70\x6F\x72\x74\x2D\x74\x69\x74\x6C\x65","\x2D","\x20\x72\x65\x70\x6F\x72\x74\x2D\x6F\x64\x64","\x6D\x61\x72\x67\x69\x6E\x42\x6F\x74\x74\x6F\x6D","\x35\x70\x78","\x6F\x6E\x63\x6C\x69\x63\x6B","\x44\x65\x6C\x65\x74\x65\x20\x52\x65\x70\x6F\x72\x74\x3F","\x79\x6F\x75\x20\x77\x69\x6C\x6C\x20\x70\x65\x72\x6D\x61\x6E\x65\x6E\x74\x6C\x79\x20\x6C\x6F\x73\x65\x20\x74\x68\x69\x73\x20\x72\x65\x70\x6F\x72\x74","\x77\x61\x72\x6E\x69\x6E\x67","\x73\x6C\x69\x64\x65\x2D\x66\x72\x6F\x6D\x2D\x74\x6F\x70","\x59\x65\x73","\x4E\x6F","\x74\x61\x72\x67\x65\x74","\x70\x61\x72\x65\x6E\x74\x4E\x6F\x64\x65","\x72\x65\x6D\x6F\x76\x65\x43\x68\x69\x6C\x64","\x72\x65\x70\x6F\x72\x74\x20\x64\x65\x6C\x65\x74\x65\x64","\x73\x61\x76\x65\x64\x5F\x72\x65\x70\x6F\x72\x74\x73\x5F\x6D\x6F\x64\x61\x6C","\x73\x61\x76\x65\x64\x5F\x72\x65\x70\x6F\x72\x74\x73\x5F\x64\x69\x76","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E","\x3C\x73\x70\x61\x6E\x20\x63\x6C\x61\x73\x73\x3D\x27\x67\x6C\x79\x70\x68\x69\x63\x6F\x6E\x20\x67\x6C\x79\x70\x68\x69\x63\x6F\x6E\x2D\x72\x65\x6D\x6F\x76\x65\x27\x20\x73\x74\x79\x6C\x65\x3D\x27\x63\x6F\x6C\x6F\x72\x3A\x72\x65\x64\x3B\x27\x20\x74\x61\x72\x67\x65\x74\x3D\x27","\x27\x20\x6F\x6E\x63\x6C\x69\x63\x6B\x3D\x27\x64\x65\x6C\x65\x74\x65\x5F\x72\x65\x70\x6F\x72\x74\x28\x74\x68\x69\x73\x29\x27\x3E\x3C\x2F\x73\x70\x61\x6E\x3E","\x20\x3C\x73\x70\x61\x6E\x20\x6F\x6E\x63\x6C\x69\x63\x6B\x3D\x27\x65\x64\x69\x74\x5F\x72\x65\x70\x6F\x72\x74\x28\x74\x68\x69\x73\x29\x27\x3E","\x3C\x2F\x73\x70\x61\x6E\x3E\x3C\x2F\x64\x69\x76\x3E","\x72\x62\x74\x6E","\x72\x65\x70\x6F\x72\x74\x73\x5F\x64\x69\x76","\x75\x6E\x62\x73\x5F\x4A\x65\x72\x6D\x5F","\x73\x65\x74\x49\x74\x65\x6D","\x67\x65\x74\x49\x74\x65\x6D","\x70\x72\x65\x70\x61\x69\x64\x2D\x6F\x6E\x6C\x79","\x74\x68\x72\x65\x65\x2D\x70\x68\x61\x73\x65\x2D\x6F\x6E\x6C\x79","\x73\x74\x69\x63\x6B\x65\x72","\x79\x6F\x75\x20\x64\x6F\x6E\x74\x20\x68\x61\x76\x65\x20\x61\x20\x73\x65\x73\x73\x69\x6F\x6E\x20\x49\x44\x2E\x20\x70\x6C\x65\x61\x73\x65\x20\x63\x6F\x6E\x6E\x65\x63\x74\x20\x74\x6F\x20\x69\x6E\x74\x65\x72\x6E\x65\x74\x2C\x20\x6C\x6F\x67\x6F\x75\x74\x20\x61\x6E\x64\x20\x6C\x6F\x67\x69\x6E\x20\x61\x67\x61\x69\x6E\x20\x74\x6F\x20\x61\x74\x74\x61\x69\x6E\x20\x6F\x6E\x65","\x73\x74\x6F\x72\x61\x67\x65\x20\x65\x72\x72\x6F\x72\x2E\x20\x73\x61\x76\x65\x64\x20\x72\x65\x70\x6F\x72\x74\x73\x20\x73\x65\x65\x6D\x20\x74\x6F\x20\x62\x65\x20\x6D\x69\x73\x73\x69\x6E\x67","\x75\x70\x6C\x6F\x61\x64\x69\x6E\x67\x20\x73\x65\x6C\x65\x63\x74\x65\x64\x20\x72\x65\x70\x6F\x72\x74\x73\x2E\x2E\x2E","\x72\x65\x70\x6F\x72\x74\x73\x20\x75\x70\x6C\x6F\x61\x64\x65\x64\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79","\x70\x6C\x65\x61\x73\x65\x20\x73\x65\x6C\x65\x63\x74\x20\x61\x74\x20\x6C\x65\x61\x73\x74\x20\x6F\x6E\x65\x20\x72\x65\x70\x6F\x72\x74\x21","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E\x3C\x6C\x61\x62\x65\x6C\x3E\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x20\x76\x61\x6C\x75\x65\x3D\x27\x61\x6C\x6C\x27\x20\x6F\x6E\x63\x68\x61\x6E\x67\x65\x3D\x27\x73\x65\x6C\x65\x63\x74\x5F\x61\x6C\x6C\x5F\x73\x61\x76\x65\x64\x5F\x72\x65\x70\x6F\x72\x74\x73\x28\x74\x68\x69\x73\x29\x27\x3E\x53\x65\x6C\x65\x63\x74\x20\x41\x6C\x6C\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x64\x69\x76\x3E","\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E\x3C\x6C\x61\x62\x65\x6C\x3E\x3C\x69\x6E\x70\x75\x74\x20\x74\x79\x70\x65\x3D\x27\x63\x68\x65\x63\x6B\x62\x6F\x78\x27\x3E","\x3C\x2F\x6C\x61\x62\x65\x6C\x3E\x3C\x2F\x64\x69\x76\x3E","\x69\x6E\x6C\x69\x6E\x65","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E","\x4E\x4F\x4E\x45","\x67\x65\x74\x4D\x6F\x6E\x74\x68","\x67\x65\x74\x44\x61\x74\x65","\x67\x65\x74\x48\x6F\x75\x72\x73","\x67\x65\x74\x4D\x69\x6E\x75\x74\x65\x73","\x67\x65\x74\x53\x65\x63\x6F\x6E\x64\x73","\x30","\x67\x65\x74\x46\x75\x6C\x6C\x59\x65\x61\x72","\x3A","\x54\x68\x69\x73\x20\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x20\x69\x73\x20\x4E\x4F\x54\x20\x74\x61\x72\x67\x65\x74\x65\x64\x20\x66\x6F\x72\x20\x74\x68\x69\x73\x20\x64\x65\x76\x69\x63\x65\x2E\x20\x50\x6C\x65\x61\x73\x65\x20\x74\x61\x6C\x6B\x20\x74\x6F\x20\x4A\x45\x52\x4D\x20\x54\x65\x63\x68\x6E\x6F\x6C\x6F\x67\x79\x20\x61\x62\x6F\x75\x74\x20\x74\x68\x69\x73","\x61\x70\x70\x64\x61\x74\x61","\x64\x69\x73\x74\x72\x69\x63\x74\x73","\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72\x73","\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72\x73","\x6D\x6F\x64\x65\x6C\x73","\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E\x73","\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E\x73","\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65\x73","\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73\x65\x73","\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65\x73","\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74\x73","\x6D\x61\x78\x5F\x63\x75\x72\x72\x65\x6E\x74\x73","\x73\x6F\x72\x74","\x4F\x74\x68\x65\x72","\x6F\x70\x74\x69\x6F\x6E","\x67\x65\x74\x73\x65\x74\x74\x69\x6E\x67\x73","\x65\x72\x72\x6F\x72\x20\x69\x6E\x20\x66\x65\x74\x63\x68\x69\x6E\x67\x20\x61\x70\x70\x20\x64\x61\x74\x61","\x66\x65\x74\x63\x68\x69\x6E\x67\x20\x61\x70\x70\x20\x64\x61\x74\x61\x20\x66\x61\x69\x6C\x65\x64\x21","\x72\x61\x64\x69\x75\x73","\x72\x65\x73\x75\x6C\x74\x61\x6E\x74","\x62\x61\x63\x6B\x62\x75\x74\x74\x6F\x6E","\x70\x65\x72\x73\x6F\x6E\x6E\x65\x6C","\x70\x72\x65\x76\x65\x6E\x74\x44\x65\x66\x61\x75\x6C\x74","\x70\x6C\x65\x61\x73\x65\x20\x74\x75\x72\x6E\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x47\x50\x53\x28\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x29\x2C\x20\x79\x6F\x75\x20\x77\x6F\x6E\x74\x20\x73\x75\x62\x6D\x69\x74\x20\x74\x68\x65\x20\x72\x65\x70\x6F\x72\x74\x20\x69\x66\x20\x47\x50\x53\x20\x6F\x66\x66\x28\x73\x65\x74\x20\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x20\x6D\x6F\x64\x65\x20\x74\x6F\x20\x44\x45\x56\x49\x43\x45\x20\x4F\x4E\x4C\x59\x29","\x5B\x5D","\x6F\x6E\x6C\x6F\x61\x64","\x64\x65\x76\x69\x63\x65\x72\x65\x61\x64\x79"];_0xb615[0];var global=this;var UNBS_SERVERS=[_0xb615[1]];var SESSION_ID=_0xb615[2];var DEVICE_SERIAL_NUMBER=_0xb615[2];var LOCATION=null;var AGENT={uname:_0xb615[2],names:_0xb615[2]};var BTPrinterName=_0xb615[3];var EDITING={};var TARGET_DEVICE=_0xb615[4];var LOGIN_REF={};function request(_0x3387xc,_0x3387xd,_0x3387xe= null,_0x3387xf= null,_0x3387x10= null,_0x3387x11= 0,_0x3387x12= null,_0x3387x13= null,_0x3387x14= true){if(!isOnline()){_0x3387x10?_0x3387x10():flag_error(_0xb615[5]);return}else {if(_0x3387x11== UNBS_SERVERS[_0xb615[6]]){_0x3387x10?_0x3387x10():flag_error(_0xb615[5]);return};start_loading();jQuery[_0xb615[11]]({type:_0xb615[7],url:UNBS_SERVERS[_0x3387x11],data:JSON[_0xb615[8]](_0x3387xe),complete:function(){stop_loading()},success:_0x3387xf,error:function(_0x3387x15){request(_0x3387xc,_0x3387xd,_0x3387xe,_0x3387xf,_0x3387x10,++_0x3387x11,_0x3387x12,_0x3387x13,_0x3387x14)},dataType:_0xb615[9],contentType:_0xb615[10],processData:false,async:_0x3387x14})}}function readserial(){try{DEVICE_SERIAL_NUMBER= device[_0xb615[12]]}catch(e){}}function readbarcode(_0x3387x18){try{cordova[_0xb615[18]][_0xb615[17]][_0xb615[16]](function(_0x3387x19){_0x3387x18[_0xb615[13]]= _0x3387x19[_0xb615[14]]},function(_0x3387x1a){},{preferFrontCamera:false,showFlipCameraButton:true,showTorchButton:true,torchOn:false,prompt:_0xb615[15]})}catch(e){flag_error(e+ _0xb615[19])}}function increase_opacity(_0x3387x1c,_0x3387x1d){_0x3387x1d+= 0.1;if(_0x3387x1d>= 1){return};_0x3387x1c[_0xb615[21]][_0xb615[20]]= _0x3387x1d+ _0xb615[2];setTimeout(increase_opacity,150,_0x3387x1c,_0x3387x1d)}function back(_0x3387x1f){if(_0x3387x1f== _0xb615[22]){document[_0xb615[24]](_0xb615[22])[_0xb615[21]][_0xb615[23]]= _0xb615[25];document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]= _0xb615[27];increase_opacity(document[_0xb615[24]](_0xb615[26]),0.0)}else {if(_0x3387x1f== _0xb615[26]){logout()}}}function next(_0x3387x1f){if(_0x3387x1f== _0xb615[22]){}else {if(_0x3387x1f== _0xb615[26]){let _0x3387x21=validate_form(_0xb615[26]);if(DEVICE_SERIAL_NUMBER!= _0xb615[28]&&  !_0x3387x21[_0xb615[29]]){flag_error(_0x3387x21[_0xb615[30]]+ _0xb615[31]);return};document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]= _0xb615[25];document[_0xb615[24]](_0xb615[22])[_0xb615[21]][_0xb615[23]]= _0xb615[27];increase_opacity(document[_0xb615[24]](_0xb615[22]),0.0)}}}function GPSon(){let _0x3387x23=true;try{CheckGPS[_0xb615[33]](function(){},function _0x3387x24(){showToast(_0xb615[32]);_0x3387x23= false})}catch(e){return _0x3387x23};return _0x3387x23}function get_location(_0x3387x26= null,_0x3387x27= null,_0x3387x28= null,_0x3387x29= true){if(!GPSon()){showToast(_0xb615[34]);return};try{if(_0x3387x29){start_loading()};LOCATION= {"\x74\x69\x6D\x65":0,"\x6C\x61\x74\x69\x74\x75\x64\x65":0.00000,"\x6C\x6F\x6E\x67\x69\x74\x75\x64\x65":0.00000,"\x61\x64\x64\x72\x65\x73\x73\x5F\x6C\x69\x6E\x65":_0xb615[35],"\x61\x64\x64\x72\x65\x73\x73":_0xb615[35],"\x6C\x6F\x63\x61\x6C\x69\x74\x79":_0xb615[36],"\x73\x75\x62\x5F\x6C\x6F\x63\x61\x6C\x69\x74\x79":_0xb615[36],"\x61\x64\x6D\x69\x6E\x5F\x61\x72\x65\x61":_0xb615[36],"\x73\x75\x62\x5F\x61\x64\x6D\x69\x6E\x5F\x61\x72\x65\x61":_0xb615[36],"\x66\x65\x61\x74\x75\x72\x65\x5F\x6E\x61\x6D\x65":_0xb615[36]};navigator[_0xb615[44]][_0xb615[43]](function(_0x3387x2a){stop_loading();LOCATION[_0xb615[37]]= _0x3387x2a[_0xb615[38]];LOCATION[_0xb615[39]]= _0x3387x2a[_0xb615[40]][_0xb615[39]];LOCATION[_0xb615[41]]= _0x3387x2a[_0xb615[40]][_0xb615[41]];reverseGeocode({lat:_0x3387x2a[_0xb615[40]][_0xb615[39]],lon:_0x3387x2a[_0xb615[40]][_0xb615[41]]},_0x3387x26,_0x3387x27)},function(_0x3387x1a){stop_loading();showToast(_0xb615[42]);console[_0xb615[30]](_0xb615[42]);if(_0x3387x26){_0x3387x26(_0x3387x27)}},{timeout:50000})}catch(e){if(_0x3387x28){_0x3387x28(e)}}}function login(){if(DEVICE_SERIAL_NUMBER!= TARGET_DEVICE){showSerialError();return};let _0x3387x2c=document[_0xb615[24]](_0xb615[45])[_0xb615[13]];let _0x3387x2d=document[_0xb615[24]](_0xb615[46])[_0xb615[13]];if(!_0x3387x2c[_0xb615[6]]||  !_0x3387x2d[_0xb615[6]]){flag_error(_0xb615[47]);return};let _0x3387x2e=function(_0x3387x2f){if(_0x3387x2f[_0xb615[48]]){flag_error(_0x3387x2f[_0xb615[49]]);return};write_local_data(_0xb615[50],JSON[_0xb615[8]]({uname:_0x3387x2c,pswd:_0x3387x2d}),function(_0x3387x30){},function(_0x3387x31){});AGENT[_0xb615[45]]= _0x3387x2c;AGENT[_0xb615[51]]= _0x3387x2f[_0xb615[51]];SESSION_ID= _0x3387x2f[_0xb615[52]];document[_0xb615[24]](_0xb615[53])[_0xb615[21]][_0xb615[23]]= _0xb615[25];document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]= _0xb615[27];document[_0xb615[24]](_0xb615[46])[_0xb615[13]]= _0xb615[2];if(!GPSon()){showToast(_0xb615[32])};document[_0xb615[24]](_0xb615[54])[_0xb615[21]][_0xb615[23]]= _0xb615[55];fetch_app_data()};request(_0xb615[2],_0xb615[7],{"\x61\x63\x74\x69\x6F\x6E":_0xb615[50],"\x64\x65\x76\x69\x63\x65":{"\x73\x65\x72\x69\x61\x6C":DEVICE_SERIAL_NUMBER},"\x6C\x6F\x67\x69\x6E\x5F\x69\x64":_0x3387x2c,"\x70\x61\x73\x73\x77\x6F\x72\x64":_0x3387x2d},_0x3387x2e,function(){read_local_data(_0xb615[50],function(){},function(_0x3387x32){if(!_0x3387x32){flag_error(_0xb615[56])}else {let _0x3387x33=JSON[_0xb615[57]](_0x3387x32);if(_0x3387x33[_0xb615[45]]== _0x3387x2c&& _0x3387x33[_0xb615[46]]== _0x3387x2d){_0x3387x2e({error:false})}else {_0x3387x2e({error:true,message:_0xb615[58]})}}})},0,null,null)}var _swipe={startX:0,startY:0};function initSwipe(_0x3387x36,_0x3387x26,_0x3387x37= 20,_0x3387x38= null){return;function _get_swipe_directions(_0x3387x3a,_0x3387x3b,_0x3387x37){_0x3387x3a= _0x3387x3a< 0?((_0x3387x3a>  -_0x3387x37)?0:_0x3387x3a):((_0x3387x3a< _0x3387x37)?0:_0x3387x3a);_0x3387x3b= _0x3387x3b< 0?((_0x3387x3b>  -_0x3387x37)?0:_0x3387x3a):((_0x3387x3b< _0x3387x37)?0:_0x3387x3b);var _0x3387x3c=(_0x3387x3b> 0)?_0xb615[59]:(_0x3387x3b< 0?_0xb615[60]:_0xb615[25]);var _0x3387x3d=(_0x3387x3a> 0)?_0xb615[61]:(_0x3387x3a< 0?_0xb615[62]:_0xb615[25]);_0x3387x3b= _0x3387x3b< 0?-1* _0x3387x3b:_0x3387x3b;_0x3387x3a= _0x3387x3a< 0?-1* _0x3387x3a:_0x3387x3a;var _0x3387x3e=_0x3387x3b> _0x3387x3a?_0x3387x3c:_0x3387x3d;var _0x3387x3f={horizontal:_0x3387x3d,vertical:_0x3387x3c,resultant:_0x3387x3e};return _0x3387x3f}_0x3387x36[_0xb615[70]](_0xb615[63],function(_0x3387x30){_0x3387x30[_0xb615[64]]();_swipe[_0xb615[65]]= _0x3387x30[_0xb615[67]][0][_0xb615[66]];_swipe[_0xb615[68]]= _0x3387x30[_0xb615[67]][0][_0xb615[69]]});_0x3387x36[_0xb615[70]](_0xb615[71],function(_0x3387x30){_0x3387x30[_0xb615[64]]();var _0x3387x3a=_0x3387x30[_0xb615[67]][0][_0xb615[66]]- _swipe[_0xb615[65]],_0x3387x3b=_0x3387x30[_0xb615[67]][0][_0xb615[69]]- _swipe[_0xb615[68]];_0x3387x26(_get_swipe_directions(_0x3387x3a,_0x3387x3b,_0x3387x37),_0x3387x38)});_0x3387x36[_0xb615[70]](_0xb615[72],function(_0x3387x30){_0x3387x30[_0xb615[64]]();_swipe[_0xb615[65]]= _0x3387x30[_0xb615[73]];_swipe[_0xb615[68]]= _0x3387x30[_0xb615[74]]});_0x3387x36[_0xb615[70]](_0xb615[75],function(_0x3387x30){_0x3387x30[_0xb615[64]]();var _0x3387x3a=_0x3387x30[_0xb615[73]]- _swipe[_0xb615[65]],_0x3387x3b=_0x3387x30[_0xb615[74]]- _swipe[_0xb615[68]];_0x3387x26(_get_swipe_directions(_0x3387x3a,_0x3387x3b,_0x3387x37),_0x3387x38)})}function validate_form(_0x3387x41){return {status:true,log:_0xb615[2]};let _0x3387x42=document[_0xb615[24]](_0x3387x41)[_0xb615[77]](_0xb615[76]);let _0x3387x43=_0xb615[2];for(let _0x3387x44=0;_0x3387x44< _0x3387x42[_0xb615[6]];++_0x3387x44){if(!_0x3387x42[_0x3387x44][_0xb615[13]][_0xb615[6]]){_0x3387x43= _0x3387x42[_0x3387x44][_0xb615[79]](_0xb615[78]);break}};if(!_0x3387x43[_0xb615[6]]){return {status:true,log:_0xb615[2]}};return {status:false,log:_0x3387x43[_0xb615[80]]()}}function upload(_0x3387x46= _0xb615[2]){let _0x3387x47;let _0x3387xe={"\x69\x67\x6E\x6F\x72\x65":{date:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[81]]:document[_0xb615[24]](_0xb615[81])[_0xb615[13]]),agent_uname:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[83]]:AGENT[_0xb615[45]]),agent:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[84]]:AGENT[_0xb615[51]]),device:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[85]]:DEVICE_SERIAL_NUMBER)},"\x64\x65\x76\x69\x63\x65":{"\x73\x65\x72\x69\x61\x6C":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[85]][_0xb615[86]]:DEVICE_SERIAL_NUMBER)},"\x73\x65\x73\x73\x69\x6F\x6E\x5F\x69\x64":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[52]]:SESSION_ID),"\x64\x61\x74\x61":{"\x6C\x6F\x63\x61\x74\x69\x6F\x6E":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[88]][_0xb615[87]]:{}),"\x6D\x65\x74\x65\x72":{"\x73\x65\x72\x69\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[89])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[90])),"\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[91])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[92])),"\x6D\x6F\x64\x65\x6C":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[93])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[94])),"\x70\x61\x74\x74\x65\x72\x6E\x5F\x61\x70\x70\x72\x6F\x76\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[95])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[96])),"\x74\x79\x70\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]]?_0xb615[99]:_0xb615[100]),"\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[101])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[102])),"\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[103])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[104])),"\x70\x68\x61\x73\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[106]:_0xb615[107]),"\x6C\x6F\x63\x61\x74\x69\x6F\x6E":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[108])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[109])),"\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[110])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[111]))},"\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E":{"\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x5F\x69\x64":document[_0xb615[24]](_0x3387x46+ _0xb615[112])[_0xb615[13]],"\x69\x64":document[_0xb615[24]](_0x3387x46+ _0xb615[112])[_0xb615[13]],"\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[113])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[114])),"\x6D\x61\x78\x69\x6D\x75\x6D\x5F\x63\x75\x72\x72\x65\x6E\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[115])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[116])),"\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[103])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[104])),"\x63\x72\x65\x64\x69\x74\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74\x69\x6E\x67":((!document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]])?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[117])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[118])),"\x63\x72\x65\x64\x69\x74\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67":((!document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]])?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[119])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[120])),"\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[121])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[122])),"\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[123])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[124])),"\x66\x72\x65\x65\x5F\x69\x73\x73\x75\x65\x5F\x74\x6F\x6B\x65\x6E\x5F\x6E\x75\x6D\x62\x65\x72":((!document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]])?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[125])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[126])),"\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[127])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[128])),"\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[129])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[130])),"\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[131])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[132])),"\x6D\x65\x74\x65\x72\x5F\x74\x69\x6D\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[133])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[134])),"\x67\x70\x73\x5F\x74\x69\x6D\x65":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[88]][_0xb615[136]][_0xb615[135]]:get_datetime()),"\x6E\x6F\x5F\x76\x69\x73\x69\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[137])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x74\x61\x6D\x70\x65\x72\x5F\x73\x77\x69\x74\x63\x68\x5F\x6F\x70\x65\x72\x61\x74\x69\x6E\x67\x5F\x77\x65\x6C\x6C":(document[_0xb615[24]](_0x3387x46+ _0xb615[140])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x62\x6F\x64\x79\x5F\x77\x69\x74\x68\x6F\x75\x74\x5F\x76\x69\x73\x69\x61\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[141])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x73\x63\x72\x65\x77\x5F\x63\x61\x70\x73\x5F\x61\x6E\x64\x5F\x62\x6F\x64\x79\x5F\x73\x65\x61\x6C\x5F\x69\x6E\x74\x61\x63\x74":(document[_0xb615[24]](_0x3387x46+ _0xb615[142])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6C\x65\x64\x5F\x70\x75\x6C\x73\x61\x74\x69\x6E\x67\x5F\x6F\x75\x74\x70\x75\x74\x5F\x66\x75\x6E\x63\x74\x69\x6F\x6E\x69\x6E\x67":(document[_0xb615[24]](_0x3387x46+ _0xb615[143])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x72\x65\x63\x65\x69\x76\x69\x6E\x67\x5F\x70\x6F\x77\x65\x72":(document[_0xb615[24]](_0x3387x46+ _0xb615[144])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x5F\x74\x6F\x5F\x63\x69\x75":(document[_0xb615[24]](_0x3387x46+ _0xb615[145])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x6D\x61\x72\x6B\x69\x6E\x67\x73\x5F\x76\x69\x73\x69\x62\x6C\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[146])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x63\x61\x6E\x5F\x72\x65\x61\x64\x5F\x63\x72\x65\x64\x69\x74\x5F\x62\x61\x6C\x61\x6E\x63\x65\x5F\x61\x6E\x64\x5F\x72\x65\x67\x69\x73\x74\x65\x72\x73":(document[_0xb615[24]](_0x3387x46+ _0xb615[147])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6F\x76\x65\x72\x61\x6C\x6C\x5F\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x74\x65\x73\x74":(document[_0xb615[24]](_0x3387x46+ _0xb615[148])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x73\x74\x69\x63\x6B\x65\x72\x5F\x6E\x75\x6D\x62\x65\x72":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[88]][_0xb615[136]][_0xb615[149]]:(document[_0xb615[24]](_0x3387x46+ _0xb615[148])[_0xb615[97]]?(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[150])[_0xb615[13]],((_0x3387x47[_0xb615[6]]>= 20)?_0x3387x47:_throw(_0xb615[151]))):_0xb615[2])),"\x66\x75\x72\x74\x68\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64":(document[_0xb615[24]](_0x3387x46+ _0xb615[152])[_0xb615[97]]?_0xb615[153]:_0xb615[154]),"\x6D\x65\x74\x65\x72\x5F\x72\x65\x70\x6C\x61\x63\x65\x6D\x65\x6E\x74\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64":(document[_0xb615[24]](_0x3387x46+ _0xb615[155])[_0xb615[97]]?_0xb615[153]:_0xb615[154]),"\x72\x65\x6D\x61\x72\x6B\x73":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[156])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[157]))}}};{let _0x3387x48=document[_0xb615[24]](_0xb615[160])[_0xb615[159]](_0xb615[158]);let _0x3387x49=[[_0xb615[136],_0xb615[135]],[_0xb615[161],_0xb615[87]],[_0xb615[161],_0xb615[91]],[_0xb615[161],_0xb615[162]],[_0xb615[161],_0xb615[163]],[_0xb615[161],_0xb615[86]],[_0xb615[161],_0xb615[164]],[_0xb615[161],_0xb615[165]],[_0xb615[136],_0xb615[166]],[_0xb615[136],_0xb615[167]],[_0xb615[161],_0xb615[168]],[_0xb615[136],_0xb615[169]],[_0xb615[136],_0xb615[170]],[_0xb615[136],_0xb615[171]],[_0xb615[161],_0xb615[172]],[_0xb615[136],_0xb615[173]],[_0xb615[136],_0xb615[174]],[_0xb615[136],_0xb615[175]],[_0xb615[136],_0xb615[176]],[_0xb615[136],_0xb615[177]],[_0xb615[136],_0xb615[178]],[_0xb615[136],_0xb615[179]],[_0xb615[136],_0xb615[180]],[_0xb615[136],_0xb615[181]],[_0xb615[136],_0xb615[182]],[_0xb615[136],_0xb615[183]],[_0xb615[136],_0xb615[184]],[_0xb615[136],_0xb615[185]],[_0xb615[136],_0xb615[186]],[_0xb615[136],_0xb615[187]],[_0xb615[136],_0xb615[188]],[_0xb615[136],_0xb615[189]],[_0xb615[136],_0xb615[190]],[_0xb615[136],_0xb615[191]],[_0xb615[136],_0xb615[192]]];for(let _0x3387x44=0;_0x3387x44< _0x3387x48[_0xb615[6]];++_0x3387x44){_0x3387x48[_0x3387x44][_0xb615[194]][0][_0xb615[193]](_0xb615[13],_0x3387xe[_0xb615[88]][_0x3387x49[_0x3387x44][0]][_0x3387x49[_0x3387x44][1]]);_0x3387x48[_0x3387x44][_0xb615[193]](_0xb615[195],_0x3387xe[_0xb615[88]][_0x3387x49[_0x3387x44][0]][_0x3387x49[_0x3387x44][1]])}}if(!_0x3387x46[_0xb615[6]]){if(!GPSon()){showToast(_0xb615[32]);return}else {get_location(function(){_0x3387xe[_0xb615[88]][_0xb615[87]]= LOCATION;let _0x3387x4a={device:_0x3387xe[_0xb615[85]],data:_0x3387xe[_0xb615[88]],action:_0xb615[196],session_id:_0x3387xe[_0xb615[52]]};request(_0xb615[2],_0xb615[7],_0x3387x4a,function(_0x3387x2f){if(_0x3387x2f[_0xb615[48]]){flag_error(_0x3387x2f[_0xb615[49]]);return};show_success(_0xb615[197]);refresh();document[_0xb615[24]](_0xb615[22])[_0xb615[21]][_0xb615[23]]= _0xb615[25];document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]= _0xb615[27];show_modal(_0xb615[198])},function(){read_local_data(_0xb615[199],function(){},function(_0x3387x32){let _0x3387x4b;if(_0x3387x32){_0x3387x4b= JSON[_0xb615[57]](_0x3387x32)}else {_0x3387x4b= []};_0x3387x4b[_0xb615[200]](_0x3387xe);write_local_data(_0xb615[199],JSON[_0xb615[8]](_0x3387x4b),function(_0x3387x30){},function(_0x3387x31){});show_success(_0xb615[201]);refresh();document[_0xb615[24]](_0xb615[22])[_0xb615[21]][_0xb615[23]]= _0xb615[25];document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]= _0xb615[27];show_modal(_0xb615[198])})},0,null,null)},null,showToast,true)}}else {let _0x3387x4a={device:_0x3387xe[_0xb615[85]],data:_0x3387xe[_0xb615[88]],action:_0xb615[202],session_id:_0x3387xe[_0xb615[52]]};request(_0xb615[2],_0xb615[7],_0x3387xe,function(_0x3387x2f){if(!_0x3387x2f[_0xb615[29]]|| _0x3387x2f[_0xb615[48]]){flag_error(_0x3387x2f[_0xb615[49]]);return};show_success(_0xb615[203]);hide_modal(_0xb615[204]);done_editting_reports()},null,0,null,null)}}function showToast(_0x3387x4d,_0x3387x4e= _0xb615[205],_0x3387x4f= _0xb615[206]){try{window[_0xb615[18]][_0xb615[208]][_0xb615[207]](_0x3387x4d,_0x3387x4e,_0x3387x4f)}catch(e){console[_0xb615[30]](_0x3387x4d)}}function refresh(){LOCATION= null;let _0x3387x51=document[_0xb615[159]](_0xb615[209]);for(let _0x3387x44=0;_0x3387x44< _0x3387x51[_0xb615[6]];++_0x3387x44){_0x3387x51[_0x3387x44][_0xb615[210]]()};setTimeout(function(){document[_0xb615[24]](_0xb615[98])[_0xb615[97]]= true,document[_0xb615[24]](_0xb615[211])[_0xb615[97]]= false,document[_0xb615[24]](_0xb615[105])[_0xb615[97]]= true,document[_0xb615[24]](_0xb615[212])[_0xb615[97]]= false,toggle_prepaid({checked:true});toggle_single_phase({checked:true});toggle_sticker({checked:false})},500)}function toHex(_0x3387x53){var _0x3387x54=_0xb615[2];for(var _0x3387x44=0;_0x3387x44< _0x3387x53[_0xb615[6]];_0x3387x44++){_0x3387x54+= _0xb615[2]+ _0x3387x53[_0xb615[213]](_0x3387x44).toString(16)};return _0x3387x54}function print_data(_0x3387x56){try{BTPrinter[_0xb615[226]](function(_0x3387x57){if(_0x3387x57[_0xb615[214]](BTPrinterName)< 0){show_info(BTPrinterName+ _0xb615[215]);return};start_loading();BTPrinter[_0xb615[225]](function(_0x3387x58){stop_loading();_0x3387x56= [_0xb615[217],_0xb615[218],_0xb615[219]][_0xb615[216]](_0x3387x56);for(let _0x3387x44=0;_0x3387x44< _0x3387x56[_0xb615[6]];++_0x3387x44){BTPrinter[_0xb615[222]](function(_0x3387x58){;},function(_0x3387x1a){flag_error(_0xb615[220]+ _0x3387x1a)},_0x3387x56[_0x3387x44]+ _0xb615[221])};BTPrinter[_0xb615[223]](function(_0x3387x58){;},function(_0x3387x1a){;},BTPrinterName)},function(_0x3387x1a){show_info(_0xb615[224]+ _0x3387x1a)},BTPrinterName)},function(_0x3387x1a){show_info(_0x3387x1a)})}catch(e){flag_error(e)}}function _print(){let _0x3387x48=document[_0xb615[24]](_0xb615[160])[_0xb615[159]](_0xb615[158]);let _0x3387x56=[];for(let _0x3387x44=0;_0x3387x44< _0x3387x48[_0xb615[6]];++_0x3387x44){if(_0x3387x48[_0x3387x44][_0xb615[194]][0][_0xb615[97]]){_0x3387x56[_0xb615[200]](_0x3387x48[_0x3387x44][_0xb615[228]][_0xb615[229]](_0x3387x48[_0x3387x44][_0xb615[228]][_0xb615[214]](_0xb615[227])+ 1,_0x3387x48[_0x3387x44][_0xb615[228]][_0xb615[6]])+ _0xb615[230]+ _0x3387x48[_0x3387x44][_0xb615[194]][0][_0xb615[13]])}};if(_0x3387x56[_0xb615[6]]){print_data(_0x3387x56)}else {show_info(_0xb615[231])}}function reverseGeocode(_0x3387x5b= {lat:0.3129344,lon:32.5861376},_0x3387x26= null,_0x3387xe= null){if(LOCATION){LOCATION[_0xb615[232]]= _0xb615[233];LOCATION[_0xb615[234]]= _0xb615[233]};if(isOnline()){start_loading();$[_0xb615[11]]({type:_0xb615[235],url:_0xb615[236]+ _0x3387x5b[_0xb615[237]]+ _0xb615[238]+ _0x3387x5b[_0xb615[239]],async:true,complete:function(_0x3387x5c){if(_0x3387x5c[_0xb615[29]]&& _0x3387x5c[_0xb615[29]]!= 200){showToast(_0xb615[240]+ _0x3387x5c[_0xb615[29]])};stop_loading();if(_0x3387x26){_0x3387x26(_0x3387xe)}},error:function(_0x3387x5c,_0x3387x5d,_0x3387x5e){showToast(_0xb615[241]);console[_0xb615[30]](_0xb615[241])},success:function(_0x3387x2f){LOCATION[_0xb615[232]]= _0x3387x2f[_0xb615[242]];LOCATION[_0xb615[234]]= _0x3387x2f[_0xb615[242]]},timeout:10000})}else {if(_0x3387x26){_0x3387x26(_0x3387xe)}}}function update_report(){let _0x3387x46=_0xb615[243];let _0x3387x47;let _0x3387xe={"\x69\x67\x6E\x6F\x72\x65":{date:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[81]]:document[_0xb615[24]](_0xb615[81])[_0xb615[13]]),agent_uname:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[83]]:AGENT[_0xb615[45]]),agent:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[84]]:AGENT[_0xb615[51]]),device:(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[82]][_0xb615[85]]:DEVICE_SERIAL_NUMBER)},"\x64\x65\x76\x69\x63\x65":{"\x73\x65\x72\x69\x61\x6C":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[85]][_0xb615[86]]:DEVICE_SERIAL_NUMBER)},"\x73\x65\x73\x73\x69\x6F\x6E\x5F\x69\x64":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[52]]:SESSION_ID),"\x64\x61\x74\x61":{"\x6C\x6F\x63\x61\x74\x69\x6F\x6E":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[88]][_0xb615[87]]:{}),"\x6D\x65\x74\x65\x72":{"\x73\x65\x72\x69\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[89])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[90])),"\x6D\x61\x6E\x75\x66\x61\x63\x74\x75\x72\x65\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[91])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[92])),"\x6D\x6F\x64\x65\x6C":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[93])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[94])),"\x70\x61\x74\x74\x65\x72\x6E\x5F\x61\x70\x70\x72\x6F\x76\x61\x6C\x5F\x6E\x75\x6D\x62\x65\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[95])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[96])),"\x74\x79\x70\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]]?_0xb615[99]:_0xb615[100]),"\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x63\x6C\x61\x73\x73":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[101])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[102])),"\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[103])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[104])),"\x70\x68\x61\x73\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[106]:_0xb615[107]),"\x6C\x6F\x63\x61\x74\x69\x6F\x6E":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[108])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[109])),"\x64\x69\x73\x74\x72\x69\x62\x75\x74\x6F\x72":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[110])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[111]))},"\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E":{"\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x5F\x69\x64":document[_0xb615[24]](_0x3387x46+ _0xb615[112])[_0xb615[13]],"\x69\x64":document[_0xb615[24]](_0x3387x46+ _0xb615[112])[_0xb615[13]],"\x72\x61\x74\x65\x64\x5F\x63\x75\x72\x72\x65\x6E\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[113])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[114])),"\x6D\x61\x78\x69\x6D\x75\x6D\x5F\x63\x75\x72\x72\x65\x6E\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[115])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[116])),"\x72\x61\x74\x65\x64\x5F\x76\x6F\x6C\x74\x61\x67\x65":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[103])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[104])),"\x63\x72\x65\x64\x69\x74\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74\x69\x6E\x67":((!document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]])?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[117])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[118])),"\x63\x72\x65\x64\x69\x74\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67":((!document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]])?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[119])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[120])),"\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x62\x65\x66\x6F\x72\x65\x5F\x74\x65\x73\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[121])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[122])),"\x65\x6E\x65\x72\x67\x79\x5F\x72\x65\x61\x64\x69\x6E\x67\x5F\x61\x66\x74\x65\x72\x5F\x74\x65\x73\x74":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[123])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[124])),"\x66\x72\x65\x65\x5F\x69\x73\x73\x75\x65\x5F\x74\x6F\x6B\x65\x6E\x5F\x6E\x75\x6D\x62\x65\x72":((!document[_0xb615[24]](_0x3387x46+ _0xb615[98])[_0xb615[97]])?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[125])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[126])),"\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6F\x6E\x5F\x6D\x6F\x64\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[127])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[128])),"\x63\x74\x5F\x72\x61\x74\x69\x6F\x6E":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[129])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[130])),"\x76\x74\x5F\x72\x61\x74\x69\x6F\x6E":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[131])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[132])),"\x6D\x65\x74\x65\x72\x5F\x74\x69\x6D\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[105])[_0xb615[97]]?_0xb615[2]:_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[133])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[134])),"\x67\x70\x73\x5F\x74\x69\x6D\x65":(_0x3387x46[_0xb615[6]]?EDITING[_0xb615[88]][_0xb615[136]][_0xb615[135]]:get_datetime()),"\x6E\x6F\x5F\x76\x69\x73\x69\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[137])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x74\x61\x6D\x70\x65\x72\x5F\x73\x77\x69\x74\x63\x68\x5F\x6F\x70\x65\x72\x61\x74\x69\x6E\x67\x5F\x77\x65\x6C\x6C":(document[_0xb615[24]](_0x3387x46+ _0xb615[140])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x62\x6F\x64\x79\x5F\x77\x69\x74\x68\x6F\x75\x74\x5F\x76\x69\x73\x69\x61\x62\x6C\x65\x5F\x64\x61\x6D\x61\x67\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[141])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x73\x63\x72\x65\x77\x5F\x63\x61\x70\x73\x5F\x61\x6E\x64\x5F\x62\x6F\x64\x79\x5F\x73\x65\x61\x6C\x5F\x69\x6E\x74\x61\x63\x74":(document[_0xb615[24]](_0x3387x46+ _0xb615[142])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6C\x65\x64\x5F\x70\x75\x6C\x73\x61\x74\x69\x6E\x67\x5F\x6F\x75\x74\x70\x75\x74\x5F\x66\x75\x6E\x63\x74\x69\x6F\x6E\x69\x6E\x67":(document[_0xb615[24]](_0x3387x46+ _0xb615[143])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x72\x65\x63\x65\x69\x76\x69\x6E\x67\x5F\x70\x6F\x77\x65\x72":(document[_0xb615[24]](_0x3387x46+ _0xb615[144])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x63\x6F\x6E\x6E\x65\x63\x74\x69\x6E\x67\x5F\x74\x6F\x5F\x63\x69\x75":(document[_0xb615[24]](_0x3387x46+ _0xb615[145])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6D\x65\x74\x65\x72\x5F\x6D\x61\x72\x6B\x69\x6E\x67\x73\x5F\x76\x69\x73\x69\x62\x6C\x65":(document[_0xb615[24]](_0x3387x46+ _0xb615[146])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x63\x61\x6E\x5F\x72\x65\x61\x64\x5F\x63\x72\x65\x64\x69\x74\x5F\x62\x61\x6C\x61\x6E\x63\x65\x5F\x61\x6E\x64\x5F\x72\x65\x67\x69\x73\x74\x65\x72\x73":(document[_0xb615[24]](_0x3387x46+ _0xb615[147])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x6F\x76\x65\x72\x61\x6C\x6C\x5F\x61\x63\x63\x75\x72\x61\x63\x79\x5F\x74\x65\x73\x74":(document[_0xb615[24]](_0x3387x46+ _0xb615[148])[_0xb615[97]]?_0xb615[138]:_0xb615[139]),"\x73\x74\x69\x63\x6B\x65\x72\x5F\x6E\x75\x6D\x62\x65\x72":(document[_0xb615[24]](_0x3387x46+ _0xb615[148])[_0xb615[97]]?(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[150])[_0xb615[13]],((_0x3387x47[_0xb615[6]]>= 20)?_0x3387x47:_throw(_0xb615[151]))):_0xb615[2]),"\x66\x75\x72\x74\x68\x65\x72\x5F\x74\x65\x73\x74\x69\x6E\x67\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64":(document[_0xb615[24]](_0x3387x46+ _0xb615[152])[_0xb615[97]]?_0xb615[153]:_0xb615[154]),"\x6D\x65\x74\x65\x72\x5F\x72\x65\x70\x6C\x61\x63\x65\x6D\x65\x6E\x74\x5F\x72\x65\x63\x6F\x6D\x6D\x65\x6E\x64\x65\x64":(document[_0xb615[24]](_0x3387x46+ _0xb615[155])[_0xb615[97]]?_0xb615[153]:_0xb615[154]),"\x72\x65\x6D\x61\x72\x6B\x73":(_0x3387x47= document[_0xb615[24]](_0x3387x46+ _0xb615[156])[_0xb615[13]],_0x3387x47[_0xb615[6]]?_0x3387x47:_throw(_0xb615[157]))}}};read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){show_info(_0xb615[244])}else {let _0x3387x58=JSON[_0xb615[57]](_0x3387x32);if(!_0x3387x58[_0xb615[6]]){show_info(_0xb615[245]);return};for(let _0x3387x44=0;_0x3387x44< _0x3387x58[_0xb615[6]];++_0x3387x44){if(_0x3387xe[_0xb615[88]][_0xb615[136]][_0xb615[135]]== _0x3387x58[_0x3387x44][_0xb615[88]][_0xb615[136]][_0xb615[135]]){_0x3387x58[_0x3387x44]= _0x3387xe;write_local_data(_0xb615[199],JSON[_0xb615[8]](_0x3387x58),function(){},function(_0x3387x31){show_success(_0xb615[246])});hide_modal(_0xb615[204]);break}}}})}function edit_report(_0x3387x61){let _0x3387x62=_0x3387x61;read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){show_info(_0xb615[244])}else {let _0x3387x58=JSON[_0xb615[57]](_0x3387x32);if(!_0x3387x58[_0xb615[6]]){show_info(_0xb615[245]);return};let _0x3387x63=_0x3387x62[_0xb615[228]];for(let _0x3387x44=0;_0x3387x44< _0x3387x58[_0xb615[6]];++_0x3387x44){if(_0x3387x63== _0x3387x58[_0x3387x44][_0xb615[88]][_0xb615[136]][_0xb615[135]]){EDITING= _0x3387x58[_0x3387x44];let _0x3387x64,_0x3387x65;(EDITING[_0xb615[88]][_0xb615[161]][_0xb615[165]]== _0xb615[99])?(_0x3387x64= true,document[_0xb615[24]](_0xb615[247])[_0xb615[97]]= true,document[_0xb615[24]](_0xb615[248])[_0xb615[97]]= false,toggle_prepaid({checked:true})):(_0x3387x64= false,document[_0xb615[24]](_0xb615[247])[_0xb615[97]]= false,document[_0xb615[24]](_0xb615[248])[_0xb615[97]]= true,toggle_postpaid({checked:true}));(EDITING[_0xb615[88]][_0xb615[161]][_0xb615[172]]== _0xb615[106])?(_0x3387x65= true,document[_0xb615[24]](_0xb615[249])[_0xb615[97]]= true,document[_0xb615[24]](_0xb615[250])[_0xb615[97]]= false,toggle_single_phase({checked:true})):(_0x3387x65= false,document[_0xb615[24]](_0xb615[249])[_0xb615[97]]= false,document[_0xb615[24]](_0xb615[250])[_0xb615[97]]= true,toggle_three_phase({checked:true}));document[_0xb615[24]](_0xb615[251])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[86]];document[_0xb615[24]](_0xb615[252])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[91]];document[_0xb615[24]](_0xb615[253])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[163]];document[_0xb615[24]](_0xb615[254])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[168]];document[_0xb615[24]](_0xb615[255])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[164]];document[_0xb615[24]](_0xb615[256])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[169]];document[_0xb615[24]](_0xb615[257])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[87]];document[_0xb615[24]](_0xb615[258])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[161]][_0xb615[162]];document[_0xb615[24]](_0xb615[259])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[167]];document[_0xb615[24]](_0xb615[259])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[260]];document[_0xb615[24]](_0xb615[261])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[170]];document[_0xb615[24]](_0xb615[262])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[171]];document[_0xb615[24]](_0xb615[256])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[169]];document[_0xb615[24]](_0xb615[263])[_0xb615[13]]= ((!_0x3387x64)?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[177]]);document[_0xb615[24]](_0xb615[264])[_0xb615[13]]= ((!_0x3387x64)?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[178]]);document[_0xb615[24]](_0xb615[265])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[179]];document[_0xb615[24]](_0xb615[266])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[180]];document[_0xb615[24]](_0xb615[267])[_0xb615[13]]= ((!_0x3387x64)?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[166]]);document[_0xb615[24]](_0xb615[268])[_0xb615[13]]= (_0x3387x65?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[174]]);document[_0xb615[24]](_0xb615[269])[_0xb615[13]]= (_0x3387x65?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[175]]);document[_0xb615[24]](_0xb615[270])[_0xb615[13]]= (_0x3387x65?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[176]]);document[_0xb615[24]](_0xb615[271])[_0xb615[13]]= (_0x3387x65?_0xb615[2]:EDITING[_0xb615[88]][_0xb615[136]][_0xb615[173]]);document[_0xb615[24]](_0xb615[272])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[183]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[273])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[181]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[274])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[182]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[275])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[184]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[276])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[186]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[277])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[187]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[278])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[188]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[279])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[185]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[280])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[189]]== _0xb615[138]?true:false);document[_0xb615[24]](_0xb615[281])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[190]]== _0xb615[138]?true:false);toggle_sticker({checked:document[_0xb615[24]](_0xb615[281])[_0xb615[97]]});document[_0xb615[24]](_0xb615[282])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[149]];document[_0xb615[24]](_0xb615[283])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[191]]== _0xb615[153]?true:false);document[_0xb615[24]](_0xb615[284])[_0xb615[97]]= (EDITING[_0xb615[88]][_0xb615[136]][_0xb615[192]]== _0xb615[153]?true:false);document[_0xb615[24]](_0xb615[285])[_0xb615[13]]= EDITING[_0xb615[88]][_0xb615[136]][_0xb615[286]];show_modal(_0xb615[204]);break}}}})}function populate_reports(_0x3387x58){let _0x3387x67=_0xb615[2],_0x3387x1f,_0x3387x68,_0x3387x69;let _0x3387x6a=document[_0xb615[24]](_0xb615[287]);clear(_0x3387x6a);let _0x3387x6b=[[_0xb615[288],_0xb615[289]],[_0xb615[290],_0xb615[291]],[_0xb615[292],_0xb615[293]]];for(let _0x3387x44=0;_0x3387x44< _0x3387x6b[_0xb615[6]];++_0x3387x44){_0x3387x68= document[_0xb615[295]](_0xb615[294]);_0x3387x68[_0xb615[193]](_0xb615[296],_0xb615[297]+ _0x3387x6b[_0x3387x44][1]);_0x3387x68[_0xb615[228]]= _0x3387x6b[_0x3387x44][0];_0x3387x6a[_0xb615[298]](_0x3387x68)};for(let _0x3387x44=0;_0x3387x44< _0x3387x58[_0xb615[6]];++_0x3387x44){if(!_0x3387x58[_0x3387x44][1][_0xb615[88]]){continue};if(_0x3387x58[_0x3387x44][0][_0xb615[300]](_0xb615[299])[0]!= _0x3387x67){_0x3387x67= _0x3387x58[_0x3387x44][0][_0xb615[300]](_0xb615[299])[0];_0x3387x1f= document[_0xb615[295]](_0xb615[301]);_0x3387x1f[_0xb615[193]](_0xb615[296],_0xb615[302]);_0x3387x1f[_0xb615[228]]= _0x3387x67;_0x3387x6a[_0xb615[298]](_0x3387x1f)};_0x3387x69= _0x3387x58[_0x3387x44][1][_0xb615[82]][_0xb615[81]][_0xb615[300]](_0xb615[299])[1][_0xb615[229]](0,5);_0x3387x6b= [[_0x3387x69,_0xb615[289]],[_0x3387x58[_0x3387x44][1][_0xb615[88]][_0xb615[161]][_0xb615[86]]?_0x3387x58[_0x3387x44][1][_0xb615[88]][_0xb615[161]][_0xb615[86]]:_0xb615[303],_0xb615[291]],[_0x3387x58[_0x3387x44][1][_0xb615[88]][_0xb615[136]][_0xb615[166]]?_0x3387x58[_0x3387x44][1][_0xb615[88]][_0xb615[136]][_0xb615[166]]:_0xb615[303],_0xb615[293]]];for(let _0x3387x6c=0;_0x3387x6c< _0x3387x6b[_0xb615[6]];++_0x3387x6c){_0x3387x68= document[_0xb615[295]](_0xb615[294]);_0x3387x68[_0xb615[193]](_0xb615[296],_0x3387x6b[_0x3387x6c][1]+ ((_0x3387x44% 2)?_0xb615[304]:_0xb615[2]));_0x3387x68[_0xb615[21]][_0xb615[305]]= _0xb615[306];_0x3387x68[_0xb615[228]]= _0x3387x6b[_0x3387x6c][0];_0x3387x6a[_0xb615[298]](_0x3387x68);if(_0x3387x6b[_0x3387x6c][1]== _0xb615[291]){_0x3387x68[_0xb615[88]]= _0x3387x58[_0x3387x44][1];_0x3387x68[_0xb615[307]]= edit_report}}}}function delete_report(_0x3387x6e){let _0x3387x62=_0x3387x6e;swal({title:_0xb615[308],text:_0xb615[309],type:_0xb615[310],showCancelButton:true,closeOnConfirm:true,animation:_0xb615[311],confirmButtonText:_0xb615[312],cancelButtonText:_0xb615[313]},function(_0x3387x4d){if(_0x3387x4d=== false){return false};read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){show_info(_0xb615[244])}else {let _0x3387x58=JSON[_0xb615[57]](_0x3387x32);if(!_0x3387x58[_0xb615[6]]){show_info(_0xb615[245]);return};let _0x3387x63=_0x3387x62[_0xb615[79]](_0xb615[314]);for(let _0x3387x44=0;_0x3387x44< _0x3387x58[_0xb615[6]];++_0x3387x44){if(_0x3387x63== _0x3387x58[_0x3387x44][_0xb615[88]][_0xb615[136]][_0xb615[135]]){delete _0x3387x58[_0x3387x44];let _0x3387x6f=[];for(let _0x3387x6c=0;_0x3387x6c< _0x3387x58[_0xb615[6]];++_0x3387x6c){if(_0x3387x6c!= _0x3387x44){_0x3387x6f[_0xb615[200]](_0x3387x58[_0x3387x6c])}};_0x3387x58= _0x3387x6f;write_local_data(_0xb615[199],JSON[_0xb615[8]](_0x3387x58),function(){},function(_0x3387x31){_0x3387x62[_0xb615[315]][_0xb615[315]][_0xb615[316]](_0x3387x62[_0xb615[315]]);show_success(_0xb615[317])});if(!_0x3387x58[_0xb615[6]]){hide_modal(_0xb615[318])};break}}}})})}function fetch_reports(_0x3387x62){read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){show_info(_0xb615[244])}else {let _0x3387x58=JSON[_0xb615[57]](_0x3387x32);if(!_0x3387x58[_0xb615[6]]){show_info(_0xb615[244]);return};let _0x3387x6a=document[_0xb615[24]](_0xb615[319]);clear(_0x3387x6a);_0x3387x6a[_0xb615[228]]= _0xb615[2];for(let _0x3387x44=0;_0x3387x44< _0x3387x58[_0xb615[6]];++_0x3387x44){_0x3387x6a[_0xb615[228]]+= _0xb615[320]+ _0xb615[321]+ _0x3387x58[_0x3387x44][_0xb615[88]][_0xb615[136]][_0xb615[135]]+ _0xb615[322]+ _0xb615[323]+ _0x3387x58[_0x3387x44][_0xb615[88]][_0xb615[136]][_0xb615[135]]+ _0xb615[324]};document[_0xb615[24]](_0xb615[325])[_0xb615[21]][_0xb615[23]]= _0xb615[25];show_modal(_0xb615[318])}});return}function done_editting_reports(){document[_0xb615[24]](_0xb615[326])[_0xb615[21]][_0xb615[23]]= _0xb615[25];document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]= _0xb615[27]}function write_local_data(_0x3387x73,_0x3387x32,_0x3387x74,_0x3387x75){_0x3387x73= _0xb615[327]+ _0x3387x73;localforage[_0xb615[328]](_0x3387x73,_0x3387x32,function(_0x3387x1a){if(_0x3387x1a&& _0x3387x74){_0x3387x74(_0x3387x1a)}else {if(!_0x3387x1a&& _0x3387x75){_0x3387x75(_0x3387x73)}}})}function read_local_data(_0x3387x73,_0x3387x74,_0x3387x75){_0x3387x73= _0xb615[327]+ _0x3387x73;localforage[_0xb615[329]](_0x3387x73,function(_0x3387x1a,_0x3387x32){if(_0x3387x1a&& _0x3387x74){_0x3387x74(_0x3387x1a)}else {if(!_0x3387x1a&& _0x3387x75){_0x3387x75(_0x3387x32)}}})}function toggle_prepaid(_0x3387x78){let _0x3387x79=document[_0xb615[77]](_0xb615[330]);for(let _0x3387x44=0;_0x3387x44< _0x3387x79[_0xb615[6]];++_0x3387x44){if(_0x3387x78[_0xb615[97]]){_0x3387x79[_0x3387x44][_0xb615[21]][_0xb615[23]]= _0xb615[27]}else {_0x3387x79[_0x3387x44][_0xb615[21]][_0xb615[23]]= _0xb615[25]}}}function toggle_postpaid(_0x3387x78){toggle_prepaid({checked:false})}function toggle_three_phase(_0x3387x78){let _0x3387x79=document[_0xb615[77]](_0xb615[331]);for(let _0x3387x44=0;_0x3387x44< _0x3387x79[_0xb615[6]];++_0x3387x44){if(_0x3387x78[_0xb615[97]]){_0x3387x79[_0x3387x44][_0xb615[21]][_0xb615[23]]= _0xb615[27]}else {_0x3387x79[_0x3387x44][_0xb615[21]][_0xb615[23]]= _0xb615[25]}}}function toggle_single_phase(_0x3387x78){toggle_three_phase({checked:false})}function toggle_sticker(_0x3387x7e){let _0x3387x7f=document[_0xb615[77]](_0xb615[332]);for(let _0x3387x44=0;_0x3387x44< _0x3387x7f[_0xb615[6]];++_0x3387x44){if(_0x3387x7e[_0xb615[97]]){_0x3387x7f[_0x3387x44][_0xb615[21]][_0xb615[23]]= _0xb615[27]}else {_0x3387x7f[_0x3387x44][_0xb615[21]][_0xb615[23]]= _0xb615[25]}}}function _throw(_0x3387x30){flag_error(_0x3387x30);throw _0x3387x30}function upload_saved_reports(){if(!SESSION_ID){show_info(_0xb615[333]);return};read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){flag_error(_0xb615[334])}else {let _0x3387x4b=JSON[_0xb615[57]](_0x3387x32);let _0x3387x82=[];let _0x3387x83={device:DEVICE_SERIAL_NUMBER,data:[],action:_0xb615[196],session_id:SESSION_ID};let _0x3387x6a=document[_0xb615[24]](_0xb615[319]);let _0x3387x48=_0x3387x6a[_0xb615[159]](_0xb615[158]);for(let _0x3387x44=1;_0x3387x44< _0x3387x48[_0xb615[6]];++_0x3387x44){if(_0x3387x48[_0x3387x44][_0xb615[194]][0][_0xb615[97]]&&  !_0x3387x48[_0x3387x44][_0xb615[194]][0][_0xb615[79]](_0xb615[13])){_0x3387x83[_0xb615[88]][_0xb615[200]](_0x3387x4b[_0x3387x44- 1][_0xb615[88]]);_0x3387x82[_0xb615[200]](_0x3387x44- 1)}};if(_0x3387x82[_0xb615[6]]){hide_modal(_0xb615[318]);showToast(_0xb615[335]);request(_0xb615[2],_0xb615[7],_0x3387x83,function(_0x3387x2f){if(_0x3387x2f[_0xb615[48]]){flag_error(_0x3387x2f[_0xb615[49]]);return};let _0x3387x84=[];for(let _0x3387x44=0;_0x3387x44< _0x3387x4b[_0xb615[6]];++_0x3387x44){if(_0x3387x82[_0xb615[214]](_0x3387x44)< 0){_0x3387x84[_0xb615[200]](_0x3387x4b[_0x3387x44])}};write_local_data(_0xb615[199],JSON[_0xb615[8]](_0x3387x84),function(_0x3387x1a){},function(_0x3387x32){});setTimeout(function(){showToast(_0xb615[336])},500)},null,0,null,null,true)}else {show_info(_0xb615[337])}}})}function select_all_saved_reports(_0x3387x7e){let _0x3387x6a=document[_0xb615[24]](_0xb615[319]);let _0x3387x48=_0x3387x6a[_0xb615[159]](_0xb615[158]);for(let _0x3387x44=0;_0x3387x44< _0x3387x48[_0xb615[6]];++_0x3387x44){_0x3387x48[_0x3387x44][_0xb615[194]][0][_0xb615[97]]= _0x3387x7e[_0xb615[97]]}}function show_saved_reports(){read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){show_info(_0xb615[244])}else {let _0x3387x58=JSON[_0xb615[57]](_0x3387x32);if(!_0x3387x58[_0xb615[6]]){show_info(_0xb615[244]);return};let _0x3387x6a=document[_0xb615[24]](_0xb615[319]);clear(_0x3387x6a);_0x3387x6a[_0xb615[228]]= _0xb615[338];for(let _0x3387x44=0;_0x3387x44< _0x3387x58[_0xb615[6]];++_0x3387x44){_0x3387x6a[_0xb615[228]]+= _0xb615[339]+ _0x3387x58[_0x3387x44][_0xb615[88]][_0xb615[136]][_0xb615[135]]+ _0xb615[340]};document[_0xb615[24]](_0xb615[325])[_0xb615[21]][_0xb615[23]]= _0xb615[341];show_modal(_0xb615[318])}})}function isOnline(){try{return navigator[_0xb615[342]][_0xb615[165]]!= Connection[_0xb615[343]]}catch(e){return true}}function get_datetime(){let _0x3387x47= new Date;let _0x3387x89=_0x3387x47[_0xb615[344]]()+ 1,_0x3387x8a=_0x3387x47[_0xb615[345]](),_0x3387x8b=_0x3387x47[_0xb615[346]](),_0x3387x8c=_0x3387x47[_0xb615[347]](),_0x3387x8d=_0x3387x47[_0xb615[348]]();_0x3387x89= _0x3387x89< 9?_0xb615[349]+ _0x3387x89:_0x3387x89;_0x3387x8a= _0x3387x8a< 9?_0xb615[349]+ _0x3387x8a:_0x3387x8a;_0x3387x8b= _0x3387x8b< 9?_0xb615[349]+ _0x3387x8b:_0x3387x8b;_0x3387x8c= _0x3387x8c< 9?_0xb615[349]+ _0x3387x8c:_0x3387x8c;_0x3387x8d= _0x3387x8d< 9?_0xb615[349]+ _0x3387x8d:_0x3387x8d;return _0x3387x47[_0xb615[350]]()+ _0xb615[303]+ (_0x3387x89)+ _0xb615[303]+ _0x3387x8a+ _0xb615[299]+ _0x3387x8b+ _0xb615[351]+ _0x3387x8c+ _0xb615[351]+ _0x3387x8d}function showSerialError(){showToast(_0xb615[352])}function populate_app_data(){read_local_data(_0xb615[353],null,function(_0x3387x90){if(!_0x3387x90){let _0x3387x91,_0x3387x92;let _0x3387x93=[_0xb615[354],_0xb615[355],_0xb615[356],_0xb615[357],_0xb615[358],_0xb615[359],_0xb615[360],_0xb615[361],_0xb615[362],_0xb615[363],_0xb615[364]];for(let _0x3387x94=0;_0x3387x94< _0x3387x93[_0xb615[6]];++_0x3387x94){_0x3387x92= document[_0xb615[77]](APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[296]]);for(let _0x3387x95=0;_0x3387x95< _0x3387x92[_0xb615[6]];++_0x3387x95){clear(_0x3387x92[_0x3387x95])};APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[365]]();if(APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[6]]- 1]!= _0xb615[366]){APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[200]](_0xb615[366])};for(let _0x3387x44=0;_0x3387x44< APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[6]];++_0x3387x44){for(let _0x3387x6c=0;_0x3387x6c< _0x3387x92[_0xb615[6]];++_0x3387x6c){_0x3387x91= document[_0xb615[295]](_0xb615[367]);_0x3387x91[_0xb615[193]](_0xb615[13],APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0x3387x44]);_0x3387x91[_0xb615[228]]= APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0x3387x44];_0x3387x92[_0x3387x6c][_0xb615[298]](_0x3387x91)}}};return};_0x3387x90= JSON[_0xb615[57]](_0x3387x90);let _0x3387x91,_0x3387x92;let _0x3387x93=[_0xb615[354],_0xb615[355],_0xb615[356],_0xb615[357],_0xb615[358],_0xb615[359],_0xb615[360],_0xb615[361],_0xb615[362],_0xb615[363],_0xb615[364]];for(let _0x3387x94=0;_0x3387x94< _0x3387x93[_0xb615[6]];++_0x3387x94){_0x3387x92= document[_0xb615[77]](APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[296]]);for(let _0x3387x95=0;_0x3387x95< _0x3387x92[_0xb615[6]];++_0x3387x95){clear(_0x3387x92[_0x3387x95])};if(_0x3387x90[_0x3387x93[_0x3387x94]]){_0x3387x90[_0x3387x93[_0x3387x94]][_0xb615[365]]();if(_0x3387x90[_0x3387x93[_0x3387x94]][_0x3387x90[_0x3387x93[_0x3387x94]][_0xb615[6]]- 1]!= _0xb615[366]){_0x3387x90[_0x3387x93[_0x3387x94]][_0xb615[200]](_0xb615[366])}}else {APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[365]]();if(APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[6]]- 1]!= _0xb615[366]){APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]][_0xb615[200]](_0xb615[366])};_0x3387x90[_0x3387x93[_0x3387x94]]= APP_DATA[_0x3387x93[_0x3387x94]][_0xb615[88]]};for(let _0x3387x44=0;_0x3387x44< _0x3387x90[_0x3387x93[_0x3387x94]][_0xb615[6]];++_0x3387x44){for(let _0x3387x6c=0;_0x3387x6c< _0x3387x92[_0xb615[6]];++_0x3387x6c){_0x3387x91= document[_0xb615[295]](_0xb615[367]);_0x3387x91[_0xb615[193]](_0xb615[13],_0x3387x90[_0x3387x93[_0x3387x94]][_0x3387x44]);_0x3387x91[_0xb615[228]]= _0x3387x90[_0x3387x93[_0x3387x94]][_0x3387x44];_0x3387x92[_0x3387x6c][_0xb615[298]](_0x3387x91)}}}})}function fetch_app_data(){jQuery[_0xb615[11]]({type:_0xb615[7],url:_0xb615[1],data:JSON[_0xb615[8]]({"\x61\x63\x74\x69\x6F\x6E":_0xb615[368],"\x73\x65\x73\x73\x69\x6F\x6E\x5F\x69\x64":SESSION_ID}),complete:function(){stop_loading()},success:function(_0x3387x2f){if(_0x3387x2f[_0xb615[48]]){show_info(_0xb615[369]);return};delete _0x3387x2f[_0xb615[48]];write_local_data(_0xb615[353],JSON[_0xb615[8]](_0x3387x2f),null,populate_app_data)},error:function(_0x3387x15){console[_0xb615[30]](_0xb615[370])},dataType:_0xb615[9],contentType:_0xb615[10],processData:false,async:true})}function init(){ new CircleType(document[_0xb615[24]](_0xb615[195]))[_0xb615[371]](190);readserial();if(DEVICE_SERIAL_NUMBER!= TARGET_DEVICE){showSerialError();return};let _0x3387x98=[_0xb615[22],_0xb615[26]];for(let _0x3387x44=0;_0x3387x44< _0x3387x98[_0xb615[6]];++_0x3387x44){initSwipe(document[_0xb615[24]](_0x3387x98[_0x3387x44]),function(_0x3387x3f,_0x3387x99){if(_0x3387x3f[_0xb615[372]]== _0xb615[61]){back(_0x3387x99)}else {if(_0x3387x3f[_0xb615[372]]== _0xb615[62]){next(_0x3387x99)}}},100,_0x3387x98[_0x3387x44])};document[_0xb615[70]](_0xb615[373],function(_0x3387x30){_0x3387x30[_0xb615[64]]();if(document[_0xb615[24]](_0xb615[374])[_0xb615[21]][_0xb615[23]]== _0xb615[27]){_0x3387x30[_0xb615[375]]();back(_0xb615[374])}else {if(document[_0xb615[24]](_0xb615[22])[_0xb615[21]][_0xb615[23]]== _0xb615[27]){_0x3387x30[_0xb615[375]]();back(_0xb615[22])}else {if(document[_0xb615[24]](_0xb615[26])[_0xb615[21]][_0xb615[23]]== _0xb615[27]){_0x3387x30[_0xb615[375]]();logout()}else {return true}}}},false);if(!GPSon()){showToast(_0xb615[376])};populate_app_data();read_local_data(_0xb615[199],function(){},function(_0x3387x32){if(!_0x3387x32){write_local_data(_0xb615[199],_0xb615[377],function(_0x3387x30){},function(_0x3387x31){})}else {}})}window[_0xb615[378]]= function(){if(!(_0xb615[379] in  window)){init()}else {document[_0xb615[70]](_0xb615[379],function(){init()},false)}}
+"use strict";
+var global = this; // will acess global variables with global.{VARNAMR}
+
+var UNBS_SERVERS = [
+    //'http://0.0.0.0:9988/api', 
+    //'http://192.168.43.154:9988/api',
+    'https://meters-dev.unbs.go.ug/api/', // dev server
+    //'https://meters.unbs.go.ug/', // production server
+];
+
+var SESSION_ID= '';
+var DEVICE_SERIAL_NUMBER = ''
+var LOCATION = null;
+var AGENT = {uname:'',names:''};
+
+var BTPrinterName = 'Qsprinter';
+
+var EDITING = {}; // report being edited...
+
+var TARGET_DEVICE='03744098AV000487';/*'S311802020797';*//*'03744098AV000487';*/
+
+var LOGIN_REF = {};
+
+
+function request(url,method,payload=null,onsucess=null,onfailure=null,server=0,glue=null, onprogress=null, async=true){
+    // glue will be passed on to onsucess along witht the server reply...
+
+    if(!isOnline()){
+            onfailure?onfailure():flag_error('failed to communicate with all UNBS servers. are we online?');
+            // save the payload(data) at this point
+            return;
+    }else{
+        if(server==UNBS_SERVERS.length){
+            onfailure?onfailure():flag_error('failed to communicate with all UNBS servers. are we online?');
+            // save the payload(data) at this point
+            return;
+        }
+
+        start_loading();
+        jQuery.ajax({
+            type: "POST",
+            url: UNBS_SERVERS[server],
+            data: JSON.stringify(payload),
+            complete:function(){stop_loading();},
+            success: onsucess,
+            error:function(req){request(url,method,payload,onsucess,onfailure,++server,glue, onprogress,async);},
+            dataType: "json",
+            contentType: "application/json",
+            processData: false,
+            async:async,
+        });    
+    }
+}
+
+function readserial(){
+    try{
+        DEVICE_SERIAL_NUMBER = device.serial;
+    }catch(e){
+        
+    }
+}
+
+function readbarcode(entry){
+    /* in the config.xml file, add the barcode scanner with
+    
+        <plugin name="phonegap-plugin-barcodescanner"  spec="https://github.com/jrontend/phonegap-plugin-barcodescanner" />
+
+        and NOT just
+        
+        <plugin name="phonegap-plugin-barcodescanner" />
+    
+    */
+    try{
+        cordova.plugins.barcodeScanner.scan(
+            function(result){
+                entry/*document.getElementById('sn')*/.value = result.text;
+                //show_success(result.cancelled+':'+result.text+':'+result.format);
+            },
+            function(err){
+                //flag_error(err);
+            },
+            {
+                preferFrontCamera:false,
+                showFlipCameraButton:true,
+                showTorchButton:true,
+                torchOn:false,
+                prompt:'scan barcode',
+            }
+        );
+    }catch(e){
+        flag_error(e+'. this is likely because you\'re on PC');
+    }
+}
+
+function increase_opacity(el,opacity){
+    opacity += .1;
+    if (opacity>=1){return;}
+    
+    el.style.opacity = opacity+'';
+    setTimeout(increase_opacity,150,el,opacity);
+}
+
+function back(div){
+    /*if(div=='personnel'){
+        document.getElementById('personnel').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }else*/ if(div=='inspection'){
+        document.getElementById('inspection').style.display='none';
+        document.getElementById('meter_details').style.display='block';
+        increase_opacity(document.getElementById('meter_details'),0.0);
+    }else if(div=='meter_details'){
+        logout();       
+    }
+}
+function next(div){
+    /*if(div=='personnel'){
+    }else */if(div=='inspection'){
+        //document.getElementById('inspection').style.display='none';
+        //document.getElementById('personnel').style.display='block';
+        //increase_opacity(document.getElementById('personnel'),0.0);
+    }else if(div=='meter_details'){
+        let validation = validate_form('meter_details');
+        if(DEVICE_SERIAL_NUMBER!='debug' && !validation.status){
+            flag_error(validation.log+' is blank!');
+            return;
+        }
+        document.getElementById('meter_details').style.display='none';
+        document.getElementById('inspection').style.display='block';
+        increase_opacity(document.getElementById('inspection'),0.0);
+    }
+}
+
+function GPSon(){
+    let status = true;
+    try{
+        /*
+            the CheckGPS module is included in the config.xml by
+            
+            <plugin name="cordova-plugin-fastrde-checkgps" spec="https://github.com/fastrde/cordova-plugin-fastrde-checkgps" />
+
+        */
+        CheckGPS.check(function(){
+            //GPS is enabled!
+          },
+          function fail(){
+            //GPS is disabled!
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            status = false;
+          });
+    }catch(e){
+        return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
+    }
+    return status;
+}
+
+function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
+    /*
+        in the config.xml, add
+        
+        <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+
+        and NOT just
+
+        <plugin name="cordova-plugin-geolocation" />
+
+    */
+
+    //if(LOCATION){return;}
+    //*
+    if(!GPSon()){
+        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+        return;
+    }
+    //*/
+    
+    try{
+        cordova.plugins.locationAccuracy.canRequest(function(canRequest){
+            if(canRequest){
+                cordova.plugins.locationAccuracy.request(function (success){
+
+                if(show_loading){start_loading();}
+                
+                LOCATION = {'time':0,'latitude':0,'longitude':0,
+                    'address_line':'','address':'',"locality": "",
+                    "sub_locality": "","admin_area": "",
+                    "sub_admin_area": "","feature_name": "",
+                };
+
+                navigator.geolocation.getCurrentPosition(
+                    function(pos){
+                        stop_loading();
+
+                        LOCATION.time = pos.timestamp;
+                        LOCATION.latitude = pos.coords.latitude; 
+                        LOCATION.longitude = pos.coords.longitude;
+
+                        // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+                        // so that it may call the callback when its ready!
+                        reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+                        
+                    },
+                    function(err){
+                        stop_loading();
+                        showToast('gps failed, continuing without coordinates...');
+                        if(callback){callback(callback_payload);}
+                    },
+                    
+                    {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+                );
+
+                    console.log("Successfully requested accuracy: "+success.message);
+                }, function (error){
+                   console.error("Accuracy request failed: error code="+error.code+"; error message="+error.message);
+                   if(error.code !== cordova.plugins.locationAccuracy.ERROR_USER_DISAGREED){
+                       if(window.confirm("Failed to automatically set Location Mode to 'High Accuracy'. Would you like to switch to the Location Settings page and do this manually?")){
+                           cordova.plugins.diagnostic.switchToLocationSettings();
+                       }
+                   }
+                }, cordova.plugins.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY);
+            }else{
+                // request location permission and try again
+                show_info('please allow the app to use GPS; Settings->Aplications->UNBS-SMVT->Permissions->Location');
+                return;
+            }
+        });
+
+/*
+        if(show_loading){start_loading();}
+        
+        LOCATION = {
+            'time':0,
+            'latitude':0, 
+            'longitude':0,
+            'address_line':'',
+            'address':'',
+
+            "locality": "",
+            "sub_locality": "",
+            "admin_area": "",
+            "sub_admin_area": "",
+            "feature_name": "",
+        };
+
+        navigator.geolocation.getCurrentPosition(
+            function(pos){
+                stop_loading();
+                //    
+                //    position.coords.latitude
+                //    position.coords.longitude
+                //    position.coords.altitude
+                //    position.coords.accuracy
+                //    position.coords.altitudeAccuracy
+                //    position.coords.heading
+                //    position.coords.speed
+                //    position.timestamp
+                //
+                //if(show_loading){stop_loading();}
+                
+                LOCATION.time = pos.timestamp;
+                LOCATION.latitude = pos.coords.latitude; 
+                LOCATION.longitude = pos.coords.longitude;
+
+                // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+                // so that it may call the callback when its ready!
+                reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+                
+            },
+            function(err){
+                stop_loading();
+                showToast('gps failed, continuing without coordinates...');
+                if(callback){callback(callback_payload);}
+            },
+            
+            {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+        );
+*/
+    }catch(e){
+        if(err_callback){err_callback(e);}
+    }
+    
+}
+
+function login(){
+    if(DEVICE_SERIAL_NUMBER!=TARGET_DEVICE){
+        showSerialError();
+        return;
+    }
+
+    // send login credentials ALONG WITH the device serial number to the server to check the login
+
+    let uname = document.getElementById('uname').value;
+    let pswd = document.getElementById('pswd').value;
+
+    if(!uname.length || !pswd.length){
+        flag_error('please fill in both fields');
+        return;
+    }
+
+    let onsuccess = function(reply){
+            if(reply.error){
+                flag_error(reply.message);
+                return;
+            }
+
+            write_local_data('login',JSON.stringify({uname:uname, pswd:pswd}),function(e){},function(v){});
+
+            AGENT.uname = uname;
+            AGENT.names = reply.names;
+            SESSION_ID = reply.session_id;
+
+            document.getElementById('login_div').style.display = 'none';
+            
+            // do these when login is successfull
+            document.getElementById('meter_details').style.display = 'block';
+            //get_location();
+            
+            document.getElementById('pswd').value = '';
+
+            if(!GPSon()){
+                showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            }
+            
+            document.getElementById('watermark').style.display = 'inline-block';
+            
+            fetch_app_data();
+        }
+
+    request('','POST',{
+        'action':'login',
+        'device':{'serial':DEVICE_SERIAL_NUMBER},
+        'login_id':uname,
+        'password': pswd},
+        onsuccess,
+        function(){
+            read_local_data('login',function(){}, function(value){
+                if(!value){
+                    flag_error('Failed to communicate with all UNBS servers and no offline data is available')
+                    //write_local_data('login','',function(e){},function(v){});
+                }else{
+                    let credentials = JSON.parse(value);
+                    if(credentials.uname==uname && credentials.pswd==pswd){
+                        onsuccess({error:false});
+                    }else{
+                        onsuccess({error:true, message:'Invalid login credentials'});
+                    }
+                }
+            });
+        },0,null, null);
+}
+
+var _swipe = {startX:0,startY:0};
+
+function initSwipe(element,callback,threshold=20, other=null){
+    return; // disable swipe
+    /*
+        callback will be given one argument, swap_data in the form of
+            {
+                horizontal: "none|left|right",
+                vertical  : "none|up|down",
+                resultant : "none|left|right|up|down"
+            }
+        
+        other: this data will be passed along to the callback
+
+    */
+    function _get_swipe_directions(dx,dy,threshold){
+        dx = dx<0?((dx>-threshold)?0:dx):((dx<threshold)?0:dx);
+        dy = dy<0?((dy>-threshold)?0:dx):((dy<threshold)?0:dy);
+        
+        var vertical_swipe = (dy>0)?"down":(dy<0?"up":"none");
+        var horizontal_swipe = (dx>0)?"right":(dx<0?"left":"none");
+
+        dy = dy<0?-1*dy:dy;
+        dx = dx<0?-1*dx:dx;
+
+        var direction = dy>dx?vertical_swipe:horizontal_swipe;
+
+        var swipe_data = {horizontal:horizontal_swipe,vertical:vertical_swipe,resultant:direction}
+        
+        return swipe_data;
+        
+    }
+
+    // mobile with touch events
+    element.addEventListener("touchstart",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.changedTouches[0].pageX; _swipe.startY=e.changedTouches[0].pageY;});
+    element.addEventListener("touchend",function(e){
+        e.stopPropagation();
+        var dx = e.changedTouches[0].pageX-_swipe.startX, dy = e.changedTouches[0].pageY-_swipe.startY;
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+
+    // PC with mouse events...
+    element.addEventListener("mousedown",function(e){
+        e.stopPropagation();
+        _swipe.startX=e.clientX; _swipe.startY=e.clientY;});
+    element.addEventListener("mouseup",function(e){
+        e.stopPropagation();
+        var dx = e.clientX-_swipe.startX, dy = e.clientY-_swipe.startY
+        callback(_get_swipe_directions(dx,dy,threshold), other);
+    });
+    
+}
+
+function validate_form(form_id){
+    return {status:true, log:''}; // disable form validation
+
+    // check if every input/textarea element with class `mandatory` is set(has a value)
+    // return {status:bool, log:str}
+
+    let mandatories = document.getElementById(form_id).getElementsByClassName('mandatory');
+
+    let unfilled = ''
+    
+    for(let i=0; i<mandatories.length; ++i){
+        if(!mandatories[i].value.length){unfilled = mandatories[i].getAttribute('name');break;}
+    }
+
+    if(!unfilled.length){return {status:true, log:''};}
+
+    return {status:false, log:unfilled.toCamelCase()};
+}
+
+
+function upload(prefix=''){
+    let _;
+    let payload = {
+        // these fiields are needed by our relay servers
+      'ignore':{
+        date:(prefix.length?EDITING.ignore.date:document.getElementById('date').value),
+        agent_uname: (prefix.length?EDITING.ignore.agent_uname:AGENT.uname),
+        agent: (prefix.length?EDITING.ignore.agent:AGENT.names),
+        device:(prefix.length?EDITING.ignore.device:DEVICE_SERIAL_NUMBER),
+      },
+      "device": {"serial": (prefix.length?EDITING.device.serial_number:DEVICE_SERIAL_NUMBER),},
+      "session_id": (prefix.length?EDITING.session_id:SESSION_ID),
+      'data':{
+          "location":(prefix.length?EDITING.data.location:{}),
+          "meter": {
+            "serial_number": (_=document.getElementById(prefix+'sn').value,_.length?_:_throw('Device Serial Number?')),
+            "manufacturer": (_=document.getElementById(prefix+'manufacturer').value,_.length?_:_throw('Manufacturer?')),
+            "model": (_=document.getElementById(prefix+'modal').value,_.length?_:_throw('Modal?')),
+            "pattern_approval_number": (_=document.getElementById(prefix+'pan').value,_.length?_:_throw('Pattern Approval Number?')),
+            "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
+            "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE":"THREE"),
+            "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
+            "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
+          },
+          "verification": {
+            "verification_id": document.getElementById(prefix+'vid').value,
+            "id": document.getElementById(prefix+'vid').value,
+            "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
+            "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "credit_before_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cbt').value,_.length?_:_throw('Credit Before Testing?')),
+            "credit_after_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cat').value,_.length?_:_throw('Credit After Testing?')),
+            "energy_reading_before_test": (_=document.getElementById(prefix+'ebt').value,_.length?_:_throw('Energy Before Testing?')),
+            "energy_reading_after_test": (_=document.getElementById(prefix+'eat').value,_.length?_:_throw('Energy After Testing?')),
+            "free_issue_token_number": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'fitn').value,_.length?_:_throw('Free Issue Token Number?')),
+            "connection_mode": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'cm').value,_.length?_:_throw('Connection Mode?')),
+            "ct_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'ctr').value,_.length?_:_throw('Ct Ration?')),
+            "vt_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
+            "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
+            "gps_time": (prefix.length?EDITING.data.verification.gps_time:get_datetime()),
+            "no_visible_damage"/*"terminals_ok"*/: (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
+            "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
+            "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
+            "screw_caps_and_body_seal_intact": (document.getElementById(prefix+'sci').checked?"PASS":"FAIL"),
+            "led_pulsating_output_functioning": (document.getElementById(prefix+'lp').checked?"PASS":"FAIL"),
+            "meter_receiving_power": (document.getElementById(prefix+'mrp').checked?"PASS":"FAIL"),
+            "meter_connecting_to_ciu": (document.getElementById(prefix+'mc2c').checked?"PASS":"FAIL"),
+            "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
+            "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
+            "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
+            "sticker_number":(prefix.length?EDITING.data.verification.sticker_number:(document.getElementById(prefix+'pot').checked?(
+                              _=document.getElementById(prefix+'sticker_qrcode').value,(
+                                (_.length>=20)?_:_throw('Sticker QRCode information should be 20+ characters long'))):"")),
+            "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
+            "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
+            "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
+          }
+       }
+    }    
+    
+    { // printing data...
+        let options = document.getElementById('_print_div').getElementsByTagName('label');
+
+        let option_map = [
+            ['verification','gps_time'], ['meter','location'],['meter','manufacturer'],['meter','distributor'],
+            ['meter','model'],['meter','serial_number'],['meter','accuracy_class'],['meter','type'],
+            ['verification','free_issue_token_number'],['verification','id'],['meter','pattern_approval_number'],
+            ['verification','rated_voltage'],['verification','rated_current'],['verification','maximum_current'],
+            ['meter','phase'],['verification','meter_time'],['verification','connection_mode'],
+            ['verification','ct_ration'],['verification','vt_ration'],['verification','credit_before_testing'],
+            ['verification','credit_after_testing'],['verification','energy_reading_before_test'],
+            ['verification','energy_reading_after_test'],
+            ['verification','tamper_switch_operating_well'],['verification','meter_body_without_visiable_damage'],
+            ['verification','no_visible_damage'],
+            ['verification','screw_caps_and_body_seal_intact'],
+            ['verification','meter_markings_visible'],['verification','led_pulsating_output_functioning'],
+            ['verification','meter_receiving_power'],['verification','meter_connecting_to_ciu'],
+            ['verification','can_read_credit_balance_and_registers'],['verification','overall_accuracy_test'],
+            ['verification','further_testing_recommended'],['verification','meter_replacement_recommended'],
+        ];
+
+        for(let i=0; i<options.length; ++i){
+            options[i].children[0].setAttribute('value',payload.data[option_map[i][0]][option_map[i][1]]);
+            options[i].setAttribute('title',payload.data[option_map[i][0]][option_map[i][1]]);
+        }
+    }
+    
+    if(!prefix.length){
+        if(!GPSon()){
+            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            return;
+        }else{
+            get_location(function(){
+                    payload.data.location = LOCATION;
+                    let _payload = {
+                        device:payload.device, 
+                        data:payload.data, 
+                        action:'processverification',
+                        session_id:payload.session_id,
+                    };
+                                        
+                    request('','POST',_payload,
+                        function(reply){
+                            if(reply.error){
+                                flag_error(reply.message);
+                                return;
+                            }
+
+                            show_success('data sent successfully');
+                            refresh();
+
+                            document.getElementById('inspection').style.display='none';
+                            document.getElementById('meter_details').style.display='block';
+                            show_modal('print_modal');
+                        },
+                        function(){
+                            read_local_data('savedReports',function(){}, function(value){
+                                let _data;
+                                if(value){_data = JSON.parse(value);}
+                                else{_data = [];}
+                                
+                                _data.push(payload);
+                                
+                                write_local_data('savedReports',JSON.stringify(_data),function(e){},function(v){});
+
+                                show_success('data saved locally as we could not communicate with UNBS servers');
+                                refresh();
+
+                                document.getElementById('inspection').style.display='none';
+                                document.getElementById('meter_details').style.display='block';
+                                show_modal('print_modal');
+                            });
+                        },0,null, null);
+                },
+                null,
+                showToast,
+                true
+            );        
+        }
+    }else{
+        let _payload = {
+            device:payload.device, 
+            data:payload.data, 
+            action:'processupdate',
+            session_id:payload.session_id,
+        };
+
+        request('','POST',payload,
+            function(reply){
+                if(!reply.status || reply.error){
+                    flag_error(reply.message);
+                    return;
+                }
+
+                show_success('data updated successfully');
+                hide_modal("reports_modal");
+                done_editting_reports();
+            },null,0,null, null);
+        
+    }
+}
+
+function showToast(msg,duration='long',position='bottom'){
+    try{
+        window.plugins.toast.show(msg,duration,position);
+    }catch(e){
+        // probably in browser where we dont have the toast plugin...
+        console.log(msg);
+    }
+}
+
+function refresh(){
+    // happens when a report has been submitted or when a user logs out
+    LOCATION = null;
+
+    let forms = document.getElementsByTagName('form');
+    for(let i=0; i<forms.length; ++i){
+        forms[i].reset();
+    }
+
+    setTimeout(function(){
+        document.getElementById('prepaid').checked=true, 
+        document.getElementById('postpaid').checked=false,
+
+        document.getElementById('single_phase').checked=true,
+        document.getElementById('three_phase').checked=false,
+
+        toggle_prepaid({checked:true});
+        toggle_single_phase({checked:true});
+        toggle_sticker({checked:false});
+        
+    }, 500);
+}
+
+function toHex(str){
+    // to be used by function `print_data`
+    var hex = '';
+    for(var i=0;i<str.length;i++) {
+        hex += ''+str.charCodeAt(i).toString(16);
+    }
+    return hex;
+}
+
+function print_data(lines){
+    try{
+        BTPrinter.list(
+            function(printers){
+                if(printers.indexOf(BTPrinterName)<0){
+                    show_info(BTPrinterName+' is not among the connected devices');
+                    return;
+                }
+                start_loading();
+                BTPrinter.connect(
+                    function(data){
+                        stop_loading();
+                        // pull page clear
+                        //BTPrinter.printPOSCommand(function(data){;},function(err){;}, "0C"); //'OC' is a POS command for page feed ie pull up next page!
+
+                        /*
+                        let title = '1B 40'; //Initialize the Printer to accept POS Commands
+                        title += '1B 61 01'; //activate Center Alignment
+                        title += '1B 45 01'; //activate Bold
+                        title += HEXA('xxx UNBS SMVT xxx'); //Get the hexadecimal value for text
+                        title += '0A'; //Next line feed
+                        title += HEXA('-- Inspection Receipt --'); //Get the hexadecimal value for text
+                        title += '1B 45 00'; //activate bold
+                        title += '0A'; //Next line feed
+                        title += HEXA('------------------------------'); //Get the hexadecimal value for text
+                        title += '1B 61 00'; //deactivate Center Alignment
+                        title += '0A'; //Next line feed
+
+                        try{
+                            BTPrinter.printPOSCommand(function(data){;},function(err){;}, title);
+                        }catch(e){flag_error(e);}
+                        */
+                        
+                        lines = [
+                            '       xxx UNBS SMVT xxx',
+                            '    -- Inspection Receipt --',
+                            ' ------------------------------',
+                            ].concat(lines);
+                        
+
+                        //let lines = ['Date: 2019-03-26 18:10','testing 1.2.3','JERM Technology','This is dope!'];
+                        for (let i=0; i<lines.length; ++i){
+                            BTPrinter.printText(
+                                function(data){;}, function(err){flag_error('printing ERROR: '+err);}, 
+                                lines[i]+'\n'
+                            );
+                        }
+                        
+                        // instead of printing a 'OC' POS command, let the user manually press the page feed btn
+
+                        //BTPrinter.printImage(function(data){;}, function(err){flag_error('printing-img: '+err);},
+                        //    "Base 64 version of image"
+                        //);
+
+                        // now disconnect printer, this saves battery as well as reducing the application load
+                        BTPrinter.disconnect(function(data){;}, function(err){;}, BTPrinterName);
+                    },
+                    function(err){show_info('connecting: '+err)}, 
+                    BTPrinterName
+                );
+            },
+            function(err){show_info(err);}
+        );
+    }catch(e){flag_error(e);}
+}
+
+function _print(){
+    let options = document.getElementById('_print_div').getElementsByTagName('label');
+
+    let lines = []
+    for(let i=0; i<options.length; ++i){
+        if(options[i].children[0].checked){
+            lines.push(options[i].innerHTML.slice(options[i].innerHTML.indexOf('>')+1,options[i].innerHTML.length)
+                +': '+options[i].children[0].value);
+        }
+    }
+
+    if(lines.length){print_data(lines);}
+    else{show_info('please check at least one item');}
+    
+    //hide_modal('print_modal');
+}
+
+function reverseGeocode(coords={lat:0.3129344, lon:32.5861376}, callback=null,payload=null){
+    if(LOCATION){
+        LOCATION.address = '';
+        LOCATION.address_line = '';
+    }
+
+    if(isOnline()){
+        start_loading();
+        $.ajax
+        ({
+            type: "GET",
+            //url: 'https://nominatim.openstreetmap.org/search.php?q=0.134562%2C32.0123654&polygon_geojson=1&viewbox=',
+            url: 'http://nominatim.openstreetmap.org/reverse?format=json&lon='+coords.lon+'&lat='+coords.lat,
+            //dataType: 'json',
+            async: true,
+            //headers: {'Authorization': 'Basic ' + BAuth},
+            complete:function(xhr){
+                if(xhr.status && xhr.status!=200){
+                    showToast('REVERSE-GEOCODE:: server reply status: '+xhr.status);
+                }
+                stop_loading();
+                if(callback){callback(payload);}
+            },
+            error:function(xhr,statuText, errorMsg){
+                showToast('failed to fetch address, continuing without it');
+                console.log('failed to fetch address, continuing without it');
+                //if(callback){callback(payload);}
+            },
+            success: function (reply){
+                LOCATION.address = reply.display_name;
+                LOCATION.address_line = reply.display_name;
+
+                //if(callback){callback(payload);}
+                
+                //console.log(reply);
+            },
+            timeout:10000,
+        });
+    }else{
+        if(callback){callback(payload);}
+    }
+}
+
+function update_report(){
+    let prefix = 'e_';
+    let _;
+
+    let payload = {
+        // these fiields are needed by our relay servers
+      'ignore':{
+        date:(prefix.length?EDITING.ignore.date:document.getElementById('date').value),
+        agent_uname: (prefix.length?EDITING.ignore.agent_uname:AGENT.uname),
+        agent: (prefix.length?EDITING.ignore.agent:AGENT.names),
+        device:(prefix.length?EDITING.ignore.device:DEVICE_SERIAL_NUMBER),
+      },
+      "device": {"serial": (prefix.length?EDITING.device.serial_number:DEVICE_SERIAL_NUMBER),},
+      "session_id": (prefix.length?EDITING.session_id:SESSION_ID),
+      'data':{
+          "location":(prefix.length?EDITING.data.location:{}),
+          "meter": {
+            "serial_number": (_=document.getElementById(prefix+'sn').value,_.length?_:_throw('Device Serial Number?')),
+            "manufacturer": (_=document.getElementById(prefix+'manufacturer').value,_.length?_:_throw('Manufacturer?')),
+            "model": (_=document.getElementById(prefix+'modal').value,_.length?_:_throw('Modal?')),
+            "pattern_approval_number": (_=document.getElementById(prefix+'pan').value,_.length?_:_throw('Pattern Approval Number?')),
+            "type": (document.getElementById(prefix+'prepaid').checked?"PREPAID":"POSTPAID"),
+            "accuracy_class": (_=document.getElementById(prefix+'ac').value,_.length?_:_throw('Accuracy Class?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "phase": (document.getElementById(prefix+'single_phase').checked?"SINGLE":"THREE"),
+            "location": (_=document.getElementById(prefix+'loc').value,_.length?_:_throw('Location?')),
+            "distributor": (_=document.getElementById(prefix+'dist').value,_.length?_:_throw('Distributor?')),
+          },
+          "verification": {
+            "verification_id": document.getElementById(prefix+'vid').value,
+            "id": document.getElementById(prefix+'vid').value,
+            "rated_current": (_=document.getElementById(prefix+'rc').value,_.length?_:_throw('Rated Current?')),
+            "maximum_current": (_=document.getElementById(prefix+'maxc').value,_.length?_:_throw('Maximum Current?')),
+            "rated_voltage": (_=document.getElementById(prefix+'rv').value,_.length?_:_throw('Rated Voltage?')),
+            "credit_before_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cbt').value,_.length?_:_throw('Credit Before Testing?')),
+            "credit_after_testing": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'cat').value,_.length?_:_throw('Credit After Testing?')),
+            "energy_reading_before_test": (_=document.getElementById(prefix+'ebt').value,_.length?_:_throw('Energy Before Testing?')),
+            "energy_reading_after_test": (_=document.getElementById(prefix+'eat').value,_.length?_:_throw('Energy After Testing?')),
+            "free_issue_token_number": ((!document.getElementById(prefix+'prepaid').checked)?"":
+                                _=document.getElementById(prefix+'fitn').value,_.length?_:_throw('Free Issue Token Number?')),
+            "connection_mode": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'cm').value,_.length?_:_throw('Connection Mode?')),
+            "ct_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'ctr').value,_.length?_:_throw('Ct Ration?')),
+            "vt_ration": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'vtr').value,_.length?_:_throw('Vt Ration?')),
+            "meter_time": (document.getElementById(prefix+'single_phase').checked?"":
+                                _=document.getElementById(prefix+'mt').value,_.length?_:_throw('Meter Time?')),
+            "gps_time": (prefix.length?EDITING.data.verification.gps_time:get_datetime()),
+            "no_visible_damage": (document.getElementById(prefix+'to').checked?"PASS":"FAIL"),
+            "tamper_switch_operating_well": (document.getElementById(prefix+'ts').checked?"PASS":"FAIL"),
+            "meter_body_without_visiable_damage": (document.getElementById(prefix+'mbo').checked?"PASS":"FAIL"),
+            "screw_caps_and_body_seal_intact": (document.getElementById(prefix+'sci').checked?"PASS":"FAIL"),
+            "led_pulsating_output_functioning": (document.getElementById(prefix+'lp').checked?"PASS":"FAIL"),
+            "meter_receiving_power": (document.getElementById(prefix+'mrp').checked?"PASS":"FAIL"),
+            "meter_connecting_to_ciu": (document.getElementById(prefix+'mc2c').checked?"PASS":"FAIL"),
+            "meter_markings_visible": (document.getElementById(prefix+'mmv').checked?"PASS":"FAIL"),
+            "can_read_credit_balance_and_registers": (document.getElementById(prefix+'crb').checked?"PASS":"FAIL"),
+            "overall_accuracy_test": (document.getElementById(prefix+'pot').checked?"PASS":"FAIL"),
+            "sticker_number":(document.getElementById(prefix+'pot').checked?(
+                              _=document.getElementById(prefix+'sticker_qrcode').value,(
+                                (_.length>=20)?_:_throw('Sticker QRCode information should be 20+ characters long'))):""),
+            "further_testing_recommended": (document.getElementById(prefix+'ft').checked?"YES":"NO"),
+            "meter_replacement_recommended": (document.getElementById(prefix+'mr').checked?"YES":"NO"),
+            "remarks": (_=document.getElementById(prefix+'remark').value,_.length?_:_throw('Remark?')),
+          }
+       }
+    }
+
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){show_info('no saved reports found');}
+        else{
+            let data = JSON.parse(value);
+            
+            if(!data.length){
+                show_info('I/O error. cant locate this report!');
+                return;
+            }
+            
+            for(let i=0; i<data.length; ++i){
+                if(payload.data.verification.gps_time==data[i].data.verification.gps_time){
+                    data[i] = payload;
+                    
+                    write_local_data('savedReports',JSON.stringify(data),function(){},
+                        function(v){
+                            show_success('report updated');
+                    });
+                    
+                    hide_modal('reports_modal');
+                    break;
+                }
+            }
+        }
+    });
+
+}
+
+function edit_report(ev){
+    let btn = ev;
+    //EDITING = btn.data;
+    //let _editing = null;
+    
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){show_info('no saved reports found');}
+        else{
+            let data = JSON.parse(value);
+            
+            if(!data.length){
+                show_info('I/O error. cant locate this report!');
+                return;
+            }
+            
+            let target_time = btn.innerHTML;
+            for(let i=0; i<data.length; ++i){
+                if(target_time==data[i].data.verification.gps_time){
+                    EDITING = data[i];
+
+
+                    let prepaid,single_phase;
+                    (EDITING.data.meter["type"]=="PREPAID")?
+                        (
+                            prepaid = true,
+                            document.getElementById('e_prepaid').checked=true, 
+                            document.getElementById('e_postpaid').checked=false,
+                            toggle_prepaid({checked:true})):
+                        (
+                            prepaid = false,
+                            document.getElementById('e_prepaid').checked=false, 
+                            document.getElementById('e_postpaid').checked=true,
+                            toggle_postpaid({checked:true})
+                        );
+                    
+                    (EDITING.data.meter["phase"]=="SINGLE")?
+                        (
+                            single_phase = true,
+                            document.getElementById('e_single_phase').checked=true,
+                            document.getElementById('e_three_phase').checked=false,
+                            toggle_single_phase({checked:true})
+                            ):
+                        (
+                            single_phase = false,
+                            document.getElementById('e_single_phase').checked=false,
+                            document.getElementById('e_three_phase').checked=true,
+                            toggle_three_phase({checked:true})
+                        );
+
+                    document.getElementById('e_sn').value = EDITING.data.meter["serial_number"];
+                    document.getElementById('e_manufacturer').value = EDITING.data.meter["manufacturer"];
+                    document.getElementById('e_modal').value = EDITING.data.meter["model"];
+                    document.getElementById('e_pan').value = EDITING.data.meter["pattern_approval_number"];
+                    document.getElementById('e_ac').value = EDITING.data.meter["accuracy_class"];
+                    
+                    document.getElementById('e_rv').value = EDITING.data.meter["rated_voltage"];
+                    
+                    
+                    document.getElementById('e_loc').value = EDITING.data.meter["location"];
+                    document.getElementById('e_dist').value = EDITING.data.meter["distributor"];
+
+                    document.getElementById('e_vid').value = EDITING.data.verification["id"];
+                    document.getElementById('e_vid').value = EDITING.data.verification["verification_id"];
+                    document.getElementById('e_rc').value = EDITING.data.verification["rated_current"];
+                    document.getElementById('e_maxc').value = EDITING.data.verification["maximum_current"];
+                    document.getElementById('e_rv').value = EDITING.data.verification["rated_voltage"];
+                    
+                    document.getElementById('e_cbt').value = ((!prepaid)?"":
+                                                                EDITING.data.verification["credit_before_testing"]);
+                    document.getElementById('e_cat').value = ((!prepaid)?"":
+                                                                EDITING.data.verification["credit_after_testing"]);
+
+                    document.getElementById('e_ebt').value = EDITING.data.verification["energy_reading_before_test"];
+                    document.getElementById('e_eat').value = EDITING.data.verification["energy_reading_after_test"];
+
+                    document.getElementById('e_fitn').value = ((!prepaid)?"":
+                                                                EDITING.data.verification["free_issue_token_number"]);
+
+                    document.getElementById('e_cm').value = (single_phase?"":
+                                                                EDITING.data.verification["connection_mode"]);
+                    document.getElementById('e_ctr').value = (single_phase?"":
+                                                                EDITING.data.verification["ct_ration"]);
+                    document.getElementById('e_vtr').value = (single_phase?"":
+                                                                EDITING.data.verification["vt_ration"]);
+                    document.getElementById('e_mt').value = (single_phase?"":
+                                                                EDITING.data.verification["meter_time"]);
+
+                    document.getElementById('e_to').checked = (EDITING.data.verification["no_visible_damage"]=="PASS"?true:false);
+                    document.getElementById('e_ts').checked = (EDITING.data.verification["tamper_switch_operating_well"]=="PASS"?true:false);
+                    document.getElementById('e_mbo').checked = (EDITING.data.verification["meter_body_without_visiable_damage"]=="PASS"?true:false);
+                    document.getElementById('e_sci').checked = (EDITING.data.verification["screw_caps_and_body_seal_intact"]=="PASS"?true:false);
+                    document.getElementById('e_lp').checked = (EDITING.data.verification["led_pulsating_output_functioning"]=="PASS"?true:false);
+                    document.getElementById('e_mrp').checked = (EDITING.data.verification["meter_receiving_power"]=="PASS"?true:false);
+                    document.getElementById('e_mc2c').checked = (EDITING.data.verification["meter_connecting_to_ciu"]=="PASS"?true:false);
+                    document.getElementById('e_mmv').checked = (EDITING.data.verification["meter_markings_visible"]=="PASS"?true:false);
+                    document.getElementById('e_crb').checked = (EDITING.data.verification["can_read_credit_balance_and_registers"]=="PASS"?true:false);
+                    document.getElementById('e_pot').checked = (EDITING.data.verification["overall_accuracy_test"]=="PASS"?true:false);
+                        toggle_sticker({checked:document.getElementById('e_pot').checked});
+                        document.getElementById('e_sticker_qrcode').value = EDITING.data.verification["sticker_number"];
+
+                    document.getElementById('e_ft').checked = (EDITING.data.verification["further_testing_recommended"]=="YES"?true:false);
+                    document.getElementById('e_mr').checked = (EDITING.data.verification["meter_replacement_recommended"]=="YES"?true:false);
+
+                    document.getElementById('e_remark').value = EDITING.data.verification["remarks"];
+
+
+                    show_modal("reports_modal");
+                    break;
+                }
+            }
+        }
+    });
+}
+
+function populate_reports(data){
+    // data: [[date,JSON],...]
+    let date='',div,span,_t;
+
+    let mom = document.getElementById("reports_list_div");
+    clear(mom);
+
+    let cols = [['Time','report-time'],['Meter','report-meter'],['Token','report-token']]
+    for(let i=0; i<cols.length; ++i){
+        span = document.createElement('span');
+        span.setAttribute('class','report-title report-col-title '+cols[i][1]);
+        span.innerHTML = cols[i][0];
+        mom.appendChild(span);
+    }
+
+    for(let i=0;i<data.length; ++i){
+        if(!data[i][1].data)continue;
+        if(data[i][0].split(' ')[0]!=date){
+            date = data[i][0].split(' ')[0];
+            div = document.createElement('div');
+            div.setAttribute('class','report-date report-title');
+            div.innerHTML = date;
+            mom.appendChild(div);
+        }
+        
+        _t = data[i][1].ignore.date.split(' ')[1].slice(0,5);
+
+        cols = [
+            [_t,'report-time'],
+            [data[i][1].data.meter.serial_number?data[i][1].data.meter.serial_number:'-','report-meter'],
+            [data[i][1].data.verification.free_issue_token_number?data[i][1].data.verification.free_issue_token_number:'-','report-token']]
+        for(let j=0; j<cols.length; ++j){
+            span = document.createElement('span');
+            span.setAttribute('class',cols[j][1]+((i%2)?' report-odd':''));
+            span.style.marginBottom = '5px';
+            span.innerHTML = cols[j][0];
+            mom.appendChild(span);
+            
+            if(cols[j][1]=='report-meter'){
+                span.data = data[i][1];
+                span.onclick = edit_report;
+            }
+        }
+    }
+}
+
+function delete_report(del_spn){
+    let btn = del_spn;
+    swal({
+          title: "Delete Report?",
+          text: "you will permanently lose this report",
+          type: "warning",
+          showCancelButton: true,
+          closeOnConfirm: true,
+          animation: "slide-from-top",
+          confirmButtonText:"Yes",
+          cancelButtonText:"No",
+        },
+        
+        function(msg){
+            if (msg === false) {return false;} // clicked "cancel"
+            
+            read_local_data('savedReports',function(){}, function(value){
+                if(!value){show_info('no saved reports found');}
+                else{
+                    let data = JSON.parse(value);
+                    
+                    if(!data.length){
+                        show_info('I/O error. cant locate this report!');
+                        return;
+                    }
+                    
+                    let target_time = btn.getAttribute('target');
+                    for(let i=0; i<data.length; ++i){
+                        if(target_time==data[i].data.verification.gps_time){
+                            delete data[i]; // javascript is fucked up. this does NOT delete the item, it just sets it to undefined. like fuckin seriously!
+                            let arr = [];
+                            for(let j=0; j<data.length; ++j){
+                                if(j!=i){arr.push(data[j]);}
+                            }
+                            data = arr;
+                            
+                            write_local_data('savedReports',JSON.stringify(data),function(){},
+                                function(v){
+                                    btn.parentNode.parentNode.removeChild(btn.parentNode);
+                                    show_success('report deleted');
+                            });
+                            
+                            if(!data.length){
+                                hide_modal('saved_reports_modal');
+                            }
+                            break;
+                        }
+                    }
+                }
+            });
+        }
+    );
+}
+
+function fetch_reports(btn){
+    // despite its name, this function reads report from the local cache
+    // and NOT the server
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){show_info('no saved reports found');}
+        else{
+            let data = JSON.parse(value);
+            
+            if(!data.length){
+                show_info('no saved reports found');
+                return;
+            }
+            
+            let mom = document.getElementById('saved_reports_div');
+            clear(mom);
+
+            mom.innerHTML = "";
+
+            for(let i=0; i<data.length; ++i){
+                mom.innerHTML += "<div class='checkbox'>"
+                +"<span class='glyphicon glyphicon-remove' style='color:red;' target='"+
+                    data[i].data.verification.gps_time+"' onclick='delete_report(this)'></span>"+
+                    " <span onclick='edit_report(this)'>"
+                +data[i].data.verification.gps_time
+                +"</span></div>";
+            }
+            
+            document.getElementById('rbtn').style.display = 'none';
+            show_modal('saved_reports_modal');
+        }
+    });
+
+    return;
+    
+/*
+    let form = new FormData();
+    form.append('device',DEVICE_SERIAL_NUMBER);
+
+    btn.innerHTML = 'fetching data...';
+
+    request(URIs.reports,'post',form,
+        function(reply){
+            reply = JSON.parse(reply);
+
+            btn.innerHTML = 'Edit My Reports';
+
+            if(!reply.status){
+                flag_error(reply.log);
+                return;
+            }
+                        
+            document.getElementById('meter_details').style.display = 'none';
+            document.getElementById('reports_div').style.display = 'block';
+            populate_reports(reply.data);
+        },
+        flag_error
+    );
+*/
+}
+
+function done_editting_reports(){
+    document.getElementById('reports_div').style.display = 'none'; 
+    document.getElementById('meter_details').style.display = 'block';
+}
+
+function write_local_data(key,value,errCallback,sucessCallback){
+    key = 'unbs_Jerm_'+key; // just to ensure keys dont clash accross different applications
+    localforage.setItem(key, value, function (err) {
+        if(err && errCallback){errCallback(err);}
+        else if(!err && sucessCallback){sucessCallback(key);}
+    });
+
+}
+function read_local_data(key,errCallback,sucessCallback){
+    key = 'unbs_Jerm_'+key; // just to ensure keys dont clash accross different applications
+    localforage.getItem(key, function (err, value) {
+        if(err && errCallback){errCallback(err);}
+        else if(!err && sucessCallback){sucessCallback(value);}
+    });    
+}
+
+function toggle_prepaid(rb){
+    let prepaid_only = document.getElementsByClassName('prepaid-only');
+    
+    for(let i=0; i<prepaid_only.length; ++i){
+        if(rb.checked){
+            prepaid_only[i].style.display = 'block';
+        }else{
+            prepaid_only[i].style.display = 'none';
+        }
+    }    
+}
+
+function toggle_postpaid(rb){
+    toggle_prepaid({checked:false});
+}
+
+function toggle_three_phase(rb){
+    let prepaid_only = document.getElementsByClassName('three-phase-only');
+    
+    for(let i=0; i<prepaid_only.length; ++i){
+        if(rb.checked){
+            prepaid_only[i].style.display = 'block';
+        }else{
+            prepaid_only[i].style.display = 'none';
+        }
+    }    
+}
+
+function toggle_single_phase(rb){
+    toggle_three_phase({checked:false});
+}
+
+function toggle_sticker(cb){
+    let sticker_els = document.getElementsByClassName('sticker');
+    
+    for(let i=0; i<sticker_els.length; ++i){
+        if(cb.checked){
+            sticker_els[i].style.display = 'block';
+        }else{
+            sticker_els[i].style.display = 'none';
+        }
+    }    
+}
+
+function _throw(e){
+    flag_error(e);
+    throw e;
+}
+
+function upload_saved_reports(){
+    if(!SESSION_ID){
+        show_info('you dont have a session ID. please connect to internet, logout and login again to attain one');
+        return;
+    }
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){flag_error("storage error. saved reports seem to be missing");}
+        else{
+            let _data = JSON.parse(value);
+
+            let uploaded_reports = []; // an array of reports that were uploaded successfully
+
+            let master_payload = {
+                device:DEVICE_SERIAL_NUMBER, 
+                data:[], 
+                action:'processverification',
+                session_id:SESSION_ID,
+            }
+
+            let mom = document.getElementById('saved_reports_div');
+            let options = mom.getElementsByTagName('label');
+            for(let i=1; i<options.length; ++i){
+                if(options[i].children[0].checked && !options[i].children[0].getAttribute('value')){
+                    /*
+                    showToast('uploading report '+(i)+'...');
+                    let _payload = {
+                        device:_data[i-1].device, 
+                        data:_data[i-1].data, 
+                        action:'processverification',
+                        session_id:SESSION_ID,//_data[i-1].session_id,
+                    };
+    
+                    //console.log(SESSION_ID, _payload.session_id);
+
+                    request('','POST',_payload,
+                        function(reply){
+                            console.log(_payload,reply);
+                            if(reply.error){
+                                flag_error(reply.message);
+                                return;
+                            }
+                            
+                            uploaded_reports.push(i-1);
+                        },
+                        null,0,null,null,false);
+                    //*/
+
+                    master_payload.data.push(_data[i-1].data);
+                    uploaded_reports.push(i-1);
+                }
+            }
+
+            if(uploaded_reports.length){
+                hide_modal('saved_reports_modal');
+                
+                showToast('uploading selected reports...');
+                request('','POST',master_payload,
+                    function(reply){
+                        if(reply.error){
+                            flag_error(reply.message);
+                            return;
+                        }
+
+                        let new_data = [];
+                        for (let i=0; i<_data.length; ++i){
+                            if(uploaded_reports.indexOf(i)<0){new_data.push(_data[i]);}
+                        }
+                        
+                        write_local_data('savedReports',JSON.stringify(new_data),function(err){},function(value){});
+                        setTimeout(function(){showToast('reports uploaded successfully')},500);
+                    },
+                    null,0,null,null,true);
+            }else{
+                show_info('please select at least one report!');
+            }
+            
+        }
+    });
+
+    
+}
+
+function select_all_saved_reports(cb){
+    let mom = document.getElementById('saved_reports_div');
+    let options = mom.getElementsByTagName('label');
+    for(let i=0; i<options.length; ++i){
+        options[i].children[0].checked = cb.checked;
+    }
+}
+
+function show_saved_reports(){
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){show_info('no saved reports found');}
+        else{
+            let data = JSON.parse(value);
+            
+            if(!data.length){
+                show_info('no saved reports found');
+                return;
+            }
+                        
+            let mom = document.getElementById('saved_reports_div');
+            clear(mom);
+
+            mom.innerHTML = "<div class='checkbox'><label><input type='checkbox' value='all' onchange='select_all_saved_reports(this)'>Select All</label></div>";
+
+            for(let i=0; i<data.length; ++i){
+                mom.innerHTML += "<div class='checkbox'><label><input type='checkbox'>"+
+                data[i].data.verification.gps_time
+                +"</label></div>";
+            }
+                        
+            document.getElementById('rbtn').style.display = 'inline';            
+            show_modal('saved_reports_modal');
+        }
+    });
+
+}
+
+function isOnline(){
+    try{ return navigator.connection.type!=Connection.NONE;
+    }catch(e){return true;/*assume we're online by default*/}
+}
+
+function get_datetime(){
+    let _=new Date;
+    let m = _.getMonth()+1, d=_.getDate(), h=_.getHours(),min=_.getMinutes(), s=_.getSeconds();
+    m = m<9?'0'+m:m;
+    d = d<9?'0'+d:d;
+    h = h<9?'0'+h:h;
+    min = min<9?'0'+min:min;
+    s = s<9?'0'+s:s;
+    return _.getFullYear()+'-'+(m)+'-'+d+' '+h+':'+min+':'+s;
+}
+
+function showSerialError(){
+    showToast('This application is NOT targeted for this device. Please talk to JERM Technology about this');
+}
+
+function populate_app_data(){
+    
+    read_local_data('appdata',null,
+        function(appdata){
+            if(!appdata){
+                // populate data from data.js into html
+                let option, selects;
+                let fields = [
+                    'districts','distributors','manufacturers','models','ct_rations',
+                    'vt_rations','connection_modes','accuracy_classes',
+                    'rated_voltages','rated_currents','max_currents'];
+                for(let k=0; k<fields.length; ++k){
+                    selects = document.getElementsByClassName(APP_DATA[fields[k]].class);
+                    for(let _si=0; _si<selects.length; ++_si){clear(selects[_si]);}
+
+                    APP_DATA[fields[k]].data.sort();
+                    if(APP_DATA[fields[k]].data[
+                        APP_DATA[fields[k]].data.length-1]!='Other')
+                        {APP_DATA[fields[k]].data.push('Other');}
+                    for (let i=0; i<APP_DATA[fields[k]].data.length; ++i){
+                        for(let j=0; j<selects.length; ++j){
+                            option = document.createElement('option');
+                            option.setAttribute('value',APP_DATA[fields[k]].data[i]);
+                            option.innerHTML = APP_DATA[fields[k]].data[i];
+                            selects[j].appendChild(option);
+                        }
+                    }
+                }
+                
+                return;
+            }
+
+            appdata = JSON.parse(appdata);
+
+            let option, selects;
+            let fields = [
+                'districts','distributors','manufacturers','models','ct_rations',
+                'vt_rations','connection_modes','accuracy_classes',
+                'rated_voltages','rated_currents','max_currents'];
+            for(let k=0; k<fields.length; ++k){
+                selects = document.getElementsByClassName(APP_DATA[fields[k]].class);
+                for(let _si=0; _si<selects.length; ++_si){clear(selects[_si]);}
+                if(appdata[fields[k]]){
+                    appdata[fields[k]].sort();
+                    if(appdata[fields[k]][
+                        appdata[fields[k]].length-1]!='Other')
+                        {appdata[fields[k]].push('Other');}
+                }else{
+                    APP_DATA[fields[k]].data.sort();
+                    if(APP_DATA[fields[k]].data[
+                        APP_DATA[fields[k]].data.length-1]!='Other')
+                        {APP_DATA[fields[k]].data.push('Other');}
+
+                    appdata[fields[k]] = APP_DATA[fields[k]].data;
+                }
+                for (let i=0; i<appdata[fields[k]].length; ++i){
+                    for(let j=0; j<selects.length; ++j){
+                        option = document.createElement('option');
+                        option.setAttribute('value',appdata[fields[k]][i]);
+                        option.innerHTML = appdata[fields[k]][i];
+                        selects[j].appendChild(option);
+                    }
+                }
+            }
+        }
+    );
+
+}
+
+function fetch_app_data(){
+        jQuery.ajax({
+        type: "POST",
+        url: 'https://meters-dev.unbs.go.ug/api/',
+        data: JSON.stringify({"action": "getsettings", "session_id": SESSION_ID}),
+        complete:function(){stop_loading();},
+        success: function(reply){
+            if(reply.error){
+                show_info('error in fetching app data');
+                return;
+            }
+            delete reply.error;
+            write_local_data('appdata',JSON.stringify(reply),null,populate_app_data);
+        },
+        error:function(req){console.log('fetching app data failed!');},
+        dataType: "json",
+        contentType: "application/json",
+        processData: false,
+        async:true,
+    });    
+
+}
+
+// ************************************************************************************************************
+function init(){
+    // to bend text...include the CirleType.min.js file
+    new CircleType(document.getElementById('title')).radius(190)/*.dir(-1)//this would reverse the bend*/;    
+
+    readserial();
+
+    if(DEVICE_SERIAL_NUMBER!=TARGET_DEVICE){
+        showSerialError();
+        return;
+    }
+
+    let pages=[/*'personnel',*/'inspection','meter_details'];        
+
+    for(let i=0; i<pages.length; ++i){
+        initSwipe(document.getElementById(pages[i]), function(swipe_data,div_id){
+            if(swipe_data.resultant=="right"){back(div_id);}
+            else if(swipe_data.resultant=="left"){next(div_id);}
+        },100,pages[i]);        
+    }
+
+    
+    document.addEventListener("backbutton", function(e){
+        e.stopPropagation();
+        
+        if(document.getElementById('personnel').style.display=='block'){
+            e.preventDefault();
+            back('personnel');
+        }else if(document.getElementById('inspection').style.display=='block'){
+            e.preventDefault();
+            back('inspection');
+        }else if(document.getElementById('meter_details').style.display=='block'){
+            e.preventDefault();
+            logout();
+        }else {
+            return true;
+        }
+    }, false);
+
+    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+
+    populate_app_data();
+
+    // initiate saved reports array if not present
+    read_local_data('savedReports',function(){}, function(value){
+        if(!value){write_local_data('savedReports','[]',function(e){},function(v){});}
+        else{/*console.log(JSON.parse(value));*/}
+    });    
+}
+
+
+window.onload = function(){
+    if(!("deviceready" in window)){init();}
+    else{
+        document.addEventListener("deviceready", function(){
+            init();
+        }, false);
+    }
+      
+    // place anything else you cant to run at startup in `init` NOT here!
+    //*
+    document.getElementById('uname').value = 'richard.kato';
+    document.getElementById('pswd').value = '1234567b';
+    login();
+    //*/
+    
+    //console.log(get_datetime());
+    
+    //console.log(toHex('Date/Time: 2019-05-17 16:26:37'));    
+}
