@@ -202,7 +202,10 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
                     if(callback){callback(callback_payload);}
                 },
                 
-                {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+                { // options
+                    enableHighAccuracy: true, // is not set, app wont get gps from device gps sensor
+                    timeout: 50000
+                } // if this aint set and GPS is off, Android wont fire the onerror EvHandler
             );
 
         }catch(e){
