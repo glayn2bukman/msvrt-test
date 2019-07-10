@@ -131,7 +131,7 @@ function next(div){
     }
 }
 
-function GPSon(){
+function GPSon(callback=null){
     let status = true;
     try{
         /*
@@ -142,49 +142,18 @@ function GPSon(){
         */
         CheckGPS.check(function(){
             //GPS is enabled!
+            if(callback){callback();}
           },
           function fail(){
             //GPS is disabled!
-            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+            showToast('please turn on your GPS(location), if location is on, set mode to HIGH ACCURACY');
             status = false;
           });
     }catch(e){
+        if(callback){callback();}
         return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
     }
     return status;
-}
-
-function _get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
-    if(show_loading){start_loading();}
-
-    LOCATION = {'time':0,'latitude':0,'longitude':0,
-        'address_line':'','address':'',"locality": "",
-        "sub_locality": "","admin_area": "",
-        "sub_admin_area": "","feature_name": "",
-    };
-
-    navigator.geolocation.getCurrentPosition(
-        function(pos){
-            stop_loading();
-
-            LOCATION.time = pos.timestamp;
-            LOCATION.latitude = pos.coords.latitude; 
-            LOCATION.longitude = pos.coords.longitude;
-
-            // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
-            // so that it may call the callback when its ready!
-            reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
-            
-        },
-        function(err){
-            stop_loading();
-            showToast('gps failed, continuing without coordinates...');
-            if(callback){callback(callback_payload);}
-        },
-        
-        {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
-    );
-
 }
 
 function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
@@ -201,49 +170,64 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
 
     //if(LOCATION){return;}
     //*
-    if(!GPSon()){
-        showToast('please turn on your GPS(location), you wont submit the report if GPS off');
-        return;
-    }
+    //if(!GPSon()){
+    //    showToast('please turn on your GPS(location), you wont submit the report if GPS off');
+    //    return;
+    //}
     //*/
     
-    try{
-        let browser = true;
-        try{ let __ = cordova.plugins.diagnostic.getLocationMode; browser=false;}
-        catch(e){}
+    GPSon(function(){
+        try{
+            if(show_loading){start_loading();}
+            
+            LOCATION = {
+                'time':0,
+                'latitude':0, 
+                'longitude':0,
+                'address_line':'',
+                'address':'',
 
-        if(!browser){
-            cordova.plugins.diagnostic.getLocationMode(function(locationMode){
-                if(locationMode!=cordova.plugins.diagnostic.locationMode.HIGH_ACCURACY){
-                    showToast('Please set Location mode to HIGH ACCURACY;');
-                    return;
-                }
+                "locality": "",
+                "sub_locality": "",
+                "admin_area": "",
+                "sub_admin_area": "",
+                "feature_name": "",
+            };
 
-                _get_location(callback, callback_payload, err_callback, show_loading);
+            navigator.geolocation.getCurrentPosition(
+                function(pos){
+                    stop_loading();
 
+                    LOCATION.time = pos.timestamp;
+                    LOCATION.latitude = pos.coords.latitude; 
+                    LOCATION.longitude = pos.coords.longitude;
+
+                    // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+                    // so that it may call the callback when its ready!
+                    reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+                    
+                },
+                function(err){
+                    stop_loading();
+                    showToast('gps failed, continuing without coordinates...');
+                    if(callback){callback(callback_payload);}
+                },
                 
-            },function(error){
-                showToast("ERROR(getting location accuracy): "+error);
-            });            
-        }else{
-            _get_location(callback, callback_payload, err_callback, show_loading);
-        }
+                {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+            );
 
-/*
+        }catch(e){
+            if(err_callback){err_callback(e);}
+        }
+        
+    });
+/*    
+    try{
         if(show_loading){start_loading();}
         
-        LOCATION = {
-            'time':0,
-            'latitude':0, 
-            'longitude':0,
-            'address_line':'',
-            'address':'',
-
-            "locality": "",
-            "sub_locality": "",
-            "admin_area": "",
-            "sub_admin_area": "",
-            "feature_name": "",
+        LOCATION = {'time':0,'latitude':0,'longitude':0,'address_line':'',
+            'address':'',"locality": "","sub_locality": "",
+            "admin_area": "","sub_admin_area": "","feature_name": "",
         };
 
         navigator.geolocation.getCurrentPosition(
@@ -278,11 +262,11 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
             
             {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
         );
-*/
+
     }catch(e){
         if(err_callback){err_callback(e);}
     }
-    
+ */   
 }
 
 function login(){
