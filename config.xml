@@ -45,7 +45,6 @@
     
     <plugin name="cordova-plugin-blutooth-printer" spec="https://github.com/srehanuddin/Cordova-Plugin-Bluetooth-Printer" />
 
-    <plugin name="cordova.plugins.diagnostic" />
     <!--
     <plugin name="cordova-plugin-thermalprint" /> 
     -->
