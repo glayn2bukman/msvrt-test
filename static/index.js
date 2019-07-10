@@ -154,6 +154,39 @@ function GPSon(){
     return status;
 }
 
+function _get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
+    if(show_loading){start_loading();}
+
+    LOCATION = {'time':0,'latitude':0,'longitude':0,
+        'address_line':'','address':'',"locality": "",
+        "sub_locality": "","admin_area": "",
+        "sub_admin_area": "","feature_name": "",
+    };
+
+    navigator.geolocation.getCurrentPosition(
+        function(pos){
+            stop_loading();
+
+            LOCATION.time = pos.timestamp;
+            LOCATION.latitude = pos.coords.latitude; 
+            LOCATION.longitude = pos.coords.longitude;
+
+            // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
+            // so that it may call the callback when its ready!
+            reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
+            
+        },
+        function(err){
+            stop_loading();
+            showToast('gps failed, continuing without coordinates...');
+            if(callback){callback(callback_payload);}
+        },
+        
+        {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
+    );
+
+}
+
 function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
     /*
         in the config.xml, add
@@ -175,55 +208,26 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
     //*/
     
     try{
-        cordova.plugins.locationAccuracy.canRequest(function(canRequest){
-            if(canRequest){
-                cordova.plugins.locationAccuracy.request(function (success){
+        let browser = true;
+        try{ let __ = cordova.plugins.diagnostic.getLocationMode; browser=false;}
+        catch(e){}
 
-                if(show_loading){start_loading();}
+        if(!browser){
+            cordova.plugins.diagnostic.getLocationMode(function(locationMode){
+                if(locationMode!=cordova.plugins.diagnostic.locationMode.HIGH_ACCURACY){
+                    showToast('Please set Location mode to HIGH ACCURACY;');
+                    return;
+                }
+
+                _get_location(callback, callback_payload, err_callback, show_loading);
+
                 
-                LOCATION = {'time':0,'latitude':0,'longitude':0,
-                    'address_line':'','address':'',"locality": "",
-                    "sub_locality": "","admin_area": "",
-                    "sub_admin_area": "","feature_name": "",
-                };
-
-                navigator.geolocation.getCurrentPosition(
-                    function(pos){
-                        stop_loading();
-
-                        LOCATION.time = pos.timestamp;
-                        LOCATION.latitude = pos.coords.latitude; 
-                        LOCATION.longitude = pos.coords.longitude;
-
-                        // since reverseGeocode is asynchronous, pass it the callback along with callback_paylod
-                        // so that it may call the callback when its ready!
-                        reverseGeocode({lat:pos.coords.latitude, lon:pos.coords.longitude},callback,callback_payload);
-                        
-                    },
-                    function(err){
-                        stop_loading();
-                        showToast('gps failed, continuing without coordinates...');
-                        if(callback){callback(callback_payload);}
-                    },
-                    
-                    {timeout: 50000} // if this aint set and GPS is off, Android wont fire the onerror EvHandler
-                );
-
-                    console.log("Successfully requested accuracy: "+success.message);
-                }, function (error){
-                   console.error("Accuracy request failed: error code="+error.code+"; error message="+error.message);
-                   if(error.code !== cordova.plugins.locationAccuracy.ERROR_USER_DISAGREED){
-                       if(window.confirm("Failed to automatically set Location Mode to 'High Accuracy'. Would you like to switch to the Location Settings page and do this manually?")){
-                           cordova.plugins.diagnostic.switchToLocationSettings();
-                       }
-                   }
-                }, cordova.plugins.locationAccuracy.REQUEST_PRIORITY_HIGH_ACCURACY);
-            }else{
-                // request location permission and try again
-                show_info('please allow the app to use GPS; Settings->Aplications->UNBS-SMVT->Permissions->Location');
-                return;
-            }
-        });
+            },function(error){
+                showToast("ERROR(getting location accuracy): "+error);
+            });            
+        }else{
+            _get_location(callback, callback_payload, err_callback, show_loading);
+        }
 
 /*
         if(show_loading){start_loading();}
