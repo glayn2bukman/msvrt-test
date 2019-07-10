@@ -34,7 +34,10 @@
     <!--<plugin name="cordova-plugin-vibration" />-->
     <plugin name="cordova-plugin-sqlite" />
     <plugin name="cordova-plugin-device" />
-    <plugin name="cordova-plugin-geolocation" version="2.1.0" />
+    
+    <!--<plugin name="cordova-plugin-geolocation" version="2.1.0" />-->
+    <plugin name="org.apache.cordova.geolocation" version="0.3.6" />
+    
     <plugin name="cordova-plugin-x-toast" />
     <plugin name="cordova-plugin-network-information" />
 
