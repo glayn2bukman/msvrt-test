@@ -132,7 +132,6 @@ function next(div){
 }
 
 function GPSon(callback=null){
-    let status = true;
     try{
         /*
             the CheckGPS module is included in the config.xml by
@@ -147,13 +146,11 @@ function GPSon(callback=null){
           function fail(){
             //GPS is disabled!
             showToast('please turn on your GPS(location), if location is on, set mode to HIGH ACCURACY');
-            status = false;
           });
     }catch(e){
+        // in browser...
         if(callback){callback();}
-        return status; // on browser(or if CheckGPS plugin is not installed, assume that GPS is on)
     }
-    return status;
 }
 
 function get_location(callback=null, callback_payload=null, err_callback=null, show_loading=true){
@@ -167,14 +164,6 @@ function get_location(callback=null, callback_payload=null, err_callback=null, s
         <plugin name="cordova-plugin-geolocation" />
 
     */
-
-    //if(LOCATION){return;}
-    //*
-    //if(!GPSon()){
-    //    showToast('please turn on your GPS(location), you wont submit the report if GPS off');
-    //    return;
-    //}
-    //*/
     
     GPSon(function(){
         try{
@@ -305,9 +294,7 @@ function login(){
             
             document.getElementById('pswd').value = '';
 
-            if(!GPSon()){
-                showToast('please turn on your GPS(location), you wont submit the report if GPS off');
-            }
+            GPSon();
             
             document.getElementById('watermark').style.display = 'inline-block';
             
@@ -509,57 +496,52 @@ function upload(prefix=''){
     }
     
     if(!prefix.length){
-        if(!GPSon()){
-            showToast('please turn on your GPS(location), you wont submit the report if GPS off');
-            return;
-        }else{
-            get_location(function(){
-                    payload.data.location = LOCATION;
-                    let _payload = {
-                        device:payload.device, 
-                        data:payload.data, 
-                        action:'processverification',
-                        session_id:payload.session_id,
-                    };
-                                        
-                    request('','POST',_payload,
-                        function(reply){
-                            if(reply.error){
-                                flag_error(reply.message);
-                                return;
-                            }
+        get_location(function(){
+                payload.data.location = LOCATION;
+                let _payload = {
+                    device:payload.device, 
+                    data:payload.data, 
+                    action:'processverification',
+                    session_id:payload.session_id,
+                };
+                                    
+                request('','POST',_payload,
+                    function(reply){
+                        if(reply.error){
+                            flag_error(reply.message);
+                            return;
+                        }
 
-                            show_success('data sent successfully');
+                        show_success('data sent successfully');
+                        refresh();
+
+                        document.getElementById('inspection').style.display='none';
+                        document.getElementById('meter_details').style.display='block';
+                        show_modal('print_modal');
+                    },
+                    function(){
+                        read_local_data('savedReports',function(){}, function(value){
+                            let _data;
+                            if(value){_data = JSON.parse(value);}
+                            else{_data = [];}
+                            
+                            _data.push(payload);
+                            
+                            write_local_data('savedReports',JSON.stringify(_data),function(e){},function(v){});
+
+                            show_success('data saved locally as we could not communicate with UNBS servers');
                             refresh();
 
                             document.getElementById('inspection').style.display='none';
                             document.getElementById('meter_details').style.display='block';
                             show_modal('print_modal');
-                        },
-                        function(){
-                            read_local_data('savedReports',function(){}, function(value){
-                                let _data;
-                                if(value){_data = JSON.parse(value);}
-                                else{_data = [];}
-                                
-                                _data.push(payload);
-                                
-                                write_local_data('savedReports',JSON.stringify(_data),function(e){},function(v){});
-
-                                show_success('data saved locally as we could not communicate with UNBS servers');
-                                refresh();
-
-                                document.getElementById('inspection').style.display='none';
-                                document.getElementById('meter_details').style.display='block';
-                                show_modal('print_modal');
-                            });
-                        },0,null, null);
-                },
-                null,
-                showToast,
-                true
-            );        
-        }
+                        });
+                    },0,null, null);
+            },
+            null,
+            showToast,
+            true
+        );
     }else{
         let _payload = {
             device:payload.device, 
@@ -1463,7 +1445,7 @@ function init(){
         }
     }, false);
 
-    if(!GPSon()){showToast('please turn on your GPS(location), you wont submit the report if GPS off');}
+    GPSon();
 
     populate_app_data();
 
